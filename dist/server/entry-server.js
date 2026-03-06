@@ -1191,16 +1191,29 @@ const SSGLayout = ({ children }) => {
     children,
     /* @__PURE__ */ jsx(Footer, {}),
     /* @__PURE__ */ jsx(BackToTop, {}),
-    /* @__PURE__ */ jsx(FloatingContactForm, {})
+    /* @__PURE__ */ jsx(FloatingContactForm, {}),
+    /* @__PURE__ */ jsx("script", { dangerouslySetInnerHTML: {
+      __html: `
+                document.addEventListener('DOMContentLoaded', function() {
+                    const observer = new IntersectionObserver((entries) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                entry.target.classList.remove('opacity-0', 'translate-y-8');
+                                entry.target.classList.add('opacity-100', 'translate-y-0');
+                                observer.unobserve(entry.target);
+                            }
+                        });
+                    }, { threshold: 0.1 });
+                    
+                    document.querySelectorAll('.reveal-section').forEach((section) => {
+                        observer.observe(section);
+                    });
+                });
+            `
+    } })
   ] });
 };
 const AbdomenUltrasound = () => {
-  const fadeUpProps = {
-    initial: { opacity: 0, y: 30 },
-    whileInView: { opacity: 1, y: 0 },
-    viewport: { once: true, margin: "-50px" },
-    transition: { duration: 0.6, ease: "easeOut" }
-  };
   return /* @__PURE__ */ jsxs("div", { className: "pt-24 lg:pt-32", children: [
     /* @__PURE__ */ jsxs(Helmet, { children: [
       /* @__PURE__ */ jsx("title", { children: "Abdominal Ultrasound Downers Grove | Precision Imaging" }),
@@ -1224,7 +1237,7 @@ const AbdomenUltrasound = () => {
             }
           ` })
     ] }),
-    /* @__PURE__ */ jsx(motion.section, { ...fadeUpProps, className: "bg-blue-900 text-white py-20 px-6", children: /* @__PURE__ */ jsxs("div", { className: "max-w-6xl mx-auto flex flex-col items-center text-center", children: [
+    /* @__PURE__ */ jsx("section", { className: "reveal-section opacity-0 translate-y-8 bg-blue-900 text-white py-20 px-6 transition-all duration-700 ease-out", children: /* @__PURE__ */ jsxs("div", { className: "max-w-6xl mx-auto flex flex-col items-center text-center", children: [
       /* @__PURE__ */ jsx("h1", { className: "text-4xl md:text-5xl font-bold mb-6", children: "Abdominal Ultrasound Downers Grove | Precision Imaging" }),
       /* @__PURE__ */ jsx("p", { className: "text-xl md:text-2xl mb-4 max-w-3xl", children: "Safe imaging of liver, gallbladder, kidneys, pancreas & more" }),
       /* @__PURE__ */ jsx("p", { className: "text-lg text-blue-200 mb-8 max-w-2xl", children: "Transparent pricing. Fast scheduling. Results to your doctor." }),
@@ -1236,7 +1249,7 @@ const AbdomenUltrasound = () => {
         /* @__PURE__ */ jsx("a", { href: "#contact", className: "bg-transparent border-2 border-white hover:bg-white hover:text-blue-900 px-8 py-4 rounded-lg font-semibold flex items-center justify-center transition hover:-translate-y-1", children: "Contact Us" })
       ] })
     ] }) }),
-    /* @__PURE__ */ jsx(motion.section, { ...fadeUpProps, className: "py-16 bg-gray-50 px-6", children: /* @__PURE__ */ jsxs("div", { className: "max-w-6xl mx-auto grid md:grid-cols-2 gap-12", children: [
+    /* @__PURE__ */ jsx("section", { className: "reveal-section opacity-0 translate-y-8 transition-all duration-700 ease-out py-16 bg-gray-50 px-6", children: /* @__PURE__ */ jsxs("div", { className: "max-w-6xl mx-auto grid md:grid-cols-2 gap-12", children: [
       /* @__PURE__ */ jsxs("div", { className: "hover:transform hover:translate-x-2 transition-transform duration-300", children: [
         /* @__PURE__ */ jsxs("h2", { className: "text-3xl font-bold text-gray-900 mb-6 flex items-center", children: [
           /* @__PURE__ */ jsx(Activity, { className: "w-8 h-8 text-blue-600 mr-3" }),
@@ -1262,7 +1275,7 @@ const AbdomenUltrasound = () => {
         ] }, idx)) })
       ] })
     ] }) }),
-    /* @__PURE__ */ jsx(motion.section, { ...fadeUpProps, className: "py-16 bg-white px-6", children: /* @__PURE__ */ jsxs("div", { className: "max-w-6xl mx-auto grid md:grid-cols-2 gap-12", children: [
+    /* @__PURE__ */ jsx("section", { className: "reveal-section opacity-0 translate-y-8 transition-all duration-700 ease-out py-16 bg-white px-6", children: /* @__PURE__ */ jsxs("div", { className: "max-w-6xl mx-auto grid md:grid-cols-2 gap-12", children: [
       /* @__PURE__ */ jsxs("div", { className: "bg-blue-50 p-8 rounded-2xl hover:shadow-md transition-shadow", children: [
         /* @__PURE__ */ jsxs("h2", { className: "text-2xl font-bold text-blue-900 mb-6 flex items-center", children: [
           /* @__PURE__ */ jsx(FileText, { className: "w-6 h-6 mr-3 text-blue-600" }),
@@ -1317,7 +1330,7 @@ const AbdomenUltrasound = () => {
         ] })
       ] })
     ] }) }),
-    /* @__PURE__ */ jsx(motion.section, { ...fadeUpProps, className: "py-16 bg-blue-900 text-white px-6", children: /* @__PURE__ */ jsxs("div", { className: "max-w-6xl mx-auto", children: [
+    /* @__PURE__ */ jsx("section", { className: "reveal-section opacity-0 translate-y-8 transition-all duration-700 ease-out py-16 bg-blue-900 text-white px-6", children: /* @__PURE__ */ jsxs("div", { className: "max-w-6xl mx-auto", children: [
       /* @__PURE__ */ jsx("h2", { className: "text-3xl md:text-4xl font-bold text-center mb-12", children: "Why Get Your Abdominal Ultrasound Here" }),
       /* @__PURE__ */ jsxs("div", { className: "grid sm:grid-cols-2 lg:grid-cols-4 gap-6", children: [
         /* @__PURE__ */ jsxs("div", { className: "bg-blue-800/50 p-6 rounded-xl text-center hover:bg-blue-800 transition-colors hover:-translate-y-2 duration-300", children: [
@@ -1342,7 +1355,7 @@ const AbdomenUltrasound = () => {
         ] })
       ] })
     ] }) }),
-    /* @__PURE__ */ jsx(motion.section, { ...fadeUpProps, className: "py-16 bg-gray-50 px-6", children: /* @__PURE__ */ jsxs("div", { className: "max-w-3xl mx-auto", children: [
+    /* @__PURE__ */ jsx("section", { className: "reveal-section opacity-0 translate-y-8 transition-all duration-700 ease-out py-16 bg-gray-50 px-6", children: /* @__PURE__ */ jsxs("div", { className: "max-w-3xl mx-auto", children: [
       /* @__PURE__ */ jsx("h2", { className: "text-3xl font-bold text-center text-gray-900 mb-10", children: "Frequently Asked Questions" }),
       /* @__PURE__ */ jsxs("div", { className: "space-y-6", children: [
         /* @__PURE__ */ jsxs("div", { className: "bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow", children: [
@@ -1367,11 +1380,11 @@ const AbdomenUltrasound = () => {
         ] })
       ] })
     ] }) }),
-    /* @__PURE__ */ jsx(motion.section, { ...fadeUpProps, className: "py-12 bg-white border-t border-gray-200 px-6", children: /* @__PURE__ */ jsxs("div", { className: "max-w-6xl mx-auto text-center", children: [
+    /* @__PURE__ */ jsx("section", { className: "reveal-section opacity-0 translate-y-8 transition-all duration-700 ease-out py-12 bg-white border-t border-gray-200 px-6", children: /* @__PURE__ */ jsxs("div", { className: "max-w-6xl mx-auto text-center", children: [
       /* @__PURE__ */ jsx("h2", { className: "text-2xl font-bold text-gray-900 mb-4", children: "Local Service Area" }),
       /* @__PURE__ */ jsx("p", { className: "text-sm text-gray-500 leading-relaxed max-w-4xl mx-auto", children: "Serving Downers Grove, Westmont, Clarendon Hills, Lisle, Oak Brook, Hinsdale, Darien, Willowbrook, Woodridge, Lombard, Glen Ellyn, Western Springs, Villa Park, Wheaton, Burr Ridge, Indian Head Park, Naperville, Elmhurst, Westchester, La Grange, Countryside, Carol Stream, Northlake, Oakbrook Terrace, Bolingbrook, Addison, Aurora, Brookfield, Berkeley, Hillside, Broadview, Roselle, Itasca, Bensenville, Lemont, Franklin Park, Schiller Park, River Forest, Forest Park, Maywood, Bellwood, Oak Park, Oak Forest, Tinley Park, Rolling Meadows, Ridgewood, Sauganash, Crest Hill, Mount Prospect, Niles, Crystal Lawns, Edgebrook, Mayfair, Joliet, Ingalls Park, East Joliet, South Elgin, Plum Grove Village, Winthrop Village, Fernway, Hoffman Estates, Albany Park, Creekside, Valley View, Raynor Park, Arlington Heights, Forest River, Lidice, Fernway Park, Lincolnwood, Morton Grove, Cherry Hill, Gougars, Fairfax Village, Sherwood Oaks, Clintonville, Coleman, and Schaumburg." })
     ] }) }),
-    /* @__PURE__ */ jsx(motion.section, { ...fadeUpProps, className: "py-16 bg-gray-50 px-6 border-t border-gray-200", children: /* @__PURE__ */ jsxs("div", { className: "max-w-4xl mx-auto text-center", children: [
+    /* @__PURE__ */ jsx("section", { className: "reveal-section opacity-0 translate-y-8 transition-all duration-700 ease-out py-16 bg-gray-50 px-6 border-t border-gray-200", children: /* @__PURE__ */ jsxs("div", { className: "max-w-4xl mx-auto text-center", children: [
       /* @__PURE__ */ jsx("h2", { className: "text-3xl font-bold text-gray-900 mb-6", children: "Ready to Schedule?" }),
       /* @__PURE__ */ jsxs("div", { className: "flex flex-col sm:flex-row gap-4 justify-center items-center mb-8", children: [
         /* @__PURE__ */ jsxs("a", { href: "/#/booking", className: "bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold flex items-center transition hover:-translate-y-1 hover:shadow-lg", children: [

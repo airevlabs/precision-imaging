@@ -1,16 +1,8 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { ArrowRight, CheckCircle2, Clock, Calendar, FileText, Heart, Activity } from 'lucide-react';
-import { motion } from 'framer-motion';
 
 const AbdomenUltrasound = () => {
-  const fadeUpProps = {
-    initial: { opacity: 0, y: 30 },
-    whileInView: { opacity: 1, y: 0 },
-    viewport: { once: true, margin: "-50px" },
-    transition: { duration: 0.6, ease: "easeOut" }
-  };
-
   return (
     <div className="pt-24 lg:pt-32">
       <Helmet>
@@ -39,7 +31,7 @@ const AbdomenUltrasound = () => {
       </Helmet>
 
       {/* Hero Section */}
-      <motion.section {...fadeUpProps} className="bg-blue-900 text-white py-20 px-6">
+      <section className="reveal-section opacity-0 translate-y-8 bg-blue-900 text-white py-20 px-6 transition-all duration-700 ease-out">
         <div className="max-w-6xl mx-auto flex flex-col items-center text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Abdominal Ultrasound Downers Grove | Precision Imaging</h1>
           <p className="text-xl md:text-2xl mb-4 max-w-3xl">Safe imaging of liver, gallbladder, kidneys, pancreas & more</p>
@@ -53,10 +45,10 @@ const AbdomenUltrasound = () => {
             </a>
           </div>
         </div>
-      </motion.section>
+      </section>
 
       {/* What it Shows & Common Findings */}
-      <motion.section {...fadeUpProps} className="py-16 bg-gray-50 px-6">
+      <section className="reveal-section opacity-0 translate-y-8 transition-all duration-700 ease-out py-16 bg-gray-50 px-6">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
           <div className="hover:transform hover:translate-x-2 transition-transform duration-300">
             <h2 className="text-3xl font-bold text-gray-900 mb-6 flex items-center">
@@ -91,10 +83,10 @@ const AbdomenUltrasound = () => {
             </ul>
           </div>
         </div>
-      </motion.section>
+      </section>
 
       {/* Preparation & Process */}
-      <motion.section {...fadeUpProps} className="py-16 bg-white px-6">
+      <section className="reveal-section opacity-0 translate-y-8 transition-all duration-700 ease-out py-16 bg-white px-6">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
           <div className="bg-blue-50 p-8 rounded-2xl hover:shadow-md transition-shadow">
             <h2 className="text-2xl font-bold text-blue-900 mb-6 flex items-center">
@@ -125,10 +117,10 @@ const AbdomenUltrasound = () => {
             </div>
           </div>
         </div>
-      </motion.section>
+      </section>
 
       {/* Why Choose Us */}
-      <motion.section {...fadeUpProps} className="py-16 bg-blue-900 text-white px-6">
+      <section className="reveal-section opacity-0 translate-y-8 transition-all duration-700 ease-out py-16 bg-blue-900 text-white px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Why Get Your Abdominal Ultrasound Here</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -162,10 +154,10 @@ const AbdomenUltrasound = () => {
             </div>
           </div>
         </div>
-      </motion.section>
+      </section>
 
       {/* FAQ */}
-      <motion.section {...fadeUpProps} className="py-16 bg-gray-50 px-6">
+      <section className="reveal-section opacity-0 translate-y-8 transition-all duration-700 ease-out py-16 bg-gray-50 px-6">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-10">Frequently Asked Questions</h2>
           <div className="space-y-6">
@@ -191,20 +183,20 @@ const AbdomenUltrasound = () => {
             </div>
           </div>
         </div>
-      </motion.section>
+      </section>
 
       {/* Service Area */}
-      <motion.section {...fadeUpProps} className="py-12 bg-white border-t border-gray-200 px-6">
+      <section className="reveal-section opacity-0 translate-y-8 transition-all duration-700 ease-out py-12 bg-white border-t border-gray-200 px-6">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Local Service Area</h2>
           <p className="text-sm text-gray-500 leading-relaxed max-w-4xl mx-auto">
             Serving Downers Grove, Westmont, Clarendon Hills, Lisle, Oak Brook, Hinsdale, Darien, Willowbrook, Woodridge, Lombard, Glen Ellyn, Western Springs, Villa Park, Wheaton, Burr Ridge, Indian Head Park, Naperville, Elmhurst, Westchester, La Grange, Countryside, Carol Stream, Northlake, Oakbrook Terrace, Bolingbrook, Addison, Aurora, Brookfield, Berkeley, Hillside, Broadview, Roselle, Itasca, Bensenville, Lemont, Franklin Park, Schiller Park, River Forest, Forest Park, Maywood, Bellwood, Oak Park, Oak Forest, Tinley Park, Rolling Meadows, Ridgewood, Sauganash, Crest Hill, Mount Prospect, Niles, Crystal Lawns, Edgebrook, Mayfair, Joliet, Ingalls Park, East Joliet, South Elgin, Plum Grove Village, Winthrop Village, Fernway, Hoffman Estates, Albany Park, Creekside, Valley View, Raynor Park, Arlington Heights, Forest River, Lidice, Fernway Park, Lincolnwood, Morton Grove, Cherry Hill, Gougars, Fairfax Village, Sherwood Oaks, Clintonville, Coleman, and Schaumburg.
           </p>
         </div>
-      </motion.section>
+      </section>
 
       {/* Final CTA */}
-      <motion.section {...fadeUpProps} className="py-16 bg-gray-50 px-6 border-t border-gray-200">
+      <section className="reveal-section opacity-0 translate-y-8 transition-all duration-700 ease-out py-16 bg-gray-50 px-6 border-t border-gray-200">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">Ready to Schedule?</h2>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
@@ -220,7 +212,7 @@ const AbdomenUltrasound = () => {
             <span className="flex items-center"><CheckCircle2 className="w-4 h-4 text-green-500 mr-1" /> HIPAA Compliant</span>
           </p>
         </div>
-      </motion.section>
+      </section>
     </div>
   );
 };
