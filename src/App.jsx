@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import BackToTop from './components/BackToTop';
@@ -9,6 +9,7 @@ import Booking from './pages/Booking';
 import Hipaa from './pages/Hipaa';
 import Privacy from './pages/Privacy';
 import Terms from './pages/Terms';
+import AbdomenUltrasound from './pages/services/AbdomenUltrasound';
 
 // ScrollToAnchor component to handle hash scrolling on route change
 const ScrollToAnchor = () => {
@@ -38,22 +39,21 @@ const ScrollToAnchor = () => {
 
 function App() {
   return (
-    <Router>
-      <div className="app">
-        <ScrollToAnchor />
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/booking" element={<Booking />} />
-          <Route path="/hipaa" element={<Hipaa />} />
-          <Route path="/privacy" element={<Privacy />} />
-          <Route path="/terms" element={<Terms />} />
-        </Routes>
-        <Footer />
-        <BackToTop />
-        <FloatingContactForm />
-      </div>
-    </Router>
+    <div className="app">
+      <ScrollToAnchor />
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/booking" element={<Booking />} />
+        <Route path="/hipaa" element={<Hipaa />} />
+        <Route path="/privacy" element={<Privacy />} />
+        <Route path="/terms" element={<Terms />} />
+        <Route path="/services/abdomen-ultrasound" element={<AbdomenUltrasound />} />
+      </Routes>
+      <Footer />
+      <BackToTop />
+      <FloatingContactForm />
+    </div>
   );
 }
 
