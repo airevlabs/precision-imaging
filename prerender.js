@@ -18,8 +18,9 @@ for (const { url, name } of routesToPrerender) {
     const { helmet } = helmetContext;
 
     const html = template
-        .replace(`<!--app-head-->`, helmet ? Array.from([helmet.title.toString(), helmet.meta.toString(), helmet.link.toString(), helmet.script.toString()]).join('\\n') : '')
-        .replace(`<!--app-html-->`, appHtml);
+        .replace(`<!--app-head-->`, helmet ? Array.from([helmet.title.toString(), helmet.meta.toString(), helmet.link.toString(), helmet.script.toString()]).join('\n') : '')
+        .replace(`<!--app-html-->`, appHtml)
+        .replace(/<script type="module" crossorigin src="[^"]+"><\/script>/, '');
 
     const outDir = toAbsolute('dist/ssg');
     if (!fs.existsSync(outDir)) {
