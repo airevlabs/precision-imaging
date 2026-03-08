@@ -1248,13 +1248,13 @@ const AbdomenUltrasound = () => {
     /* @__PURE__ */ jsx("section", { className: "reveal-section opacity-0 translate-y-8 !bg-blue-900 !text-white !py-24 !px-6 transition-all duration-700 ease-out", children: /* @__PURE__ */ jsxs("div", { className: "max-w-6xl mx-auto flex flex-col items-center text-center", children: [
       /* @__PURE__ */ jsx("h1", { className: "!text-4xl md:!text-6xl !font-bold !mb-8 !text-white leading-tight", children: "Abdominal Ultrasound Downers Grove | Precision Imaging" }),
       /* @__PURE__ */ jsx("p", { className: "!text-xl md:!text-2xl !mb-6 max-w-3xl !text-white font-medium", children: "Safe imaging of liver, gallbladder, kidneys, pancreas & more" }),
-      /* @__PURE__ */ jsx("p", { className: "text-lg text-blue-200 mb-8 max-w-2xl", children: "Transparent pricing. Fast scheduling. Results to your doctor." }),
+      /* @__PURE__ */ jsx("p", { className: "!text-lg !text-blue-200 !mb-8 max-w-2xl", children: "Transparent pricing. Fast scheduling. Results to your doctor." }),
       /* @__PURE__ */ jsxs("div", { className: "flex flex-col sm:flex-row gap-4", children: [
-        /* @__PURE__ */ jsxs("a", { href: "/#/booking", className: "bg-blue-500 hover:bg-blue-600 px-8 py-4 rounded-lg font-semibold flex items-center justify-center transition hover:-translate-y-1 hover:shadow-lg", children: [
+        /* @__PURE__ */ jsxs("a", { href: "/#/booking", className: "!bg-blue-500 hover:!bg-blue-600 !px-8 !py-4 rounded-lg !font-semibold flex items-center justify-center transition hover:-translate-y-1 hover:shadow-lg !text-white", children: [
           "Book Abdominal Ultrasound ",
           /* @__PURE__ */ jsx(Calendar, { className: "ml-2 w-5 h-5" })
         ] }),
-        /* @__PURE__ */ jsx("a", { href: "#contact", className: "bg-transparent border-2 border-white hover:bg-white hover:text-blue-900 px-8 py-4 rounded-lg font-semibold flex items-center justify-center transition hover:-translate-y-1", children: "Contact Us" })
+        /* @__PURE__ */ jsx("a", { href: "#contact", className: "bg-transparent border-2 !border-white hover:!bg-white hover:!text-blue-900 !px-8 !py-4 rounded-lg !font-semibold flex items-center justify-center transition hover:-translate-y-1 !text-white", children: "Contact Us" })
       ] })
     ] }) }),
     /* @__PURE__ */ jsx("section", { className: "reveal-section opacity-0 translate-y-8 transition-all duration-700 ease-out !py-16 !bg-gray-50 !px-6", children: /* @__PURE__ */ jsxs("div", { className: "max-w-6xl mx-auto grid md:grid-cols-2 gap-12", children: [
@@ -1264,8 +1264,8 @@ const AbdomenUltrasound = () => {
           "What Does an Abdominal Ultrasound Examine?"
         ] }),
         /* @__PURE__ */ jsx("p", { className: "!text-gray-600 !mb-6 !text-lg text-left", children: "Noninvasive sound waves create clear images without radiation, allowing us to safely examine:" }),
-        /* @__PURE__ */ jsx("ul", { className: "space-y-3", children: ["Liver", "Gallbladder", "Pancreas", "Spleen", "Kidneys", "Aorta", "Appendix"].map((organ, idx) => /* @__PURE__ */ jsxs("li", { className: "flex items-center text-gray-700 hover:text-blue-600 transition-colors", children: [
-          /* @__PURE__ */ jsx(CheckCircle2, { className: "w-5 h-5 text-green-500 mr-3 shrink-0" }),
+        /* @__PURE__ */ jsx("ul", { className: "space-y-3", children: ["Liver", "Gallbladder", "Pancreas", "Spleen", "Kidneys", "Aorta", "Appendix"].map((organ, idx) => /* @__PURE__ */ jsxs("li", { className: "!flex !items-center !text-gray-700 hover:!text-blue-600 transition-colors", children: [
+          /* @__PURE__ */ jsx(CheckCircle2, { className: "!w-5 !h-5 !text-green-500 !mr-3 shrink-0" }),
           " ",
           organ
         ] }, idx)) })
@@ -1276,8 +1276,8 @@ const AbdomenUltrasound = () => {
           "Common Conditions Detected"
         ] }),
         /* @__PURE__ */ jsx("p", { className: "!text-gray-600 !mb-6 !text-lg text-left", children: "Early detection allows for timely treatment. We commonly screen for:" }),
-        /* @__PURE__ */ jsx("ul", { className: "space-y-3", children: ["Gallstones", "Kidney stones", "Cysts", "Tumors", "Aneurysms", "Fluid collections", "Appendicitis"].map((condition, idx) => /* @__PURE__ */ jsxs("li", { className: "flex items-center text-gray-700 hover:text-blue-600 transition-colors", children: [
-          /* @__PURE__ */ jsx(CheckCircle2, { className: "w-5 h-5 text-blue-500 mr-3 shrink-0" }),
+        /* @__PURE__ */ jsx("ul", { className: "space-y-3", children: ["Gallstones", "Kidney stones", "Cysts", "Tumors", "Aneurysms", "Fluid collections", "Appendicitis"].map((condition, idx) => /* @__PURE__ */ jsxs("li", { className: "!flex !items-center !text-gray-700 hover:!text-blue-600 transition-colors", children: [
+          /* @__PURE__ */ jsx(CheckCircle2, { className: "!w-5 !h-5 !text-blue-500 !mr-3 shrink-0" }),
           " ",
           condition
         ] }, idx)) })
@@ -1339,75 +1339,75 @@ const AbdomenUltrasound = () => {
       ] })
     ] }) }),
     /* @__PURE__ */ jsx("section", { className: "reveal-section opacity-0 translate-y-8 transition-all duration-700 ease-out !py-20 !bg-blue-900 !text-white !px-6 mt-16", children: /* @__PURE__ */ jsxs("div", { className: "max-w-6xl mx-auto", children: [
-      /* @__PURE__ */ jsx("h2", { className: "text-3xl md:text-4xl font-bold text-center mb-12", children: "Why Get Your Abdominal Ultrasound Here" }),
+      /* @__PURE__ */ jsx("h2", { className: "!text-3xl md:!text-4xl !font-bold text-center !mb-12 !text-white", children: "Why Get Your Abdominal Ultrasound Here" }),
       /* @__PURE__ */ jsxs("div", { className: "grid sm:grid-cols-2 lg:grid-cols-4 gap-6", children: [
-        /* @__PURE__ */ jsxs("div", { className: "bg-blue-800/50 p-6 rounded-xl text-center hover:bg-blue-800 transition-colors hover:-translate-y-2 duration-300", children: [
-          /* @__PURE__ */ jsx("div", { className: "bg-blue-500 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4", children: /* @__PURE__ */ jsx(CheckCircle2, { className: "w-6 h-6 text-white" }) }),
-          /* @__PURE__ */ jsx("h3", { className: "font-semibold text-lg mb-2", children: "Transparent Pricing" }),
-          /* @__PURE__ */ jsx("p", { className: "text-blue-200 text-sm", children: "No hidden fees, simple self-pay rates." })
+        /* @__PURE__ */ jsxs("div", { className: "!bg-blue-800/50 !p-6 rounded-xl text-center hover:!bg-blue-800 transition-colors hover:-translate-y-2 duration-300", children: [
+          /* @__PURE__ */ jsx("div", { className: "!bg-blue-500 w-12 h-12 rounded-full flex items-center justify-center mx-auto !mb-4", children: /* @__PURE__ */ jsx(CheckCircle2, { className: "w-6 h-6 !text-white" }) }),
+          /* @__PURE__ */ jsx("h3", { className: "!font-semibold !text-xl !mb-2 !text-white", children: "Transparent Pricing" }),
+          /* @__PURE__ */ jsx("p", { className: "!text-blue-200 !text-sm", children: "No hidden fees, simple self-pay rates." })
         ] }),
-        /* @__PURE__ */ jsxs("div", { className: "bg-blue-800/50 p-6 rounded-xl text-center hover:bg-blue-800 transition-colors hover:-translate-y-2 duration-300", children: [
-          /* @__PURE__ */ jsx("div", { className: "bg-blue-500 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4", children: /* @__PURE__ */ jsx(Activity, { className: "w-6 h-6 text-white" }) }),
-          /* @__PURE__ */ jsx("h3", { className: "font-semibold text-lg mb-2", children: "Modern Equipment" }),
-          /* @__PURE__ */ jsx("p", { className: "text-blue-200 text-sm", children: "Latest portable ultrasound technology." })
+        /* @__PURE__ */ jsxs("div", { className: "!bg-blue-800/50 !p-6 rounded-xl text-center hover:!bg-blue-800 transition-colors hover:-translate-y-2 duration-300", children: [
+          /* @__PURE__ */ jsx("div", { className: "!bg-blue-500 w-12 h-12 rounded-full flex items-center justify-center mx-auto !mb-4", children: /* @__PURE__ */ jsx(Activity, { className: "w-6 h-6 !text-white" }) }),
+          /* @__PURE__ */ jsx("h3", { className: "!font-semibold !text-xl !mb-2 !text-white", children: "Modern Equipment" }),
+          /* @__PURE__ */ jsx("p", { className: "!text-blue-200 !text-sm", children: "Latest portable ultrasound technology." })
         ] }),
-        /* @__PURE__ */ jsxs("div", { className: "bg-blue-800/50 p-6 rounded-xl text-center hover:bg-blue-800 transition-colors hover:-translate-y-2 duration-300", children: [
+        /* @__PURE__ */ jsxs("div", { className: "!bg-blue-800/50 !p-6 rounded-xl text-center hover:!bg-blue-800 transition-colors hover:-translate-y-2 duration-300", children: [
           /* @__PURE__ */ jsx("div", { className: "!bg-blue-500 w-12 h-12 rounded-full flex items-center justify-center mx-auto !mb-4", children: /* @__PURE__ */ jsx(Clock, { className: "w-6 h-6 !text-white" }) }),
           /* @__PURE__ */ jsx("h3", { className: "!font-semibold !text-xl !mb-2 !text-white", children: "Fast Scheduling" }),
           /* @__PURE__ */ jsx("p", { className: "!text-blue-200 !text-sm", children: "Appointments available when you need them." })
         ] }),
-        /* @__PURE__ */ jsxs("div", { className: "bg-blue-800/50 p-6 rounded-xl text-center hover:bg-blue-800 transition-colors hover:-translate-y-2 duration-300", children: [
-          /* @__PURE__ */ jsx("div", { className: "bg-blue-500 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4", children: /* @__PURE__ */ jsx(FileText, { className: "w-6 h-6 text-white" }) }),
-          /* @__PURE__ */ jsx("h3", { className: "font-semibold text-lg mb-2", children: "Direct Results" }),
-          /* @__PURE__ */ jsx("p", { className: "text-blue-200 text-sm", children: "Sent directly to your referring doctor." })
+        /* @__PURE__ */ jsxs("div", { className: "!bg-blue-800/50 !p-6 rounded-xl text-center hover:!bg-blue-800 transition-colors hover:-translate-y-2 duration-300", children: [
+          /* @__PURE__ */ jsx("div", { className: "!bg-blue-500 w-12 h-12 rounded-full flex items-center justify-center mx-auto !mb-4", children: /* @__PURE__ */ jsx(FileText, { className: "w-6 h-6 !text-white" }) }),
+          /* @__PURE__ */ jsx("h3", { className: "!font-semibold !text-xl !mb-2 !text-white", children: "Direct Results" }),
+          /* @__PURE__ */ jsx("p", { className: "!text-blue-200 !text-sm", children: "Sent directly to your referring doctor." })
         ] })
       ] })
     ] }) }),
     /* @__PURE__ */ jsx("section", { className: "reveal-section opacity-0 translate-y-8 transition-all duration-700 ease-out py-16 bg-gray-50 px-6", children: /* @__PURE__ */ jsxs("div", { className: "max-w-3xl mx-auto flex flex-col gap-6", children: [
       /* @__PURE__ */ jsx("h2", { className: "!text-3xl md:!text-4xl !font-bold text-center !text-gray-900 !mb-10", children: "Frequently Asked Questions" }),
       /* @__PURE__ */ jsxs("div", { className: "space-y-6", children: [
-        /* @__PURE__ */ jsxs("div", { className: "bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow", children: [
-          /* @__PURE__ */ jsx("h3", { className: "font-semibold text-lg text-gray-900 mb-2", children: "Do I need to fast?" }),
-          /* @__PURE__ */ jsx("p", { className: "text-gray-600", children: "Yes, please fast for 6-8 hours prior to your exam. Water is OK after 2 hours of fasting." })
+        /* @__PURE__ */ jsxs("div", { className: "!bg-white !p-6 !rounded-xl shadow-sm border !border-gray-200 hover:shadow-md transition-shadow", children: [
+          /* @__PURE__ */ jsx("h3", { className: "!font-semibold !text-lg !text-gray-900 !mb-2", children: "Do I need to fast?" }),
+          /* @__PURE__ */ jsx("p", { className: "!text-gray-600", children: "Yes, please fast for 6-8 hours prior to your exam. Water is OK after 2 hours of fasting." })
         ] }),
-        /* @__PURE__ */ jsxs("div", { className: "bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow", children: [
-          /* @__PURE__ */ jsx("h3", { className: "font-semibold text-lg text-gray-900 mb-2", children: "How long does it take?" }),
-          /* @__PURE__ */ jsx("p", { className: "text-gray-600", children: "The entire process typically takes between 20 to 45 minutes." })
+        /* @__PURE__ */ jsxs("div", { className: "!bg-white !p-6 !rounded-xl shadow-sm border !border-gray-200 hover:shadow-md transition-shadow", children: [
+          /* @__PURE__ */ jsx("h3", { className: "!font-semibold !text-lg !text-gray-900 !mb-2", children: "How long does it take?" }),
+          /* @__PURE__ */ jsx("p", { className: "!text-gray-600", children: "The entire process typically takes between 20 to 45 minutes." })
         ] }),
-        /* @__PURE__ */ jsxs("div", { className: "bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow", children: [
-          /* @__PURE__ */ jsx("h3", { className: "font-semibold text-lg text-gray-900 mb-2", children: "Is it safe and painful?" }),
-          /* @__PURE__ */ jsx("p", { className: "text-gray-600", children: "Ultrasounds are incredibly safe, using zero radiation. It is generally painless, though you may feel mild pressure." })
+        /* @__PURE__ */ jsxs("div", { className: "!bg-white !p-6 !rounded-xl shadow-sm border !border-gray-200 hover:shadow-md transition-shadow", children: [
+          /* @__PURE__ */ jsx("h3", { className: "!font-semibold !text-lg !text-gray-900 !mb-2", children: "Is it safe and painful?" }),
+          /* @__PURE__ */ jsx("p", { className: "!text-gray-600", children: "Ultrasounds are incredibly safe, using zero radiation. It is generally painless, though you may feel mild pressure." })
         ] }),
-        /* @__PURE__ */ jsxs("div", { className: "bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow", children: [
-          /* @__PURE__ */ jsx("h3", { className: "font-semibold text-lg text-gray-900 mb-2", children: "When will I get results?" }),
-          /* @__PURE__ */ jsx("p", { className: "text-gray-600", children: "Results are typically sent directly to your doctor on the same day as your exam." })
+        /* @__PURE__ */ jsxs("div", { className: "!bg-white !p-6 !rounded-xl shadow-sm border !border-gray-200 hover:shadow-md transition-shadow", children: [
+          /* @__PURE__ */ jsx("h3", { className: "!font-semibold !text-lg !text-gray-900 !mb-2", children: "When will I get results?" }),
+          /* @__PURE__ */ jsx("p", { className: "!text-gray-600", children: "Results are typically sent directly to your doctor on the same day as your exam." })
         ] }),
-        /* @__PURE__ */ jsxs("div", { className: "bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow", children: [
-          /* @__PURE__ */ jsx("h3", { className: "font-semibold text-lg text-gray-900 mb-2", children: "Do I need a referral?" }),
-          /* @__PURE__ */ jsx("p", { className: "text-gray-600", children: "A referral is not necessary if you are paying out of pocket (self-pay), but it is required if you are billing through insurance." })
+        /* @__PURE__ */ jsxs("div", { className: "!bg-white !p-6 !rounded-xl shadow-sm border !border-gray-200 hover:shadow-md transition-shadow", children: [
+          /* @__PURE__ */ jsx("h3", { className: "!font-semibold !text-lg !text-gray-900 !mb-2", children: "Do I need a referral?" }),
+          /* @__PURE__ */ jsx("p", { className: "!text-gray-600", children: "A referral is not necessary if you are paying out of pocket (self-pay), but it is required if you are billing through insurance." })
         ] })
       ] })
     ] }) }),
     /* @__PURE__ */ jsx("section", { className: "reveal-section opacity-0 translate-y-8 transition-all duration-700 ease-out !py-16 !bg-white border-t border-gray-200 !px-6 mt-16", children: /* @__PURE__ */ jsxs("div", { className: "max-w-6xl mx-auto text-center", children: [
-      /* @__PURE__ */ jsx("h2", { className: "text-2xl font-bold text-gray-900 mb-4", children: "Local Service Area" }),
-      /* @__PURE__ */ jsx("p", { className: "text-sm text-gray-500 leading-relaxed max-w-4xl mx-auto", children: "Serving Downers Grove, Westmont, Clarendon Hills, Lisle, Oak Brook, Hinsdale, Darien, Willowbrook, Woodridge, Lombard, Glen Ellyn, Western Springs, Villa Park, Wheaton, Burr Ridge, Indian Head Park, Naperville, Elmhurst, Westchester, La Grange, Countryside, Carol Stream, Northlake, Oakbrook Terrace, Bolingbrook, Addison, Aurora, Brookfield, Berkeley, Hillside, Broadview, Roselle, Itasca, Bensenville, Lemont, Franklin Park, Schiller Park, River Forest, Forest Park, Maywood, Bellwood, Oak Park, Oak Forest, Tinley Park, Rolling Meadows, Ridgewood, Sauganash, Crest Hill, Mount Prospect, Niles, Crystal Lawns, Edgebrook, Mayfair, Joliet, Ingalls Park, East Joliet, South Elgin, Plum Grove Village, Winthrop Village, Fernway, Hoffman Estates, Albany Park, Creekside, Valley View, Raynor Park, Arlington Heights, Forest River, Lidice, Fernway Park, Lincolnwood, Morton Grove, Cherry Hill, Gougars, Fairfax Village, Sherwood Oaks, Clintonville, Coleman, and Schaumburg." })
+      /* @__PURE__ */ jsx("h2", { className: "!text-2xl !font-bold !text-gray-900 !mb-4", children: "Local Service Area" }),
+      /* @__PURE__ */ jsx("p", { className: "!text-sm !text-gray-500 leading-relaxed max-w-4xl mx-auto", children: "Serving Downers Grove, Westmont, Clarendon Hills, Lisle, Oak Brook, Hinsdale, Darien, Willowbrook, Woodridge, Lombard, Glen Ellyn, Western Springs, Villa Park, Wheaton, Burr Ridge, Indian Head Park, Naperville, Elmhurst, Westchester, La Grange, Countryside, Carol Stream, Northlake, Oakbrook Terrace, Bolingbrook, Addison, Aurora, Brookfield, Berkeley, Hillside, Broadview, Roselle, Itasca, Bensenville, Lemont, Franklin Park, Schiller Park, River Forest, Forest Park, Maywood, Bellwood, Oak Park, Oak Forest, Tinley Park, Rolling Meadows, Ridgewood, Sauganash, Crest Hill, Mount Prospect, Niles, Crystal Lawns, Edgebrook, Mayfair, Joliet, Ingalls Park, East Joliet, South Elgin, Plum Grove Village, Winthrop Village, Fernway, Hoffman Estates, Albany Park, Creekside, Valley View, Raynor Park, Arlington Heights, Forest River, Lidice, Fernway Park, Lincolnwood, Morton Grove, Cherry Hill, Gougars, Fairfax Village, Sherwood Oaks, Clintonville, Coleman, and Schaumburg." })
     ] }) }),
     /* @__PURE__ */ jsx("section", { className: "reveal-section opacity-0 translate-y-8 transition-all duration-700 ease-out !py-20 !bg-gray-50 !px-6 border-t border-gray-200", children: /* @__PURE__ */ jsxs("div", { className: "max-w-4xl mx-auto text-center", children: [
-      /* @__PURE__ */ jsx("h2", { className: "text-3xl font-bold text-gray-900 mb-6", children: "Ready to Schedule?" }),
+      /* @__PURE__ */ jsx("h2", { className: "!text-3xl !font-bold !text-gray-900 !mb-6", children: "Ready to Schedule?" }),
       /* @__PURE__ */ jsxs("div", { className: "flex flex-col sm:flex-row gap-4 justify-center items-center mb-8", children: [
-        /* @__PURE__ */ jsxs("a", { href: "/#/booking", className: "bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold flex items-center transition hover:-translate-y-1 hover:shadow-lg", children: [
+        /* @__PURE__ */ jsxs("a", { href: "/#/booking", className: "!bg-blue-600 hover:!bg-blue-700 !text-white !px-8 !py-4 rounded-lg !font-semibold flex items-center transition hover:-translate-y-1 hover:shadow-lg", children: [
           "Book Appointment ",
           /* @__PURE__ */ jsx(ArrowRight, { className: "ml-2 w-5 h-5" })
         ] }),
-        /* @__PURE__ */ jsx("a", { href: "#contact", className: "bg-white text-blue-600 border-2 border-blue-600 hover:bg-blue-50 px-8 py-4 rounded-lg font-semibold transition hover:-translate-y-1", children: "Contact Us" })
+        /* @__PURE__ */ jsx("a", { href: "#contact", className: "!bg-white !text-blue-600 border-2 !border-blue-600 hover:!bg-blue-50 !px-8 !py-4 rounded-lg !font-semibold transition hover:-translate-y-1", children: "Contact Us" })
       ] }),
-      /* @__PURE__ */ jsxs("p", { className: "text-sm font-medium text-gray-500 flex items-center justify-center gap-4", children: [
+      /* @__PURE__ */ jsxs("p", { className: "!text-sm !font-medium !text-gray-500 flex items-center justify-center gap-4", children: [
         /* @__PURE__ */ jsxs("span", { className: "flex items-center", children: [
-          /* @__PURE__ */ jsx(CheckCircle2, { className: "w-4 h-4 text-green-500 mr-1" }),
+          /* @__PURE__ */ jsx(CheckCircle2, { className: "w-4 h-4 !text-green-500 mr-1" }),
           " Licensed Providers"
         ] }),
         /* @__PURE__ */ jsxs("span", { className: "flex items-center", children: [
-          /* @__PURE__ */ jsx(CheckCircle2, { className: "w-4 h-4 text-green-500 mr-1" }),
+          /* @__PURE__ */ jsx(CheckCircle2, { className: "w-4 h-4 !text-green-500 mr-1" }),
           " HIPAA Compliant"
         ] })
       ] })
