@@ -3,58 +3,62 @@
 ## Page Requirements
 **SEO Keywords to weave in naturally:** "breast ultrasound near me," "breast scan Downers Grove," "breast imaging Chicago suburbs"  
 **Length:** 800-1200 words total  
-**Images:** Ultrasound machine, gel transducer, sample anonymized scan  
+**Images:** Ultrasound machine, technologist scanning, sample anonymized breast image  
 **Schema:** MedicalService + FAQPage
 
-## 1. Hero Section (Above the Fold)
-- **H1:** `Breast Ultrasound Downers Grove | Precision Imaging`
-- **Subhead:** `Safe imaging of breast tissue for lumps, cysts & abnormalities`
-- **Short benefit:** `Transparent pricing. Fast scheduling. Results to your doctor.`
-- **Primary CTA:** `Book Breast Ultrasound` → website booking link
-- **Secondary CTA:** `Contact Us` → website contact form
+## 1. Our Diagnostic Ultrasound Center
+Our outpatient diagnostic ultrasound center provides high‑quality breast imaging for patients and referring providers throughout the western Chicago suburbs.  
+Every exam is performed using modern equipment that produces clear, detailed images to help your provider answer specific clinical questions.  
+These ultrasound studies use sound waves only—there is no radiation exposure.
 
-## 2. What the Exam Shows
-- **H2:** `What Does a Breast Ultrasound Examine?`
-- **Bullet list of organs:** Breast tissue, ducts, lymph nodes, chest wall
-- **1 sentence:** "Noninvasive sound waves create clear images without radiation."
+## 2. Available Exam Options
+We offer the following exam options in this category so your provider can select the study that best matches your needs:
 
-## 3. Common Findings & Conditions
-- **H2:** `Common Conditions Detected`
-- **Bullet list:** Breast cysts, fibroadenomas, solid masses, ductal abnormalities, lymph node enlargement
-- **Reassuring note:** "Early detection allows for timely treatment."
+- **Breast Ultrasound**: Targeted ultrasound used to evaluate a lump, area of pain, mammogram finding, or dense breast tissue.
+
+## 3. What These Exams Show
+During your breast ultrasound, we evaluate:
+
+- Whether a palpable lump is solid, cystic, or a complex combination.
+- Changes in breast tissue such as dilated ducts, focal inflammation, or fluid collections.
+- Abnormal lymph nodes in the armpit or near the breast that may require further follow‑up.
+
+Your provider uses these findings alongside your history, physical exam, and lab results to make an accurate diagnosis.
 
 ## 4. Preparation Instructions
-- **H2:** `How to Prepare`
-- **Clear bullets:** 
-  - No fasting required, wear comfortable two-piece clothing, no deodorant/lotion/powder on chest
-- **Timeline:** "Arrive 15 mins early."
+To help your breast ultrasound produce the clearest images, please follow these guidelines:
 
-## 5. Exam Process & Duration
-- **H2:** `What Happens During the Exam`
-- **Steps:** Gel applied → transducer examines area → images captured → clean up
-- **Duration:** `15-30 minutes`
-- **Comfort:** "Painless. Mild pressure possible."
+- No fasting is required; you may eat and drink normally.
+- Avoid lotions, powders, or deodorant on the breast or underarm area on the day of the exam.
+- Wear a two‑piece outfit so only the upper garment needs to be removed.
 
-## 6. Why Precision Imaging
-- **H2:** `Why Get Your Breast Ultrasound Here`
-- **4 cards** (reuse homepage style):
-  - Transparent pricing
-  - Modern portable equipment
-  - Fast scheduling
-  - Results sent directly to your doctor
+If your appointment combines more than one ultrasound type, our scheduling team will review the best preparation plan with you.
 
-## 7. FAQ (Schema Markup)
-- **H2:** `Frequently Asked Questions`
-- **5 questions** (accordion or bullets):
-  - Do I need to fast? *(See preparation above)*
-  - How long does it take? *(15-30 minutes)*
-  - Is it safe/painful? *(Safe, no radiation)*
-  - When will I get results? *(Sent to your doctor same day)*
-  - Do I need a referral? *(Not necessary for self-pay; required if using insurance)*
+## 5. What to Expect During Your Exam
+Here is what a typical visit looks like at our diagnostic ultrasound center:
+
+- You will lie on your back or slightly turned to the side while the technologist applies warm gel.
+- The transducer is moved slowly over the area of concern and surrounding tissue to obtain detailed images.
+- You may feel mild pressure but the exam is generally very comfortable and takes about 15–30 minutes.
+
+Throughout the exam you are welcome to ask questions; our technologist will let you know when each part of the study is complete.
+
+## 6. Results & Follow-up
+- If a doctor order is provided, a detailed report is sent directly to your ordering provider so they can review results and plan next steps.  
+- Your provider may recommend medication changes, additional testing, or follow‑up imaging based on the ultrasound findings.  
+- Disclaimer: If there is no doctor's order, images will be provided after the exam on a CD. In order to receive a radiology report, a doctor's order is required.  
+
+## 7. FAQ (Including Ultrasound Terminology)
+- **Is this the same as an ultrasound?** Yes. The terms sonogram, sonography, and ultrasound all describe the same type of imaging test that uses sound waves.  
+- **What is a sonogram?** A sonogram is the picture or moving image created during your ultrasound exam.  
+- **What is sonography?** Sonography is the medical imaging specialty that uses ultrasound to evaluate organs, vessels, and soft tissues throughout the body.  
+- **What is a sonograph?** Many people use sonograph to describe the ultrasound machine or the images it produces; both uses are common.  
+- **Can ultrasound replace my mammogram?** Breast ultrasound is an important complement to mammography, especially in dense breast tissue, but it does not replace routine screening mammograms.
+- **Will I get results right away?** In many cases your provider receives a preliminary impression quickly, followed by a full written report when a doctor order is on file.
 
 ## 8. Local Service Area
-- **H2:** `Serving Downers Grove, Westmont, Clarendon Hills, Lisle, Oak Brook, Hinsdale, Darien, Willowbrook, Woodridge, Lombard, Glen Ellyn, Western Springs, Villa Park, Wheaton, Burr Ridge, Indian Head Park, Naperville, Elmhurst, Westchester, La Grange, Countryside, Carol Stream, Northlake, Oakbrook Terrace, Bolingbrook, Addison, Aurora, Brookfield, Berkeley, Hillside, Broadview, Roselle, Itasca, Bensenville, Lemont, Franklin Park, Schiller Park, River Forest, Forest Park, Maywood, Bellwood, Oak Park, Oak Forest, Tinley Park, Rolling Meadows, Ridgewood, Sauganash, Crest Hill, Mount Prospect, Niles, Crystal Lawns, Edgebrook, Mayfair, Joliet, Ingalls Park, East Joliet, South Elgin, Plum Grove Village, Winthrop Village, Fernway, Hoffman Estates, Albany Park, Creekside, Valley View, Raynor Park, Arlington Heights, Forest River, Lidice, Fernway Park, Lincolnwood, Morton Grove, Cherry Hill, Gougars, Fairfax Village, Sherwood Oaks, Clintonville, Coleman, and Schaumburg.`
+We proudly serve patients in Downers Grove, Westmont, Clarendon Hills, Lisle, Oak Brook, Hinsdale, Darien, Willowbrook, Woodridge, Lombard, Glen Ellyn, Western Springs, Villa Park, Wheaton, Burr Ridge, Indian Head Park, Naperville, Elmhurst, Westchester, La Grange, Countryside, Carol Stream, Northlake, Oakbrook Terrace, Bolingbrook, Addison, Aurora, Brookfield, Berkeley, Hillside, Broadview, Roselle, Itasca, Bensenville, Lemont, Franklin Park, Schiller Park, River Forest, Forest Park, Maywood, Bellwood, Oak Park, Oak Forest, Tinley Park, Rolling Meadows, Ridgewood, Sauganash, Crest Hill, Mount Prospect, Niles, Crystal Lawns, Edgebrook, Mayfair, Joliet, Ingalls Park, East Joliet, South Elgin, Plum Grove Village, Winthrop Village, Fernway, Hoffman Estates, Albany Park, Creekside, Valley View, Raynor Park, Arlington Heights, Forest River, Lidice, Fernway Park, Lincolnwood, Morton Grove, Cherry Hill, Gougars, Fairfax Village, Sherwood Oaks, Clintonville, Coleman, and Schaumburg.
 
 ## 9. Final CTAs
-- Repeat booking button + contact form button
-- Trust signals: Licensed providers, HIPAA compliant
+Ready to schedule your breast ultrasound? Use our online scheduling page or click **Contact Us** on the website to request an appointment.  
+Our team is happy to answer questions and help you select the most appropriate exam option listed above.

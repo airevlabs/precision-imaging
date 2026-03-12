@@ -1,47 +1,46 @@
-# Carotid Doppler & Stroke Screening Service Page Template
+# Pelvic Ultrasound Service Page Template
 
 ## Page Requirements
-**SEO Keywords to weave in naturally:** "carotid ultrasound near me," "stroke screening ultrasound Downers Grove," "carotid doppler Chicago"  
+**SEO Keywords to weave in naturally:** "pelvic ultrasound near me," "transvaginal ultrasound Downers Grove," "uterus and ovary ultrasound Chicago"  
 **Length:** 800-1200 words total  
-**Images:** Ultrasound machine, technologist scanning, sample anonymized carotid artery image  
+**Images:** Ultrasound machine, technologist scanning, sample anonymized pelvic image  
 **Schema:** MedicalService + FAQPage
 
 ## 1. Our Diagnostic Ultrasound Center
-Our outpatient diagnostic ultrasound center provides high‑quality carotid artery imaging for patients and referring providers throughout the western Chicago suburbs.  
+Our outpatient diagnostic ultrasound center provides high‑quality pelvic imaging for patients and referring providers throughout the western Chicago suburbs.  
 Every exam is performed using modern equipment that produces clear, detailed images to help your provider answer specific clinical questions.  
 These ultrasound studies use sound waves only—there is no radiation exposure.
 
 ## 2. Available Exam Options
 We offer the following exam options in this category so your provider can select the study that best matches your needs:
 
-- **Carotid Doppler**: Detailed ultrasound of the carotid arteries to measure plaque build‑up and blood‑flow velocity.
-- **Stroke screening* (Carotid artery)**: Preventive exam focused on identifying narrowing or plaque that may increase stroke risk.
-- **Stroke and Vascular Screening Package* (Carotid + AAA Screening + PAD)**: Comprehensive stroke and vascular screening that bundles carotid, AAA, and PAD evaluations.
+- **Transabdominal pelvic ultrasound**: External pelvic exam performed through the lower abdomen with a full bladder; often the first step in evaluation.
+- **Transvaginal pelvic ultrasound**: Internal exam using a thin probe placed in the vagina for closer views of the uterus and ovaries when appropriate.
 
 ## 3. What These Exams Show
-During your carotid artery ultrasound, we evaluate:
+During your pelvic ultrasound, we evaluate:
 
-- Thickness of the carotid‑artery walls and presence of plaque.
-- Degree of narrowing (stenosis) based on Doppler blood‑flow measurements.
-- Direction of flow in the vertebral arteries, which can be relevant in some stroke syndromes.
+- Uterine size and shape, fibroids, and endometrial thickness.
+- Ovarian size, cysts, masses, and blood‑flow patterns.
+- Presence of pelvic fluid or other abnormalities that may explain pain or bleeding.
 
 Your provider uses these findings alongside your history, physical exam, and lab results to make an accurate diagnosis.
 
 ## 4. Preparation Instructions
-To help your carotid artery ultrasound produce the clearest images, please follow these guidelines:
+To help your pelvic ultrasound produce the clearest images, please follow these guidelines:
 
-- No fasting is required; you may eat and drink normally.
-- Avoid wearing turtlenecks or tight collars; a loose shirt makes access to the neck easier.
-- Do not apply thick lotions or make‑up on the sides of the neck on the day of your exam.
+- For transabdominal exams, drink water so that your bladder is comfortably full at the time of the appointment.
+- For transvaginal imaging, you will be asked to empty your bladder just before the exam.
+- Wear comfortable, easily removable clothing and consider bringing a sanitary pad if you are currently bleeding.
 
 If your appointment combines more than one ultrasound type, our scheduling team will review the best preparation plan with you.
 
 ## 5. What to Expect During Your Exam
 Here is what a typical visit looks like at our diagnostic ultrasound center:
 
-- You will lie on your back while the technologist applies gel to both sides of your neck.
-- The transducer is moved along the carotid arteries while Doppler ultrasound records blood‑flow patterns.
-- You may hear whooshing sounds as the machine measures velocity; the exam usually takes 20–30 minutes.
+- Your technologist will explain each step and confirm which pelvic ultrasound type your provider ordered.
+- Warm gel is applied to the lower abdomen for transabdominal imaging; for transvaginal exams, a covered and lubricated probe is gently inserted after you are positioned comfortably.
+- Most pelvic ultrasounds take 20–30 minutes and are performed with close attention to privacy and comfort.
 
 Throughout the exam you are welcome to ask questions; our technologist will let you know when each part of the study is complete.
 
@@ -55,12 +54,12 @@ Throughout the exam you are welcome to ask questions; our technologist will let 
 - **What is a sonogram?** A sonogram is the picture or moving image created during your ultrasound exam.  
 - **What is sonography?** Sonography is the medical imaging specialty that uses ultrasound to evaluate organs, vessels, and soft tissues throughout the body.  
 - **What is a sonograph?** Many people use sonograph to describe the ultrasound machine or the images it produces; both uses are common.  
-- **If my carotid arteries are clear, can I skip other tests?** Normal carotid results are reassuring but do not rule out all stroke risks; your provider will consider your full clinical picture.
-- **How often should I repeat stroke screening?** Frequency depends on your risk factors and prior findings; some patients repeat ultrasounds every 1–3 years.
+- **Is pelvic ultrasound safe during my period?** Yes, pelvic ultrasound can often be performed during menstruation; in some cases your provider may prefer a specific timing in your cycle.
+- **Do I have to have the transvaginal portion?** Transvaginal imaging provides the clearest detail, but you may decline; your technologist and provider can discuss alternatives.
 
 ## 8. Local Service Area
 We proudly serve patients in Downers Grove, Westmont, Clarendon Hills, Lisle, Oak Brook, Hinsdale, Darien, Willowbrook, Woodridge, Lombard, Glen Ellyn, Western Springs, Villa Park, Wheaton, Burr Ridge, Indian Head Park, Naperville, Elmhurst, Westchester, La Grange, Countryside, Carol Stream, Northlake, Oakbrook Terrace, Bolingbrook, Addison, Aurora, Brookfield, Berkeley, Hillside, Broadview, Roselle, Itasca, Bensenville, Lemont, Franklin Park, Schiller Park, River Forest, Forest Park, Maywood, Bellwood, Oak Park, Oak Forest, Tinley Park, Rolling Meadows, Ridgewood, Sauganash, Crest Hill, Mount Prospect, Niles, Crystal Lawns, Edgebrook, Mayfair, Joliet, Ingalls Park, East Joliet, South Elgin, Plum Grove Village, Winthrop Village, Fernway, Hoffman Estates, Albany Park, Creekside, Valley View, Raynor Park, Arlington Heights, Forest River, Lidice, Fernway Park, Lincolnwood, Morton Grove, Cherry Hill, Gougars, Fairfax Village, Sherwood Oaks, Clintonville, Coleman, and Schaumburg.
 
 ## 9. Final CTAs
-Ready to schedule your carotid artery ultrasound? Use our online scheduling page or click **Contact Us** on the website to request an appointment.  
+Ready to schedule your pelvic ultrasound? Use our online scheduling page or click **Contact Us** on the website to request an appointment.  
 Our team is happy to answer questions and help you select the most appropriate exam option listed above.

@@ -7,7 +7,7 @@ import shallowEqual from "shallowequal";
 import { StaticRouter } from "react-router";
 import { useLocation, Link, useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowUp, Calendar, Activity, CheckCircle2, Heart, FileText, Clock, ArrowRight } from "lucide-react";
+import { ArrowUp, Activity, Calendar, Search, Stethoscope, CheckCircle2, Info, Clock, FileBadge, ArrowRight } from "lucide-react";
 var TAG_NAMES = /* @__PURE__ */ ((TAG_NAMES2) => {
   TAG_NAMES2["BASE"] = "base";
   TAG_NAMES2["BODY"] = "body";
@@ -1222,11 +1222,26 @@ const SSGLayout = ({ children }) => {
   ] });
 };
 const AbdomenUltrasound = () => {
-  return /* @__PURE__ */ jsxs("div", { className: "!pt-32 lg:!pt-44 !pb-12 !bg-gray-50 flex flex-col gap-12 sm:gap-16", children: [
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.remove("opacity-0", "translate-y-8");
+          entry.target.classList.add("opacity-100", "translate-y-0");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll(".reveal-section").forEach((section) => {
+      observer.observe(section);
+    });
+    return () => observer.disconnect();
+  }, []);
+  return /* @__PURE__ */ jsxs("div", { className: "!pt-32 lg:!pt-44 !pb-12 !bg-slate-50 flex flex-col gap-12 sm:gap-16 font-sans", children: [
     /* @__PURE__ */ jsxs(Helmet, { children: [
-      /* @__PURE__ */ jsx("title", { children: "Abdominal Ultrasound Downers Grove | Precision Imaging" }),
-      /* @__PURE__ */ jsx("meta", { name: "description", content: "Safe ultrasound imaging of liver, gallbladder, kidneys, pancreas & more in Downers Grove. Transparent pricing, fast scheduling." }),
-      /* @__PURE__ */ jsx("meta", { name: "keywords", content: "abdominal ultrasound near me, abdominal scan Downers Grove, liver ultrasound Chicago suburbs" }),
+      /* @__PURE__ */ jsx("title", { children: "Abdominal Ultrasound | Precision Imaging Diagnostic Center" }),
+      /* @__PURE__ */ jsx("meta", { name: "description", content: "Safe abdominal sonogram imaging in Downers Grove. High-quality liver and gallbladder ultrasound serving the Chicago suburbs." }),
+      /* @__PURE__ */ jsx("meta", { name: "keywords", content: "abdominal ultrasound near me, abdominal sonogram Downers Grove, liver and gallbladder ultrasound Chicago suburbs" }),
       /* @__PURE__ */ jsx("script", { type: "application/ld+json", children: `
             {
               "@context": "https://schema.org",
@@ -1245,175 +1260,240 @@ const AbdomenUltrasound = () => {
             }
           ` })
     ] }),
-    /* @__PURE__ */ jsx("section", { className: "reveal-section opacity-0 translate-y-8 !bg-blue-900 !text-white !py-24 !px-6 transition-all duration-700 ease-out", children: /* @__PURE__ */ jsxs("div", { className: "max-w-6xl mx-auto flex flex-col items-center text-center", children: [
-      /* @__PURE__ */ jsx("h1", { className: "!text-4xl md:!text-6xl !font-bold !mb-8 !text-white leading-tight", children: "Abdominal Ultrasound Downers Grove | Precision Imaging" }),
-      /* @__PURE__ */ jsx("p", { className: "!text-xl md:!text-2xl !mb-6 max-w-3xl !text-white font-medium", children: "Safe imaging of liver, gallbladder, kidneys, pancreas & more" }),
-      /* @__PURE__ */ jsx("p", { className: "!text-lg !text-blue-200 !mb-8 max-w-2xl", children: "Transparent pricing. Fast scheduling. Results to your doctor." }),
-      /* @__PURE__ */ jsxs("div", { className: "flex flex-col sm:flex-row gap-4", children: [
-        /* @__PURE__ */ jsxs("a", { href: "/#/booking", className: "!bg-blue-500 hover:!bg-blue-600 !px-8 !py-4 rounded-lg !font-semibold flex items-center justify-center transition hover:-translate-y-1 hover:shadow-lg !text-white", children: [
-          "Book Abdominal Ultrasound ",
-          /* @__PURE__ */ jsx(Calendar, { className: "ml-2 w-5 h-5" })
+    /* @__PURE__ */ jsxs("header", { className: "reveal-section opacity-0 translate-y-8 !bg-slate-900 !rounded-3xl !mx-4 md:!mx-auto md:!max-w-7xl !px-6 !py-20 md:!py-28 lg:!py-32 !text-white !relative !overflow-hidden transition-all duration-700 shadow-2xl", children: [
+      /* @__PURE__ */ jsx("div", { className: "!absolute !inset-0 !opacity-10 !bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] !from-blue-400 !to-transparent" }),
+      /* @__PURE__ */ jsxs("div", { className: "!relative !z-10 !max-w-4xl !mx-auto !text-center flex flex-col items-center", children: [
+        /* @__PURE__ */ jsxs("span", { className: "!uppercase !tracking-wider !text-blue-300 !font-semibold !text-sm !mb-4 flex items-center gap-2", children: [
+          /* @__PURE__ */ jsx(Activity, { className: "!w-4 !h-4" }),
+          " Diagnostic Ultrasound Center"
         ] }),
-        /* @__PURE__ */ jsx("a", { href: "#contact", className: "bg-transparent border-2 !border-white hover:!bg-white hover:!text-blue-900 !px-8 !py-4 rounded-lg !font-semibold flex items-center justify-center transition hover:-translate-y-1 !text-white", children: "Contact Us" })
+        /* @__PURE__ */ jsx("h1", { className: "!text-5xl md:!text-6xl lg:!text-7xl !font-bold !mb-8 !text-white leading-tight !tracking-tight", children: "Abdominal Ultrasound" }),
+        /* @__PURE__ */ jsx("p", { className: "!text-xl md:!text-2xl !mb-10 max-w-3xl !text-slate-300 font-medium !leading-relaxed", children: "Safe, High‑Quality Sonography for the Liver, Gallbladder, Kidneys, and Pancreas in Downers Grove" }),
+        /* @__PURE__ */ jsxs("div", { className: "flex flex-col sm:flex-row gap-4", children: [
+          /* @__PURE__ */ jsxs("a", { href: "/#/booking", className: "!bg-blue-600 hover:!bg-blue-500 !px-8 !py-4 rounded-xl !font-semibold flex items-center justify-center transition hover:-translate-y-1 shadow-lg hover:shadow-blue-500/25 !text-white !text-lg", children: [
+            "Book Appointment ",
+            /* @__PURE__ */ jsx(Calendar, { className: "!ml-2 !w-5 !h-5" })
+          ] }),
+          /* @__PURE__ */ jsx("a", { href: "#contact", className: "!bg-transparent border-2 !border-slate-600 hover:!border-white hover:!bg-white/10 !px-8 !py-4 rounded-xl !font-semibold flex items-center justify-center transition hover:-translate-y-1 !text-white !text-lg", children: "Contact Us" })
+        ] })
+      ] })
+    ] }),
+    /* @__PURE__ */ jsx("section", { "aria-labelledby": "center-overview", className: "reveal-section opacity-0 translate-y-8 transition-all duration-700 ease-out !px-6", children: /* @__PURE__ */ jsxs("div", { className: "!max-w-4xl !mx-auto !text-center", children: [
+      /* @__PURE__ */ jsx("h2", { id: "center-overview", className: "!text-3xl md:!text-4xl !font-bold !text-slate-900 !mb-6", children: "Our Diagnostic Ultrasound Center" }),
+      /* @__PURE__ */ jsxs("div", { className: "!bg-white !p-8 md:!p-12 !rounded-3xl !shadow-sm !border !border-slate-100", children: [
+        /* @__PURE__ */ jsx("p", { className: "!text-lg md:!text-xl !text-slate-600 !leading-relaxed !mb-6", children: "Our outpatient diagnostic ultrasound center provides high‑quality abdominal imaging for patients and referring providers throughout the western Chicago suburbs." }),
+        /* @__PURE__ */ jsx("p", { className: "!text-lg md:!text-xl !text-slate-600 !leading-relaxed", children: "Every exam is performed using modern equipment that produces clear, detailed images to help your provider answer specific clinical questions. These ultrasound studies use sound waves only—there is no radiation exposure." })
       ] })
     ] }) }),
-    /* @__PURE__ */ jsx("section", { className: "reveal-section opacity-0 translate-y-8 transition-all duration-700 ease-out !py-16 !bg-gray-50 !px-6", children: /* @__PURE__ */ jsxs("div", { className: "max-w-6xl mx-auto grid md:grid-cols-2 gap-12", children: [
-      /* @__PURE__ */ jsxs("div", { className: "hover:transform hover:translate-x-2 transition-transform duration-300", children: [
-        /* @__PURE__ */ jsxs("h2", { className: "!text-3xl !font-bold !text-gray-900 !mb-6 flex flex-row items-center justify-start text-left", children: [
-          /* @__PURE__ */ jsx(Activity, { className: "w-8 h-8 !text-blue-600 !mr-3" }),
-          "What Does an Abdominal Ultrasound Examine?"
+    /* @__PURE__ */ jsx("section", { "aria-labelledby": "exam-options", className: "reveal-section opacity-0 translate-y-8 transition-all duration-700 ease-out !px-6", children: /* @__PURE__ */ jsxs("div", { className: "!max-w-7xl !mx-auto", children: [
+      /* @__PURE__ */ jsx("h2", { id: "exam-options", className: "!text-3xl md:!text-4xl !font-bold !text-slate-900 !text-center !mb-12", children: "Available Exam Options" }),
+      /* @__PURE__ */ jsx("p", { className: "!text-lg !text-slate-600 !text-center !mb-10 !max-w-3xl !mx-auto", children: "We offer the following exam options in this category so your provider can select the study that best matches your needs:" }),
+      /* @__PURE__ */ jsxs("div", { className: "grid md:grid-cols-3 gap-8", children: [
+        /* @__PURE__ */ jsxs("article", { className: "!bg-white !rounded-3xl !p-8 !shadow-sm hover:!shadow-xl !border !border-slate-100 hover:!border-blue-100 transition-all duration-300 hover:-translate-y-1 flex flex-col h-full", children: [
+          /* @__PURE__ */ jsx("div", { className: "!bg-blue-50 !w-14 !h-14 !rounded-2xl flex items-center justify-center !mb-6 text-blue-600", children: /* @__PURE__ */ jsx(Search, { className: "!w-7 !h-7" }) }),
+          /* @__PURE__ */ jsx("h3", { className: "!text-2xl !font-bold !text-slate-900 !mb-4", children: "Abdomen – Complete" }),
+          /* @__PURE__ */ jsx("p", { className: "!text-slate-600 !leading-relaxed !flex-grow", children: "Comprehensive evaluation of the liver, gallbladder, bile ducts, pancreas, spleen, kidneys, and abdominal aorta for pain, abnormal labs, or follow‑up of prior imaging." })
         ] }),
-        /* @__PURE__ */ jsx("p", { className: "!text-gray-600 !mb-6 !text-lg text-left", children: "Noninvasive sound waves create clear images without radiation, allowing us to safely examine:" }),
-        /* @__PURE__ */ jsx("ul", { className: "space-y-3", children: ["Liver", "Gallbladder", "Pancreas", "Spleen", "Kidneys", "Aorta", "Appendix"].map((organ, idx) => /* @__PURE__ */ jsxs("li", { className: "!flex !items-center !text-gray-700 hover:!text-blue-600 transition-colors", children: [
-          /* @__PURE__ */ jsx(CheckCircle2, { className: "!w-5 !h-5 !text-green-500 !mr-3 shrink-0" }),
-          " ",
-          organ
-        ] }, idx)) })
-      ] }),
-      /* @__PURE__ */ jsxs("div", { className: "hover:transform hover:translate-x-2 transition-transform duration-300", children: [
-        /* @__PURE__ */ jsxs("h2", { className: "!text-3xl !font-bold !text-gray-900 !mb-6 flex flex-row items-center justify-start text-left mt-10 md:mt-0", children: [
-          /* @__PURE__ */ jsx(Heart, { className: "w-8 h-8 !text-red-500 !mr-3" }),
-          "Common Conditions Detected"
+        /* @__PURE__ */ jsxs("article", { className: "!bg-white !rounded-3xl !p-8 !shadow-sm hover:!shadow-xl !border !border-slate-100 hover:!border-blue-100 transition-all duration-300 hover:-translate-y-1 flex flex-col h-full relative overflow-hidden", children: [
+          /* @__PURE__ */ jsx("div", { className: "!bg-blue-50 !w-14 !h-14 !rounded-2xl flex items-center justify-center !mb-6 text-blue-600", children: /* @__PURE__ */ jsx(Activity, { className: "!w-7 !h-7" }) }),
+          /* @__PURE__ */ jsx("h3", { className: "!text-2xl !font-bold !text-slate-900 !mb-4", children: "Abdomen – Limited" }),
+          /* @__PURE__ */ jsx("p", { className: "!text-slate-600 !leading-relaxed !flex-grow", children: "Targeted upper‑abdominal exam focused on liver, gallbladder, bile ducts, and pancreas when symptoms or lab results point to these organs." })
         ] }),
-        /* @__PURE__ */ jsx("p", { className: "!text-gray-600 !mb-6 !text-lg text-left", children: "Early detection allows for timely treatment. We commonly screen for:" }),
-        /* @__PURE__ */ jsx("ul", { className: "space-y-3", children: ["Gallstones", "Kidney stones", "Cysts", "Tumors", "Aneurysms", "Fluid collections", "Appendicitis"].map((condition, idx) => /* @__PURE__ */ jsxs("li", { className: "!flex !items-center !text-gray-700 hover:!text-blue-600 transition-colors", children: [
-          /* @__PURE__ */ jsx(CheckCircle2, { className: "!w-5 !h-5 !text-blue-500 !mr-3 shrink-0" }),
-          " ",
-          condition
-        ] }, idx)) })
+        /* @__PURE__ */ jsxs("article", { className: "!bg-white !rounded-3xl !p-8 !shadow-sm hover:!shadow-xl !border !border-slate-100 hover:!border-blue-100 transition-all duration-300 hover:-translate-y-1 flex flex-col h-full", children: [
+          /* @__PURE__ */ jsx("div", { className: "!bg-rose-50 !w-14 !h-14 !rounded-2xl flex items-center justify-center !mb-6 text-rose-600", children: /* @__PURE__ */ jsx(Stethoscope, { className: "!w-7 !h-7" }) }),
+          /* @__PURE__ */ jsx("h3", { className: "!text-2xl !font-bold !text-slate-900 !mb-4", children: "AAA Screening" }),
+          /* @__PURE__ */ jsx("p", { className: "!text-slate-600 !leading-relaxed !flex-grow", children: "Focused screening of the abdominal aorta to measure its diameter and look for aneurysm or enlargement, often recommended for adults with vascular risk factors." })
+        ] })
       ] })
     ] }) }),
-    /* @__PURE__ */ jsx("section", { className: "reveal-section opacity-0 translate-y-8 transition-all duration-700 ease-out py-16 bg-white px-6", children: /* @__PURE__ */ jsxs("div", { className: "max-w-6xl mx-auto grid md:grid-cols-2 gap-12", children: [
-      /* @__PURE__ */ jsxs("div", { className: "!bg-blue-50 !p-8 rounded-2xl hover:shadow-md transition-shadow h-full sm:min-h-[300px]", children: [
-        /* @__PURE__ */ jsxs("h2", { className: "text-2xl font-bold text-blue-900 mb-6 flex items-center", children: [
-          /* @__PURE__ */ jsx(FileText, { className: "w-6 h-6 mr-3 text-blue-600" }),
-          " How to Prepare"
+    /* @__PURE__ */ jsx("section", { "aria-labelledby": "what-it-shows", className: "reveal-section opacity-0 translate-y-8 transition-all duration-700 ease-out !px-6", children: /* @__PURE__ */ jsxs("div", { className: "!max-w-5xl !mx-auto !bg-slate-900 !rounded-3xl !p-8 md:!p-12 !shadow-xl !text-white overflow-hidden relative", children: [
+      /* @__PURE__ */ jsx("div", { className: "!absolute !bottom-0 !right-0 !opacity-5 pointer-events-none", children: /* @__PURE__ */ jsx(Activity, { className: "!w-96 !h-96" }) }),
+      /* @__PURE__ */ jsxs("div", { className: "relative z-10", children: [
+        /* @__PURE__ */ jsx("h2", { id: "what-it-shows", className: "!text-3xl md:!text-4xl !font-bold !text-white !mb-8", children: "What These Exams Show" }),
+        /* @__PURE__ */ jsx("p", { className: "!text-lg !text-slate-100 !font-medium !mb-10 !leading-relaxed", children: "During your abdominal ultrasound, we evaluate multiple key indicators. Your provider uses these diagnostic ultrasound findings alongside your history, physical exam, and lab results to make an accurate diagnosis." }),
+        /* @__PURE__ */ jsxs("div", { className: "grid md:grid-cols-2 gap-8", children: [
+          /* @__PURE__ */ jsxs("div", { className: "flex gap-4", children: [
+            /* @__PURE__ */ jsx("div", { className: "!mt-1 !bg-white/20 !p-2 !rounded-lg h-fit", children: /* @__PURE__ */ jsx(CheckCircle2, { className: "!w-6 !h-6 !text-blue-300" }) }),
+            /* @__PURE__ */ jsxs("div", { children: [
+              /* @__PURE__ */ jsx("h4", { className: "!text-xl !font-bold !mb-2 !text-white", children: "Organ Integrity" }),
+              /* @__PURE__ */ jsx("p", { className: "!text-slate-100 !font-medium", children: "Size, shape, and texture of each abdominal organ to look for inflammation, fatty change, cirrhosis, cysts, or masses." })
+            ] })
+          ] }),
+          /* @__PURE__ */ jsxs("div", { className: "flex gap-4", children: [
+            /* @__PURE__ */ jsx("div", { className: "!mt-1 !bg-white/20 !p-2 !rounded-lg h-fit", children: /* @__PURE__ */ jsx(CheckCircle2, { className: "!w-6 !h-6 !text-blue-300" }) }),
+            /* @__PURE__ */ jsxs("div", { children: [
+              /* @__PURE__ */ jsx("h4", { className: "!text-xl !font-bold !mb-2 !text-white", children: "Gallbladder & Ducts" }),
+              /* @__PURE__ */ jsx("p", { className: "!text-slate-100 !font-medium", children: "Gallstones, gallbladder wall thickening, and bile‑duct dilation that might indicate blockage or infection." })
+            ] })
+          ] }),
+          /* @__PURE__ */ jsxs("div", { className: "flex gap-4", children: [
+            /* @__PURE__ */ jsx("div", { className: "!mt-1 !bg-white/20 !p-2 !rounded-lg h-fit", children: /* @__PURE__ */ jsx(CheckCircle2, { className: "!w-6 !h-6 !text-blue-300" }) }),
+            /* @__PURE__ */ jsxs("div", { children: [
+              /* @__PURE__ */ jsx("h4", { className: "!text-xl !font-bold !mb-2 !text-white", children: "Pancreas & Kidneys" }),
+              /* @__PURE__ */ jsx("p", { className: "!text-slate-100 !font-medium", children: "Pancreatic enlargement or mass, spleen size, kidney appearance, and any free fluid within the abdomen." })
+            ] })
+          ] }),
+          /* @__PURE__ */ jsxs("div", { className: "flex gap-4", children: [
+            /* @__PURE__ */ jsx("div", { className: "!mt-1 !bg-white/20 !p-2 !rounded-lg h-fit", children: /* @__PURE__ */ jsx(CheckCircle2, { className: "!w-6 !h-6 !text-blue-300" }) }),
+            /* @__PURE__ */ jsxs("div", { children: [
+              /* @__PURE__ */ jsx("h4", { className: "!text-xl !font-bold !mb-2 !text-white", children: "Aorta Screening" }),
+              /* @__PURE__ */ jsx("p", { className: "!text-slate-100 !font-medium", children: "For AAA screening, aortic diameter and plaque to assess aneurysm risk." })
+            ] })
+          ] })
+        ] })
+      ] })
+    ] }) }),
+    /* @__PURE__ */ jsx("section", { className: "reveal-section opacity-0 translate-y-8 transition-all duration-700 ease-out !px-6", children: /* @__PURE__ */ jsxs("div", { className: "!max-w-7xl !mx-auto grid lg:grid-cols-2 gap-12", children: [
+      /* @__PURE__ */ jsxs("div", { className: "!bg-white !p-8 md:!p-12 !rounded-3xl !shadow-sm !border !border-slate-100", children: [
+        /* @__PURE__ */ jsxs("h2", { className: "!text-3xl !font-bold !text-slate-900 !mb-8 flex items-center gap-3", children: [
+          /* @__PURE__ */ jsx(Info, { className: "!w-8 !h-8 !text-blue-600" }),
+          " Preparation Instructions"
         ] }),
-        /* @__PURE__ */ jsxs("ul", { className: "space-y-4 mb-6", children: [
+        /* @__PURE__ */ jsx("p", { className: "!text-lg !text-slate-600 !mb-8", children: "To help your abdominal ultrasound produce the clearest images, please follow these guidelines:" }),
+        /* @__PURE__ */ jsxs("ul", { className: "space-y-5 !mb-8", children: [
           /* @__PURE__ */ jsxs("li", { className: "flex items-start", children: [
-            /* @__PURE__ */ jsx(CheckCircle2, { className: "w-5 h-5 text-blue-600 mr-3 mt-0.5 shrink-0" }),
-            " Fast 6-8 hours before exam"
+            /* @__PURE__ */ jsx("div", { className: "!bg-slate-100 !p-1.5 !rounded-full !mr-4 !mt-0.5", children: /* @__PURE__ */ jsx(CheckCircle2, { className: "!w-5 !h-5 !text-slate-700" }) }),
+            /* @__PURE__ */ jsxs("span", { className: "!text-lg !text-slate-700", children: [
+              "Do not eat or drink anything except small sips of water for ",
+              /* @__PURE__ */ jsx("strong", { children: "6–8 hours" }),
+              " before your appointment."
+            ] })
           ] }),
           /* @__PURE__ */ jsxs("li", { className: "flex items-start", children: [
-            /* @__PURE__ */ jsx(CheckCircle2, { className: "w-5 h-5 text-blue-600 mr-3 mt-0.5 shrink-0" }),
-            " Water OK after 2 hours fasting"
+            /* @__PURE__ */ jsx("div", { className: "!bg-slate-100 !p-1.5 !rounded-full !mr-4 !mt-0.5", children: /* @__PURE__ */ jsx(CheckCircle2, { className: "!w-5 !h-5 !text-slate-700" }) }),
+            /* @__PURE__ */ jsx("span", { className: "!text-lg !text-slate-700", children: "Take essential medications with a small amount of water unless your provider gives different instructions." })
           ] }),
           /* @__PURE__ */ jsxs("li", { className: "flex items-start", children: [
-            /* @__PURE__ */ jsx(CheckCircle2, { className: "w-5 h-5 text-blue-600 mr-3 mt-0.5 shrink-0" }),
-            " Wear loose clothing"
-          ] }),
-          /* @__PURE__ */ jsxs("li", { className: "flex items-start", children: [
-            /* @__PURE__ */ jsx(CheckCircle2, { className: "w-5 h-5 text-blue-600 mr-3 mt-0.5 shrink-0" }),
-            " No lotions on abdomen"
+            /* @__PURE__ */ jsx("div", { className: "!bg-slate-100 !p-1.5 !rounded-full !mr-4 !mt-0.5", children: /* @__PURE__ */ jsx(CheckCircle2, { className: "!w-5 !h-5 !text-slate-700" }) }),
+            /* @__PURE__ */ jsx("span", { className: "!text-lg !text-slate-700", children: "Wear loose, two‑piece clothing so we can easily access your upper abdomen." })
           ] })
         ] }),
-        /* @__PURE__ */ jsx("p", { className: "font-medium text-blue-800 bg-blue-100 p-3 rounded-lg inline-block", children: "Please arrive 15 mins early." })
+        /* @__PURE__ */ jsx("div", { className: "!bg-blue-50 !border-l-4 !border-blue-600 !p-5 !rounded-r-xl", children: /* @__PURE__ */ jsxs("p", { className: "!text-blue-900 !font-medium !flex !items-center !gap-2", children: [
+          /* @__PURE__ */ jsx(Clock, { className: "!w-5 !h-5" }),
+          " Arrive 15 minutes early to complete registration."
+        ] }) }),
+        /* @__PURE__ */ jsx("p", { className: "!text-sm !text-slate-500 !mt-6 !italic", children: "If your appointment combines more than one ultrasound type, our scheduling team will review the best preparation plan with you." })
       ] }),
-      /* @__PURE__ */ jsxs("div", { className: "!bg-gray-50 !p-8 rounded-2xl border border-gray-100 hover:shadow-md transition-shadow mt-10 md:mt-0 h-full sm:min-h-[300px]", children: [
-        /* @__PURE__ */ jsxs("h2", { className: "text-2xl font-bold text-gray-900 mb-6 flex items-center", children: [
-          /* @__PURE__ */ jsx(Clock, { className: "w-6 h-6 mr-3 text-blue-600" }),
-          " What Happens During Exam"
+      /* @__PURE__ */ jsxs("div", { className: "!bg-white !p-8 md:!p-12 !rounded-3xl !shadow-sm !border !border-slate-100", children: [
+        /* @__PURE__ */ jsxs("h2", { className: "!text-3xl !font-bold !text-slate-900 !mb-8 flex items-center gap-3", children: [
+          /* @__PURE__ */ jsx(Activity, { className: "!w-8 !h-8 !text-blue-600" }),
+          " What to Expect"
         ] }),
-        /* @__PURE__ */ jsxs("div", { className: "mb-6 space-y-4", children: [
-          /* @__PURE__ */ jsxs("p", { className: "text-gray-700", children: [
-            /* @__PURE__ */ jsx("strong", { children: "Step 1:" }),
-            " Gel is applied to the skin."
+        /* @__PURE__ */ jsx("p", { className: "!text-lg !text-slate-600 !mb-8", children: "Here is what a typical visit looks like at our diagnostic ultrasound center:" }),
+        /* @__PURE__ */ jsxs("div", { className: "space-y-6 relative border-l-2 border-slate-100 ml-4 pb-4", children: [
+          /* @__PURE__ */ jsxs("div", { className: "relative pl-8", children: [
+            /* @__PURE__ */ jsx("div", { className: "absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-blue-600 border-4 border-white shadow-sm" }),
+            /* @__PURE__ */ jsx("h4", { className: "!text-xl !font-bold !text-slate-900 !mb-2", children: "1. Preparation" }),
+            /* @__PURE__ */ jsx("p", { className: "!text-slate-600 !leading-relaxed", children: "You will lie on a padded exam table while the technologist applies warm gel over your upper abdomen." })
           ] }),
-          /* @__PURE__ */ jsxs("p", { className: "text-gray-700", children: [
-            /* @__PURE__ */ jsx("strong", { children: "Step 2:" }),
-            " Transducer smoothly moved over abdomen."
+          /* @__PURE__ */ jsxs("div", { className: "relative pl-8", children: [
+            /* @__PURE__ */ jsx("div", { className: "absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-blue-600 border-4 border-white shadow-sm" }),
+            /* @__PURE__ */ jsx("h4", { className: "!text-xl !font-bold !text-slate-900 !mb-2", children: "2. Imaging Process" }),
+            /* @__PURE__ */ jsx("p", { className: "!text-slate-600 !leading-relaxed", children: "The transducer is moved in several directions to obtain real‑time images of each organ. You may be asked to hold your breath or change position briefly to improve visualization." })
           ] }),
-          /* @__PURE__ */ jsxs("p", { className: "text-gray-700", children: [
-            /* @__PURE__ */ jsx("strong", { children: "Step 3:" }),
-            " High-resolution images are captured."
-          ] }),
-          /* @__PURE__ */ jsxs("p", { className: "text-gray-700", children: [
-            /* @__PURE__ */ jsx("strong", { children: "Step 4:" }),
-            " Quick clean up and you're done."
+          /* @__PURE__ */ jsxs("div", { className: "relative pl-8", children: [
+            /* @__PURE__ */ jsx("div", { className: "absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-blue-600 border-4 border-white shadow-sm" }),
+            /* @__PURE__ */ jsx("h4", { className: "!text-xl !font-bold !text-slate-900 !mb-2", children: "3. Duration" }),
+            /* @__PURE__ */ jsxs("p", { className: "!text-slate-600 !leading-relaxed", children: [
+              "Most abdominal ultrasound appointments take about ",
+              /* @__PURE__ */ jsx("strong", { children: "20–30 minutes" }),
+              "; add a few minutes if AAA screening is performed at the same visit."
+            ] })
           ] })
         ] }),
-        /* @__PURE__ */ jsxs("div", { className: "flex gap-4 mb-4", children: [
-          /* @__PURE__ */ jsx("span", { className: "bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold shadow-sm", children: "Duration: 20-45 mins" }),
-          /* @__PURE__ */ jsx("span", { className: "bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold shadow-sm", children: "Painless / Mild Pressure" })
+        /* @__PURE__ */ jsx("p", { className: "!text-sm !text-slate-500 !mt-6 !italic", children: "Throughout the exam you are welcome to ask questions; our technologist will let you know when each part of the study is complete." })
+      ] })
+    ] }) }),
+    /* @__PURE__ */ jsx("section", { "aria-labelledby": "results", className: "reveal-section opacity-0 translate-y-8 transition-all duration-700 ease-out !px-6", children: /* @__PURE__ */ jsxs("div", { className: "!max-w-7xl !mx-auto !bg-blue-50 !rounded-3xl !p-8 md:!p-12 border border-blue-100 flex flex-col md:flex-row items-center gap-10", children: [
+      /* @__PURE__ */ jsx("div", { className: "md:w-1/3 flex justify-center", children: /* @__PURE__ */ jsx("div", { className: "!w-32 !h-32 !bg-white !rounded-full !shadow-lg flex items-center justify-center", children: /* @__PURE__ */ jsx(FileBadge, { className: "!w-16 !h-16 !text-blue-600" }) }) }),
+      /* @__PURE__ */ jsxs("div", { className: "md:w-2/3 text-center md:text-left", children: [
+        /* @__PURE__ */ jsx("h2", { id: "results", className: "!text-3xl md:!text-4xl !font-bold !text-slate-900 !mb-6", children: "Results & Follow-up" }),
+        /* @__PURE__ */ jsxs("ul", { className: "space-y-4 !text-lg !text-slate-700 !mb-6", children: [
+          /* @__PURE__ */ jsxs("li", { className: "flex items-start md:items-center", children: [
+            /* @__PURE__ */ jsx(ArrowRight, { className: "!w-5 !h-5 !text-blue-500 !mr-3 shrink-0 !mt-1 md:!mt-0" }),
+            /* @__PURE__ */ jsx("span", { children: "If a doctor order is provided, a detailed report is sent directly to your ordering provider so they can review results and plan next steps." })
+          ] }),
+          /* @__PURE__ */ jsxs("li", { className: "flex items-start md:items-center", children: [
+            /* @__PURE__ */ jsx(ArrowRight, { className: "!w-5 !h-5 !text-blue-500 !mr-3 shrink-0 !mt-1 md:!mt-0" }),
+            /* @__PURE__ */ jsx("span", { children: "Your provider may recommend medication changes, additional testing, or follow‑up imaging based on the ultrasound findings." })
+          ] })
+        ] }),
+        /* @__PURE__ */ jsx("p", { className: "!text-lg !text-slate-700 !font-bold", children: "Disclaimer: If there is no doctor's order, images will be provided after the exam on a CD. In order to receive a radiology report, a doctor's order is required." })
+      ] })
+    ] }) }),
+    /* @__PURE__ */ jsx("section", { "aria-labelledby": "faq", className: "reveal-section opacity-0 translate-y-8 transition-all duration-700 ease-out !px-6", children: /* @__PURE__ */ jsxs("div", { className: "!max-w-4xl !mx-auto", children: [
+      /* @__PURE__ */ jsx("h2", { id: "faq", className: "!text-3xl md:!text-4xl !font-bold !text-center !text-slate-900 !mb-12", children: "Frequently Asked Questions" }),
+      /* @__PURE__ */ jsxs("div", { className: "grid gap-6", children: [
+        /* @__PURE__ */ jsxs("details", { className: "!bg-white !rounded-2xl !p-6 !shadow-sm border !border-slate-200 group cursor-pointer transition-shadow hover:!shadow-md", children: [
+          /* @__PURE__ */ jsxs("summary", { className: "!text-xl !font-bold !text-slate-900 !flex !justify-between !items-center !list-none", children: [
+            "Is this the same as an ultrasound?",
+            /* @__PURE__ */ jsx("span", { className: "transition-transform group-open:rotate-180", children: /* @__PURE__ */ jsx(ChevronDownIcon, {}) })
+          ] }),
+          /* @__PURE__ */ jsx("div", { className: "!mt-4 !pt-4 !border-t border-slate-100 !text-slate-600 !text-lg !leading-relaxed", children: "Yes. The terms ultrasound, sonogram, and diagnostic ultrasound all refer to the same type of imaging test that uses sound waves." })
+        ] }),
+        /* @__PURE__ */ jsxs("details", { className: "!bg-white !rounded-2xl !p-6 !shadow-sm border !border-slate-200 group cursor-pointer transition-shadow hover:!shadow-md", children: [
+          /* @__PURE__ */ jsxs("summary", { className: "!text-xl !font-bold !text-slate-900 !flex !justify-between !items-center !list-none", children: [
+            "What is a sonogram? What is sonography?",
+            /* @__PURE__ */ jsx("span", { className: "transition-transform group-open:rotate-180", children: /* @__PURE__ */ jsx(ChevronDownIcon, {}) })
+          ] }),
+          /* @__PURE__ */ jsxs("div", { className: "!mt-4 !pt-4 !border-t border-slate-100 !text-slate-600 !text-lg !leading-relaxed", children: [
+            /* @__PURE__ */ jsxs("p", { className: "!mb-3", children: [
+              "A ",
+              /* @__PURE__ */ jsx("strong", { children: "sonogram" }),
+              " is the picture or moving image created during your exam."
+            ] }),
+            /* @__PURE__ */ jsxs("p", { className: "!mb-3", children: [
+              /* @__PURE__ */ jsx("strong", { children: "Sonography" }),
+              " is the medical imaging specialty that uses ultrasound to evaluate organs and tissues."
+            ] }),
+            /* @__PURE__ */ jsxs("p", { children: [
+              "A ",
+              /* @__PURE__ */ jsx("strong", { children: "sonograph" }),
+              " describes the ultrasound machine or the images it produces."
+            ] })
+          ] })
+        ] }),
+        /* @__PURE__ */ jsxs("details", { className: "!bg-white !rounded-2xl !p-6 !shadow-sm border !border-slate-200 group cursor-pointer transition-shadow hover:!shadow-md", children: [
+          /* @__PURE__ */ jsxs("summary", { className: "!text-xl !font-bold !text-slate-900 !flex !justify-between !items-center !list-none", children: [
+            "Can this test replace a CT scan?",
+            /* @__PURE__ */ jsx("span", { className: "transition-transform group-open:rotate-180", children: /* @__PURE__ */ jsx(ChevronDownIcon, {}) })
+          ] }),
+          /* @__PURE__ */ jsx("div", { className: "!mt-4 !pt-4 !border-t border-slate-100 !text-slate-600 !text-lg !leading-relaxed", children: "In many cases abdominal ultrasound is the first‑line test because it is noninvasive and radiation‑free, but your provider may still recommend a CT or MRI for certain specific conditions if more detail is needed." })
+        ] }),
+        /* @__PURE__ */ jsxs("details", { className: "!bg-white !rounded-2xl !p-6 !shadow-sm border !border-slate-200 group cursor-pointer transition-shadow hover:!shadow-md", children: [
+          /* @__PURE__ */ jsxs("summary", { className: "!text-xl !font-bold !text-slate-900 !flex !justify-between !items-center !list-none", children: [
+            "Will an ultrasound see all gallstones?",
+            /* @__PURE__ */ jsx("span", { className: "transition-transform group-open:rotate-180", children: /* @__PURE__ */ jsx(ChevronDownIcon, {}) })
+          ] }),
+          /* @__PURE__ */ jsx("div", { className: "!mt-4 !pt-4 !border-t border-slate-100 !text-slate-600 !text-lg !leading-relaxed", children: 'Ultrasound is very good at detecting gallstones, especially those in the gallbladder. However, very small stones or "sludge" can occasionally be difficult to see depending on position.' })
         ] })
       ] })
     ] }) }),
-    /* @__PURE__ */ jsx("section", { className: "reveal-section opacity-0 translate-y-8 transition-all duration-700 ease-out !py-20 !bg-blue-900 !text-white !px-6 mt-16", children: /* @__PURE__ */ jsxs("div", { className: "max-w-6xl mx-auto", children: [
-      /* @__PURE__ */ jsx("h2", { className: "!text-3xl md:!text-4xl !font-bold text-center !mb-12 !text-white", children: "Why Get Your Abdominal Ultrasound Here" }),
-      /* @__PURE__ */ jsxs("div", { className: "grid sm:grid-cols-2 lg:grid-cols-4 gap-6", children: [
-        /* @__PURE__ */ jsxs("div", { className: "!bg-blue-800/50 !p-6 rounded-xl text-center hover:!bg-blue-800 transition-colors hover:-translate-y-2 duration-300", children: [
-          /* @__PURE__ */ jsx("div", { className: "!bg-blue-500 w-12 h-12 rounded-full flex items-center justify-center mx-auto !mb-4", children: /* @__PURE__ */ jsx(CheckCircle2, { className: "w-6 h-6 !text-white" }) }),
-          /* @__PURE__ */ jsx("h3", { className: "!font-semibold !text-xl !mb-2 !text-white", children: "Transparent Pricing" }),
-          /* @__PURE__ */ jsx("p", { className: "!text-blue-200 !text-sm", children: "No hidden fees, simple self-pay rates." })
-        ] }),
-        /* @__PURE__ */ jsxs("div", { className: "!bg-blue-800/50 !p-6 rounded-xl text-center hover:!bg-blue-800 transition-colors hover:-translate-y-2 duration-300", children: [
-          /* @__PURE__ */ jsx("div", { className: "!bg-blue-500 w-12 h-12 rounded-full flex items-center justify-center mx-auto !mb-4", children: /* @__PURE__ */ jsx(Activity, { className: "w-6 h-6 !text-white" }) }),
-          /* @__PURE__ */ jsx("h3", { className: "!font-semibold !text-xl !mb-2 !text-white", children: "Modern Equipment" }),
-          /* @__PURE__ */ jsx("p", { className: "!text-blue-200 !text-sm", children: "Latest portable ultrasound technology." })
-        ] }),
-        /* @__PURE__ */ jsxs("div", { className: "!bg-blue-800/50 !p-6 rounded-xl text-center hover:!bg-blue-800 transition-colors hover:-translate-y-2 duration-300", children: [
-          /* @__PURE__ */ jsx("div", { className: "!bg-blue-500 w-12 h-12 rounded-full flex items-center justify-center mx-auto !mb-4", children: /* @__PURE__ */ jsx(Clock, { className: "w-6 h-6 !text-white" }) }),
-          /* @__PURE__ */ jsx("h3", { className: "!font-semibold !text-xl !mb-2 !text-white", children: "Fast Scheduling" }),
-          /* @__PURE__ */ jsx("p", { className: "!text-blue-200 !text-sm", children: "Appointments available when you need them." })
-        ] }),
-        /* @__PURE__ */ jsxs("div", { className: "!bg-blue-800/50 !p-6 rounded-xl text-center hover:!bg-blue-800 transition-colors hover:-translate-y-2 duration-300", children: [
-          /* @__PURE__ */ jsx("div", { className: "!bg-blue-500 w-12 h-12 rounded-full flex items-center justify-center mx-auto !mb-4", children: /* @__PURE__ */ jsx(FileText, { className: "w-6 h-6 !text-white" }) }),
-          /* @__PURE__ */ jsx("h3", { className: "!font-semibold !text-xl !mb-2 !text-white", children: "Direct Results" }),
-          /* @__PURE__ */ jsx("p", { className: "!text-blue-200 !text-sm", children: "Sent directly to your referring doctor." })
-        ] })
+    /* @__PURE__ */ jsx("section", { "aria-labelledby": "service-area", className: "reveal-section opacity-0 translate-y-8 transition-all duration-700 ease-out !px-6 !py-8", children: /* @__PURE__ */ jsxs("div", { className: "!max-w-5xl !mx-auto !text-center", children: [
+      /* @__PURE__ */ jsx("h2", { id: "service-area", className: "sr-only", children: "Local Service Area" }),
+      /* @__PURE__ */ jsxs("p", { className: "!text-xs md:!text-sm !text-slate-400 !leading-relaxed inline-block", children: [
+        /* @__PURE__ */ jsx("strong", { children: "Proudly serving patients in:" }),
+        " Downers Grove, Westmont, Clarendon Hills, Lisle, Oak Brook, Hinsdale, Darien, Willowbrook, Woodridge, Lombard, Glen Ellyn, Western Springs, Villa Park, Wheaton, Burr Ridge, Indian Head Park, Naperville, Elmhurst, Westchester, La Grange, Countryside, Carol Stream, Northlake, Oakbrook Terrace, Bolingbrook, Addison, Aurora, Brookfield, Berkeley, Hillside, Broadview, Roselle, Itasca, Bensenville, Lemont, Franklin Park, Schiller Park, River Forest, Forest Park, Maywood, Bellwood, Oak Park, Oak Forest, Tinley Park, Rolling Meadows, Ridgewood, Sauganash, Crest Hill, Mount Prospect, Niles, Crystal Lawns, Edgebrook, Mayfair, Joliet, Ingalls Park, East Joliet, South Elgin, Plum Grove Village, Winthrop Village, Fernway, Hoffman Estates, Albany Park, Creekside, Valley View, Raynor Park, Arlington Heights, Forest River, Lidice, Fernway Park, Lincolnwood, Morton Grove, Cherry Hill, Gougars, Fairfax Village, Sherwood Oaks, Clintonville, Coleman, and Schaumburg."
       ] })
     ] }) }),
-    /* @__PURE__ */ jsx("section", { className: "reveal-section opacity-0 translate-y-8 transition-all duration-700 ease-out py-16 bg-gray-50 px-6", children: /* @__PURE__ */ jsxs("div", { className: "max-w-3xl mx-auto flex flex-col gap-6", children: [
-      /* @__PURE__ */ jsx("h2", { className: "!text-3xl md:!text-4xl !font-bold text-center !text-gray-900 !mb-10", children: "Frequently Asked Questions" }),
-      /* @__PURE__ */ jsxs("div", { className: "space-y-6", children: [
-        /* @__PURE__ */ jsxs("div", { className: "!bg-white !p-6 !rounded-xl shadow-sm border !border-gray-200 hover:shadow-md transition-shadow", children: [
-          /* @__PURE__ */ jsx("h3", { className: "!font-semibold !text-lg !text-gray-900 !mb-2", children: "Do I need to fast?" }),
-          /* @__PURE__ */ jsx("p", { className: "!text-gray-600", children: "Yes, please fast for 6-8 hours prior to your exam. Water is OK after 2 hours of fasting." })
-        ] }),
-        /* @__PURE__ */ jsxs("div", { className: "!bg-white !p-6 !rounded-xl shadow-sm border !border-gray-200 hover:shadow-md transition-shadow", children: [
-          /* @__PURE__ */ jsx("h3", { className: "!font-semibold !text-lg !text-gray-900 !mb-2", children: "How long does it take?" }),
-          /* @__PURE__ */ jsx("p", { className: "!text-gray-600", children: "The entire process typically takes between 20 to 45 minutes." })
-        ] }),
-        /* @__PURE__ */ jsxs("div", { className: "!bg-white !p-6 !rounded-xl shadow-sm border !border-gray-200 hover:shadow-md transition-shadow", children: [
-          /* @__PURE__ */ jsx("h3", { className: "!font-semibold !text-lg !text-gray-900 !mb-2", children: "Is it safe and painful?" }),
-          /* @__PURE__ */ jsx("p", { className: "!text-gray-600", children: "Ultrasounds are incredibly safe, using zero radiation. It is generally painless, though you may feel mild pressure." })
-        ] }),
-        /* @__PURE__ */ jsxs("div", { className: "!bg-white !p-6 !rounded-xl shadow-sm border !border-gray-200 hover:shadow-md transition-shadow", children: [
-          /* @__PURE__ */ jsx("h3", { className: "!font-semibold !text-lg !text-gray-900 !mb-2", children: "When will I get results?" }),
-          /* @__PURE__ */ jsx("p", { className: "!text-gray-600", children: "Results are typically sent directly to your doctor on the same day as your exam." })
-        ] }),
-        /* @__PURE__ */ jsxs("div", { className: "!bg-white !p-6 !rounded-xl shadow-sm border !border-gray-200 hover:shadow-md transition-shadow", children: [
-          /* @__PURE__ */ jsx("h3", { className: "!font-semibold !text-lg !text-gray-900 !mb-2", children: "Do I need a referral?" }),
-          /* @__PURE__ */ jsx("p", { className: "!text-gray-600", children: "A referral is not necessary if you are paying out of pocket (self-pay), but it is required if you are billing through insurance." })
-        ] })
-      ] })
-    ] }) }),
-    /* @__PURE__ */ jsx("section", { className: "reveal-section opacity-0 translate-y-8 transition-all duration-700 ease-out !py-16 !bg-white border-t border-gray-200 !px-6 mt-16", children: /* @__PURE__ */ jsxs("div", { className: "max-w-6xl mx-auto text-center", children: [
-      /* @__PURE__ */ jsx("h2", { className: "!text-2xl !font-bold !text-gray-900 !mb-4", children: "Local Service Area" }),
-      /* @__PURE__ */ jsx("p", { className: "!text-sm !text-gray-500 leading-relaxed max-w-4xl mx-auto", children: "Serving Downers Grove, Westmont, Clarendon Hills, Lisle, Oak Brook, Hinsdale, Darien, Willowbrook, Woodridge, Lombard, Glen Ellyn, Western Springs, Villa Park, Wheaton, Burr Ridge, Indian Head Park, Naperville, Elmhurst, Westchester, La Grange, Countryside, Carol Stream, Northlake, Oakbrook Terrace, Bolingbrook, Addison, Aurora, Brookfield, Berkeley, Hillside, Broadview, Roselle, Itasca, Bensenville, Lemont, Franklin Park, Schiller Park, River Forest, Forest Park, Maywood, Bellwood, Oak Park, Oak Forest, Tinley Park, Rolling Meadows, Ridgewood, Sauganash, Crest Hill, Mount Prospect, Niles, Crystal Lawns, Edgebrook, Mayfair, Joliet, Ingalls Park, East Joliet, South Elgin, Plum Grove Village, Winthrop Village, Fernway, Hoffman Estates, Albany Park, Creekside, Valley View, Raynor Park, Arlington Heights, Forest River, Lidice, Fernway Park, Lincolnwood, Morton Grove, Cherry Hill, Gougars, Fairfax Village, Sherwood Oaks, Clintonville, Coleman, and Schaumburg." })
-    ] }) }),
-    /* @__PURE__ */ jsx("section", { className: "reveal-section opacity-0 translate-y-8 transition-all duration-700 ease-out !py-20 !bg-gray-50 !px-6 border-t border-gray-200", children: /* @__PURE__ */ jsxs("div", { className: "max-w-4xl mx-auto text-center", children: [
-      /* @__PURE__ */ jsx("h2", { className: "!text-3xl !font-bold !text-gray-900 !mb-6", children: "Ready to Schedule?" }),
-      /* @__PURE__ */ jsxs("div", { className: "flex flex-col sm:flex-row gap-4 justify-center items-center mb-8", children: [
-        /* @__PURE__ */ jsxs("a", { href: "/#/booking", className: "!bg-blue-600 hover:!bg-blue-700 !text-white !px-8 !py-4 rounded-lg !font-semibold flex items-center transition hover:-translate-y-1 hover:shadow-lg", children: [
+    /* @__PURE__ */ jsx("footer", { className: "reveal-section opacity-0 translate-y-8 transition-all duration-700 ease-out !px-6", children: /* @__PURE__ */ jsxs("div", { className: "!max-w-7xl !mx-auto !bg-slate-900 !rounded-3xl !p-10 md:!p-16 !text-center shadow-xl", children: [
+      /* @__PURE__ */ jsx("h2", { className: "!text-3xl md:!text-4xl !font-bold !text-white !mb-6", children: "Ready to schedule your abdomen ultrasound?" }),
+      /* @__PURE__ */ jsxs("p", { className: "!text-xl !text-slate-300 !mb-10 !max-w-3xl !mx-auto", children: [
+        "Use our online scheduling page or click ",
+        /* @__PURE__ */ jsx("strong", { children: "Contact Us" }),
+        " on the website to request an appointment. Our team is happy to answer questions and help you select the most appropriate exam option listed above."
+      ] }),
+      /* @__PURE__ */ jsxs("div", { className: "flex flex-col sm:flex-row gap-6 justify-center items-center", children: [
+        /* @__PURE__ */ jsxs("a", { href: "/#/booking", className: "!bg-blue-600 hover:!bg-blue-500 !text-white !px-10 !py-5 rounded-xl !font-bold !text-xl flex items-center transition hover:-translate-y-1 hover:shadow-lg hover:shadow-blue-500/25 w-full sm:w-auto justify-center", children: [
           "Book Appointment ",
-          /* @__PURE__ */ jsx(ArrowRight, { className: "ml-2 w-5 h-5" })
+          /* @__PURE__ */ jsx(ArrowRight, { className: "!ml-3 !w-6 !h-6" })
         ] }),
-        /* @__PURE__ */ jsx("a", { href: "#contact", className: "!bg-white !text-blue-600 border-2 !border-blue-600 hover:!bg-blue-50 !px-8 !py-4 rounded-lg !font-semibold transition hover:-translate-y-1", children: "Contact Us" })
-      ] }),
-      /* @__PURE__ */ jsxs("p", { className: "!text-sm !font-medium !text-gray-500 flex items-center justify-center gap-4", children: [
-        /* @__PURE__ */ jsxs("span", { className: "flex items-center", children: [
-          /* @__PURE__ */ jsx(CheckCircle2, { className: "w-4 h-4 !text-green-500 mr-1" }),
-          " Licensed Providers"
-        ] }),
-        /* @__PURE__ */ jsxs("span", { className: "flex items-center", children: [
-          /* @__PURE__ */ jsx(CheckCircle2, { className: "w-4 h-4 !text-green-500 mr-1" }),
-          " HIPAA Compliant"
-        ] })
+        /* @__PURE__ */ jsx("a", { href: "#contact", className: "!bg-slate-800 hover:!bg-slate-700 !text-white !border !border-slate-600 hover:!border-slate-400 !px-10 !py-5 rounded-xl !font-bold !text-xl transition hover:-translate-y-1 hover:shadow-lg w-full sm:w-auto justify-center flex items-center", children: "Contact Us" })
       ] })
     ] }) })
   ] });
 };
+const ChevronDownIcon = () => /* @__PURE__ */ jsx("svg", { className: "!w-6 !h-6 !text-blue-500", fill: "none", viewBox: "0 0 24 24", stroke: "currentColor", children: /* @__PURE__ */ jsx("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M19 9l-7 7-7-7" }) });
 const routes = {
   "/services/abdomen-ultrasound": AbdomenUltrasound
 };
