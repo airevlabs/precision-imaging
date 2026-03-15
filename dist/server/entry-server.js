@@ -1274,7 +1274,7 @@ const AbdomenUltrasound = () => {
             "Book Appointment ",
             /* @__PURE__ */ jsx(Calendar, { className: "!ml-2 !w-5 !h-5" })
           ] }),
-          /* @__PURE__ */ jsx("a", { href: "https://precisionimagingus.com/#contact", className: "!bg-transparent border-2 !border-slate-600 hover:!border-white hover:!bg-white/10 !px-8 !py-4 rounded-xl !font-semibold flex items-center justify-center transition hover:-translate-y-1 !text-white !text-lg", children: "Contact Us" })
+          /* @__PURE__ */ jsx("a", { href: "https://precisionimagingus.com/#/#contact", className: "!bg-transparent border-2 !border-slate-600 hover:!border-white hover:!bg-white/10 !px-8 !py-4 rounded-xl !font-semibold flex items-center justify-center transition hover:-translate-y-1 !text-white !text-lg", children: "Contact Us" })
         ] })
       ] })
     ] }),
@@ -1536,7 +1536,7 @@ const AbdomenUltrasound = () => {
           "Book Appointment ",
           /* @__PURE__ */ jsx(ArrowRight, { className: "!ml-3 !w-6 !h-6" })
         ] }),
-        /* @__PURE__ */ jsx("a", { href: "https://precisionimagingus.com/#contact", className: "!bg-slate-800 hover:!bg-slate-700 !text-white !border !border-slate-600 hover:!border-slate-400 !px-10 !py-5 rounded-xl !font-bold !text-xl transition hover:-translate-y-1 hover:shadow-lg w-full sm:w-auto justify-center flex items-center", children: "Contact Us" })
+        /* @__PURE__ */ jsx("a", { href: "https://precisionimagingus.com/#/#contact", className: "!bg-slate-800 hover:!bg-slate-700 !text-white !border !border-slate-600 hover:!border-slate-400 !px-10 !py-5 rounded-xl !font-bold !text-xl transition hover:-translate-y-1 hover:shadow-lg w-full sm:w-auto justify-center flex items-center", children: "Contact Us" })
       ] })
     ] }) })
   ] });
