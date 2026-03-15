@@ -6,7 +6,7 @@ import invariant from "invariant";
 import shallowEqual from "shallowequal";
 import { StaticRouter } from "react-router";
 import { useLocation, Link, useNavigate } from "react-router-dom";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { ArrowUp, Activity, Calendar, Search, Stethoscope, CheckCircle2, Info, Clock, FileBadge, ArrowRight } from "lucide-react";
 var TAG_NAMES = /* @__PURE__ */ ((TAG_NAMES2) => {
   TAG_NAMES2["BASE"] = "base";
@@ -814,40 +814,25 @@ const Logo = ({ animated = false, theme = "light" }) => {
   const gradientEnd = isDark ? "#bee3f8" : "#2b6cb0";
   return /* @__PURE__ */ jsxs("div", { className: "logo-container", style: { display: "flex", alignItems: "center", gap: "0px" }, children: [
     /* @__PURE__ */ jsxs(
-      motion.svg,
+      "svg",
       {
         width: "80",
         height: "40",
         viewBox: "0 0 120 60",
         fill: "none",
         xmlns: "http://www.w3.org/2000/svg",
-        initial: "initial",
-        whileHover: !animated ? "hover" : void 0,
-        animate: animated ? "animate" : void 0,
+        className: animated ? "animated-logo-svg" : "",
         children: [
           /* @__PURE__ */ jsx(
-            motion.path,
+            "path",
             {
+              className: "logo-wave-path",
               d: "M0 30H15L20 20L30 40L40 10L50 50L60 20L70 40L75 30H120",
               stroke: "url(#waveGradient)",
               strokeWidth: "3",
               strokeLinecap: "round",
               strokeLinejoin: "round",
-              variants: {
-                initial: { pathLength: animated ? 0 : 1, opacity: animated ? 1 : 0.8 },
-                hover: {
-                  pathLength: [1, 0.95, 1],
-                  opacity: 1,
-                  transition: { repeat: Infinity, duration: 2, ease: "easeInOut" }
-                },
-                animate: {
-                  pathLength: [0, 1],
-                  opacity: 1,
-                  transition: {
-                    pathLength: { repeat: Infinity, duration: 2.5, ease: "linear", repeatDelay: 0.5 }
-                  }
-                }
-              }
+              pathLength: "1"
             }
           ),
           /* @__PURE__ */ jsx("defs", { children: /* @__PURE__ */ jsxs("linearGradient", { id: "waveGradient", x1: "0", y1: "30", x2: "120", y2: "30", gradientUnits: "userSpaceOnUse", children: [
@@ -893,40 +878,24 @@ const Header = () => {
     { name: "Why Choose Us", to: "/#why-choose-us" }
     // Book Now is handled separately as a button
   ];
-  return /* @__PURE__ */ jsxs(
-    "header",
-    {
-      className: `header ${isScrolled ? "scrolled" : ""}`,
-      style: {
-        position: "fixed",
-        top: 0,
-        left: 0,
-        right: 0,
-        zIndex: 1e3,
-        padding: isScrolled ? "0.75rem 0" : "1.5rem 0",
-        backgroundColor: isScrolled ? "rgba(255, 255, 255, 0.95)" : "transparent",
-        boxShadow: isScrolled ? "var(--shadow-md)" : "none",
-        backdropFilter: isScrolled ? "blur(10px)" : "none",
-        transition: "var(--transition-smooth)"
-      },
-      children: [
-        /* @__PURE__ */ jsxs("div", { className: "container", style: { display: "flex", justifyContent: "space-between", alignItems: "center" }, children: [
-          /* @__PURE__ */ jsx(Link, { to: "/", children: /* @__PURE__ */ jsx(Logo, { animated: true }) }),
-          /* @__PURE__ */ jsx("nav", { className: "desktop-nav", style: { display: "none" }, children: /* @__PURE__ */ jsxs("ul", { style: { display: "flex", gap: "2rem", alignItems: "center" }, children: [
-            navLinks.map((link) => /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsxs(
-              Link,
-              {
-                to: link.to,
-                style: {
-                  fontWeight: "600",
-                  fontSize: "0.925rem",
-                  color: "var(--color-primary-navy)",
-                  position: "relative"
-                },
-                className: "nav-link",
-                children: [
-                  link.name,
-                  /* @__PURE__ */ jsx("style", { children: `
+  return /* @__PURE__ */ jsxs("header", { className: `site-header ${isScrolled ? "scrolled" : ""}`, children: [
+    /* @__PURE__ */ jsxs("div", { className: "container", style: { display: "flex", justifyContent: "space-between", alignItems: "center" }, children: [
+      /* @__PURE__ */ jsx(Link, { to: "/", children: /* @__PURE__ */ jsx(Logo, { animated: true }) }),
+      /* @__PURE__ */ jsx("nav", { className: "desktop-nav", style: { display: "none" }, children: /* @__PURE__ */ jsxs("ul", { style: { display: "flex", gap: "2rem", alignItems: "center" }, children: [
+        navLinks.map((link) => /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsxs(
+          Link,
+          {
+            to: link.to,
+            style: {
+              fontWeight: "600",
+              fontSize: "0.925rem",
+              color: "var(--color-primary-navy)",
+              position: "relative"
+            },
+            className: "nav-link",
+            children: [
+              link.name,
+              /* @__PURE__ */ jsx("style", { children: `
                     .nav-link::after {
                       content: '';
                       position: absolute;
@@ -941,96 +910,94 @@ const Header = () => {
                       width: 100%;
                     }
                   ` })
-                ]
-              }
-            ) }, link.name)),
-            /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx(
-              Link,
-              {
-                to: "/booking",
-                className: "btn btn-primary",
-                style: {
-                  padding: "0.75rem 1.5rem",
-                  fontSize: "0.9rem",
-                  borderRadius: "9999px",
-                  // Rounded full like pills
-                  textDecoration: "none",
-                  display: "inline-block"
-                },
-                children: "Book Now"
-              }
-            ) })
-          ] }) }),
-          /* @__PURE__ */ jsx(
-            "button",
-            {
-              className: "mobile-toggle",
-              onClick: () => setIsMobileMenuOpen(!isMobileMenuOpen),
-              style: {
-                fontSize: "1.5rem",
-                color: "var(--color-primary-navy)",
-                zIndex: 1001
-              },
-              children: isMobileMenuOpen ? "✕" : "☰"
-            }
-          )
-        ] }),
-        /* @__PURE__ */ jsx(AnimatePresence, { children: isMobileMenuOpen && /* @__PURE__ */ jsxs(
-          motion.div,
-          {
-            initial: { opacity: 0, y: -20 },
-            animate: { opacity: 1, y: 0 },
-            exit: { opacity: 0, y: -20 },
-            style: {
-              position: "absolute",
-              top: "100%",
-              left: 0,
-              right: 0,
-              backgroundColor: "var(--color-white)",
-              padding: "2rem",
-              boxShadow: "var(--shadow-lg)",
-              display: "flex",
-              flexDirection: "column",
-              gap: "1.5rem",
-              zIndex: 999
-            },
-            children: [
-              navLinks.map((link) => /* @__PURE__ */ jsx(
-                Link,
-                {
-                  to: link.to,
-                  onClick: () => setIsMobileMenuOpen(false),
-                  style: { fontWeight: "600", color: "var(--color-primary-navy)" },
-                  children: link.name
-                },
-                link.name
-              )),
-              /* @__PURE__ */ jsx(
-                Link,
-                {
-                  to: "/booking",
-                  onClick: () => setIsMobileMenuOpen(false),
-                  className: "btn btn-primary",
-                  style: {
-                    textAlign: "center",
-                    padding: "0.75rem",
-                    borderRadius: "0.5rem"
-                  },
-                  children: "Book Now"
-                }
-              )
             ]
           }
-        ) }),
-        /* @__PURE__ */ jsx("style", { jsx: true, children: `
+        ) }, link.name)),
+        /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx(
+          Link,
+          {
+            to: "/booking",
+            className: "btn btn-primary",
+            style: {
+              padding: "0.75rem 1.5rem",
+              fontSize: "0.9rem",
+              borderRadius: "9999px",
+              // Rounded full like pills
+              textDecoration: "none",
+              display: "inline-block"
+            },
+            children: "Book Now"
+          }
+        ) })
+      ] }) }),
+      /* @__PURE__ */ jsx(
+        "button",
+        {
+          className: "mobile-toggle",
+          onClick: () => setIsMobileMenuOpen(!isMobileMenuOpen),
+          style: {
+            fontSize: "1.5rem",
+            color: "var(--color-primary-navy)",
+            zIndex: 1001
+          },
+          children: isMobileMenuOpen ? "✕" : "☰"
+        }
+      )
+    ] }),
+    /* @__PURE__ */ jsx(AnimatePresence, { children: isMobileMenuOpen && /* @__PURE__ */ jsxs(
+      motion.div,
+      {
+        initial: { opacity: 0, y: -20 },
+        animate: { opacity: 1, y: 0 },
+        exit: { opacity: 0, y: -20 },
+        style: {
+          position: "absolute",
+          top: "100%",
+          left: 0,
+          right: 0,
+          backgroundColor: "var(--color-white)",
+          padding: "2rem",
+          boxShadow: "var(--shadow-lg)",
+          display: "flex",
+          flexDirection: "column",
+          gap: "1.5rem",
+          zIndex: 999
+        },
+        children: [
+          navLinks.map((link) => /* @__PURE__ */ jsx(
+            Link,
+            {
+              to: link.to,
+              onClick: () => setIsMobileMenuOpen(false),
+              style: { fontWeight: "600", color: "var(--color-primary-navy)" },
+              children: link.name
+            },
+            link.name
+          )),
+          /* @__PURE__ */ jsx(
+            Link,
+            {
+              to: "/booking",
+              onClick: () => setIsMobileMenuOpen(false),
+              className: "btn btn-primary",
+              style: {
+                textAlign: "center",
+                padding: "0.75rem",
+                borderRadius: "0.5rem"
+              },
+              children: "Book Now"
+            }
+          )
+        ]
+      }
+    ) }),
+    /* @__PURE__ */ jsx("style", { jsx: true, children: `
         @media (min-width: 1024px) {
           .desktop-nav { display: block !important; }
           .mobile-toggle { display: none !important; }
         }
       ` })
-      ]
-    }
-  );
+  ] });
 };
 const Footer = () => {
   return /* @__PURE__ */ jsxs("footer", { style: { backgroundColor: "var(--color-primary-navy)", color: "var(--color-white)", padding: "5rem 0 2rem" }, children: [
@@ -1211,10 +1178,29 @@ const SSGLayout = ({ children }) => {
                         });
                     };
 
-                    if (document.readyState === 'loading') {
-                        document.addEventListener('DOMContentLoaded', initObserver);
-                    } else {
+                    const initHeaderScroll = () => {
+                        const header = document.querySelector('.site-header');
+                        if (!header) return;
+                        const handleScroll = () => {
+                            if (window.scrollY > 20) {
+                                header.classList.add('scrolled');
+                            } else {
+                                header.classList.remove('scrolled');
+                            }
+                        };
+                        window.addEventListener('scroll', handleScroll);
+                        handleScroll(); // Trigger once on load
+                    };
+
+                    const initAll = () => {
                         initObserver();
+                        initHeaderScroll();
+                    };
+
+                    if (document.readyState === 'loading') {
+                        document.addEventListener('DOMContentLoaded', initAll);
+                    } else {
+                        initAll();
                     }
                 })();
             `

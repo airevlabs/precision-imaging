@@ -31,10 +31,29 @@ const SSGLayout = ({ children }) => {
                         });
                     };
 
-                    if (document.readyState === 'loading') {
-                        document.addEventListener('DOMContentLoaded', initObserver);
-                    } else {
+                    const initHeaderScroll = () => {
+                        const header = document.querySelector('.site-header');
+                        if (!header) return;
+                        const handleScroll = () => {
+                            if (window.scrollY > 20) {
+                                header.classList.add('scrolled');
+                            } else {
+                                header.classList.remove('scrolled');
+                            }
+                        };
+                        window.addEventListener('scroll', handleScroll);
+                        handleScroll(); // Trigger once on load
+                    };
+
+                    const initAll = () => {
                         initObserver();
+                        initHeaderScroll();
+                    };
+
+                    if (document.readyState === 'loading') {
+                        document.addEventListener('DOMContentLoaded', initAll);
+                    } else {
+                        initAll();
                     }
                 })();
             `}} />

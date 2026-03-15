@@ -33,21 +33,7 @@ const Header = () => {
   ];
 
   return (
-    <header
-      className={`header ${isScrolled ? 'scrolled' : ''}`}
-      style={{
-        position: 'fixed',
-        top: 0,
-        left: 0,
-        right: 0,
-        zIndex: 1000,
-        padding: isScrolled ? '0.75rem 0' : '1.5rem 0',
-        backgroundColor: isScrolled ? 'rgba(255, 255, 255, 0.95)' : 'transparent',
-        boxShadow: isScrolled ? 'var(--shadow-md)' : 'none',
-        backdropFilter: isScrolled ? 'blur(10px)' : 'none',
-        transition: 'var(--transition-smooth)'
-      }}
-    >
+    <header className={`site-header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <Link to="/"><Logo animated={true} /></Link>
 

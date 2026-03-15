@@ -29,6 +29,48 @@
   --header-height: 100px;
 }
 
+/* Static Site Header (for GHL Export) */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 1.5rem 0;
+  background-color: transparent;
+  box-shadow: none;
+  backdrop-filter: none;
+  transition: padding 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+.site-header.scrolled {
+  padding: 0.75rem 0;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  backdrop-filter: blur(10px);
+}
+
+/* Static Logo Wave Animation (for GHL Export) */
+.animated-logo-svg .logo-wave-path {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: draw-wave 2.5s linear infinite;
+}
+
+@keyframes draw-wave {
+  0% {
+    stroke-dashoffset: 1;
+  }
+
+  80% {
+    stroke-dashoffset: 0;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
 /* Force Padding on Main Content Pages to clear Fixed Header */
 .page-container {
   padding-top: 160px !important;
