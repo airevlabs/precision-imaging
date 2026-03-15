@@ -1268,7 +1268,7 @@ const AbdomenUltrasound = () => {
           " Diagnostic Ultrasound Center"
         ] }),
         /* @__PURE__ */ jsx("h1", { className: "!text-5xl md:!text-6xl lg:!text-7xl !font-bold !mb-8 !text-white leading-tight !tracking-tight", children: "Abdominal Ultrasound" }),
-        /* @__PURE__ */ jsx("p", { className: "!text-xl md:!text-2xl !mb-10 max-w-3xl !text-slate-300 font-medium !leading-relaxed", children: "Safe, High‑Quality Sonography for the Liver, Gallbladder, Kidneys, and Pancreas in Downers Grove" }),
+        /* @__PURE__ */ jsx("p", { className: "!text-xl md:!text-2xl !mb-10 max-w-3xl !text-slate-300 font-medium !leading-relaxed", children: "Safe, High‑Quality Sonography for the Liver, Gallbladder, Bile ducts, Pancreas, Spleen, Kidneys, and Abdominal aorta in Downers Grove and Chicago Suburbs." }),
         /* @__PURE__ */ jsxs("div", { className: "flex flex-col sm:flex-row gap-4", children: [
           /* @__PURE__ */ jsxs("a", { href: "/#/booking", className: "!bg-blue-600 hover:!bg-blue-500 !px-8 !py-4 rounded-xl !font-semibold flex items-center justify-center transition hover:-translate-y-1 shadow-lg hover:shadow-blue-500/25 !text-white !text-lg", children: [
             "Book Appointment ",
@@ -1380,24 +1380,30 @@ const AbdomenUltrasound = () => {
           " What to Expect"
         ] }),
         /* @__PURE__ */ jsx("p", { className: "!text-lg !text-slate-600 !mb-8", children: "Here is what a typical visit looks like at our diagnostic ultrasound center:" }),
-        /* @__PURE__ */ jsxs("div", { className: "!space-y-6 !relative !border-l-2 !border-slate-100 !ml-4 !pb-4", children: [
-          /* @__PURE__ */ jsxs("div", { className: "!relative !pl-8", children: [
-            /* @__PURE__ */ jsx("div", { className: "!absolute !-left-[9px] !top-1.5 !w-4 !h-4 !rounded-full !bg-blue-600 !border-4 !border-white !shadow-sm" }),
-            /* @__PURE__ */ jsx("h4", { className: "!text-xl !font-bold !text-slate-900 !mb-2", children: "1. Preparation" }),
-            /* @__PURE__ */ jsx("p", { className: "!text-slate-600 !leading-relaxed", children: "You will lie on a padded exam table while the technologist applies warm gel over your upper abdomen." })
+        /* @__PURE__ */ jsxs("div", { className: "!flex !flex-col !gap-6 !border-l-2 !border-slate-200 !ml-4 !py-4", children: [
+          /* @__PURE__ */ jsxs("div", { className: "!flex !gap-4 !items-start !-ml-[17px]", children: [
+            /* @__PURE__ */ jsx("div", { className: "!w-8 !h-8 !rounded-full !bg-blue-600 !text-white !flex !items-center !justify-center !font-bold !flex-shrink-0 !border-4 !border-white !shadow-sm", children: "1" }),
+            /* @__PURE__ */ jsxs("div", { className: "!flex-1 !pt-0.5", children: [
+              /* @__PURE__ */ jsx("h4", { className: "!text-xl !font-bold !text-slate-900 !mb-2 !mt-0", children: "Preparation" }),
+              /* @__PURE__ */ jsx("p", { className: "!text-slate-600 !leading-relaxed !m-0", children: "You will lie on a padded exam table while the technologist applies warm gel over your upper abdomen." })
+            ] })
           ] }),
-          /* @__PURE__ */ jsxs("div", { className: "!relative !pl-8", children: [
-            /* @__PURE__ */ jsx("div", { className: "!absolute !-left-[9px] !top-1.5 !w-4 !h-4 !rounded-full !bg-blue-600 !border-4 !border-white !shadow-sm" }),
-            /* @__PURE__ */ jsx("h4", { className: "!text-xl !font-bold !text-slate-900 !mb-2", children: "2. Imaging Process" }),
-            /* @__PURE__ */ jsx("p", { className: "!text-slate-600 !leading-relaxed", children: "The transducer is moved in several directions to obtain real‑time images of each organ. You may be asked to hold your breath or change position briefly to improve visualization." })
+          /* @__PURE__ */ jsxs("div", { className: "!flex !gap-4 !items-start !-ml-[17px]", children: [
+            /* @__PURE__ */ jsx("div", { className: "!w-8 !h-8 !rounded-full !bg-blue-600 !text-white !flex !items-center !justify-center !font-bold !flex-shrink-0 !border-4 !border-white !shadow-sm", children: "2" }),
+            /* @__PURE__ */ jsxs("div", { className: "!flex-1 !pt-0.5", children: [
+              /* @__PURE__ */ jsx("h4", { className: "!text-xl !font-bold !text-slate-900 !mb-2 !mt-0", children: "Imaging Process" }),
+              /* @__PURE__ */ jsx("p", { className: "!text-slate-600 !leading-relaxed !m-0", children: "The transducer is moved in several directions to obtain real‑time images of each organ. You may be asked to hold your breath or change position briefly to improve visualization." })
+            ] })
           ] }),
-          /* @__PURE__ */ jsxs("div", { className: "!relative !pl-8", children: [
-            /* @__PURE__ */ jsx("div", { className: "!absolute !-left-[9px] !top-1.5 !w-4 !h-4 !rounded-full !bg-blue-600 !border-4 !border-white !shadow-sm" }),
-            /* @__PURE__ */ jsx("h4", { className: "!text-xl !font-bold !text-slate-900 !mb-2", children: "3. Duration" }),
-            /* @__PURE__ */ jsxs("p", { className: "!text-slate-600 !leading-relaxed", children: [
-              "Most abdominal ultrasound appointments take about ",
-              /* @__PURE__ */ jsx("strong", { children: "20–30 minutes" }),
-              "; add a few minutes if AAA screening is performed at the same visit."
+          /* @__PURE__ */ jsxs("div", { className: "!flex !gap-4 !items-start !-ml-[17px]", children: [
+            /* @__PURE__ */ jsx("div", { className: "!w-8 !h-8 !rounded-full !bg-blue-600 !text-white !flex !items-center !justify-center !font-bold !flex-shrink-0 !border-4 !border-white !shadow-sm", children: "3" }),
+            /* @__PURE__ */ jsxs("div", { className: "!flex-1 !pt-0.5", children: [
+              /* @__PURE__ */ jsx("h4", { className: "!text-xl !font-bold !text-slate-900 !mb-2 !mt-0", children: "Duration" }),
+              /* @__PURE__ */ jsxs("p", { className: "!text-slate-600 !leading-relaxed !m-0", children: [
+                "Most abdominal ultrasound appointments take about ",
+                /* @__PURE__ */ jsx("strong", { children: "20–30 minutes" }),
+                "; add a few minutes if AAA screening is performed at the same visit."
+              ] })
             ] })
           ] })
         ] }),

@@ -60,7 +60,7 @@ const AbdomenUltrasound = () => {
             Abdominal Ultrasound
           </h1>
           <p className="!text-xl md:!text-2xl !mb-10 max-w-3xl !text-slate-300 font-medium !leading-relaxed">
-            Safe, High‑Quality Sonography for the Liver, Gallbladder, Kidneys, and Pancreas in Downers Grove
+            Safe, High‑Quality Sonography for the Liver, Gallbladder, Bile ducts, Pancreas, Spleen, Kidneys, and Abdominal aorta in Downers Grove and Chicago Suburbs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a href="/#/booking" className="!bg-blue-600 hover:!bg-blue-500 !px-8 !py-4 rounded-xl !font-semibold flex items-center justify-center transition hover:-translate-y-1 shadow-lg hover:shadow-blue-500/25 !text-white !text-lg">
@@ -212,24 +212,30 @@ const AbdomenUltrasound = () => {
               <Activity className="!w-8 !h-8 !text-blue-600" /> What to Expect
             </h2>
             <p className="!text-lg !text-slate-600 !mb-8">Here is what a typical visit looks like at our diagnostic ultrasound center:</p>
-            <div className="!space-y-6 !relative !border-l-2 !border-slate-100 !ml-4 !pb-4">
+            <div className="!flex !flex-col !gap-6 !border-l-2 !border-slate-200 !ml-4 !py-4">
 
-              <div className="!relative !pl-8">
-                <div className="!absolute !-left-[9px] !top-1.5 !w-4 !h-4 !rounded-full !bg-blue-600 !border-4 !border-white !shadow-sm"></div>
-                <h4 className="!text-xl !font-bold !text-slate-900 !mb-2">1. Preparation</h4>
-                <p className="!text-slate-600 !leading-relaxed">You will lie on a padded exam table while the technologist applies warm gel over your upper abdomen.</p>
+              <div className="!flex !gap-4 !items-start !-ml-[17px]">
+                <div className="!w-8 !h-8 !rounded-full !bg-blue-600 !text-white !flex !items-center !justify-center !font-bold !flex-shrink-0 !border-4 !border-white !shadow-sm">1</div>
+                <div className="!flex-1 !pt-0.5">
+                  <h4 className="!text-xl !font-bold !text-slate-900 !mb-2 !mt-0">Preparation</h4>
+                  <p className="!text-slate-600 !leading-relaxed !m-0">You will lie on a padded exam table while the technologist applies warm gel over your upper abdomen.</p>
+                </div>
               </div>
 
-              <div className="!relative !pl-8">
-                <div className="!absolute !-left-[9px] !top-1.5 !w-4 !h-4 !rounded-full !bg-blue-600 !border-4 !border-white !shadow-sm"></div>
-                <h4 className="!text-xl !font-bold !text-slate-900 !mb-2">2. Imaging Process</h4>
-                <p className="!text-slate-600 !leading-relaxed">The transducer is moved in several directions to obtain real‑time images of each organ. You may be asked to hold your breath or change position briefly to improve visualization.</p>
+              <div className="!flex !gap-4 !items-start !-ml-[17px]">
+                <div className="!w-8 !h-8 !rounded-full !bg-blue-600 !text-white !flex !items-center !justify-center !font-bold !flex-shrink-0 !border-4 !border-white !shadow-sm">2</div>
+                <div className="!flex-1 !pt-0.5">
+                  <h4 className="!text-xl !font-bold !text-slate-900 !mb-2 !mt-0">Imaging Process</h4>
+                  <p className="!text-slate-600 !leading-relaxed !m-0">The transducer is moved in several directions to obtain real‑time images of each organ. You may be asked to hold your breath or change position briefly to improve visualization.</p>
+                </div>
               </div>
 
-              <div className="!relative !pl-8">
-                <div className="!absolute !-left-[9px] !top-1.5 !w-4 !h-4 !rounded-full !bg-blue-600 !border-4 !border-white !shadow-sm"></div>
-                <h4 className="!text-xl !font-bold !text-slate-900 !mb-2">3. Duration</h4>
-                <p className="!text-slate-600 !leading-relaxed">Most abdominal ultrasound appointments take about <strong>20–30 minutes</strong>; add a few minutes if AAA screening is performed at the same visit.</p>
+              <div className="!flex !gap-4 !items-start !-ml-[17px]">
+                <div className="!w-8 !h-8 !rounded-full !bg-blue-600 !text-white !flex !items-center !justify-center !font-bold !flex-shrink-0 !border-4 !border-white !shadow-sm">3</div>
+                <div className="!flex-1 !pt-0.5">
+                  <h4 className="!text-xl !font-bold !text-slate-900 !mb-2 !mt-0">Duration</h4>
+                  <p className="!text-slate-600 !leading-relaxed !m-0">Most abdominal ultrasound appointments take about <strong>20–30 minutes</strong>; add a few minutes if AAA screening is performed at the same visit.</p>
+                </div>
               </div>
 
             </div>
