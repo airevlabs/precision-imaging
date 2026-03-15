@@ -1237,7 +1237,7 @@ const AbdomenUltrasound = () => {
     });
     return () => observer.disconnect();
   }, []);
-  return /* @__PURE__ */ jsxs("div", { className: "!pt-32 lg:!pt-44 !pb-12 !bg-slate-50 flex flex-col gap-12 sm:gap-16 font-sans", children: [
+  return /* @__PURE__ */ jsxs("div", { className: "!pt-32 lg:!pt-44 !pb-12 !bg-slate-50 !flex !flex-col !gap-8 sm:!gap-12 !font-sans", children: [
     /* @__PURE__ */ jsxs(Helmet, { children: [
       /* @__PURE__ */ jsx("title", { children: "Abdominal Ultrasound | Precision Imaging Diagnostic Center" }),
       /* @__PURE__ */ jsx("meta", { name: "description", content: "Safe abdominal sonogram imaging in Downers Grove. High-quality liver and gallbladder ultrasound serving the Chicago suburbs." }),
@@ -1380,19 +1380,19 @@ const AbdomenUltrasound = () => {
           " What to Expect"
         ] }),
         /* @__PURE__ */ jsx("p", { className: "!text-lg !text-slate-600 !mb-8", children: "Here is what a typical visit looks like at our diagnostic ultrasound center:" }),
-        /* @__PURE__ */ jsxs("div", { className: "space-y-6 relative border-l-2 border-slate-100 ml-4 pb-4", children: [
-          /* @__PURE__ */ jsxs("div", { className: "relative pl-8", children: [
-            /* @__PURE__ */ jsx("div", { className: "absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-blue-600 border-4 border-white shadow-sm" }),
+        /* @__PURE__ */ jsxs("div", { className: "!space-y-6 !relative !border-l-2 !border-slate-100 !ml-4 !pb-4", children: [
+          /* @__PURE__ */ jsxs("div", { className: "!relative !pl-8", children: [
+            /* @__PURE__ */ jsx("div", { className: "!absolute !-left-[9px] !top-1.5 !w-4 !h-4 !rounded-full !bg-blue-600 !border-4 !border-white !shadow-sm" }),
             /* @__PURE__ */ jsx("h4", { className: "!text-xl !font-bold !text-slate-900 !mb-2", children: "1. Preparation" }),
             /* @__PURE__ */ jsx("p", { className: "!text-slate-600 !leading-relaxed", children: "You will lie on a padded exam table while the technologist applies warm gel over your upper abdomen." })
           ] }),
-          /* @__PURE__ */ jsxs("div", { className: "relative pl-8", children: [
-            /* @__PURE__ */ jsx("div", { className: "absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-blue-600 border-4 border-white shadow-sm" }),
+          /* @__PURE__ */ jsxs("div", { className: "!relative !pl-8", children: [
+            /* @__PURE__ */ jsx("div", { className: "!absolute !-left-[9px] !top-1.5 !w-4 !h-4 !rounded-full !bg-blue-600 !border-4 !border-white !shadow-sm" }),
             /* @__PURE__ */ jsx("h4", { className: "!text-xl !font-bold !text-slate-900 !mb-2", children: "2. Imaging Process" }),
             /* @__PURE__ */ jsx("p", { className: "!text-slate-600 !leading-relaxed", children: "The transducer is moved in several directions to obtain real‑time images of each organ. You may be asked to hold your breath or change position briefly to improve visualization." })
           ] }),
-          /* @__PURE__ */ jsxs("div", { className: "relative pl-8", children: [
-            /* @__PURE__ */ jsx("div", { className: "absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-blue-600 border-4 border-white shadow-sm" }),
+          /* @__PURE__ */ jsxs("div", { className: "!relative !pl-8", children: [
+            /* @__PURE__ */ jsx("div", { className: "!absolute !-left-[9px] !top-1.5 !w-4 !h-4 !rounded-full !bg-blue-600 !border-4 !border-white !shadow-sm" }),
             /* @__PURE__ */ jsx("h4", { className: "!text-xl !font-bold !text-slate-900 !mb-2", children: "3. Duration" }),
             /* @__PURE__ */ jsxs("p", { className: "!text-slate-600 !leading-relaxed", children: [
               "Most abdominal ultrasound appointments take about ",
@@ -1409,12 +1409,12 @@ const AbdomenUltrasound = () => {
       /* @__PURE__ */ jsxs("div", { className: "md:w-2/3 text-center md:text-left", children: [
         /* @__PURE__ */ jsx("h2", { id: "results", className: "!text-3xl md:!text-4xl !font-bold !text-slate-900 !mb-6", children: "Results & Follow-up" }),
         /* @__PURE__ */ jsxs("ul", { className: "space-y-4 !text-lg !text-slate-700 !mb-6", children: [
-          /* @__PURE__ */ jsxs("li", { className: "flex items-start md:items-center", children: [
-            /* @__PURE__ */ jsx(ArrowRight, { className: "!w-5 !h-5 !text-blue-500 !mr-3 shrink-0 !mt-1 md:!mt-0" }),
+          /* @__PURE__ */ jsxs("li", { className: "!flex !items-start md:!items-center", children: [
+            /* @__PURE__ */ jsx(ArrowRight, { className: "!w-5 !h-5 !text-blue-500 !mr-3 !shrink-0 !mt-1 md:!mt-0" }),
             /* @__PURE__ */ jsx("span", { children: "If a doctor order is provided, a detailed report is sent directly to your ordering provider so they can review results and plan next steps." })
           ] }),
-          /* @__PURE__ */ jsxs("li", { className: "flex items-start md:items-center", children: [
-            /* @__PURE__ */ jsx(ArrowRight, { className: "!w-5 !h-5 !text-blue-500 !mr-3 shrink-0 !mt-1 md:!mt-0" }),
+          /* @__PURE__ */ jsxs("li", { className: "!flex !items-start md:!items-center", children: [
+            /* @__PURE__ */ jsx(ArrowRight, { className: "!w-5 !h-5 !text-blue-500 !mr-3 !shrink-0 !mt-1 md:!mt-0" }),
             /* @__PURE__ */ jsx("span", { children: "Your provider may recommend medication changes, additional testing, or follow‑up imaging based on the ultrasound findings." })
           ] })
         ] }),
@@ -1424,19 +1424,12 @@ const AbdomenUltrasound = () => {
     /* @__PURE__ */ jsx("section", { "aria-labelledby": "faq", className: "reveal-section opacity-0 translate-y-8 transition-all duration-700 ease-out !px-6", children: /* @__PURE__ */ jsxs("div", { className: "!max-w-4xl !mx-auto", children: [
       /* @__PURE__ */ jsx("h2", { id: "faq", className: "!text-3xl md:!text-4xl !font-bold !text-center !text-slate-900 !mb-12", children: "Frequently Asked Questions" }),
       /* @__PURE__ */ jsxs("div", { className: "grid gap-6", children: [
-        /* @__PURE__ */ jsxs("details", { className: "!bg-white !rounded-2xl !p-6 !shadow-sm border !border-slate-200 group cursor-pointer transition-shadow hover:!shadow-md", children: [
-          /* @__PURE__ */ jsxs("summary", { className: "!text-xl !font-bold !text-slate-900 !flex !justify-between !items-center !list-none", children: [
-            "Is this the same as an ultrasound?",
-            /* @__PURE__ */ jsx("span", { className: "transition-transform group-open:rotate-180", children: /* @__PURE__ */ jsx(ChevronDownIcon, {}) })
-          ] }),
-          /* @__PURE__ */ jsx("div", { className: "!mt-4 !pt-4 !border-t border-slate-100 !text-slate-600 !text-lg !leading-relaxed", children: "Yes. The terms ultrasound, sonogram, and diagnostic ultrasound all refer to the same type of imaging test that uses sound waves." })
-        ] }),
-        /* @__PURE__ */ jsxs("details", { className: "!bg-white !rounded-2xl !p-6 !shadow-sm border !border-slate-200 group cursor-pointer transition-shadow hover:!shadow-md", children: [
+        /* @__PURE__ */ jsxs("details", { className: "!bg-white !rounded-2xl !p-6 !shadow-sm !border !border-slate-200 group cursor-pointer !transition-shadow hover:!shadow-md", children: [
           /* @__PURE__ */ jsxs("summary", { className: "!text-xl !font-bold !text-slate-900 !flex !justify-between !items-center !list-none", children: [
             "What is a sonogram? What is sonography?",
             /* @__PURE__ */ jsx("span", { className: "transition-transform group-open:rotate-180", children: /* @__PURE__ */ jsx(ChevronDownIcon, {}) })
           ] }),
-          /* @__PURE__ */ jsxs("div", { className: "!mt-4 !pt-4 !border-t border-slate-100 !text-slate-600 !text-lg !leading-relaxed", children: [
+          /* @__PURE__ */ jsxs("div", { className: "!mt-4 !pt-4 !border-t !border-slate-100 !text-slate-600 !text-lg !leading-relaxed", children: [
             /* @__PURE__ */ jsxs("p", { className: "!mb-3", children: [
               "A ",
               /* @__PURE__ */ jsx("strong", { children: "sonogram" }),
@@ -1453,19 +1446,68 @@ const AbdomenUltrasound = () => {
             ] })
           ] })
         ] }),
-        /* @__PURE__ */ jsxs("details", { className: "!bg-white !rounded-2xl !p-6 !shadow-sm border !border-slate-200 group cursor-pointer transition-shadow hover:!shadow-md", children: [
+        /* @__PURE__ */ jsxs("details", { className: "!bg-white !rounded-2xl !p-6 !shadow-sm !border !border-slate-200 group cursor-pointer !transition-shadow hover:!shadow-md", children: [
           /* @__PURE__ */ jsxs("summary", { className: "!text-xl !font-bold !text-slate-900 !flex !justify-between !items-center !list-none", children: [
             "Can this test replace a CT scan?",
             /* @__PURE__ */ jsx("span", { className: "transition-transform group-open:rotate-180", children: /* @__PURE__ */ jsx(ChevronDownIcon, {}) })
           ] }),
-          /* @__PURE__ */ jsx("div", { className: "!mt-4 !pt-4 !border-t border-slate-100 !text-slate-600 !text-lg !leading-relaxed", children: "In many cases abdominal ultrasound is the first‑line test because it is noninvasive and radiation‑free, but your provider may still recommend a CT or MRI for certain specific conditions if more detail is needed." })
+          /* @__PURE__ */ jsx("div", { className: "!mt-4 !pt-4 !border-t !border-slate-100 !text-slate-600 !text-lg !leading-relaxed", children: "In many cases abdominal ultrasound is the first‑line test because it is noninvasive and radiation‑free, but your provider may still recommend a CT or MRI for certain specific conditions if more detail is needed." })
         ] }),
-        /* @__PURE__ */ jsxs("details", { className: "!bg-white !rounded-2xl !p-6 !shadow-sm border !border-slate-200 group cursor-pointer transition-shadow hover:!shadow-md", children: [
+        /* @__PURE__ */ jsxs("details", { className: "!bg-white !rounded-2xl !p-6 !shadow-sm !border !border-slate-200 group cursor-pointer !transition-shadow hover:!shadow-md", children: [
           /* @__PURE__ */ jsxs("summary", { className: "!text-xl !font-bold !text-slate-900 !flex !justify-between !items-center !list-none", children: [
             "Will an ultrasound see all gallstones?",
             /* @__PURE__ */ jsx("span", { className: "transition-transform group-open:rotate-180", children: /* @__PURE__ */ jsx(ChevronDownIcon, {}) })
           ] }),
-          /* @__PURE__ */ jsx("div", { className: "!mt-4 !pt-4 !border-t border-slate-100 !text-slate-600 !text-lg !leading-relaxed", children: 'Ultrasound is very good at detecting gallstones, especially those in the gallbladder. However, very small stones or "sludge" can occasionally be difficult to see depending on position.' })
+          /* @__PURE__ */ jsx("div", { className: "!mt-4 !pt-4 !border-t !border-slate-100 !text-slate-600 !text-lg !leading-relaxed", children: 'Ultrasound is very good at detecting gallstones, especially those in the gallbladder. However, very small stones or "sludge" can occasionally be difficult to see depending on position.' })
+        ] }),
+        /* @__PURE__ */ jsxs("details", { className: "!bg-white !rounded-2xl !p-6 !shadow-sm !border !border-slate-200 group cursor-pointer !transition-shadow hover:!shadow-md", children: [
+          /* @__PURE__ */ jsxs("summary", { className: "!text-xl !font-bold !text-slate-900 !flex !justify-between !items-center !list-none", children: [
+            "How should I prepare for a complete abdominal ultrasound?",
+            /* @__PURE__ */ jsx("span", { className: "transition-transform group-open:rotate-180", children: /* @__PURE__ */ jsx(ChevronDownIcon, {}) })
+          ] }),
+          /* @__PURE__ */ jsx("div", { className: "!mt-4 !pt-4 !border-t !border-slate-100 !text-slate-600 !text-lg !leading-relaxed", children: "You should fast (nothing to eat or drink except very small sips of water) for 6-8 hours before the exam. This reduces gas in the bowel and ensures your gallbladder is fully distended for better evaluation." })
+        ] }),
+        /* @__PURE__ */ jsxs("details", { className: "!bg-white !rounded-2xl !p-6 !shadow-sm !border !border-slate-200 group cursor-pointer !transition-shadow hover:!shadow-md", children: [
+          /* @__PURE__ */ jsxs("summary", { className: "!text-xl !font-bold !text-slate-900 !flex !justify-between !items-center !list-none", children: [
+            "How long does an abdominal ultrasound take?",
+            /* @__PURE__ */ jsx("span", { className: "transition-transform group-open:rotate-180", children: /* @__PURE__ */ jsx(ChevronDownIcon, {}) })
+          ] }),
+          /* @__PURE__ */ jsx("div", { className: "!mt-4 !pt-4 !border-t !border-slate-100 !text-slate-600 !text-lg !leading-relaxed", children: "A complete abdominal ultrasound usually takes between 20 to 30 minutes, depending on the complexity of the study and how well the organs can be visualized." })
+        ] }),
+        /* @__PURE__ */ jsxs("details", { className: "!bg-white !rounded-2xl !p-6 !shadow-sm !border !border-slate-200 group cursor-pointer !transition-shadow hover:!shadow-md", children: [
+          /* @__PURE__ */ jsxs("summary", { className: "!text-xl !font-bold !text-slate-900 !flex !justify-between !items-center !list-none", children: [
+            "Is an abdominal ultrasound painful?",
+            /* @__PURE__ */ jsx("span", { className: "transition-transform group-open:rotate-180", children: /* @__PURE__ */ jsx(ChevronDownIcon, {}) })
+          ] }),
+          /* @__PURE__ */ jsx("div", { className: "!mt-4 !pt-4 !border-t !border-slate-100 !text-slate-600 !text-lg !leading-relaxed", children: "No, the procedure is generally painless. You might feel mild pressure as the technologist moves the transducer over your abdomen, especially if that area is already tender." })
+        ] }),
+        /* @__PURE__ */ jsxs("details", { className: "!bg-white !rounded-2xl !p-6 !shadow-sm !border !border-slate-200 group cursor-pointer !transition-shadow hover:!shadow-md", children: [
+          /* @__PURE__ */ jsxs("summary", { className: "!text-xl !font-bold !text-slate-900 !flex !justify-between !items-center !list-none", children: [
+            "Can I take my medications before the exam?",
+            /* @__PURE__ */ jsx("span", { className: "transition-transform group-open:rotate-180", children: /* @__PURE__ */ jsx(ChevronDownIcon, {}) })
+          ] }),
+          /* @__PURE__ */ jsx("div", { className: "!mt-4 !pt-4 !border-t !border-slate-100 !text-slate-600 !text-lg !leading-relaxed", children: "Yes, you may take essential medications with a small sip of water prior to your exam, unless instructed otherwise by your physician." })
+        ] }),
+        /* @__PURE__ */ jsxs("details", { className: "!bg-white !rounded-2xl !p-6 !shadow-sm !border !border-slate-200 group cursor-pointer !transition-shadow hover:!shadow-md", children: [
+          /* @__PURE__ */ jsxs("summary", { className: "!text-xl !font-bold !text-slate-900 !flex !justify-between !items-center !list-none", children: [
+            "When will I receive the results of my ultrasound?",
+            /* @__PURE__ */ jsx("span", { className: "transition-transform group-open:rotate-180", children: /* @__PURE__ */ jsx(ChevronDownIcon, {}) })
+          ] }),
+          /* @__PURE__ */ jsx("div", { className: "!mt-4 !pt-4 !border-t !border-slate-100 !text-slate-600 !text-lg !leading-relaxed", children: "A specialized radiologist will interpret the images and send the final report to your referring physician within 24 to 48 hours. Your physician will then review the findings with you." })
+        ] }),
+        /* @__PURE__ */ jsxs("details", { className: "!bg-white !rounded-2xl !p-6 !shadow-sm !border !border-slate-200 group cursor-pointer !transition-shadow hover:!shadow-md", children: [
+          /* @__PURE__ */ jsxs("summary", { className: "!text-xl !font-bold !text-slate-900 !flex !justify-between !items-center !list-none", children: [
+            "Do I need a doctor's order for an abdominal ultrasound?",
+            /* @__PURE__ */ jsx("span", { className: "transition-transform group-open:rotate-180", children: /* @__PURE__ */ jsx(ChevronDownIcon, {}) })
+          ] }),
+          /* @__PURE__ */ jsx("div", { className: "!mt-4 !pt-4 !border-t !border-slate-100 !text-slate-600 !text-lg !leading-relaxed", children: "In general, to receive a formal radiologist diagnostic report, a prescription or order from your referring doctor is required. Check our self-pay and booking options for specifics on providing orders." })
+        ] }),
+        /* @__PURE__ */ jsxs("details", { className: "!bg-white !rounded-2xl !p-6 !shadow-sm !border !border-slate-200 group cursor-pointer !transition-shadow hover:!shadow-md", children: [
+          /* @__PURE__ */ jsxs("summary", { className: "!text-xl !font-bold !text-slate-900 !flex !justify-between !items-center !list-none", children: [
+            "What is an AAA screening and who needs it?",
+            /* @__PURE__ */ jsx("span", { className: "transition-transform group-open:rotate-180", children: /* @__PURE__ */ jsx(ChevronDownIcon, {}) })
+          ] }),
+          /* @__PURE__ */ jsx("div", { className: "!mt-4 !pt-4 !border-t !border-slate-100 !text-slate-600 !text-lg !leading-relaxed", children: "An AAA (Abdominal Aortic Aneurysm) screening targets the main blood vessel in the abdomen to ensure there is no swelling or aneurysm. It is highly recommended for older adults with vascular risk factors or a history of smoking." })
         ] })
       ] })
     ] }) }),

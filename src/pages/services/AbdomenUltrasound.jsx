@@ -23,7 +23,7 @@ const AbdomenUltrasound = () => {
   }, []);
 
   return (
-    <div className="!pt-32 lg:!pt-44 !pb-12 !bg-slate-50 flex flex-col gap-12 sm:gap-16 font-sans">
+    <div className="!pt-32 lg:!pt-44 !pb-12 !bg-slate-50 !flex !flex-col !gap-8 sm:!gap-12 !font-sans">
       <Helmet>
         <title>Abdominal Ultrasound | Precision Imaging Diagnostic Center</title>
         <meta name="description" content="Safe abdominal sonogram imaging in Downers Grove. High-quality liver and gallbladder ultrasound serving the Chicago suburbs." />
@@ -212,22 +212,22 @@ const AbdomenUltrasound = () => {
               <Activity className="!w-8 !h-8 !text-blue-600" /> What to Expect
             </h2>
             <p className="!text-lg !text-slate-600 !mb-8">Here is what a typical visit looks like at our diagnostic ultrasound center:</p>
-            <div className="space-y-6 relative border-l-2 border-slate-100 ml-4 pb-4">
+            <div className="!space-y-6 !relative !border-l-2 !border-slate-100 !ml-4 !pb-4">
 
-              <div className="relative pl-8">
-                <div className="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-blue-600 border-4 border-white shadow-sm"></div>
+              <div className="!relative !pl-8">
+                <div className="!absolute !-left-[9px] !top-1.5 !w-4 !h-4 !rounded-full !bg-blue-600 !border-4 !border-white !shadow-sm"></div>
                 <h4 className="!text-xl !font-bold !text-slate-900 !mb-2">1. Preparation</h4>
                 <p className="!text-slate-600 !leading-relaxed">You will lie on a padded exam table while the technologist applies warm gel over your upper abdomen.</p>
               </div>
 
-              <div className="relative pl-8">
-                <div className="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-blue-600 border-4 border-white shadow-sm"></div>
+              <div className="!relative !pl-8">
+                <div className="!absolute !-left-[9px] !top-1.5 !w-4 !h-4 !rounded-full !bg-blue-600 !border-4 !border-white !shadow-sm"></div>
                 <h4 className="!text-xl !font-bold !text-slate-900 !mb-2">2. Imaging Process</h4>
                 <p className="!text-slate-600 !leading-relaxed">The transducer is moved in several directions to obtain real‑time images of each organ. You may be asked to hold your breath or change position briefly to improve visualization.</p>
               </div>
 
-              <div className="relative pl-8">
-                <div className="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-blue-600 border-4 border-white shadow-sm"></div>
+              <div className="!relative !pl-8">
+                <div className="!absolute !-left-[9px] !top-1.5 !w-4 !h-4 !rounded-full !bg-blue-600 !border-4 !border-white !shadow-sm"></div>
                 <h4 className="!text-xl !font-bold !text-slate-900 !mb-2">3. Duration</h4>
                 <p className="!text-slate-600 !leading-relaxed">Most abdominal ultrasound appointments take about <strong>20–30 minutes</strong>; add a few minutes if AAA screening is performed at the same visit.</p>
               </div>
@@ -250,12 +250,12 @@ const AbdomenUltrasound = () => {
           <div className="md:w-2/3 text-center md:text-left">
             <h2 id="results" className="!text-3xl md:!text-4xl !font-bold !text-slate-900 !mb-6">Results & Follow-up</h2>
             <ul className="space-y-4 !text-lg !text-slate-700 !mb-6">
-              <li className="flex items-start md:items-center">
-                <ArrowRight className="!w-5 !h-5 !text-blue-500 !mr-3 shrink-0 !mt-1 md:!mt-0" />
+              <li className="!flex !items-start md:!items-center">
+                <ArrowRight className="!w-5 !h-5 !text-blue-500 !mr-3 !shrink-0 !mt-1 md:!mt-0" />
                 <span>If a doctor order is provided, a detailed report is sent directly to your ordering provider so they can review results and plan next steps.</span>
               </li>
-              <li className="flex items-start md:items-center">
-                <ArrowRight className="!w-5 !h-5 !text-blue-500 !mr-3 shrink-0 !mt-1 md:!mt-0" />
+              <li className="!flex !items-start md:!items-center">
+                <ArrowRight className="!w-5 !h-5 !text-blue-500 !mr-3 !shrink-0 !mt-1 md:!mt-0" />
                 <span>Your provider may recommend medication changes, additional testing, or follow‑up imaging based on the ultrasound findings.</span>
               </li>
             </ul>
@@ -270,53 +270,125 @@ const AbdomenUltrasound = () => {
           <h2 id="faq" className="!text-3xl md:!text-4xl !font-bold !text-center !text-slate-900 !mb-12">Frequently Asked Questions</h2>
           <div className="grid gap-6">
 
-            <details className="!bg-white !rounded-2xl !p-6 !shadow-sm border !border-slate-200 group cursor-pointer transition-shadow hover:!shadow-md">
-              <summary className="!text-xl !font-bold !text-slate-900 !flex !justify-between !items-center !list-none">
-                Is this the same as an ultrasound?
-                <span className="transition-transform group-open:rotate-180">
-                  <ChevronDownIcon />
-                </span>
-              </summary>
-              <div className="!mt-4 !pt-4 !border-t border-slate-100 !text-slate-600 !text-lg !leading-relaxed">
-                Yes. The terms ultrasound, sonogram, and diagnostic ultrasound all refer to the same type of imaging test that uses sound waves.
-              </div>
-            </details>
-
-            <details className="!bg-white !rounded-2xl !p-6 !shadow-sm border !border-slate-200 group cursor-pointer transition-shadow hover:!shadow-md">
+            <details className="!bg-white !rounded-2xl !p-6 !shadow-sm !border !border-slate-200 group cursor-pointer !transition-shadow hover:!shadow-md">
               <summary className="!text-xl !font-bold !text-slate-900 !flex !justify-between !items-center !list-none">
                 What is a sonogram? What is sonography?
                 <span className="transition-transform group-open:rotate-180">
                   <ChevronDownIcon />
                 </span>
               </summary>
-              <div className="!mt-4 !pt-4 !border-t border-slate-100 !text-slate-600 !text-lg !leading-relaxed">
+              <div className="!mt-4 !pt-4 !border-t !border-slate-100 !text-slate-600 !text-lg !leading-relaxed">
                 <p className="!mb-3">A <strong>sonogram</strong> is the picture or moving image created during your exam.</p>
                 <p className="!mb-3"><strong>Sonography</strong> is the medical imaging specialty that uses ultrasound to evaluate organs and tissues.</p>
                 <p>A <strong>sonograph</strong> describes the ultrasound machine or the images it produces.</p>
               </div>
             </details>
 
-            <details className="!bg-white !rounded-2xl !p-6 !shadow-sm border !border-slate-200 group cursor-pointer transition-shadow hover:!shadow-md">
+            <details className="!bg-white !rounded-2xl !p-6 !shadow-sm !border !border-slate-200 group cursor-pointer !transition-shadow hover:!shadow-md">
               <summary className="!text-xl !font-bold !text-slate-900 !flex !justify-between !items-center !list-none">
                 Can this test replace a CT scan?
                 <span className="transition-transform group-open:rotate-180">
                   <ChevronDownIcon />
                 </span>
               </summary>
-              <div className="!mt-4 !pt-4 !border-t border-slate-100 !text-slate-600 !text-lg !leading-relaxed">
+              <div className="!mt-4 !pt-4 !border-t !border-slate-100 !text-slate-600 !text-lg !leading-relaxed">
                 In many cases abdominal ultrasound is the first‑line test because it is noninvasive and radiation‑free, but your provider may still recommend a CT or MRI for certain specific conditions if more detail is needed.
               </div>
             </details>
 
-            <details className="!bg-white !rounded-2xl !p-6 !shadow-sm border !border-slate-200 group cursor-pointer transition-shadow hover:!shadow-md">
+            <details className="!bg-white !rounded-2xl !p-6 !shadow-sm !border !border-slate-200 group cursor-pointer !transition-shadow hover:!shadow-md">
               <summary className="!text-xl !font-bold !text-slate-900 !flex !justify-between !items-center !list-none">
                 Will an ultrasound see all gallstones?
                 <span className="transition-transform group-open:rotate-180">
                   <ChevronDownIcon />
                 </span>
               </summary>
-              <div className="!mt-4 !pt-4 !border-t border-slate-100 !text-slate-600 !text-lg !leading-relaxed">
+              <div className="!mt-4 !pt-4 !border-t !border-slate-100 !text-slate-600 !text-lg !leading-relaxed">
                 Ultrasound is very good at detecting gallstones, especially those in the gallbladder. However, very small stones or "sludge" can occasionally be difficult to see depending on position.
+              </div>
+            </details>
+
+            <details className="!bg-white !rounded-2xl !p-6 !shadow-sm !border !border-slate-200 group cursor-pointer !transition-shadow hover:!shadow-md">
+              <summary className="!text-xl !font-bold !text-slate-900 !flex !justify-between !items-center !list-none">
+                How should I prepare for a complete abdominal ultrasound?
+                <span className="transition-transform group-open:rotate-180">
+                  <ChevronDownIcon />
+                </span>
+              </summary>
+              <div className="!mt-4 !pt-4 !border-t !border-slate-100 !text-slate-600 !text-lg !leading-relaxed">
+                You should fast (nothing to eat or drink except very small sips of water) for 6-8 hours before the exam. This reduces gas in the bowel and ensures your gallbladder is fully distended for better evaluation.
+              </div>
+            </details>
+
+            <details className="!bg-white !rounded-2xl !p-6 !shadow-sm !border !border-slate-200 group cursor-pointer !transition-shadow hover:!shadow-md">
+              <summary className="!text-xl !font-bold !text-slate-900 !flex !justify-between !items-center !list-none">
+                How long does an abdominal ultrasound take?
+                <span className="transition-transform group-open:rotate-180">
+                  <ChevronDownIcon />
+                </span>
+              </summary>
+              <div className="!mt-4 !pt-4 !border-t !border-slate-100 !text-slate-600 !text-lg !leading-relaxed">
+                A complete abdominal ultrasound usually takes between 20 to 30 minutes, depending on the complexity of the study and how well the organs can be visualized.
+              </div>
+            </details>
+
+            <details className="!bg-white !rounded-2xl !p-6 !shadow-sm !border !border-slate-200 group cursor-pointer !transition-shadow hover:!shadow-md">
+              <summary className="!text-xl !font-bold !text-slate-900 !flex !justify-between !items-center !list-none">
+                Is an abdominal ultrasound painful?
+                <span className="transition-transform group-open:rotate-180">
+                  <ChevronDownIcon />
+                </span>
+              </summary>
+              <div className="!mt-4 !pt-4 !border-t !border-slate-100 !text-slate-600 !text-lg !leading-relaxed">
+                No, the procedure is generally painless. You might feel mild pressure as the technologist moves the transducer over your abdomen, especially if that area is already tender.
+              </div>
+            </details>
+
+            <details className="!bg-white !rounded-2xl !p-6 !shadow-sm !border !border-slate-200 group cursor-pointer !transition-shadow hover:!shadow-md">
+              <summary className="!text-xl !font-bold !text-slate-900 !flex !justify-between !items-center !list-none">
+                Can I take my medications before the exam?
+                <span className="transition-transform group-open:rotate-180">
+                  <ChevronDownIcon />
+                </span>
+              </summary>
+              <div className="!mt-4 !pt-4 !border-t !border-slate-100 !text-slate-600 !text-lg !leading-relaxed">
+                Yes, you may take essential medications with a small sip of water prior to your exam, unless instructed otherwise by your physician.
+              </div>
+            </details>
+
+            <details className="!bg-white !rounded-2xl !p-6 !shadow-sm !border !border-slate-200 group cursor-pointer !transition-shadow hover:!shadow-md">
+              <summary className="!text-xl !font-bold !text-slate-900 !flex !justify-between !items-center !list-none">
+                When will I receive the results of my ultrasound?
+                <span className="transition-transform group-open:rotate-180">
+                  <ChevronDownIcon />
+                </span>
+              </summary>
+              <div className="!mt-4 !pt-4 !border-t !border-slate-100 !text-slate-600 !text-lg !leading-relaxed">
+                A specialized radiologist will interpret the images and send the final report to your referring physician within 24 to 48 hours. Your physician will then review the findings with you.
+              </div>
+            </details>
+
+            <details className="!bg-white !rounded-2xl !p-6 !shadow-sm !border !border-slate-200 group cursor-pointer !transition-shadow hover:!shadow-md">
+              <summary className="!text-xl !font-bold !text-slate-900 !flex !justify-between !items-center !list-none">
+                Do I need a doctor's order for an abdominal ultrasound?
+                <span className="transition-transform group-open:rotate-180">
+                  <ChevronDownIcon />
+                </span>
+              </summary>
+              <div className="!mt-4 !pt-4 !border-t !border-slate-100 !text-slate-600 !text-lg !leading-relaxed">
+                In general, to receive a formal radiologist diagnostic report, a prescription or order from your referring doctor is required. Check our self-pay and booking options for specifics on providing orders.
+              </div>
+            </details>
+
+            <details className="!bg-white !rounded-2xl !p-6 !shadow-sm !border !border-slate-200 group cursor-pointer !transition-shadow hover:!shadow-md">
+              <summary className="!text-xl !font-bold !text-slate-900 !flex !justify-between !items-center !list-none">
+                What is an AAA screening and who needs it?
+                <span className="transition-transform group-open:rotate-180">
+                  <ChevronDownIcon />
+                </span>
+              </summary>
+              <div className="!mt-4 !pt-4 !border-t !border-slate-100 !text-slate-600 !text-lg !leading-relaxed">
+                An AAA (Abdominal Aortic Aneurysm) screening targets the main blood vessel in the abdomen to ensure there is no swelling or aneurysm. It is highly recommended for older adults with vascular risk factors or a history of smoking.
               </div>
             </details>
 
