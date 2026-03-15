@@ -1412,15 +1412,15 @@ const AbdomenUltrasound = () => {
     ] }) }),
     /* @__PURE__ */ jsx("section", { "aria-labelledby": "results", className: "reveal-section opacity-0 translate-y-8 transition-all duration-700 ease-out !px-6", children: /* @__PURE__ */ jsxs("div", { className: "!max-w-7xl !mx-auto !bg-blue-50 !rounded-3xl !p-8 md:!p-12 border border-blue-100 flex flex-col md:flex-row items-center gap-10", children: [
       /* @__PURE__ */ jsx("div", { className: "md:w-1/3 flex justify-center", children: /* @__PURE__ */ jsx("div", { className: "!w-32 !h-32 !bg-white !rounded-full !shadow-lg flex items-center justify-center", children: /* @__PURE__ */ jsx(FileBadge, { className: "!w-16 !h-16 !text-blue-600" }) }) }),
-      /* @__PURE__ */ jsxs("div", { className: "md:w-2/3 text-center md:text-left", children: [
+      /* @__PURE__ */ jsxs("div", { className: "md:w-2/3 !text-center md:!text-left", children: [
         /* @__PURE__ */ jsx("h2", { id: "results", className: "!text-3xl md:!text-4xl !font-bold !text-slate-900 !mb-6", children: "Results & Follow-up" }),
         /* @__PURE__ */ jsxs("ul", { className: "space-y-4 !text-lg !text-slate-700 !mb-6", children: [
-          /* @__PURE__ */ jsxs("li", { className: "!flex !items-start md:!items-center", children: [
-            /* @__PURE__ */ jsx(ArrowRight, { className: "!w-5 !h-5 !text-blue-500 !mr-3 !shrink-0 !mt-1 md:!mt-0" }),
+          /* @__PURE__ */ jsxs("li", { className: "!flex !items-start", children: [
+            /* @__PURE__ */ jsx(ArrowRight, { className: "!w-5 !h-5 !text-blue-500 !mr-3 !shrink-0 !mt-1" }),
             /* @__PURE__ */ jsx("span", { children: "If a doctor order is provided, a detailed report is sent directly to your ordering provider so they can review results and plan next steps." })
           ] }),
-          /* @__PURE__ */ jsxs("li", { className: "!flex !items-start md:!items-center", children: [
-            /* @__PURE__ */ jsx(ArrowRight, { className: "!w-5 !h-5 !text-blue-500 !mr-3 !shrink-0 !mt-1 md:!mt-0" }),
+          /* @__PURE__ */ jsxs("li", { className: "!flex !items-start", children: [
+            /* @__PURE__ */ jsx(ArrowRight, { className: "!w-5 !h-5 !text-blue-500 !mr-3 !shrink-0 !mt-1" }),
             /* @__PURE__ */ jsx("span", { children: "Your provider may recommend medication changes, additional testing, or follow‑up imaging based on the ultrasound findings." })
           ] })
         ] }),

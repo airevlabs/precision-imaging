@@ -253,15 +253,15 @@ const AbdomenUltrasound = () => {
               <FileBadge className="!w-16 !h-16 !text-blue-600" />
             </div>
           </div>
-          <div className="md:w-2/3 text-center md:text-left">
+          <div className="md:w-2/3 !text-center md:!text-left">
             <h2 id="results" className="!text-3xl md:!text-4xl !font-bold !text-slate-900 !mb-6">Results & Follow-up</h2>
             <ul className="space-y-4 !text-lg !text-slate-700 !mb-6">
-              <li className="!flex !items-start md:!items-center">
-                <ArrowRight className="!w-5 !h-5 !text-blue-500 !mr-3 !shrink-0 !mt-1 md:!mt-0" />
+              <li className="!flex !items-start">
+                <ArrowRight className="!w-5 !h-5 !text-blue-500 !mr-3 !shrink-0 !mt-1" />
                 <span>If a doctor order is provided, a detailed report is sent directly to your ordering provider so they can review results and plan next steps.</span>
               </li>
-              <li className="!flex !items-start md:!items-center">
-                <ArrowRight className="!w-5 !h-5 !text-blue-500 !mr-3 !shrink-0 !mt-1 md:!mt-0" />
+              <li className="!flex !items-start">
+                <ArrowRight className="!w-5 !h-5 !text-blue-500 !mr-3 !shrink-0 !mt-1" />
                 <span>Your provider may recommend medication changes, additional testing, or follow‑up imaging based on the ultrasound findings.</span>
               </li>
             </ul>
