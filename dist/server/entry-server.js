@@ -1154,7 +1154,6 @@ const FloatingContactForm = () => {
 };
 const SSGLayout = ({ children }) => {
   return /* @__PURE__ */ jsxs("div", { className: "app", children: [
-    /* @__PURE__ */ jsx("div", { id: "ghl-scroll-sentinel", style: { position: "absolute", top: 0, left: 0, width: "1px", height: "10px", pointerEvents: "none", visibility: "hidden" } }),
     /* @__PURE__ */ jsx(Header, {}),
     children,
     /* @__PURE__ */ jsx(Footer, {}),
@@ -1179,37 +1178,8 @@ const SSGLayout = ({ children }) => {
                         });
                     };
 
-                    const initHeaderScroll = () => {
-                        const header = document.querySelector('.site-header');
-                        const sentinel = document.getElementById('ghl-scroll-sentinel');
-                        if (!header || !sentinel) return;
-
-                        const headerObserver = new IntersectionObserver((entries) => {
-                            entries.forEach(entry => {
-                                // When sentinel is NOT intersecting (it scrolled up out of view), add scrolled!
-                                if (!entry.isIntersecting) {
-                                    header.classList.add('scrolled');
-                                } else {
-                                    header.classList.remove('scrolled');
-                                }
-                            });
-                        }, { threshold: 0 });
-
-                        headerObserver.observe(sentinel);
-                        
-                        // Fallback scroll listener just in case they are scrolling the window natively
-                        window.addEventListener('scroll', () => {
-                            if (window.scrollY > 20) {
-                                header.classList.add('scrolled');
-                            } else if (sentinel.getBoundingClientRect().top >= 0) {
-                                header.classList.remove('scrolled');
-                            }
-                        }, { passive: true, capture: true });
-                    };
-
                     const initAll = () => {
                         initObserver();
-                        initHeaderScroll();
                     };
 
                     if (document.readyState === 'loading') {

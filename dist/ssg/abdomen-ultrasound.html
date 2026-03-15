@@ -27,11 +27,11 @@
             }
           </script>
   
-  <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/airevlabs/precision-imaging@main/dist/client/assets/index-CJ-amJGy.css">
+  <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/airevlabs/precision-imaging@main/dist/client/assets/index-BbCRxklK.css">
 </head>
 
 <body>
-  <div id="root"><div class="app"><div id="ghl-scroll-sentinel" style="position:absolute;top:0;left:0;width:1px;height:10px;pointer-events:none;visibility:hidden"></div><header class="site-header "><div class="container" style="display:flex;justify-content:space-between;align-items:center"><a href="/" data-discover="true"><div class="logo-container" style="display:flex;align-items:center;gap:0px"><svg width="80" height="40" viewBox="0 0 120 60" fill="none" xmlns="http://www.w3.org/2000/svg" class="animated-logo-svg"><path class="logo-wave-path" d="M0 30H15L20 20L30 40L40 10L50 50L60 20L70 40L75 30H120" stroke="url(#waveGradient)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" pathLength="1"></path><defs><linearGradient id="waveGradient" x1="0" y1="30" x2="120" y2="30" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#4299e1"></stop><stop offset="75%" stop-color="#2b6cb0" stop-opacity="1"></stop><stop offset="100%" stop-color="#2b6cb0" stop-opacity="0"></stop></linearGradient></defs></svg><div style="display:flex;flex-direction:column;line-height:1;align-items:center;margin-left:-15px"><span style="font-size:1.5rem;font-weight:700;color:var(--color-primary-navy);letter-spacing:-0.02em">Precision</span><span style="font-size:1.2rem;font-weight:500;color:var(--color-secondary-blue);margin-top:-2px">Imaging</span></div></div></a><nav class="desktop-nav" style="display:none"><ul style="display:flex;gap:2rem;align-items:center"><li><a style="font-weight:600;font-size:0.925rem;color:var(--color-primary-navy);position:relative" class="nav-link" href="/" data-discover="true">Home<style>
+  <div id="root"><div class="app"><header class="site-header "><div class="container" style="display:flex;justify-content:space-between;align-items:center"><a href="/" data-discover="true"><div class="logo-container" style="display:flex;align-items:center;gap:0px"><svg width="80" height="40" viewBox="0 0 120 60" fill="none" xmlns="http://www.w3.org/2000/svg" class="animated-logo-svg"><path class="logo-wave-path" d="M0 30H15L20 20L30 40L40 10L50 50L60 20L70 40L75 30H120" stroke="url(#waveGradient)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" pathLength="1"></path><defs><linearGradient id="waveGradient" x1="0" y1="30" x2="120" y2="30" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#4299e1"></stop><stop offset="75%" stop-color="#2b6cb0" stop-opacity="1"></stop><stop offset="100%" stop-color="#2b6cb0" stop-opacity="0"></stop></linearGradient></defs></svg><div style="display:flex;flex-direction:column;line-height:1;align-items:center;margin-left:-15px"><span style="font-size:1.5rem;font-weight:700;color:var(--color-primary-navy);letter-spacing:-0.02em">Precision</span><span style="font-size:1.2rem;font-weight:500;color:var(--color-secondary-blue);margin-top:-2px">Imaging</span></div></div></a><nav class="desktop-nav" style="display:none"><ul style="display:flex;gap:2rem;align-items:center"><li><a style="font-weight:600;font-size:0.925rem;color:var(--color-primary-navy);position:relative" class="nav-link" href="/" data-discover="true">Home<style>
                     .nav-link::after {
                       content: '';
                       position: absolute;
@@ -129,37 +129,8 @@
                         });
                     };
 
-                    const initHeaderScroll = () => {
-                        const header = document.querySelector('.site-header');
-                        const sentinel = document.getElementById('ghl-scroll-sentinel');
-                        if (!header || !sentinel) return;
-
-                        const headerObserver = new IntersectionObserver((entries) => {
-                            entries.forEach(entry => {
-                                // When sentinel is NOT intersecting (it scrolled up out of view), add scrolled!
-                                if (!entry.isIntersecting) {
-                                    header.classList.add('scrolled');
-                                } else {
-                                    header.classList.remove('scrolled');
-                                }
-                            });
-                        }, { threshold: 0 });
-
-                        headerObserver.observe(sentinel);
-                        
-                        // Fallback scroll listener just in case they are scrolling the window natively
-                        window.addEventListener('scroll', () => {
-                            if (window.scrollY > 20) {
-                                header.classList.add('scrolled');
-                            } else if (sentinel.getBoundingClientRect().top >= 0) {
-                                header.classList.remove('scrolled');
-                            }
-                        }, { passive: true, capture: true });
-                    };
-
                     const initAll = () => {
                         initObserver();
-                        initHeaderScroll();
                     };
 
                     if (document.readyState === 'loading') {
