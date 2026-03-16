@@ -32,6 +32,7 @@ const Header = () => {
 
   return (
     <header className="site-header">
+      <input type="checkbox" id="mobile-menu-toggle" style={{ display: 'none' }} />
       <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <a href="https://precisionimagingus.com/"><Logo animated={true} /></a>
 
@@ -89,24 +90,24 @@ const Header = () => {
         </nav>
 
         {/* Mobile Menu Toggle */}
-        <button
+        <label
+          htmlFor="mobile-menu-toggle"
           className="mobile-toggle"
           id="mobile-menu-btn"
           style={{
             fontSize: '1.5rem',
             color: 'var(--color-primary-navy)',
             zIndex: 1001,
-            background: 'none',
-            border: 'none',
             cursor: 'pointer'
           }}
         >
-          ☰
-        </button>
+          <span className="hamburger-icon">☰</span>
+        </label>
       </div>
 
       <div
         id="mobile-menu-container"
+        className="mobile-menu-container"
         style={{
           position: 'absolute',
           top: '100%',
@@ -115,7 +116,6 @@ const Header = () => {
           backgroundColor: 'var(--color-white)',
           padding: '2rem',
           boxShadow: 'var(--shadow-lg)',
-          display: 'none',
           flexDirection: 'column',
           gap: '1.5rem',
           zIndex: 999
@@ -125,6 +125,7 @@ const Header = () => {
           <a
             key={link.name}
             href={link.to}
+            className="mobile-nav-link"
             style={{ fontWeight: '600', color: 'var(--color-primary-navy)', fontSize: '1.1rem' }}
           >
             {link.name}
@@ -145,6 +146,35 @@ const Header = () => {
       </div>
 
       <style jsx>{`
+        /* Hide menu by default */
+        .mobile-menu-container {
+          display: none !important;
+        }
+
+        /* Show menu when checkbox is checked */
+        #mobile-menu-toggle:checked ~ .mobile-menu-container {
+          display: flex !important;
+        }
+
+        /* Change hamburger to X when open */
+        #mobile-menu-toggle:checked ~ .container .mobile-toggle .hamburger-icon::before {
+          content: '✕';
+        }
+        .hamburger-icon::before {
+          content: '☰';
+        }
+        .hamburger-icon {
+          font-size: 0; /* hides the original text */
+        }
+        .hamburger-icon::before {
+          font-size: 1.5rem;
+        }
+
+        /* Hide checkbox when label is clicked, auto close menu */
+        .mobile-nav-link {
+          /* optional styling */
+        }
+
         @media (min-width: 1024px) {
           .desktop-nav { display: block !important; }
           .mobile-toggle { display: none !important; }

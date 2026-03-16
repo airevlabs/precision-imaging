@@ -31,7 +31,7 @@
 </head>
 
 <body>
-  <div id="root"><div class="app"><header class="site-header"><div class="container" style="display:flex;justify-content:space-between;align-items:center"><a href="https://precisionimagingus.com/"><div class="logo-container" style="display:flex;align-items:center;gap:0px"><svg width="80" height="40" viewBox="0 0 120 60" fill="none" xmlns="http://www.w3.org/2000/svg" class="animated-logo-svg"><path class="logo-wave-path" d="M0 30H15L20 20L30 40L40 10L50 50L60 20L70 40L75 30H120" stroke="url(#waveGradient)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" pathLength="1"></path><defs><linearGradient id="waveGradient" x1="0" y1="30" x2="120" y2="30" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#4299e1"></stop><stop offset="75%" stop-color="#2b6cb0" stop-opacity="1"></stop><stop offset="100%" stop-color="#2b6cb0" stop-opacity="0"></stop></linearGradient></defs></svg><div style="display:flex;flex-direction:column;line-height:1;align-items:center;margin-left:-15px"><span style="font-size:1.5rem;font-weight:700;color:var(--color-primary-navy);letter-spacing:-0.02em">Precision</span><span style="font-size:1.2rem;font-weight:500;color:var(--color-secondary-blue);margin-top:-2px">Imaging</span></div></div></a><nav class="desktop-nav" style="display:none"><ul style="display:flex;gap:2rem;align-items:center"><li><a href="https://precisionimagingus.com/" style="font-weight:600;font-size:0.925rem;color:var(--color-primary-navy);position:relative" class="nav-link">Home<style>
+  <div id="root"><div class="app"><header class="site-header"><input type="checkbox" id="mobile-menu-toggle" style="display:none"/><div class="container" style="display:flex;justify-content:space-between;align-items:center"><a href="https://precisionimagingus.com/"><div class="logo-container" style="display:flex;align-items:center;gap:0px"><svg width="80" height="40" viewBox="0 0 120 60" fill="none" xmlns="http://www.w3.org/2000/svg" class="animated-logo-svg"><path class="logo-wave-path" d="M0 30H15L20 20L30 40L40 10L50 50L60 20L70 40L75 30H120" stroke="url(#waveGradient)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" pathLength="1"></path><defs><linearGradient id="waveGradient" x1="0" y1="30" x2="120" y2="30" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#4299e1"></stop><stop offset="75%" stop-color="#2b6cb0" stop-opacity="1"></stop><stop offset="100%" stop-color="#2b6cb0" stop-opacity="0"></stop></linearGradient></defs></svg><div style="display:flex;flex-direction:column;line-height:1;align-items:center;margin-left:-15px"><span style="font-size:1.5rem;font-weight:700;color:var(--color-primary-navy);letter-spacing:-0.02em">Precision</span><span style="font-size:1.2rem;font-weight:500;color:var(--color-secondary-blue);margin-top:-2px">Imaging</span></div></div></a><nav class="desktop-nav" style="display:none"><ul style="display:flex;gap:2rem;align-items:center"><li><a href="https://precisionimagingus.com/" style="font-weight:600;font-size:0.925rem;color:var(--color-primary-navy);position:relative" class="nav-link">Home<style>
                     .nav-link::after {
                       content: '';
                       position: absolute;
@@ -101,7 +101,36 @@
                     .nav-link:hover::after {
                       width: 100%;
                     }
-                  </style></a></li><li><a href="https://precisionimagingus.com/#/booking" class="btn btn-primary" style="padding:0.75rem 1.5rem;font-size:0.9rem;border-radius:9999px;text-decoration:none;display:inline-block">Book Now</a></li></ul></nav><button class="mobile-toggle" id="mobile-menu-btn" style="font-size:1.5rem;color:var(--color-primary-navy);z-index:1001;background:none;border:none;cursor:pointer">☰</button></div><div id="mobile-menu-container" style="position:absolute;top:100%;left:0;right:0;background-color:var(--color-white);padding:2rem;box-shadow:var(--shadow-lg);display:none;flex-direction:column;gap:1.5rem;z-index:999"><a href="https://precisionimagingus.com/" style="font-weight:600;color:var(--color-primary-navy);font-size:1.1rem">Home</a><a href="https://precisionimagingus.com/#/#services" style="font-weight:600;color:var(--color-primary-navy);font-size:1.1rem">Ultrasound Services</a><a href="https://precisionimagingus.com/#/#self-pay" style="font-weight:600;color:var(--color-primary-navy);font-size:1.1rem">Self-Pay Options</a><a href="https://precisionimagingus.com/#/#what-to-expect" style="font-weight:600;color:var(--color-primary-navy);font-size:1.1rem">What to Expect</a><a href="https://precisionimagingus.com/#/#why-choose-us" style="font-weight:600;color:var(--color-primary-navy);font-size:1.1rem">Why Choose Us</a><a href="https://precisionimagingus.com/#/booking" class="btn btn-primary" style="text-align:center;padding:0.75rem;border-radius:0.5rem;font-weight:600">Book Now</a></div><style>
+                  </style></a></li><li><a href="https://precisionimagingus.com/#/booking" class="btn btn-primary" style="padding:0.75rem 1.5rem;font-size:0.9rem;border-radius:9999px;text-decoration:none;display:inline-block">Book Now</a></li></ul></nav><label for="mobile-menu-toggle" class="mobile-toggle" id="mobile-menu-btn" style="font-size:1.5rem;color:var(--color-primary-navy);z-index:1001;cursor:pointer"><span class="hamburger-icon">☰</span></label></div><div id="mobile-menu-container" class="mobile-menu-container" style="position:absolute;top:100%;left:0;right:0;background-color:var(--color-white);padding:2rem;box-shadow:var(--shadow-lg);flex-direction:column;gap:1.5rem;z-index:999"><a href="https://precisionimagingus.com/" class="mobile-nav-link" style="font-weight:600;color:var(--color-primary-navy);font-size:1.1rem">Home</a><a href="https://precisionimagingus.com/#/#services" class="mobile-nav-link" style="font-weight:600;color:var(--color-primary-navy);font-size:1.1rem">Ultrasound Services</a><a href="https://precisionimagingus.com/#/#self-pay" class="mobile-nav-link" style="font-weight:600;color:var(--color-primary-navy);font-size:1.1rem">Self-Pay Options</a><a href="https://precisionimagingus.com/#/#what-to-expect" class="mobile-nav-link" style="font-weight:600;color:var(--color-primary-navy);font-size:1.1rem">What to Expect</a><a href="https://precisionimagingus.com/#/#why-choose-us" class="mobile-nav-link" style="font-weight:600;color:var(--color-primary-navy);font-size:1.1rem">Why Choose Us</a><a href="https://precisionimagingus.com/#/booking" class="btn btn-primary" style="text-align:center;padding:0.75rem;border-radius:0.5rem;font-weight:600">Book Now</a></div><style>
+        /* Hide menu by default */
+        .mobile-menu-container {
+          display: none !important;
+        }
+
+        /* Show menu when checkbox is checked */
+        #mobile-menu-toggle:checked ~ .mobile-menu-container {
+          display: flex !important;
+        }
+
+        /* Change hamburger to X when open */
+        #mobile-menu-toggle:checked ~ .container .mobile-toggle .hamburger-icon::before {
+          content: '✕';
+        }
+        .hamburger-icon::before {
+          content: '☰';
+        }
+        .hamburger-icon {
+          font-size: 0; /* hides the original text */
+        }
+        .hamburger-icon::before {
+          font-size: 1.5rem;
+        }
+
+        /* Hide checkbox when label is clicked, auto close menu */
+        .mobile-nav-link {
+          /* optional styling */
+        }
+
         @media (min-width: 1024px) {
           .desktop-nav { display: block !important; }
           .mobile-toggle { display: none !important; }
@@ -129,25 +158,8 @@
                         });
                     };
 
-                    const initMobileMenu = () => {
-                        const btn = document.getElementById('mobile-menu-btn');
-                        const menu = document.getElementById('mobile-menu-container');
-                        if (btn && menu) {
-                            btn.addEventListener('click', () => {
-                                if (menu.style.display === 'none' || menu.style.display === '') {
-                                    menu.style.display = 'flex';
-                                    btn.innerHTML = '✕';
-                                } else {
-                                    menu.style.display = 'none';
-                                    btn.innerHTML = '☰';
-                                }
-                            });
-                        }
-                    };
-
                     const initAll = () => {
                         initObserver();
-                        initMobileMenu();
                     };
 
                     if (document.readyState === 'loading') {

@@ -878,6 +878,7 @@ const Header = () => {
     { name: "Why Choose Us", to: "https://precisionimagingus.com/#/#why-choose-us" }
   ];
   return /* @__PURE__ */ jsxs("header", { className: "site-header", children: [
+    /* @__PURE__ */ jsx("input", { type: "checkbox", id: "mobile-menu-toggle", style: { display: "none" } }),
     /* @__PURE__ */ jsxs("div", { className: "container", style: { display: "flex", justifyContent: "space-between", alignItems: "center" }, children: [
       /* @__PURE__ */ jsx("a", { href: "https://precisionimagingus.com/", children: /* @__PURE__ */ jsx(Logo, { animated: true }) }),
       /* @__PURE__ */ jsx("nav", { className: "desktop-nav", style: { display: "none" }, children: /* @__PURE__ */ jsxs("ul", { style: { display: "flex", gap: "2rem", alignItems: "center" }, children: [
@@ -930,19 +931,18 @@ const Header = () => {
         ) })
       ] }) }),
       /* @__PURE__ */ jsx(
-        "button",
+        "label",
         {
+          htmlFor: "mobile-menu-toggle",
           className: "mobile-toggle",
           id: "mobile-menu-btn",
           style: {
             fontSize: "1.5rem",
             color: "var(--color-primary-navy)",
             zIndex: 1001,
-            background: "none",
-            border: "none",
             cursor: "pointer"
           },
-          children: "☰"
+          children: /* @__PURE__ */ jsx("span", { className: "hamburger-icon", children: "☰" })
         }
       )
     ] }),
@@ -950,6 +950,7 @@ const Header = () => {
       "div",
       {
         id: "mobile-menu-container",
+        className: "mobile-menu-container",
         style: {
           position: "absolute",
           top: "100%",
@@ -958,7 +959,6 @@ const Header = () => {
           backgroundColor: "var(--color-white)",
           padding: "2rem",
           boxShadow: "var(--shadow-lg)",
-          display: "none",
           flexDirection: "column",
           gap: "1.5rem",
           zIndex: 999
@@ -968,6 +968,7 @@ const Header = () => {
             "a",
             {
               href: link.to,
+              className: "mobile-nav-link",
               style: { fontWeight: "600", color: "var(--color-primary-navy)", fontSize: "1.1rem" },
               children: link.name
             },
@@ -991,6 +992,35 @@ const Header = () => {
       }
     ),
     /* @__PURE__ */ jsx("style", { jsx: true, children: `
+        /* Hide menu by default */
+        .mobile-menu-container {
+          display: none !important;
+        }
+
+        /* Show menu when checkbox is checked */
+        #mobile-menu-toggle:checked ~ .mobile-menu-container {
+          display: flex !important;
+        }
+
+        /* Change hamburger to X when open */
+        #mobile-menu-toggle:checked ~ .container .mobile-toggle .hamburger-icon::before {
+          content: '✕';
+        }
+        .hamburger-icon::before {
+          content: '☰';
+        }
+        .hamburger-icon {
+          font-size: 0; /* hides the original text */
+        }
+        .hamburger-icon::before {
+          font-size: 1.5rem;
+        }
+
+        /* Hide checkbox when label is clicked, auto close menu */
+        .mobile-nav-link {
+          /* optional styling */
+        }
+
         @media (min-width: 1024px) {
           .desktop-nav { display: block !important; }
           .mobile-toggle { display: none !important; }
@@ -1177,25 +1207,8 @@ const SSGLayout = ({ children }) => {
                         });
                     };
 
-                    const initMobileMenu = () => {
-                        const btn = document.getElementById('mobile-menu-btn');
-                        const menu = document.getElementById('mobile-menu-container');
-                        if (btn && menu) {
-                            btn.addEventListener('click', () => {
-                                if (menu.style.display === 'none' || menu.style.display === '') {
-                                    menu.style.display = 'flex';
-                                    btn.innerHTML = '✕';
-                                } else {
-                                    menu.style.display = 'none';
-                                    btn.innerHTML = '☰';
-                                }
-                            });
-                        }
-                    };
-
                     const initAll = () => {
                         initObserver();
-                        initMobileMenu();
                     };
 
                     if (document.readyState === 'loading') {
