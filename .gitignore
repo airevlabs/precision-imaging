@@ -8,7 +8,11 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
+# Production build files
 dist
+!dist/client/assets/style.css
+!dist/ssg/
+!dist/ssg/*.html
 dist-ssr
 *.local
 
