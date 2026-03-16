@@ -27,7 +27,7 @@
             }
           </script>
   
-  <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/airevlabs/precision-imaging@main/dist/client/assets/index-BbCRxklK.css">
+  <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/airevlabs/precision-imaging@main/dist/client/assets/style.css">
 </head>
 
 <body>
