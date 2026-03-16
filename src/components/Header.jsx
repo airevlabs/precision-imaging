@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { motion, AnimatePresence } from 'framer-motion';
+import { useLocation } from 'react-router-dom';
 import Logo from './Logo';
 
 const Header = () => {
@@ -24,28 +23,25 @@ const Header = () => {
   };
 
   const navLinks = [
-    { name: 'Home', to: '/' },
-    { name: 'Ultrasound Services', to: '/#services' },
-    { name: 'Self-Pay Options', to: '/#self-pay' },
-    { name: 'What to Expect', to: '/#what-to-expect' },
-    { name: 'Why Choose Us', to: '/#why-choose-us' },
-    // Book Now is handled separately as a button
+    { name: 'Home', to: 'https://precisionimagingus.com/' },
+    { name: 'Ultrasound Services', to: 'https://precisionimagingus.com/#/#services' },
+    { name: 'Self-Pay Options', to: 'https://precisionimagingus.com/#/#self-pay' },
+    { name: 'What to Expect', to: 'https://precisionimagingus.com/#/#what-to-expect' },
+    { name: 'Why Choose Us', to: 'https://precisionimagingus.com/#/#why-choose-us' },
   ];
 
   return (
-    <header className={`site-header ${isScrolled ? 'scrolled' : ''}`}>
+    <header className="site-header">
       <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <Link to="/"><Logo animated={true} /></Link>
+        <a href="https://precisionimagingus.com/"><Logo animated={true} /></a>
 
         {/* Desktop Navigation */}
         <nav className="desktop-nav" style={{ display: 'none' }}>
           <ul style={{ display: 'flex', gap: '2rem', alignItems: 'center' }}>
             {navLinks.map((link) => (
               <li key={link.name}>
-                {/* Use a tag for hash links to allow simple anchor behavior on same page, or Link for routing */}
-                {/* Actually Link to="/#hash" works fine with our ScrollToAnchor component */}
-                <Link
-                  to={link.to}
+                <a
+                  href={link.to}
                   style={{
                     fontWeight: '600',
                     fontSize: '0.925rem',
@@ -70,13 +66,13 @@ const Header = () => {
                       width: 100%;
                     }
                   `}</style>
-                </Link>
+                </a>
               </li>
             ))}
             {/* Book Now Button */}
             <li>
-              <Link
-                to="/booking"
+              <a
+                href="https://precisionimagingus.com/#/booking"
                 className="btn btn-primary"
                 style={{
                   padding: '0.75rem 1.5rem',
@@ -87,7 +83,7 @@ const Header = () => {
                 }}
               >
                 Book Now
-              </Link>
+              </a>
             </li>
           </ul>
         </nav>
@@ -95,63 +91,58 @@ const Header = () => {
         {/* Mobile Menu Toggle */}
         <button
           className="mobile-toggle"
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          id="mobile-menu-btn"
           style={{
             fontSize: '1.5rem',
             color: 'var(--color-primary-navy)',
-            zIndex: 1001
+            zIndex: 1001,
+            background: 'none',
+            border: 'none',
+            cursor: 'pointer'
           }}
         >
-          {isMobileMenuOpen ? '✕' : '☰'}
+          ☰
         </button>
       </div>
 
-      {/* Mobile Menu Overlay */}
-      <AnimatePresence>
-        {isMobileMenuOpen && (
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            style={{
-              position: 'absolute',
-              top: '100%',
-              left: 0,
-              right: 0,
-              backgroundColor: 'var(--color-white)',
-              padding: '2rem',
-              boxShadow: 'var(--shadow-lg)',
-              display: 'flex',
-              flexDirection: 'column',
-              gap: '1.5rem',
-              zIndex: 999
-            }}
+      <div
+        id="mobile-menu-container"
+        style={{
+          position: 'absolute',
+          top: '100%',
+          left: 0,
+          right: 0,
+          backgroundColor: 'var(--color-white)',
+          padding: '2rem',
+          boxShadow: 'var(--shadow-lg)',
+          display: 'none',
+          flexDirection: 'column',
+          gap: '1.5rem',
+          zIndex: 999
+        }}
+      >
+        {navLinks.map((link) => (
+          <a
+            key={link.name}
+            href={link.to}
+            style={{ fontWeight: '600', color: 'var(--color-primary-navy)', fontSize: '1.1rem' }}
           >
-            {navLinks.map((link) => (
-              <Link
-                key={link.name}
-                to={link.to}
-                onClick={() => setIsMobileMenuOpen(false)}
-                style={{ fontWeight: '600', color: 'var(--color-primary-navy)' }}
-              >
-                {link.name}
-              </Link>
-            ))}
-            <Link
-              to="/booking"
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="btn btn-primary"
-              style={{
-                textAlign: 'center',
-                padding: '0.75rem',
-                borderRadius: '0.5rem'
-              }}
-            >
-              Book Now
-            </Link>
-          </motion.div>
-        )}
-      </AnimatePresence>
+            {link.name}
+          </a>
+        ))}
+        <a
+          href="https://precisionimagingus.com/#/booking"
+          className="btn btn-primary"
+          style={{
+            textAlign: 'center',
+            padding: '0.75rem',
+            borderRadius: '0.5rem',
+            fontWeight: '600'
+          }}
+        >
+          Book Now
+        </a>
+      </div>
 
       <style jsx>{`
         @media (min-width: 1024px) {

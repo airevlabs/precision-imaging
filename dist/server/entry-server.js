@@ -871,21 +871,20 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   const navLinks = [
-    { name: "Home", to: "/" },
-    { name: "Ultrasound Services", to: "/#services" },
-    { name: "Self-Pay Options", to: "/#self-pay" },
-    { name: "What to Expect", to: "/#what-to-expect" },
-    { name: "Why Choose Us", to: "/#why-choose-us" }
-    // Book Now is handled separately as a button
+    { name: "Home", to: "https://precisionimagingus.com/" },
+    { name: "Ultrasound Services", to: "https://precisionimagingus.com/#/#services" },
+    { name: "Self-Pay Options", to: "https://precisionimagingus.com/#/#self-pay" },
+    { name: "What to Expect", to: "https://precisionimagingus.com/#/#what-to-expect" },
+    { name: "Why Choose Us", to: "https://precisionimagingus.com/#/#why-choose-us" }
   ];
-  return /* @__PURE__ */ jsxs("header", { className: `site-header ${isScrolled ? "scrolled" : ""}`, children: [
+  return /* @__PURE__ */ jsxs("header", { className: "site-header", children: [
     /* @__PURE__ */ jsxs("div", { className: "container", style: { display: "flex", justifyContent: "space-between", alignItems: "center" }, children: [
-      /* @__PURE__ */ jsx(Link, { to: "/", children: /* @__PURE__ */ jsx(Logo, { animated: true }) }),
+      /* @__PURE__ */ jsx("a", { href: "https://precisionimagingus.com/", children: /* @__PURE__ */ jsx(Logo, { animated: true }) }),
       /* @__PURE__ */ jsx("nav", { className: "desktop-nav", style: { display: "none" }, children: /* @__PURE__ */ jsxs("ul", { style: { display: "flex", gap: "2rem", alignItems: "center" }, children: [
         navLinks.map((link) => /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsxs(
-          Link,
+          "a",
           {
-            to: link.to,
+            href: link.to,
             style: {
               fontWeight: "600",
               fontSize: "0.925rem",
@@ -914,9 +913,9 @@ const Header = () => {
           }
         ) }, link.name)),
         /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx(
-          Link,
+          "a",
           {
-            to: "/booking",
+            href: "https://precisionimagingus.com/#/booking",
             className: "btn btn-primary",
             style: {
               padding: "0.75rem 1.5rem",
@@ -934,22 +933,23 @@ const Header = () => {
         "button",
         {
           className: "mobile-toggle",
-          onClick: () => setIsMobileMenuOpen(!isMobileMenuOpen),
+          id: "mobile-menu-btn",
           style: {
             fontSize: "1.5rem",
             color: "var(--color-primary-navy)",
-            zIndex: 1001
+            zIndex: 1001,
+            background: "none",
+            border: "none",
+            cursor: "pointer"
           },
-          children: isMobileMenuOpen ? "✕" : "☰"
+          children: "☰"
         }
       )
     ] }),
-    /* @__PURE__ */ jsx(AnimatePresence, { children: isMobileMenuOpen && /* @__PURE__ */ jsxs(
-      motion.div,
+    /* @__PURE__ */ jsxs(
+      "div",
       {
-        initial: { opacity: 0, y: -20 },
-        animate: { opacity: 1, y: 0 },
-        exit: { opacity: 0, y: -20 },
+        id: "mobile-menu-container",
         style: {
           position: "absolute",
           top: "100%",
@@ -958,39 +958,38 @@ const Header = () => {
           backgroundColor: "var(--color-white)",
           padding: "2rem",
           boxShadow: "var(--shadow-lg)",
-          display: "flex",
+          display: "none",
           flexDirection: "column",
           gap: "1.5rem",
           zIndex: 999
         },
         children: [
           navLinks.map((link) => /* @__PURE__ */ jsx(
-            Link,
+            "a",
             {
-              to: link.to,
-              onClick: () => setIsMobileMenuOpen(false),
-              style: { fontWeight: "600", color: "var(--color-primary-navy)" },
+              href: link.to,
+              style: { fontWeight: "600", color: "var(--color-primary-navy)", fontSize: "1.1rem" },
               children: link.name
             },
             link.name
           )),
           /* @__PURE__ */ jsx(
-            Link,
+            "a",
             {
-              to: "/booking",
-              onClick: () => setIsMobileMenuOpen(false),
+              href: "https://precisionimagingus.com/#/booking",
               className: "btn btn-primary",
               style: {
                 textAlign: "center",
                 padding: "0.75rem",
-                borderRadius: "0.5rem"
+                borderRadius: "0.5rem",
+                fontWeight: "600"
               },
               children: "Book Now"
             }
           )
         ]
       }
-    ) }),
+    ),
     /* @__PURE__ */ jsx("style", { jsx: true, children: `
         @media (min-width: 1024px) {
           .desktop-nav { display: block !important; }
@@ -1178,8 +1177,25 @@ const SSGLayout = ({ children }) => {
                         });
                     };
 
+                    const initMobileMenu = () => {
+                        const btn = document.getElementById('mobile-menu-btn');
+                        const menu = document.getElementById('mobile-menu-container');
+                        if (btn && menu) {
+                            btn.addEventListener('click', () => {
+                                if (menu.style.display === 'none' || menu.style.display === '') {
+                                    menu.style.display = 'flex';
+                                    btn.innerHTML = '✕';
+                                } else {
+                                    menu.style.display = 'none';
+                                    btn.innerHTML = '☰';
+                                }
+                            });
+                        }
+                    };
+
                     const initAll = () => {
                         initObserver();
+                        initMobileMenu();
                     };
 
                     if (document.readyState === 'loading') {

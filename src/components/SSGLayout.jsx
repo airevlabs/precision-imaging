@@ -31,8 +31,25 @@ const SSGLayout = ({ children }) => {
                         });
                     };
 
+                    const initMobileMenu = () => {
+                        const btn = document.getElementById('mobile-menu-btn');
+                        const menu = document.getElementById('mobile-menu-container');
+                        if (btn && menu) {
+                            btn.addEventListener('click', () => {
+                                if (menu.style.display === 'none' || menu.style.display === '') {
+                                    menu.style.display = 'flex';
+                                    btn.innerHTML = '✕';
+                                } else {
+                                    menu.style.display = 'none';
+                                    btn.innerHTML = '☰';
+                                }
+                            });
+                        }
+                    };
+
                     const initAll = () => {
                         initObserver();
+                        initMobileMenu();
                     };
 
                     if (document.readyState === 'loading') {
