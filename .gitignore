@@ -9,7 +9,9 @@ lerna-debug.log*
 
 node_modules
 # Production build files
-dist
+dist/*
+!dist/client/
+!dist/client/assets/
 !dist/client/assets/style.css
 !dist/ssg/
 !dist/ssg/*.html
