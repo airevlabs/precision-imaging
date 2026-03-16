@@ -10,6 +10,7 @@ import Hipaa from './pages/Hipaa';
 import Privacy from './pages/Privacy';
 import Terms from './pages/Terms';
 import AbdomenUltrasound from './pages/services/AbdomenUltrasound';
+import AortaScreening from './pages/services/AortaScreening';
 
 // ScrollToAnchor component to handle hash scrolling on route change
 const ScrollToAnchor = () => {
@@ -49,6 +50,7 @@ function App() {
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/services/abdomen-ultrasound" element={<AbdomenUltrasound />} />
+        <Route path="/services/aorta-screening" element={<AortaScreening />} />
       </Routes>
       <Footer />
       <BackToTop />

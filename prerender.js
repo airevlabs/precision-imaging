@@ -9,7 +9,8 @@ const template = fs.readFileSync(toAbsolute('dist/client/index.html'), 'utf-8');
 const { render } = await import('./dist/server/entry-server.js');
 
 const routesToPrerender = [
-    { url: '/services/abdomen-ultrasound', name: 'abdomen-ultrasound' }
+    { url: '/services/abdomen-ultrasound', name: 'abdomen-ultrasound' },
+    { url: '/services/aorta-screening', name: 'aorta-screening' }
 ];
 
 for (const { url, name } of routesToPrerender) {
