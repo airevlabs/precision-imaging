@@ -1433,7 +1433,7 @@ const AbdomenUltrasound = () => {
         /* @__PURE__ */ jsxs("details", { className: "!bg-white !rounded-2xl !p-6 !shadow-sm !border !border-slate-200 group cursor-pointer !transition-shadow hover:!shadow-md", children: [
           /* @__PURE__ */ jsxs("summary", { className: "!text-xl !font-bold !text-slate-900 !flex !justify-between !items-center !list-none", children: [
             "What is a sonogram? What is sonography?",
-            /* @__PURE__ */ jsx("span", { className: "transition-transform group-open:rotate-180", children: /* @__PURE__ */ jsx(ChevronDownIcon, {}) })
+            /* @__PURE__ */ jsx("span", { className: "transition-transform group-open:rotate-180", children: /* @__PURE__ */ jsx(ChevronDownIcon$1, {}) })
           ] }),
           /* @__PURE__ */ jsxs("div", { className: "!mt-4 !pt-4 !border-t !border-slate-100 !text-slate-600 !text-lg !leading-relaxed", children: [
             /* @__PURE__ */ jsxs("p", { className: "!mb-3", children: [
@@ -1455,63 +1455,63 @@ const AbdomenUltrasound = () => {
         /* @__PURE__ */ jsxs("details", { className: "!bg-white !rounded-2xl !p-6 !shadow-sm !border !border-slate-200 group cursor-pointer !transition-shadow hover:!shadow-md", children: [
           /* @__PURE__ */ jsxs("summary", { className: "!text-xl !font-bold !text-slate-900 !flex !justify-between !items-center !list-none", children: [
             "Can this test replace a CT scan?",
-            /* @__PURE__ */ jsx("span", { className: "transition-transform group-open:rotate-180", children: /* @__PURE__ */ jsx(ChevronDownIcon, {}) })
+            /* @__PURE__ */ jsx("span", { className: "transition-transform group-open:rotate-180", children: /* @__PURE__ */ jsx(ChevronDownIcon$1, {}) })
           ] }),
           /* @__PURE__ */ jsx("div", { className: "!mt-4 !pt-4 !border-t !border-slate-100 !text-slate-600 !text-lg !leading-relaxed", children: "In many cases abdominal ultrasound is the first‑line test because it is noninvasive and radiation‑free, but your provider may still recommend a CT or MRI for certain specific conditions if more detail is needed." })
         ] }),
         /* @__PURE__ */ jsxs("details", { className: "!bg-white !rounded-2xl !p-6 !shadow-sm !border !border-slate-200 group cursor-pointer !transition-shadow hover:!shadow-md", children: [
           /* @__PURE__ */ jsxs("summary", { className: "!text-xl !font-bold !text-slate-900 !flex !justify-between !items-center !list-none", children: [
             "Will an ultrasound see all gallstones?",
-            /* @__PURE__ */ jsx("span", { className: "transition-transform group-open:rotate-180", children: /* @__PURE__ */ jsx(ChevronDownIcon, {}) })
+            /* @__PURE__ */ jsx("span", { className: "transition-transform group-open:rotate-180", children: /* @__PURE__ */ jsx(ChevronDownIcon$1, {}) })
           ] }),
           /* @__PURE__ */ jsx("div", { className: "!mt-4 !pt-4 !border-t !border-slate-100 !text-slate-600 !text-lg !leading-relaxed", children: 'Ultrasound is very good at detecting gallstones, especially those in the gallbladder. However, very small stones or "sludge" can occasionally be difficult to see depending on position.' })
         ] }),
         /* @__PURE__ */ jsxs("details", { className: "!bg-white !rounded-2xl !p-6 !shadow-sm !border !border-slate-200 group cursor-pointer !transition-shadow hover:!shadow-md", children: [
           /* @__PURE__ */ jsxs("summary", { className: "!text-xl !font-bold !text-slate-900 !flex !justify-between !items-center !list-none", children: [
             "How should I prepare for a complete abdominal ultrasound?",
-            /* @__PURE__ */ jsx("span", { className: "transition-transform group-open:rotate-180", children: /* @__PURE__ */ jsx(ChevronDownIcon, {}) })
+            /* @__PURE__ */ jsx("span", { className: "transition-transform group-open:rotate-180", children: /* @__PURE__ */ jsx(ChevronDownIcon$1, {}) })
           ] }),
           /* @__PURE__ */ jsx("div", { className: "!mt-4 !pt-4 !border-t !border-slate-100 !text-slate-600 !text-lg !leading-relaxed", children: "You should fast (nothing to eat or drink except very small sips of water) for 6-8 hours before the exam. This reduces gas in the bowel and ensures your gallbladder is fully distended for better evaluation." })
         ] }),
         /* @__PURE__ */ jsxs("details", { className: "!bg-white !rounded-2xl !p-6 !shadow-sm !border !border-slate-200 group cursor-pointer !transition-shadow hover:!shadow-md", children: [
           /* @__PURE__ */ jsxs("summary", { className: "!text-xl !font-bold !text-slate-900 !flex !justify-between !items-center !list-none", children: [
             "How long does an abdominal ultrasound take?",
-            /* @__PURE__ */ jsx("span", { className: "transition-transform group-open:rotate-180", children: /* @__PURE__ */ jsx(ChevronDownIcon, {}) })
+            /* @__PURE__ */ jsx("span", { className: "transition-transform group-open:rotate-180", children: /* @__PURE__ */ jsx(ChevronDownIcon$1, {}) })
           ] }),
           /* @__PURE__ */ jsx("div", { className: "!mt-4 !pt-4 !border-t !border-slate-100 !text-slate-600 !text-lg !leading-relaxed", children: "A complete abdominal ultrasound usually takes between 20 to 30 minutes, depending on the complexity of the study and how well the organs can be visualized." })
         ] }),
         /* @__PURE__ */ jsxs("details", { className: "!bg-white !rounded-2xl !p-6 !shadow-sm !border !border-slate-200 group cursor-pointer !transition-shadow hover:!shadow-md", children: [
           /* @__PURE__ */ jsxs("summary", { className: "!text-xl !font-bold !text-slate-900 !flex !justify-between !items-center !list-none", children: [
             "Is an abdominal ultrasound painful?",
-            /* @__PURE__ */ jsx("span", { className: "transition-transform group-open:rotate-180", children: /* @__PURE__ */ jsx(ChevronDownIcon, {}) })
+            /* @__PURE__ */ jsx("span", { className: "transition-transform group-open:rotate-180", children: /* @__PURE__ */ jsx(ChevronDownIcon$1, {}) })
           ] }),
           /* @__PURE__ */ jsx("div", { className: "!mt-4 !pt-4 !border-t !border-slate-100 !text-slate-600 !text-lg !leading-relaxed", children: "No, the procedure is generally painless. You might feel mild pressure as the technologist moves the transducer over your abdomen, especially if that area is already tender." })
         ] }),
         /* @__PURE__ */ jsxs("details", { className: "!bg-white !rounded-2xl !p-6 !shadow-sm !border !border-slate-200 group cursor-pointer !transition-shadow hover:!shadow-md", children: [
           /* @__PURE__ */ jsxs("summary", { className: "!text-xl !font-bold !text-slate-900 !flex !justify-between !items-center !list-none", children: [
             "Can I take my medications before the exam?",
-            /* @__PURE__ */ jsx("span", { className: "transition-transform group-open:rotate-180", children: /* @__PURE__ */ jsx(ChevronDownIcon, {}) })
+            /* @__PURE__ */ jsx("span", { className: "transition-transform group-open:rotate-180", children: /* @__PURE__ */ jsx(ChevronDownIcon$1, {}) })
           ] }),
           /* @__PURE__ */ jsx("div", { className: "!mt-4 !pt-4 !border-t !border-slate-100 !text-slate-600 !text-lg !leading-relaxed", children: "Yes, you may take essential medications with a small sip of water prior to your exam, unless instructed otherwise by your physician." })
         ] }),
         /* @__PURE__ */ jsxs("details", { className: "!bg-white !rounded-2xl !p-6 !shadow-sm !border !border-slate-200 group cursor-pointer !transition-shadow hover:!shadow-md", children: [
           /* @__PURE__ */ jsxs("summary", { className: "!text-xl !font-bold !text-slate-900 !flex !justify-between !items-center !list-none", children: [
             "When will I receive the results of my ultrasound?",
-            /* @__PURE__ */ jsx("span", { className: "transition-transform group-open:rotate-180", children: /* @__PURE__ */ jsx(ChevronDownIcon, {}) })
+            /* @__PURE__ */ jsx("span", { className: "transition-transform group-open:rotate-180", children: /* @__PURE__ */ jsx(ChevronDownIcon$1, {}) })
           ] }),
           /* @__PURE__ */ jsx("div", { className: "!mt-4 !pt-4 !border-t !border-slate-100 !text-slate-600 !text-lg !leading-relaxed", children: "A specialized radiologist will interpret the images and send the final report to your referring physician within 24 to 48 hours. Your physician will then review the findings with you." })
         ] }),
         /* @__PURE__ */ jsxs("details", { className: "!bg-white !rounded-2xl !p-6 !shadow-sm !border !border-slate-200 group cursor-pointer !transition-shadow hover:!shadow-md", children: [
           /* @__PURE__ */ jsxs("summary", { className: "!text-xl !font-bold !text-slate-900 !flex !justify-between !items-center !list-none", children: [
             "Do I need a doctor's order for an abdominal ultrasound?",
-            /* @__PURE__ */ jsx("span", { className: "transition-transform group-open:rotate-180", children: /* @__PURE__ */ jsx(ChevronDownIcon, {}) })
+            /* @__PURE__ */ jsx("span", { className: "transition-transform group-open:rotate-180", children: /* @__PURE__ */ jsx(ChevronDownIcon$1, {}) })
           ] }),
           /* @__PURE__ */ jsx("div", { className: "!mt-4 !pt-4 !border-t !border-slate-100 !text-slate-600 !text-lg !leading-relaxed", children: "In general, to receive a formal radiologist diagnostic report, a prescription or order from your referring doctor is required. Check our self-pay and booking options for specifics on providing orders." })
         ] }),
         /* @__PURE__ */ jsxs("details", { className: "!bg-white !rounded-2xl !p-6 !shadow-sm !border !border-slate-200 group cursor-pointer !transition-shadow hover:!shadow-md", children: [
           /* @__PURE__ */ jsxs("summary", { className: "!text-xl !font-bold !text-slate-900 !flex !justify-between !items-center !list-none", children: [
             "What is an AAA screening and who needs it?",
-            /* @__PURE__ */ jsx("span", { className: "transition-transform group-open:rotate-180", children: /* @__PURE__ */ jsx(ChevronDownIcon, {}) })
+            /* @__PURE__ */ jsx("span", { className: "transition-transform group-open:rotate-180", children: /* @__PURE__ */ jsx(ChevronDownIcon$1, {}) })
           ] }),
           /* @__PURE__ */ jsx("div", { className: "!mt-4 !pt-4 !border-t !border-slate-100 !text-slate-600 !text-lg !leading-relaxed", children: "An AAA (Abdominal Aortic Aneurysm) screening targets the main blood vessel in the abdomen to ensure there is no swelling or aneurysm. It is highly recommended for older adults with vascular risk factors or a history of smoking." })
         ] })
@@ -1541,9 +1541,316 @@ const AbdomenUltrasound = () => {
     ] }) })
   ] });
 };
+const ChevronDownIcon$1 = () => /* @__PURE__ */ jsx("svg", { className: "!w-6 !h-6 !text-blue-500", fill: "none", viewBox: "0 0 24 24", stroke: "currentColor", children: /* @__PURE__ */ jsx("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M19 9l-7 7-7-7" }) });
+const AortaScreening = () => {
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.remove("opacity-0", "translate-y-8");
+          entry.target.classList.add("opacity-100", "translate-y-0");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll(".reveal-section").forEach((section) => {
+      observer.observe(section);
+    });
+    return () => observer.disconnect();
+  }, []);
+  return /* @__PURE__ */ jsxs("div", { className: "!pt-32 lg:!pt-44 !pb-12 !bg-slate-50 !flex !flex-col !gap-8 sm:!gap-12 !font-sans", children: [
+    /* @__PURE__ */ jsxs(Helmet, { children: [
+      /* @__PURE__ */ jsx("title", { children: "Aorta Screening | Precision Imaging Diagnostic Center" }),
+      /* @__PURE__ */ jsx("meta", { name: "description", content: "Safe abdominal aorta screening (AAA) in Downers Grove. High-quality vascular ultrasound serving the Chicago suburbs." }),
+      /* @__PURE__ */ jsx("meta", { name: "keywords", content: "aorta screening near me, AAA ultrasound Downers Grove, abdominal aortic aneurysm screening Chicago suburbs" }),
+      /* @__PURE__ */ jsx("script", { type: "application/ld+json", children: `
+            {
+              "@context": "https://schema.org",
+              "@type": "MedicalService",
+              "name": "Abdominal Aortic Aneurysm (AAA) Screening",
+              "provider": {
+                "@type": "MedicalOrganization",
+                "name": "Precision Imaging",
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "Downers Grove",
+                  "addressRegion": "IL"
+                }
+              },
+              "description": "Safe, non-invasive ultrasound imaging to evaluate the abdominal aorta for aneurysms or enlargement."
+            }
+          ` })
+    ] }),
+    /* @__PURE__ */ jsxs("header", { className: "reveal-section opacity-0 translate-y-8 !bg-slate-900 !rounded-3xl !mx-4 md:!mx-auto md:!max-w-7xl !px-6 !py-20 md:!py-28 lg:!py-32 !text-white !relative !overflow-hidden transition-all duration-700 shadow-2xl", children: [
+      /* @__PURE__ */ jsx("div", { className: "!absolute !inset-0 !opacity-10 !bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] !from-blue-400 !to-transparent" }),
+      /* @__PURE__ */ jsxs("div", { className: "!relative !z-10 !max-w-4xl !mx-auto !text-center flex flex-col items-center", children: [
+        /* @__PURE__ */ jsxs("span", { className: "!uppercase !tracking-wider !text-blue-300 !font-semibold !text-sm !mb-4 flex items-center gap-2", children: [
+          /* @__PURE__ */ jsx(Activity, { className: "!w-4 !h-4" }),
+          " Diagnostic Ultrasound Center"
+        ] }),
+        /* @__PURE__ */ jsx("h1", { className: "!text-5xl md:!text-6xl lg:!text-7xl !font-bold !mb-8 !text-white leading-tight !tracking-tight", children: "Aorta Screening" }),
+        /* @__PURE__ */ jsx("p", { className: "!text-xl md:!text-2xl !mb-10 max-w-3xl !text-slate-300 font-medium !leading-relaxed", children: "Safe, High‑Quality Sonography for Abdominal Aortic Aneurysm (AAA) evaluation in Downers Grove and Chicago Suburbs." }),
+        /* @__PURE__ */ jsxs("div", { className: "flex flex-col sm:flex-row gap-4", children: [
+          /* @__PURE__ */ jsxs("a", { href: "/#/booking", className: "!bg-blue-600 hover:!bg-blue-500 !px-8 !py-4 rounded-xl !font-semibold flex items-center justify-center transition hover:-translate-y-1 shadow-lg hover:shadow-blue-500/25 !text-white !text-lg", children: [
+            "Book Appointment ",
+            /* @__PURE__ */ jsx(Calendar, { className: "!ml-2 !w-5 !h-5" })
+          ] }),
+          /* @__PURE__ */ jsx("a", { href: "https://precisionimagingus.com/#/#contact", className: "!bg-transparent border-2 !border-slate-600 hover:!border-white hover:!bg-white/10 !px-8 !py-4 rounded-xl !font-semibold flex items-center justify-center transition hover:-translate-y-1 !text-white !text-lg", children: "Contact Us" })
+        ] })
+      ] })
+    ] }),
+    /* @__PURE__ */ jsx("section", { "aria-labelledby": "center-overview", className: "reveal-section opacity-0 translate-y-8 transition-all duration-700 ease-out !px-6", children: /* @__PURE__ */ jsxs("div", { className: "!max-w-4xl !mx-auto !text-center", children: [
+      /* @__PURE__ */ jsx("h2", { id: "center-overview", className: "!text-3xl md:!text-4xl !font-bold !text-slate-900 !mb-6", children: "Our Diagnostic Ultrasound Center" }),
+      /* @__PURE__ */ jsxs("div", { className: "!bg-white !p-8 md:!p-12 !rounded-3xl !shadow-sm !border !border-slate-100", children: [
+        /* @__PURE__ */ jsx("p", { className: "!text-lg md:!text-xl !text-slate-600 !leading-relaxed !mb-6", children: "Our outpatient diagnostic ultrasound center provides high‑quality vascular imaging for patients and referring providers throughout the western Chicago suburbs." }),
+        /* @__PURE__ */ jsx("p", { className: "!text-lg md:!text-xl !text-slate-600 !leading-relaxed", children: "Every exam is performed using modern equipment that produces clear, detailed images to help evaluate your abdominal aorta. These ultrasound studies use sound waves only—there is no radiation exposure." })
+      ] })
+    ] }) }),
+    /* @__PURE__ */ jsx("section", { "aria-labelledby": "exam-options", className: "reveal-section opacity-0 translate-y-8 transition-all duration-700 ease-out !px-6", children: /* @__PURE__ */ jsxs("div", { className: "!max-w-7xl !mx-auto", children: [
+      /* @__PURE__ */ jsx("h2", { id: "exam-options", className: "!text-3xl md:!text-4xl !font-bold !text-slate-900 !text-center !mb-12", children: "Available Exam Options" }),
+      /* @__PURE__ */ jsx("p", { className: "!text-lg !text-slate-600 !text-center !mb-10 !max-w-3xl !mx-auto", children: "We offer the following exam options in this category so your provider can select the study that best matches your needs:" }),
+      /* @__PURE__ */ jsxs("div", { className: "grid md:grid-cols-3 gap-8", children: [
+        /* @__PURE__ */ jsxs("article", { className: "!bg-white !rounded-3xl !p-8 !shadow-sm hover:!shadow-xl !border !border-slate-100 hover:!border-blue-100 transition-all duration-300 hover:-translate-y-1 flex flex-col h-full", children: [
+          /* @__PURE__ */ jsx("div", { className: "!bg-rose-50 !w-14 !h-14 !rounded-2xl flex items-center justify-center !mb-6 text-rose-600", children: /* @__PURE__ */ jsx(Stethoscope, { className: "!w-7 !h-7" }) }),
+          /* @__PURE__ */ jsx("h3", { className: "!text-2xl !font-bold !text-slate-900 !mb-4", children: "AAA Screening" }),
+          /* @__PURE__ */ jsx("p", { className: "!text-slate-600 !leading-relaxed !flex-grow", children: "Focused screening of the abdominal aorta to measure its diameter and look for aneurysm or enlargement, often recommended for adults with vascular risk factors." })
+        ] }),
+        /* @__PURE__ */ jsxs("article", { className: "!bg-white !rounded-3xl !p-8 !shadow-sm hover:!shadow-xl !border !border-slate-100 hover:!border-blue-100 transition-all duration-300 hover:-translate-y-1 flex flex-col h-full relative overflow-hidden", children: [
+          /* @__PURE__ */ jsx("div", { className: "!bg-blue-50 !w-14 !h-14 !rounded-2xl flex items-center justify-center !mb-6 text-blue-600", children: /* @__PURE__ */ jsx(Search, { className: "!w-7 !h-7" }) }),
+          /* @__PURE__ */ jsx("h3", { className: "!text-2xl !font-bold !text-slate-900 !mb-4", children: "Abdomen – Complete" }),
+          /* @__PURE__ */ jsx("p", { className: "!text-slate-600 !leading-relaxed !flex-grow", children: "Comprehensive evaluation of the liver, gallbladder, bile ducts, pancreas, spleen, kidneys, and abdominal aorta. Ideal if symptoms are widespread and not exclusively vascular." })
+        ] }),
+        /* @__PURE__ */ jsxs("article", { className: "!bg-white !rounded-3xl !p-8 !shadow-sm hover:!shadow-xl !border !border-slate-100 hover:!border-blue-100 transition-all duration-300 hover:-translate-y-1 flex flex-col h-full relative overflow-hidden", children: [
+          /* @__PURE__ */ jsx("div", { className: "!bg-blue-50 !w-14 !h-14 !rounded-2xl flex items-center justify-center !mb-6 text-blue-600", children: /* @__PURE__ */ jsx(Activity, { className: "!w-7 !h-7" }) }),
+          /* @__PURE__ */ jsx("h3", { className: "!text-2xl !font-bold !text-slate-900 !mb-4", children: "Aorta Follow-up" }),
+          /* @__PURE__ */ jsx("p", { className: "!text-slate-600 !leading-relaxed !flex-grow", children: "A scheduled, targeted exam designed to monitor the size of a previously known enlarged aorta or aneurysm over time." })
+        ] })
+      ] })
+    ] }) }),
+    /* @__PURE__ */ jsx("section", { "aria-labelledby": "what-it-shows", className: "reveal-section opacity-0 translate-y-8 transition-all duration-700 ease-out !px-6", children: /* @__PURE__ */ jsxs("div", { className: "!max-w-5xl !mx-auto !bg-slate-900 !rounded-3xl !p-8 md:!p-12 !shadow-xl !text-white overflow-hidden relative", children: [
+      /* @__PURE__ */ jsx("div", { className: "!absolute !bottom-0 !right-0 !opacity-5 pointer-events-none", children: /* @__PURE__ */ jsx(Activity, { className: "!w-96 !h-96" }) }),
+      /* @__PURE__ */ jsxs("div", { className: "relative z-10", children: [
+        /* @__PURE__ */ jsx("h2", { id: "what-it-shows", className: "!text-3xl md:!text-4xl !font-bold !text-white !mb-8", children: "What These Exams Show" }),
+        /* @__PURE__ */ jsx("p", { className: "!text-lg !text-slate-100 !font-medium !mb-10 !leading-relaxed", children: "During your aorta screening, we look closely at the primary blood vessel in the abdomen. This diagnostic ultrasound provides vital information to your physician." }),
+        /* @__PURE__ */ jsxs("div", { className: "grid md:grid-cols-2 gap-8", children: [
+          /* @__PURE__ */ jsxs("div", { className: "flex gap-4", children: [
+            /* @__PURE__ */ jsx("div", { className: "!mt-1 !bg-white/20 !p-2 !rounded-lg h-fit", children: /* @__PURE__ */ jsx(CheckCircle2, { className: "!w-6 !h-6 !text-blue-300" }) }),
+            /* @__PURE__ */ jsxs("div", { children: [
+              /* @__PURE__ */ jsx("h4", { className: "!text-xl !font-bold !mb-2 !text-white", children: "Aortic Diameter" }),
+              /* @__PURE__ */ jsx("p", { className: "!text-slate-100 !font-medium", children: "Direct measurements of the aorta's width to check for swelling (aneurysm) or abnormal dilation." })
+            ] })
+          ] }),
+          /* @__PURE__ */ jsxs("div", { className: "flex gap-4", children: [
+            /* @__PURE__ */ jsx("div", { className: "!mt-1 !bg-white/20 !p-2 !rounded-lg h-fit", children: /* @__PURE__ */ jsx(CheckCircle2, { className: "!w-6 !h-6 !text-blue-300" }) }),
+            /* @__PURE__ */ jsxs("div", { children: [
+              /* @__PURE__ */ jsx("h4", { className: "!text-xl !font-bold !mb-2 !text-white", children: "Plaque & Calcification" }),
+              /* @__PURE__ */ jsx("p", { className: "!text-slate-100 !font-medium", children: "Visualization of the aorta wall to identify cholesterol build-up and hardening associated with vascular disease." })
+            ] })
+          ] }),
+          /* @__PURE__ */ jsxs("div", { className: "flex gap-4", children: [
+            /* @__PURE__ */ jsx("div", { className: "!mt-1 !bg-white/20 !p-2 !rounded-lg h-fit", children: /* @__PURE__ */ jsx(CheckCircle2, { className: "!w-6 !h-6 !text-blue-300" }) }),
+            /* @__PURE__ */ jsxs("div", { children: [
+              /* @__PURE__ */ jsx("h4", { className: "!text-xl !font-bold !mb-2 !text-white", children: "Blood Flow" }),
+              /* @__PURE__ */ jsx("p", { className: "!text-slate-100 !font-medium", children: "Assessment of the blood flow passing through the vessel using Doppler ultrasound functionality." })
+            ] })
+          ] }),
+          /* @__PURE__ */ jsxs("div", { className: "flex gap-4", children: [
+            /* @__PURE__ */ jsx("div", { className: "!mt-1 !bg-white/20 !p-2 !rounded-lg h-fit", children: /* @__PURE__ */ jsx(CheckCircle2, { className: "!w-6 !h-6 !text-blue-300" }) }),
+            /* @__PURE__ */ jsxs("div", { children: [
+              /* @__PURE__ */ jsx("h4", { className: "!text-xl !font-bold !mb-2 !text-white", children: "Iliac Arteries" }),
+              /* @__PURE__ */ jsx("p", { className: "!text-slate-100 !font-medium", children: "Evaluation of the branches of the lower aorta as they supply blood to the legs and pelvic region." })
+            ] })
+          ] })
+        ] })
+      ] })
+    ] }) }),
+    /* @__PURE__ */ jsx("section", { className: "reveal-section opacity-0 translate-y-8 transition-all duration-700 ease-out !px-6", children: /* @__PURE__ */ jsxs("div", { className: "!max-w-7xl !mx-auto grid lg:grid-cols-2 gap-12", children: [
+      /* @__PURE__ */ jsxs("div", { className: "!bg-white !p-8 md:!p-12 !rounded-3xl !shadow-sm !border !border-slate-100", children: [
+        /* @__PURE__ */ jsxs("h2", { className: "!text-3xl !font-bold !text-slate-900 !mb-8 flex items-center gap-3", children: [
+          /* @__PURE__ */ jsx(Info, { className: "!w-8 !h-8 !text-blue-600" }),
+          " Preparation Instructions"
+        ] }),
+        /* @__PURE__ */ jsx("p", { className: "!text-lg !text-slate-600 !mb-8", children: "To help your aorta ultrasound produce the clearest images, please follow these guidelines:" }),
+        /* @__PURE__ */ jsxs("ul", { className: "space-y-5 !mb-8", children: [
+          /* @__PURE__ */ jsxs("li", { className: "flex items-start", children: [
+            /* @__PURE__ */ jsx("div", { className: "!bg-slate-100 !p-1.5 !rounded-full !mr-4 !mt-0.5", children: /* @__PURE__ */ jsx(CheckCircle2, { className: "!w-5 !h-5 !text-slate-700" }) }),
+            /* @__PURE__ */ jsxs("span", { className: "!text-lg !text-slate-700", children: [
+              "Do not eat or drink anything except small sips of water for ",
+              /* @__PURE__ */ jsx("strong", { children: "6–8 hours" }),
+              " before your appointment. This prevents bowel gas from obscuring the aorta."
+            ] })
+          ] }),
+          /* @__PURE__ */ jsxs("li", { className: "flex items-start", children: [
+            /* @__PURE__ */ jsx("div", { className: "!bg-slate-100 !p-1.5 !rounded-full !mr-4 !mt-0.5", children: /* @__PURE__ */ jsx(CheckCircle2, { className: "!w-5 !h-5 !text-slate-700" }) }),
+            /* @__PURE__ */ jsx("span", { className: "!text-lg !text-slate-700", children: "Take essential medications with a small amount of water unless your provider gives different instructions." })
+          ] }),
+          /* @__PURE__ */ jsxs("li", { className: "flex items-start", children: [
+            /* @__PURE__ */ jsx("div", { className: "!bg-slate-100 !p-1.5 !rounded-full !mr-4 !mt-0.5", children: /* @__PURE__ */ jsx(CheckCircle2, { className: "!w-5 !h-5 !text-slate-700" }) }),
+            /* @__PURE__ */ jsx("span", { className: "!text-lg !text-slate-700", children: "Wear loose, two‑piece clothing so we can easily access your abdominal area." })
+          ] })
+        ] }),
+        /* @__PURE__ */ jsx("div", { className: "!bg-blue-50 !border-l-4 !border-blue-600 !p-5 !rounded-r-xl", children: /* @__PURE__ */ jsxs("p", { className: "!text-blue-900 !font-medium !flex !items-center !gap-2", children: [
+          /* @__PURE__ */ jsx(Clock, { className: "!w-5 !h-5" }),
+          " Arrive 15 minutes early to complete registration."
+        ] }) }),
+        /* @__PURE__ */ jsx("p", { className: "!text-sm !text-slate-500 !mt-6 !italic", children: "If your appointment combines more than one ultrasound type, our scheduling team will review the best preparation plan with you." })
+      ] }),
+      /* @__PURE__ */ jsxs("div", { className: "!bg-white !p-8 md:!p-12 !rounded-3xl !shadow-sm !border !border-slate-100", children: [
+        /* @__PURE__ */ jsxs("h2", { className: "!text-3xl !font-bold !text-slate-900 !mb-8 flex items-center gap-3", children: [
+          /* @__PURE__ */ jsx(Activity, { className: "!w-8 !h-8 !text-blue-600" }),
+          " What to Expect"
+        ] }),
+        /* @__PURE__ */ jsx("p", { className: "!text-lg !text-slate-600 !mb-8", children: "Here is what a typical visit looks like at our diagnostic ultrasound center:" }),
+        /* @__PURE__ */ jsxs("div", { className: "!flex !flex-col !gap-6 !border-l-2 !border-slate-200 !ml-4 !py-4", children: [
+          /* @__PURE__ */ jsxs("div", { className: "!flex !gap-4 !items-start !-ml-[17px]", children: [
+            /* @__PURE__ */ jsx("div", { className: "!w-8 !h-8 !rounded-full !bg-blue-600 !text-white !flex !items-center !justify-center !font-bold !flex-shrink-0 !border-4 !border-white !shadow-sm", children: "1" }),
+            /* @__PURE__ */ jsxs("div", { className: "!flex-1 !pt-0.5", children: [
+              /* @__PURE__ */ jsx("h4", { className: "!text-xl !font-bold !text-slate-900 !mb-2 !mt-0", children: "Preparation" }),
+              /* @__PURE__ */ jsx("p", { className: "!text-slate-600 !leading-relaxed !m-0", children: "You will lie flat on a padded exam table while the technologist applies warm water-based gel over your abdomen." })
+            ] })
+          ] }),
+          /* @__PURE__ */ jsxs("div", { className: "!flex !gap-4 !items-start !-ml-[17px]", children: [
+            /* @__PURE__ */ jsx("div", { className: "!w-8 !h-8 !rounded-full !bg-blue-600 !text-white !flex !items-center !justify-center !font-bold !flex-shrink-0 !border-4 !border-white !shadow-sm", children: "2" }),
+            /* @__PURE__ */ jsxs("div", { className: "!flex-1 !pt-0.5", children: [
+              /* @__PURE__ */ jsx("h4", { className: "!text-xl !font-bold !text-slate-900 !mb-2 !mt-0", children: "Imaging Process" }),
+              /* @__PURE__ */ jsx("p", { className: "!text-slate-600 !leading-relaxed !m-0", children: "The transducer is moved across the middle of your stomach to obtain real‑time measurements. You may be asked to hold your breath briefly or shift positions." })
+            ] })
+          ] }),
+          /* @__PURE__ */ jsxs("div", { className: "!flex !gap-4 !items-start !-ml-[17px]", children: [
+            /* @__PURE__ */ jsx("div", { className: "!w-8 !h-8 !rounded-full !bg-blue-600 !text-white !flex !items-center !justify-center !font-bold !flex-shrink-0 !border-4 !border-white !shadow-sm", children: "3" }),
+            /* @__PURE__ */ jsxs("div", { className: "!flex-1 !pt-0.5", children: [
+              /* @__PURE__ */ jsx("h4", { className: "!text-xl !font-bold !text-slate-900 !mb-2 !mt-0", children: "Duration" }),
+              /* @__PURE__ */ jsxs("p", { className: "!text-slate-600 !leading-relaxed !m-0", children: [
+                "A dedicated AAA screening usually takes about ",
+                /* @__PURE__ */ jsx("strong", { children: "15–20 minutes" }),
+                "."
+              ] })
+            ] })
+          ] })
+        ] }),
+        /* @__PURE__ */ jsx("p", { className: "!text-sm !text-slate-500 !mt-6 !italic", children: "Throughout the exam you are welcome to ask questions; our technologist will let you know when each part of the study is complete." })
+      ] })
+    ] }) }),
+    /* @__PURE__ */ jsx("section", { "aria-labelledby": "results", className: "reveal-section opacity-0 translate-y-8 transition-all duration-700 ease-out !px-6", children: /* @__PURE__ */ jsxs("div", { className: "!max-w-7xl !mx-auto !bg-blue-50 !rounded-3xl !p-8 md:!p-12 border border-blue-100 flex flex-col md:flex-row items-center gap-10", children: [
+      /* @__PURE__ */ jsx("div", { className: "md:w-1/3 flex justify-center", children: /* @__PURE__ */ jsx("div", { className: "!w-32 !h-32 !bg-white !rounded-full !shadow-lg flex items-center justify-center", children: /* @__PURE__ */ jsx(FileBadge, { className: "!w-16 !h-16 !text-blue-600" }) }) }),
+      /* @__PURE__ */ jsxs("div", { className: "md:w-2/3 !text-center md:!text-left", children: [
+        /* @__PURE__ */ jsx("h2", { id: "results", className: "!text-3xl md:!text-4xl !font-bold !text-slate-900 !mb-6", children: "Results & Follow-up" }),
+        /* @__PURE__ */ jsxs("ul", { className: "space-y-4 !text-lg !text-slate-700 !mb-6", children: [
+          /* @__PURE__ */ jsxs("li", { className: "!flex !items-start", children: [
+            /* @__PURE__ */ jsx(ArrowRight, { className: "!w-5 !h-5 !text-blue-500 !mr-3 !shrink-0 !mt-1" }),
+            /* @__PURE__ */ jsx("span", { children: "If a doctor order is provided, a detailed report is sent directly to your ordering provider so they can review results and plan next steps." })
+          ] }),
+          /* @__PURE__ */ jsxs("li", { className: "!flex !items-start", children: [
+            /* @__PURE__ */ jsx(ArrowRight, { className: "!w-5 !h-5 !text-blue-500 !mr-3 !shrink-0 !mt-1" }),
+            /* @__PURE__ */ jsx("span", { children: "If an aneurysm is discovered, your provider will recommend whether it needs immediate attention or simply regular monitoring." })
+          ] })
+        ] }),
+        /* @__PURE__ */ jsx("p", { className: "!text-lg !text-slate-700 !font-bold", children: "Disclaimer: If there is no doctor's order, images will be provided after the exam on a CD. In order to receive a radiology report, a doctor's order is required." })
+      ] })
+    ] }) }),
+    /* @__PURE__ */ jsx("section", { "aria-labelledby": "faq", className: "reveal-section opacity-0 translate-y-8 transition-all duration-700 ease-out !px-6", children: /* @__PURE__ */ jsxs("div", { className: "!max-w-4xl !mx-auto", children: [
+      /* @__PURE__ */ jsx("h2", { id: "faq", className: "!text-3xl md:!text-4xl !font-bold !text-center !text-slate-900 !mb-12", children: "Frequently Asked Questions" }),
+      /* @__PURE__ */ jsxs("div", { className: "grid gap-6", children: [
+        /* @__PURE__ */ jsxs("details", { className: "!bg-white !rounded-2xl !p-6 !shadow-sm !border !border-slate-200 group cursor-pointer !transition-shadow hover:!shadow-md", children: [
+          /* @__PURE__ */ jsxs("summary", { className: "!text-xl !font-bold !text-slate-900 !flex !justify-between !items-center !list-none", children: [
+            "What exactly is an Abdominal Aortic Aneurysm (AAA)?",
+            /* @__PURE__ */ jsx("span", { className: "transition-transform group-open:rotate-180", children: /* @__PURE__ */ jsx(ChevronDownIcon, {}) })
+          ] }),
+          /* @__PURE__ */ jsx("div", { className: "!mt-4 !pt-4 !border-t !border-slate-100 !text-slate-600 !text-lg !leading-relaxed", children: /* @__PURE__ */ jsx("p", { children: "The aorta is the main blood vessel that supplies blood to your abdomen, pelvis, and legs. An aneurysm occurs when a weaker part of the vessel wall expands or bulges out like a balloon. Without detection, it can eventually become dangerously large." }) })
+        ] }),
+        /* @__PURE__ */ jsxs("details", { className: "!bg-white !rounded-2xl !p-6 !shadow-sm !border !border-slate-200 group cursor-pointer !transition-shadow hover:!shadow-md", children: [
+          /* @__PURE__ */ jsxs("summary", { className: "!text-xl !font-bold !text-slate-900 !flex !justify-between !items-center !list-none", children: [
+            "Who should consider getting an AAA screening?",
+            /* @__PURE__ */ jsx("span", { className: "transition-transform group-open:rotate-180", children: /* @__PURE__ */ jsx(ChevronDownIcon, {}) })
+          ] }),
+          /* @__PURE__ */ jsx("div", { className: "!mt-4 !pt-4 !border-t !border-slate-100 !text-slate-600 !text-lg !leading-relaxed", children: "Screenings are highly recommended for men aged 65 to 75 who have ever smoked. They may also be advised for both men and women over 60 with a family history of aneurysms, or those with other significant vascular risk factors." })
+        ] }),
+        /* @__PURE__ */ jsxs("details", { className: "!bg-white !rounded-2xl !p-6 !shadow-sm !border !border-slate-200 group cursor-pointer !transition-shadow hover:!shadow-md", children: [
+          /* @__PURE__ */ jsxs("summary", { className: "!text-xl !font-bold !text-slate-900 !flex !justify-between !items-center !list-none", children: [
+            "Are there symptoms of an abdominal aortic aneurysm?",
+            /* @__PURE__ */ jsx("span", { className: "transition-transform group-open:rotate-180", children: /* @__PURE__ */ jsx(ChevronDownIcon, {}) })
+          ] }),
+          /* @__PURE__ */ jsx("div", { className: "!mt-4 !pt-4 !border-t !border-slate-100 !text-slate-600 !text-lg !leading-relaxed", children: "Most abdominal aortic aneurysms produce no symptoms at all, which is why preventive screening is critical. If symptoms do occur, they may present as a deep, steady pain in your abdomen or on the side of your back." })
+        ] }),
+        /* @__PURE__ */ jsxs("details", { className: "!bg-white !rounded-2xl !p-6 !shadow-sm !border !border-slate-200 group cursor-pointer !transition-shadow hover:!shadow-md", children: [
+          /* @__PURE__ */ jsxs("summary", { className: "!text-xl !font-bold !text-slate-900 !flex !justify-between !items-center !list-none", children: [
+            "Is preparation necessary for a simple aorta screening?",
+            /* @__PURE__ */ jsx("span", { className: "transition-transform group-open:rotate-180", children: /* @__PURE__ */ jsx(ChevronDownIcon, {}) })
+          ] }),
+          /* @__PURE__ */ jsx("div", { className: "!mt-4 !pt-4 !border-t !border-slate-100 !text-slate-600 !text-lg !leading-relaxed", children: "Yes. We ask that you abstain from eating or drinking anything (except small sips of water for medications) for 6 to 8 hours prior to the test to prevent stomach gas from obstructing the view of your aorta." })
+        ] }),
+        /* @__PURE__ */ jsxs("details", { className: "!bg-white !rounded-2xl !p-6 !shadow-sm !border !border-slate-200 group cursor-pointer !transition-shadow hover:!shadow-md", children: [
+          /* @__PURE__ */ jsxs("summary", { className: "!text-xl !font-bold !text-slate-900 !flex !justify-between !items-center !list-none", children: [
+            "Do I need a follow-up if my aorta is slightly enlarged?",
+            /* @__PURE__ */ jsx("span", { className: "transition-transform group-open:rotate-180", children: /* @__PURE__ */ jsx(ChevronDownIcon, {}) })
+          ] }),
+          /* @__PURE__ */ jsx("div", { className: "!mt-4 !pt-4 !border-t !border-slate-100 !text-slate-600 !text-lg !leading-relaxed", children: 'If the aorta shows slight swelling but is not dangerously large, your provider will likely recommend scheduling a routine "Aorta Follow-up" ultrasound every 6 to 12 months to monitor the growth rate.' })
+        ] }),
+        /* @__PURE__ */ jsxs("details", { className: "!bg-white !rounded-2xl !p-6 !shadow-sm !border !border-slate-200 group cursor-pointer !transition-shadow hover:!shadow-md", children: [
+          /* @__PURE__ */ jsxs("summary", { className: "!text-xl !font-bold !text-slate-900 !flex !justify-between !items-center !list-none", children: [
+            "What is the difference between an AAA Screening and a Complete Abdominal Ultrasound?",
+            /* @__PURE__ */ jsx("span", { className: "transition-transform group-open:rotate-180", children: /* @__PURE__ */ jsx(ChevronDownIcon, {}) })
+          ] }),
+          /* @__PURE__ */ jsx("div", { className: "!mt-4 !pt-4 !border-t !border-slate-100 !text-slate-600 !text-lg !leading-relaxed", children: "An AAA screening exclusively focuses on measuring the abdominal aorta. A complete abdominal ultrasound examines the aorta plus the liver, gallbladder, bile ducts, pancreas, spleen, and kidneys." })
+        ] }),
+        /* @__PURE__ */ jsxs("details", { className: "!bg-white !rounded-2xl !p-6 !shadow-sm !border !border-slate-200 group cursor-pointer !transition-shadow hover:!shadow-md", children: [
+          /* @__PURE__ */ jsxs("summary", { className: "!text-xl !font-bold !text-slate-900 !flex !justify-between !items-center !list-none", children: [
+            "How long does the aorta screening take?",
+            /* @__PURE__ */ jsx("span", { className: "transition-transform group-open:rotate-180", children: /* @__PURE__ */ jsx(ChevronDownIcon, {}) })
+          ] }),
+          /* @__PURE__ */ jsx("div", { className: "!mt-4 !pt-4 !border-t !border-slate-100 !text-slate-600 !text-lg !leading-relaxed", children: "A dedicated AAA screening is very quick, typically taking only 15 to 20 minutes from start to finish." })
+        ] }),
+        /* @__PURE__ */ jsxs("details", { className: "!bg-white !rounded-2xl !p-6 !shadow-sm !border !border-slate-200 group cursor-pointer !transition-shadow hover:!shadow-md", children: [
+          /* @__PURE__ */ jsxs("summary", { className: "!text-xl !font-bold !text-slate-900 !flex !justify-between !items-center !list-none", children: [
+            "Does this test use radiation?",
+            /* @__PURE__ */ jsx("span", { className: "transition-transform group-open:rotate-180", children: /* @__PURE__ */ jsx(ChevronDownIcon, {}) })
+          ] }),
+          /* @__PURE__ */ jsx("div", { className: "!mt-4 !pt-4 !border-t !border-slate-100 !text-slate-600 !text-lg !leading-relaxed", children: "No, ultrasound uses harmless, high-frequency sound waves to generate images. It is completely noninvasive and does not rely on radiation, unlike a CT scan or X-ray." })
+        ] }),
+        /* @__PURE__ */ jsxs("details", { className: "!bg-white !rounded-2xl !p-6 !shadow-sm !border !border-slate-200 group cursor-pointer !transition-shadow hover:!shadow-md", children: [
+          /* @__PURE__ */ jsxs("summary", { className: "!text-xl !font-bold !text-slate-900 !flex !justify-between !items-center !list-none", children: [
+            "What does a normal aorta measure?",
+            /* @__PURE__ */ jsx("span", { className: "transition-transform group-open:rotate-180", children: /* @__PURE__ */ jsx(ChevronDownIcon, {}) })
+          ] }),
+          /* @__PURE__ */ jsx("div", { className: "!mt-4 !pt-4 !border-t !border-slate-100 !text-slate-600 !text-lg !leading-relaxed", children: "A normal abdominal aorta typically measures around 2 centimeters in diameter. Swelling greater than 3 centimeters is generally considered an aneurysm, and the risk of rupture increases as the diameter grows larger." })
+        ] }),
+        /* @__PURE__ */ jsxs("details", { className: "!bg-white !rounded-2xl !p-6 !shadow-sm !border !border-slate-200 group cursor-pointer !transition-shadow hover:!shadow-md", children: [
+          /* @__PURE__ */ jsxs("summary", { className: "!text-xl !font-bold !text-slate-900 !flex !justify-between !items-center !list-none", children: [
+            "Will my insurance cover an AAA screening?",
+            /* @__PURE__ */ jsx("span", { className: "transition-transform group-open:rotate-180", children: /* @__PURE__ */ jsx(ChevronDownIcon, {}) })
+          ] }),
+          /* @__PURE__ */ jsx("div", { className: "!mt-4 !pt-4 !border-t !border-slate-100 !text-slate-600 !text-lg !leading-relaxed", children: "Medicare often covers a one-time prevention screening for individuals with specific risk factors (like a smoking history or family history). For others, check with your insurance provider or view our very affordable transparent self-pay pricing." })
+        ] })
+      ] })
+    ] }) }),
+    /* @__PURE__ */ jsx("section", { "aria-labelledby": "service-area", className: "reveal-section opacity-0 translate-y-8 transition-all duration-700 ease-out !px-6 !py-8", children: /* @__PURE__ */ jsxs("div", { className: "!max-w-5xl !mx-auto !text-center", children: [
+      /* @__PURE__ */ jsx("h2", { id: "service-area", className: "sr-only", children: "Local Service Area" }),
+      /* @__PURE__ */ jsxs("p", { className: "!text-xs md:!text-sm !text-slate-400 !leading-relaxed inline-block", children: [
+        /* @__PURE__ */ jsx("strong", { children: "Proudly serving patients in:" }),
+        " Downers Grove, Westmont, Clarendon Hills, Lisle, Oak Brook, Hinsdale, Darien, Willowbrook, Woodridge, Lombard, Glen Ellyn, Western Springs, Villa Park, Wheaton, Burr Ridge, Indian Head Park, Naperville, Elmhurst, Westchester, La Grange, Countryside, Carol Stream, Northlake, Oakbrook Terrace, Bolingbrook, Addison, Aurora, Brookfield, Berkeley, Hillside, Broadview, Roselle, Itasca, Bensenville, Lemont, Franklin Park, Schiller Park, River Forest, Forest Park, Maywood, Bellwood, Oak Park, Oak Forest, Tinley Park, Rolling Meadows, Ridgewood, Sauganash, Crest Hill, Mount Prospect, Niles, Crystal Lawns, Edgebrook, Mayfair, Joliet, Ingalls Park, East Joliet, South Elgin, Plum Grove Village, Winthrop Village, Fernway, Hoffman Estates, Albany Park, Creekside, Valley View, Raynor Park, Arlington Heights, Forest River, Lidice, Fernway Park, Lincolnwood, Morton Grove, Cherry Hill, Gougars, Fairfax Village, Sherwood Oaks, Clintonville, Coleman, and Schaumburg."
+      ] })
+    ] }) }),
+    /* @__PURE__ */ jsx("footer", { className: "reveal-section opacity-0 translate-y-8 transition-all duration-700 ease-out !px-6", children: /* @__PURE__ */ jsxs("div", { className: "!max-w-7xl !mx-auto !bg-slate-900 !rounded-3xl !p-10 md:!p-16 !text-center shadow-xl", children: [
+      /* @__PURE__ */ jsx("h2", { className: "!text-3xl md:!text-4xl !font-bold !text-white !mb-6", children: "Ready to schedule your aorta screening?" }),
+      /* @__PURE__ */ jsxs("p", { className: "!text-xl !text-slate-300 !mb-10 !max-w-3xl !mx-auto", children: [
+        "Use our online scheduling page or click ",
+        /* @__PURE__ */ jsx("strong", { children: "Contact Us" }),
+        " on the website to request an appointment. Our team is happy to answer questions and help you select the most appropriate exam option listed above."
+      ] }),
+      /* @__PURE__ */ jsxs("div", { className: "flex flex-col sm:flex-row gap-6 justify-center items-center", children: [
+        /* @__PURE__ */ jsxs("a", { href: "/#/booking", className: "!bg-blue-600 hover:!bg-blue-500 !text-white !px-10 !py-5 rounded-xl !font-bold !text-xl flex items-center transition hover:-translate-y-1 hover:shadow-lg hover:shadow-blue-500/25 w-full sm:w-auto justify-center", children: [
+          "Book Appointment ",
+          /* @__PURE__ */ jsx(ArrowRight, { className: "!ml-3 !w-6 !h-6" })
+        ] }),
+        /* @__PURE__ */ jsx("a", { href: "https://precisionimagingus.com/#/#contact", className: "!bg-slate-800 hover:!bg-slate-700 !text-white !border !border-slate-600 hover:!border-slate-400 !px-10 !py-5 rounded-xl !font-bold !text-xl transition hover:-translate-y-1 hover:shadow-lg w-full sm:w-auto justify-center flex items-center", children: "Contact Us" })
+      ] })
+    ] }) })
+  ] });
+};
 const ChevronDownIcon = () => /* @__PURE__ */ jsx("svg", { className: "!w-6 !h-6 !text-blue-500", fill: "none", viewBox: "0 0 24 24", stroke: "currentColor", children: /* @__PURE__ */ jsx("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M19 9l-7 7-7-7" }) });
 const routes = {
-  "/services/abdomen-ultrasound": AbdomenUltrasound
+  "/services/abdomen-ultrasound": AbdomenUltrasound,
+  "/services/aorta-screening": AortaScreening
 };
 function render(url, helmetContext) {
   const Component2 = routes[url];
