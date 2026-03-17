@@ -23,12 +23,12 @@ const Header = () => {
   };
 
   const navLinks = [
-    { name: 'Home', to: '/#/' },
-    { name: 'Ultrasound Services', to: '/#/#services' },
-    { name: 'Self-Pay Options', to: '/#/#self-pay' },
-    { name: 'What to Expect', to: '/#/#what-to-expect' },
-    { name: 'Why Choose Us', to: '/#/#why-choose-us' },
-    { name: 'Contact Us', to: '/#/contact' },
+    { name: 'Home', to: 'https://precisionimagingus.com/' },
+    { name: 'Ultrasound Services', to: 'https://precisionimagingus.com/#/#services' },
+    { name: 'Self-Pay Options', to: 'https://precisionimagingus.com/#/#self-pay' },
+    { name: 'What to Expect', to: 'https://precisionimagingus.com/#/#what-to-expect' },
+    { name: 'Why Choose Us', to: 'https://precisionimagingus.com/#/#why-choose-us' },
+    { name: 'Contact Us', to: 'https://precisionimagingus.com/#/contact' },
   ];
 
   return (
@@ -74,7 +74,7 @@ const Header = () => {
             {/* Book Now Button */}
             <li>
               <a
-                href="/#/booking"
+                href="https://precisionimagingus.com/#/booking"
                 className="btn btn-primary"
                 style={{
                   padding: '0.75rem 1.5rem',
@@ -133,7 +133,7 @@ const Header = () => {
           </a>
         ))}
         <a
-          href="/#/booking"
+          href="https://precisionimagingus.com/#/booking"
           className="btn btn-primary"
           style={{
             textAlign: 'center',

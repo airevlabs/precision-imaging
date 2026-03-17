@@ -5,7 +5,7 @@ import fastCompare from "react-fast-compare";
 import invariant from "invariant";
 import shallowEqual from "shallowequal";
 import { StaticRouter } from "react-router";
-import { useLocation, Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import { ArrowUp, Activity, Calendar, Search, Stethoscope, CheckCircle2, Info, Clock, FileBadge, ArrowRight } from "lucide-react";
 var TAG_NAMES = /* @__PURE__ */ ((TAG_NAMES2) => {
@@ -871,12 +871,12 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   const navLinks = [
-    { name: "Home", to: "/#/" },
-    { name: "Ultrasound Services", to: "/#/#services" },
-    { name: "Self-Pay Options", to: "/#/#self-pay" },
-    { name: "What to Expect", to: "/#/#what-to-expect" },
-    { name: "Why Choose Us", to: "/#/#why-choose-us" },
-    { name: "Contact Us", to: "/#/contact" }
+    { name: "Home", to: "https://precisionimagingus.com/" },
+    { name: "Ultrasound Services", to: "https://precisionimagingus.com/#/#services" },
+    { name: "Self-Pay Options", to: "https://precisionimagingus.com/#/#self-pay" },
+    { name: "What to Expect", to: "https://precisionimagingus.com/#/#what-to-expect" },
+    { name: "Why Choose Us", to: "https://precisionimagingus.com/#/#why-choose-us" },
+    { name: "Contact Us", to: "https://precisionimagingus.com/#/contact" }
   ];
   return /* @__PURE__ */ jsxs("header", { className: "site-header", children: [
     /* @__PURE__ */ jsx("input", { type: "checkbox", id: "mobile-menu-toggle", style: { display: "none" } }),
@@ -917,7 +917,7 @@ const Header = () => {
         /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx(
           "a",
           {
-            href: "/#/booking",
+            href: "https://precisionimagingus.com/#/booking",
             className: "btn btn-primary",
             style: {
               padding: "0.75rem 1.5rem",
@@ -978,7 +978,7 @@ const Header = () => {
           /* @__PURE__ */ jsx(
             "a",
             {
-              href: "/#/booking",
+              href: "https://precisionimagingus.com/#/booking",
               className: "btn btn-primary",
               style: {
                 textAlign: "center",
@@ -1046,20 +1046,20 @@ const Footer = () => {
         /* @__PURE__ */ jsxs("div", { children: [
           /* @__PURE__ */ jsx("h3", { style: { fontSize: "1.25rem", marginBottom: "1.5rem", color: "var(--color-white)", fontWeight: "700" }, children: "Quick Links" }),
           /* @__PURE__ */ jsxs("ul", { style: { display: "flex", flexDirection: "column", gap: "0.75rem", opacity: 0.8 }, children: [
-            /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx(Link, { to: "/", className: "footer-link", children: "Home" }) }),
-            /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx(Link, { to: "/#services", className: "footer-link", children: "Services" }) }),
-            /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx(Link, { to: "/#self-pay", className: "footer-link", children: "Self-Pay Options" }) }),
-            /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx(Link, { to: "/contact", className: "footer-link", children: "Contact Us" }) })
+            /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "https://precisionimagingus.com/", className: "footer-link", children: "Home" }) }),
+            /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "https://precisionimagingus.com/#/#services", className: "footer-link", children: "Services" }) }),
+            /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "https://precisionimagingus.com/#/#self-pay", className: "footer-link", children: "Self-Pay Options" }) }),
+            /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "https://precisionimagingus.com/#/contact", className: "footer-link", children: "Contact Us" }) })
           ] })
         ] }),
         /* @__PURE__ */ jsxs("div", { children: [
           /* @__PURE__ */ jsx("h3", { style: { fontSize: "1.25rem", marginBottom: "1.5rem", color: "var(--color-white)", fontWeight: "700" }, children: "Patient Resources" }),
           /* @__PURE__ */ jsxs("ul", { style: { display: "flex", flexDirection: "column", gap: "0.75rem", opacity: 0.8 }, children: [
-            /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx(Link, { to: "/#what-to-expect", className: "footer-link", children: "What to Expect" }) }),
-            /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx(Link, { to: "/#why-choose-us", className: "footer-link", children: "Why Choose Us" }) }),
-            /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx(Link, { to: "/privacy", className: "footer-link", children: "Privacy Policy" }) }),
-            /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx(Link, { to: "/hipaa", className: "footer-link", children: "HIPAA Notice" }) }),
-            /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx(Link, { to: "/terms", className: "footer-link", children: "Terms & Conditions" }) })
+            /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "https://precisionimagingus.com/#/#what-to-expect", className: "footer-link", children: "What to Expect" }) }),
+            /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "https://precisionimagingus.com/#/#why-choose-us", className: "footer-link", children: "Why Choose Us" }) }),
+            /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "https://precisionimagingus.com/#/privacy", className: "footer-link", children: "Privacy Policy" }) }),
+            /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "https://precisionimagingus.com/#/hipaa", className: "footer-link", children: "HIPAA Notice" }) }),
+            /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "https://precisionimagingus.com/#/terms", className: "footer-link", children: "Terms & Conditions" }) })
           ] })
         ] })
       ] }),
@@ -1223,7 +1223,7 @@ const AbdomenUltrasound = () => {
         /* @__PURE__ */ jsx("h1", { className: "!text-5xl md:!text-6xl lg:!text-7xl !font-bold !mb-8 !text-white leading-tight !tracking-tight", children: "Abdominal Ultrasound" }),
         /* @__PURE__ */ jsx("p", { className: "!text-xl md:!text-2xl !mb-10 max-w-3xl !text-slate-300 font-medium !leading-relaxed", children: "Safe, High‑Quality Sonography for the Liver, Gallbladder, Bile ducts, Pancreas, Spleen, Kidneys, and Abdominal aorta in Downers Grove and Chicago Suburbs." }),
         /* @__PURE__ */ jsxs("div", { className: "flex flex-col sm:flex-row gap-4", children: [
-          /* @__PURE__ */ jsxs("a", { href: "/#/booking", className: "!bg-blue-600 hover:!bg-blue-500 !px-8 !py-4 rounded-xl !font-semibold flex items-center justify-center transition hover:-translate-y-1 shadow-lg hover:shadow-blue-500/25 !text-white !text-lg", children: [
+          /* @__PURE__ */ jsxs("a", { href: "https://precisionimagingus.com/#/booking", className: "!bg-blue-600 hover:!bg-blue-500 !px-8 !py-4 rounded-xl !font-semibold flex items-center justify-center transition hover:-translate-y-1 shadow-lg hover:shadow-blue-500/25 !text-white !text-lg", children: [
             "Book Appointment ",
             /* @__PURE__ */ jsx(Calendar, { className: "!ml-2 !w-5 !h-5" })
           ] }),
@@ -1470,13 +1470,6 @@ const AbdomenUltrasound = () => {
         ] })
       ] })
     ] }) }),
-    /* @__PURE__ */ jsx("section", { "aria-labelledby": "service-area", className: "reveal-section opacity-0 translate-y-8 transition-all duration-700 ease-out !px-6 !py-8", children: /* @__PURE__ */ jsxs("div", { className: "!max-w-5xl !mx-auto !text-center", children: [
-      /* @__PURE__ */ jsx("h2", { id: "service-area", className: "sr-only", children: "Local Service Area" }),
-      /* @__PURE__ */ jsxs("p", { className: "!text-xs md:!text-sm !text-slate-400 !leading-relaxed inline-block", children: [
-        /* @__PURE__ */ jsx("strong", { children: "Proudly serving patients in:" }),
-        " Downers Grove, Westmont, Clarendon Hills, Lisle, Oak Brook, Hinsdale, Darien, Willowbrook, Woodridge, Lombard, Glen Ellyn, Western Springs, Villa Park, Wheaton, Burr Ridge, Indian Head Park, Naperville, Elmhurst, Westchester, La Grange, Countryside, Carol Stream, Northlake, Oakbrook Terrace, Bolingbrook, Addison, Aurora, Brookfield, Berkeley, Hillside, Broadview, Roselle, Itasca, Bensenville, Lemont, Franklin Park, Schiller Park, River Forest, Forest Park, Maywood, Bellwood, Oak Park, Oak Forest, Tinley Park, Rolling Meadows, Ridgewood, Sauganash, Crest Hill, Mount Prospect, Niles, Crystal Lawns, Edgebrook, Mayfair, Joliet, Ingalls Park, East Joliet, South Elgin, Plum Grove Village, Winthrop Village, Fernway, Hoffman Estates, Albany Park, Creekside, Valley View, Raynor Park, Arlington Heights, Forest River, Lidice, Fernway Park, Lincolnwood, Morton Grove, Cherry Hill, Gougars, Fairfax Village, Sherwood Oaks, Clintonville, Coleman, and Schaumburg."
-      ] })
-    ] }) }),
     /* @__PURE__ */ jsx("footer", { className: "reveal-section opacity-0 translate-y-8 transition-all duration-700 ease-out !px-6", children: /* @__PURE__ */ jsxs("div", { className: "!max-w-7xl !mx-auto !bg-slate-900 !rounded-3xl !p-10 md:!p-16 !text-center shadow-xl", children: [
       /* @__PURE__ */ jsx("h2", { className: "!text-3xl md:!text-4xl !font-bold !text-white !mb-6", children: "Ready to schedule your abdomen ultrasound?" }),
       /* @__PURE__ */ jsxs("p", { className: "!text-xl !text-slate-300 !mb-10 !max-w-3xl !mx-auto", children: [
@@ -1485,11 +1478,18 @@ const AbdomenUltrasound = () => {
         " on the website to request an appointment. Our team is happy to answer questions and help you select the most appropriate exam option listed above."
       ] }),
       /* @__PURE__ */ jsxs("div", { className: "flex flex-col sm:flex-row gap-6 justify-center items-center", children: [
-        /* @__PURE__ */ jsxs("a", { href: "/#/booking", className: "!bg-blue-600 hover:!bg-blue-500 !text-white !px-10 !py-5 rounded-xl !font-bold !text-xl flex items-center transition hover:-translate-y-1 hover:shadow-lg hover:shadow-blue-500/25 w-full sm:w-auto justify-center", children: [
+        /* @__PURE__ */ jsxs("a", { href: "https://precisionimagingus.com/#/booking", className: "!bg-blue-600 hover:!bg-blue-500 !text-white !px-10 !py-5 rounded-xl !font-bold !text-xl flex items-center transition hover:-translate-y-1 hover:shadow-lg hover:shadow-blue-500/25 w-full sm:w-auto justify-center", children: [
           "Book Appointment ",
           /* @__PURE__ */ jsx(ArrowRight, { className: "!ml-3 !w-6 !h-6" })
         ] }),
         /* @__PURE__ */ jsx("a", { href: "https://precisionimagingus.com/#/contact", className: "!bg-slate-800 hover:!bg-slate-700 !text-white !border !border-slate-600 hover:!border-slate-400 !px-10 !py-5 rounded-xl !font-bold !text-xl transition hover:-translate-y-1 hover:shadow-lg w-full sm:w-auto justify-center flex items-center", children: "Contact Us" })
+      ] })
+    ] }) }),
+    /* @__PURE__ */ jsx("section", { "aria-labelledby": "service-area", className: "reveal-section opacity-0 translate-y-8 transition-all duration-700 ease-out !px-6 !py-8", children: /* @__PURE__ */ jsxs("div", { className: "!max-w-5xl !mx-auto !text-center", children: [
+      /* @__PURE__ */ jsx("h2", { id: "service-area", className: "sr-only", children: "Local Service Area" }),
+      /* @__PURE__ */ jsxs("p", { className: "!text-xs md:!text-sm !text-slate-400 !leading-relaxed inline-block", children: [
+        /* @__PURE__ */ jsx("strong", { children: "Proudly serving patients in:" }),
+        " Downers Grove, Westmont, Clarendon Hills, Lisle, Oak Brook, Hinsdale, Darien, Willowbrook, Woodridge, Lombard, Glen Ellyn, Western Springs, Villa Park, Wheaton, Burr Ridge, Indian Head Park, Naperville, Elmhurst, Westchester, La Grange, Countryside, Carol Stream, Northlake, Oakbrook Terrace, Bolingbrook, Addison, Aurora, Brookfield, Berkeley, Hillside, Broadview, Roselle, Itasca, Bensenville, Lemont, Franklin Park, Schiller Park, River Forest, Forest Park, Maywood, Bellwood, Oak Park, Oak Forest, Tinley Park, Rolling Meadows, Ridgewood, Sauganash, Crest Hill, Mount Prospect, Niles, Crystal Lawns, Edgebrook, Mayfair, Joliet, Ingalls Park, East Joliet, South Elgin, Plum Grove Village, Winthrop Village, Fernway, Hoffman Estates, Albany Park, Creekside, Valley View, Raynor Park, Arlington Heights, Forest River, Lidice, Fernway Park, Lincolnwood, Morton Grove, Cherry Hill, Gougars, Fairfax Village, Sherwood Oaks, Clintonville, Coleman, and Schaumburg."
       ] })
     ] }) })
   ] });
@@ -1544,7 +1544,7 @@ const AortaScreening = () => {
         /* @__PURE__ */ jsx("h1", { className: "!text-5xl md:!text-6xl lg:!text-7xl !font-bold !mb-8 !text-white leading-tight !tracking-tight", children: "Aorta Screening" }),
         /* @__PURE__ */ jsx("p", { className: "!text-xl md:!text-2xl !mb-10 max-w-3xl !text-slate-300 font-medium !leading-relaxed", children: "Safe, High‑Quality Sonography for Abdominal Aortic Aneurysm (AAA) evaluation in Downers Grove and Chicago Suburbs." }),
         /* @__PURE__ */ jsxs("div", { className: "flex flex-col sm:flex-row gap-4", children: [
-          /* @__PURE__ */ jsxs("a", { href: "/#/booking", className: "!bg-blue-600 hover:!bg-blue-500 !px-8 !py-4 rounded-xl !font-semibold flex items-center justify-center transition hover:-translate-y-1 shadow-lg hover:shadow-blue-500/25 !text-white !text-lg", children: [
+          /* @__PURE__ */ jsxs("a", { href: "https://precisionimagingus.com/#/booking", className: "!bg-blue-600 hover:!bg-blue-500 !px-8 !py-4 rounded-xl !font-semibold flex items-center justify-center transition hover:-translate-y-1 shadow-lg hover:shadow-blue-500/25 !text-white !text-lg", children: [
             "Book Appointment ",
             /* @__PURE__ */ jsx(Calendar, { className: "!ml-2 !w-5 !h-5" })
           ] }),
@@ -1776,13 +1776,6 @@ const AortaScreening = () => {
         ] })
       ] })
     ] }) }),
-    /* @__PURE__ */ jsx("section", { "aria-labelledby": "service-area", className: "reveal-section opacity-0 translate-y-8 transition-all duration-700 ease-out !px-6 !py-8", children: /* @__PURE__ */ jsxs("div", { className: "!max-w-5xl !mx-auto !text-center", children: [
-      /* @__PURE__ */ jsx("h2", { id: "service-area", className: "sr-only", children: "Local Service Area" }),
-      /* @__PURE__ */ jsxs("p", { className: "!text-xs md:!text-sm !text-slate-400 !leading-relaxed inline-block", children: [
-        /* @__PURE__ */ jsx("strong", { children: "Proudly serving patients in:" }),
-        " Downers Grove, Westmont, Clarendon Hills, Lisle, Oak Brook, Hinsdale, Darien, Willowbrook, Woodridge, Lombard, Glen Ellyn, Western Springs, Villa Park, Wheaton, Burr Ridge, Indian Head Park, Naperville, Elmhurst, Westchester, La Grange, Countryside, Carol Stream, Northlake, Oakbrook Terrace, Bolingbrook, Addison, Aurora, Brookfield, Berkeley, Hillside, Broadview, Roselle, Itasca, Bensenville, Lemont, Franklin Park, Schiller Park, River Forest, Forest Park, Maywood, Bellwood, Oak Park, Oak Forest, Tinley Park, Rolling Meadows, Ridgewood, Sauganash, Crest Hill, Mount Prospect, Niles, Crystal Lawns, Edgebrook, Mayfair, Joliet, Ingalls Park, East Joliet, South Elgin, Plum Grove Village, Winthrop Village, Fernway, Hoffman Estates, Albany Park, Creekside, Valley View, Raynor Park, Arlington Heights, Forest River, Lidice, Fernway Park, Lincolnwood, Morton Grove, Cherry Hill, Gougars, Fairfax Village, Sherwood Oaks, Clintonville, Coleman, and Schaumburg."
-      ] })
-    ] }) }),
     /* @__PURE__ */ jsx("footer", { className: "reveal-section opacity-0 translate-y-8 transition-all duration-700 ease-out !px-6", children: /* @__PURE__ */ jsxs("div", { className: "!max-w-7xl !mx-auto !bg-slate-900 !rounded-3xl !p-10 md:!p-16 !text-center shadow-xl", children: [
       /* @__PURE__ */ jsx("h2", { className: "!text-3xl md:!text-4xl !font-bold !text-white !mb-6", children: "Ready to schedule your aorta screening?" }),
       /* @__PURE__ */ jsxs("p", { className: "!text-xl !text-slate-300 !mb-10 !max-w-3xl !mx-auto", children: [
@@ -1791,11 +1784,18 @@ const AortaScreening = () => {
         " on the website to request an appointment. Our team is happy to answer questions and help you select the most appropriate exam option listed above."
       ] }),
       /* @__PURE__ */ jsxs("div", { className: "flex flex-col sm:flex-row gap-6 justify-center items-center", children: [
-        /* @__PURE__ */ jsxs("a", { href: "/#/booking", className: "!bg-blue-600 hover:!bg-blue-500 !text-white !px-10 !py-5 rounded-xl !font-bold !text-xl flex items-center transition hover:-translate-y-1 hover:shadow-lg hover:shadow-blue-500/25 w-full sm:w-auto justify-center", children: [
+        /* @__PURE__ */ jsxs("a", { href: "https://precisionimagingus.com/#/booking", className: "!bg-blue-600 hover:!bg-blue-500 !text-white !px-10 !py-5 rounded-xl !font-bold !text-xl flex items-center transition hover:-translate-y-1 hover:shadow-lg hover:shadow-blue-500/25 w-full sm:w-auto justify-center", children: [
           "Book Appointment ",
           /* @__PURE__ */ jsx(ArrowRight, { className: "!ml-3 !w-6 !h-6" })
         ] }),
         /* @__PURE__ */ jsx("a", { href: "https://precisionimagingus.com/#/contact", className: "!bg-slate-800 hover:!bg-slate-700 !text-white !border !border-slate-600 hover:!border-slate-400 !px-10 !py-5 rounded-xl !font-bold !text-xl transition hover:-translate-y-1 hover:shadow-lg w-full sm:w-auto justify-center flex items-center", children: "Contact Us" })
+      ] })
+    ] }) }),
+    /* @__PURE__ */ jsx("section", { "aria-labelledby": "service-area", className: "reveal-section opacity-0 translate-y-8 transition-all duration-700 ease-out !px-6 !py-8", children: /* @__PURE__ */ jsxs("div", { className: "!max-w-5xl !mx-auto !text-center", children: [
+      /* @__PURE__ */ jsx("h2", { id: "service-area", className: "sr-only", children: "Local Service Area" }),
+      /* @__PURE__ */ jsxs("p", { className: "!text-xs md:!text-sm !text-slate-400 !leading-relaxed inline-block", children: [
+        /* @__PURE__ */ jsx("strong", { children: "Proudly serving patients in:" }),
+        " Downers Grove, Westmont, Clarendon Hills, Lisle, Oak Brook, Hinsdale, Darien, Willowbrook, Woodridge, Lombard, Glen Ellyn, Western Springs, Villa Park, Wheaton, Burr Ridge, Indian Head Park, Naperville, Elmhurst, Westchester, La Grange, Countryside, Carol Stream, Northlake, Oakbrook Terrace, Bolingbrook, Addison, Aurora, Brookfield, Berkeley, Hillside, Broadview, Roselle, Itasca, Bensenville, Lemont, Franklin Park, Schiller Park, River Forest, Forest Park, Maywood, Bellwood, Oak Park, Oak Forest, Tinley Park, Rolling Meadows, Ridgewood, Sauganash, Crest Hill, Mount Prospect, Niles, Crystal Lawns, Edgebrook, Mayfair, Joliet, Ingalls Park, East Joliet, South Elgin, Plum Grove Village, Winthrop Village, Fernway, Hoffman Estates, Albany Park, Creekside, Valley View, Raynor Park, Arlington Heights, Forest River, Lidice, Fernway Park, Lincolnwood, Morton Grove, Cherry Hill, Gougars, Fairfax Village, Sherwood Oaks, Clintonville, Coleman, and Schaumburg."
       ] })
     ] }) })
   ] });

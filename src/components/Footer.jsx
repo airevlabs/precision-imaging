@@ -21,21 +21,21 @@ const Footer = () => {
                     <div>
                         <h3 style={{ fontSize: '1.25rem', marginBottom: '1.5rem', color: 'var(--color-white)', fontWeight: '700' }}>Quick Links</h3>
                         <ul style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', opacity: 0.8 }}>
-                            <li><Link to="/" className="footer-link">Home</Link></li>
-                            <li><Link to="/#services" className="footer-link">Services</Link></li>
-                            <li><Link to="/#self-pay" className="footer-link">Self-Pay Options</Link></li>
-                            <li><Link to="/contact" className="footer-link">Contact Us</Link></li>
+                            <li><a href="https://precisionimagingus.com/" className="footer-link">Home</a></li>
+                            <li><a href="https://precisionimagingus.com/#/#services" className="footer-link">Services</a></li>
+                            <li><a href="https://precisionimagingus.com/#/#self-pay" className="footer-link">Self-Pay Options</a></li>
+                            <li><a href="https://precisionimagingus.com/#/contact" className="footer-link">Contact Us</a></li>
                         </ul>
                     </div>
 
                     <div>
                         <h3 style={{ fontSize: '1.25rem', marginBottom: '1.5rem', color: 'var(--color-white)', fontWeight: '700' }}>Patient Resources</h3>
                         <ul style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', opacity: 0.8 }}>
-                            <li><Link to="/#what-to-expect" className="footer-link">What to Expect</Link></li>
-                            <li><Link to="/#why-choose-us" className="footer-link">Why Choose Us</Link></li>
-                            <li><Link to="/privacy" className="footer-link">Privacy Policy</Link></li>
-                            <li><Link to="/hipaa" className="footer-link">HIPAA Notice</Link></li>
-                            <li><Link to="/terms" className="footer-link">Terms & Conditions</Link></li>
+                            <li><a href="https://precisionimagingus.com/#/#what-to-expect" className="footer-link">What to Expect</a></li>
+                            <li><a href="https://precisionimagingus.com/#/#why-choose-us" className="footer-link">Why Choose Us</a></li>
+                            <li><a href="https://precisionimagingus.com/#/privacy" className="footer-link">Privacy Policy</a></li>
+                            <li><a href="https://precisionimagingus.com/#/hipaa" className="footer-link">HIPAA Notice</a></li>
+                            <li><a href="https://precisionimagingus.com/#/terms" className="footer-link">Terms & Conditions</a></li>
                         </ul>
                     </div>
                 </div>
