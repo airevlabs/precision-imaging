@@ -15,21 +15,7 @@ const SelfPay = () => {
     const location = useLocation();
 
     const handleContactClick = () => {
-        if (location.pathname !== '/') {
-            // Navigate to home with hash, App.jsx ScrollToAnchor will handle scrolling
-            navigate('/#contact');
-        } else {
-            const contactSection = document.getElementById('contact');
-            if (contactSection) {
-                const headerOffset = 80;
-                const elementPosition = contactSection.getBoundingClientRect().top;
-                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-                window.scrollTo({
-                    top: offsetPosition,
-                    behavior: "smooth"
-                });
-            }
-        }
+        navigate('/contact');
     };
 
     return (
