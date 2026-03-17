@@ -5,7 +5,8 @@ import Services from '../components/Services';
 import SelfPay from '../components/SelfPay';
 import WhatToExpect from '../components/WhatToExpect';
 import WhyChooseUs from '../components/WhyChooseUs';
-import Contact from '../components/Contact';
+import FAQ from '../components/FAQ';
+
 
 const Home = () => {
     return (
@@ -18,7 +19,8 @@ const Home = () => {
             <SelfPay />
             <WhatToExpect />
             <WhyChooseUs />
-            <Contact />
+            <FAQ />
+
         </div>
     );
 };

@@ -871,16 +871,17 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   const navLinks = [
-    { name: "Home", to: "https://precisionimagingus.com/" },
-    { name: "Ultrasound Services", to: "https://precisionimagingus.com/#/#services" },
-    { name: "Self-Pay Options", to: "https://precisionimagingus.com/#/#self-pay" },
-    { name: "What to Expect", to: "https://precisionimagingus.com/#/#what-to-expect" },
-    { name: "Why Choose Us", to: "https://precisionimagingus.com/#/#why-choose-us" }
+    { name: "Home", to: "/#/" },
+    { name: "Ultrasound Services", to: "/#/#services" },
+    { name: "Self-Pay Options", to: "/#/#self-pay" },
+    { name: "What to Expect", to: "/#/#what-to-expect" },
+    { name: "Why Choose Us", to: "/#/#why-choose-us" },
+    { name: "Contact Us", to: "/#/contact" }
   ];
   return /* @__PURE__ */ jsxs("header", { className: "site-header", children: [
     /* @__PURE__ */ jsx("input", { type: "checkbox", id: "mobile-menu-toggle", style: { display: "none" } }),
     /* @__PURE__ */ jsxs("div", { className: "container", style: { display: "flex", justifyContent: "space-between", alignItems: "center" }, children: [
-      /* @__PURE__ */ jsx("a", { href: "https://precisionimagingus.com/", children: /* @__PURE__ */ jsx(Logo, { animated: true }) }),
+      /* @__PURE__ */ jsx("a", { href: "/", children: /* @__PURE__ */ jsx(Logo, { animated: true }) }),
       /* @__PURE__ */ jsx("nav", { className: "desktop-nav", style: { display: "none" }, children: /* @__PURE__ */ jsxs("ul", { style: { display: "flex", gap: "2rem", alignItems: "center" }, children: [
         navLinks.map((link) => /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsxs(
           "a",
@@ -916,7 +917,7 @@ const Header = () => {
         /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx(
           "a",
           {
-            href: "https://precisionimagingus.com/#/booking",
+            href: "/#/booking",
             className: "btn btn-primary",
             style: {
               padding: "0.75rem 1.5rem",
@@ -977,7 +978,7 @@ const Header = () => {
           /* @__PURE__ */ jsx(
             "a",
             {
-              href: "https://precisionimagingus.com/#/booking",
+              href: "/#/booking",
               className: "btn btn-primary",
               style: {
                 textAlign: "center",
@@ -1048,7 +1049,7 @@ const Footer = () => {
             /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx(Link, { to: "/", className: "footer-link", children: "Home" }) }),
             /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx(Link, { to: "/#services", className: "footer-link", children: "Services" }) }),
             /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx(Link, { to: "/#self-pay", className: "footer-link", children: "Self-Pay Options" }) }),
-            /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx(Link, { to: "/#contact", className: "footer-link", children: "Contact Us" }) })
+            /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx(Link, { to: "/contact", className: "footer-link", children: "Contact Us" }) })
           ] })
         ] }),
         /* @__PURE__ */ jsxs("div", { children: [
@@ -1115,7 +1116,7 @@ const BackToTop = () => {
       whileTap: { scale: 0.9 },
       style: {
         position: "fixed",
-        bottom: "6rem",
+        bottom: "2rem",
         right: "2rem",
         backgroundColor: "var(--color-primary-blue)",
         color: "var(--color-white)",
@@ -1226,7 +1227,7 @@ const AbdomenUltrasound = () => {
             "Book Appointment ",
             /* @__PURE__ */ jsx(Calendar, { className: "!ml-2 !w-5 !h-5" })
           ] }),
-          /* @__PURE__ */ jsx("a", { href: "https://precisionimagingus.com/#/#contact", className: "!bg-transparent border-2 !border-slate-600 hover:!border-white hover:!bg-white/10 !px-8 !py-4 rounded-xl !font-semibold flex items-center justify-center transition hover:-translate-y-1 !text-white !text-lg", children: "Contact Us" })
+          /* @__PURE__ */ jsx("a", { href: "https://precisionimagingus.com/#/contact", className: "!bg-transparent border-2 !border-slate-600 hover:!border-white hover:!bg-white/10 !px-8 !py-4 rounded-xl !font-semibold flex items-center justify-center transition hover:-translate-y-1 !text-white !text-lg", children: "Contact Us" })
         ] })
       ] })
     ] }),
@@ -1488,7 +1489,7 @@ const AbdomenUltrasound = () => {
           "Book Appointment ",
           /* @__PURE__ */ jsx(ArrowRight, { className: "!ml-3 !w-6 !h-6" })
         ] }),
-        /* @__PURE__ */ jsx("a", { href: "https://precisionimagingus.com/#/#contact", className: "!bg-slate-800 hover:!bg-slate-700 !text-white !border !border-slate-600 hover:!border-slate-400 !px-10 !py-5 rounded-xl !font-bold !text-xl transition hover:-translate-y-1 hover:shadow-lg w-full sm:w-auto justify-center flex items-center", children: "Contact Us" })
+        /* @__PURE__ */ jsx("a", { href: "https://precisionimagingus.com/#/contact", className: "!bg-slate-800 hover:!bg-slate-700 !text-white !border !border-slate-600 hover:!border-slate-400 !px-10 !py-5 rounded-xl !font-bold !text-xl transition hover:-translate-y-1 hover:shadow-lg w-full sm:w-auto justify-center flex items-center", children: "Contact Us" })
       ] })
     ] }) })
   ] });
@@ -1547,7 +1548,7 @@ const AortaScreening = () => {
             "Book Appointment ",
             /* @__PURE__ */ jsx(Calendar, { className: "!ml-2 !w-5 !h-5" })
           ] }),
-          /* @__PURE__ */ jsx("a", { href: "https://precisionimagingus.com/#/#contact", className: "!bg-transparent border-2 !border-slate-600 hover:!border-white hover:!bg-white/10 !px-8 !py-4 rounded-xl !font-semibold flex items-center justify-center transition hover:-translate-y-1 !text-white !text-lg", children: "Contact Us" })
+          /* @__PURE__ */ jsx("a", { href: "https://precisionimagingus.com/#/contact", className: "!bg-transparent border-2 !border-slate-600 hover:!border-white hover:!bg-white/10 !px-8 !py-4 rounded-xl !font-semibold flex items-center justify-center transition hover:-translate-y-1 !text-white !text-lg", children: "Contact Us" })
         ] })
       ] })
     ] }),
@@ -1794,7 +1795,7 @@ const AortaScreening = () => {
           "Book Appointment ",
           /* @__PURE__ */ jsx(ArrowRight, { className: "!ml-3 !w-6 !h-6" })
         ] }),
-        /* @__PURE__ */ jsx("a", { href: "https://precisionimagingus.com/#/#contact", className: "!bg-slate-800 hover:!bg-slate-700 !text-white !border !border-slate-600 hover:!border-slate-400 !px-10 !py-5 rounded-xl !font-bold !text-xl transition hover:-translate-y-1 hover:shadow-lg w-full sm:w-auto justify-center flex items-center", children: "Contact Us" })
+        /* @__PURE__ */ jsx("a", { href: "https://precisionimagingus.com/#/contact", className: "!bg-slate-800 hover:!bg-slate-700 !text-white !border !border-slate-600 hover:!border-slate-400 !px-10 !py-5 rounded-xl !font-bold !text-xl transition hover:-translate-y-1 hover:shadow-lg w-full sm:w-auto justify-center flex items-center", children: "Contact Us" })
       ] })
     ] }) })
   ] });

@@ -3,7 +3,7 @@ import { Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import BackToTop from './components/BackToTop';
-import FloatingContactForm from './components/FloatingContactForm';
+
 import Home from './pages/Home';
 import Booking from './pages/Booking';
 import Hipaa from './pages/Hipaa';
@@ -11,10 +11,12 @@ import Privacy from './pages/Privacy';
 import Terms from './pages/Terms';
 import AbdomenUltrasound from './pages/services/AbdomenUltrasound';
 import AortaScreening from './pages/services/AortaScreening';
+import ContactPage from './pages/ContactPage';
 
 // ScrollToAnchor component to handle hash scrolling on route change
 const ScrollToAnchor = () => {
-  const { hash } = useLocation();
+  const { pathname, hash } = useLocation();
+  const topPages = ['/contact', '/booking', '/hipaa', '/privacy', '/terms'];
 
   useEffect(() => {
     if (hash) {
@@ -30,10 +32,12 @@ const ScrollToAnchor = () => {
           });
         }, 100);
       }
+    } else if (topPages.includes(pathname)) {
+      window.scrollTo(0, 0);
     } else {
       window.scrollTo(0, 0);
     }
-  }, [hash]);
+  }, [pathname, hash]);
 
   return null;
 }
@@ -51,10 +55,10 @@ function App() {
         <Route path="/terms" element={<Terms />} />
         <Route path="/services/abdomen-ultrasound" element={<AbdomenUltrasound />} />
         <Route path="/services/aorta-screening" element={<AortaScreening />} />
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
       <Footer />
       <BackToTop />
-      <FloatingContactForm />
     </div>
   );
 }

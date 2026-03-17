@@ -55,7 +55,7 @@ const WhyChooseUs = () => {
                             We pride ourselves on providing a clinical experience that feels high-tech yet personal. Our self-pay model ensures that financial transparency is never a barrier to quality diagnostic care.
                         </p>
                         <motion.a
-                            href="/booking"
+                            href="/#/booking"
                             className="btn btn-primary"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}

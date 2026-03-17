@@ -23,18 +23,19 @@ const Header = () => {
   };
 
   const navLinks = [
-    { name: 'Home', to: 'https://precisionimagingus.com/' },
-    { name: 'Ultrasound Services', to: 'https://precisionimagingus.com/#/#services' },
-    { name: 'Self-Pay Options', to: 'https://precisionimagingus.com/#/#self-pay' },
-    { name: 'What to Expect', to: 'https://precisionimagingus.com/#/#what-to-expect' },
-    { name: 'Why Choose Us', to: 'https://precisionimagingus.com/#/#why-choose-us' },
+    { name: 'Home', to: '/#/' },
+    { name: 'Ultrasound Services', to: '/#/#services' },
+    { name: 'Self-Pay Options', to: '/#/#self-pay' },
+    { name: 'What to Expect', to: '/#/#what-to-expect' },
+    { name: 'Why Choose Us', to: '/#/#why-choose-us' },
+    { name: 'Contact Us', to: '/#/contact' },
   ];
 
   return (
     <header className="site-header">
       <input type="checkbox" id="mobile-menu-toggle" style={{ display: 'none' }} />
       <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <a href="https://precisionimagingus.com/"><Logo animated={true} /></a>
+        <a href="/"><Logo animated={true} /></a>
 
         {/* Desktop Navigation */}
         <nav className="desktop-nav" style={{ display: 'none' }}>
@@ -73,7 +74,7 @@ const Header = () => {
             {/* Book Now Button */}
             <li>
               <a
-                href="https://precisionimagingus.com/#/booking"
+                href="/#/booking"
                 className="btn btn-primary"
                 style={{
                   padding: '0.75rem 1.5rem',
@@ -132,7 +133,7 @@ const Header = () => {
           </a>
         ))}
         <a
-          href="https://precisionimagingus.com/#/booking"
+          href="/#/booking"
           className="btn btn-primary"
           style={{
             textAlign: 'center',

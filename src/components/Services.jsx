@@ -188,11 +188,18 @@ const ServiceCard = ({ title, icon: IconOrUrl, desc, index }) => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: index * 0.05, duration: 0.5 }}
             whileHover={{
                 y: -10,
                 boxShadow: 'var(--shadow-lg)',
-                transition: { duration: 0.2, ease: "easeOut" }
+                borderColor: 'var(--color-secondary-blue)',
+            }}
+            whileTap={{ scale: 0.98, y: -5 }}
+            transition={{ 
+                type: "spring", 
+                stiffness: 300, 
+                damping: 25,
+                opacity: { duration: 0.5, delay: index * 0.05 },
+                y: { duration: 0.2 }
             }}
             style={{
                 backgroundColor: 'var(--color-white)',
@@ -202,9 +209,10 @@ const ServiceCard = ({ title, icon: IconOrUrl, desc, index }) => {
                 display: 'flex',
                 flexDirection: 'column',
                 gap: '1rem',
-                transition: 'var(--transition-smooth)',
-                cursor: 'default',
-                height: '100%'
+                cursor: 'pointer',
+                height: '100%',
+                position: 'relative',
+                willChange: 'transform, box-shadow'
             }}
         >
             <div style={{

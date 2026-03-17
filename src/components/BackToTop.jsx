@@ -37,7 +37,7 @@ const BackToTop = () => {
                     whileTap={{ scale: 0.9 }}
                     style={{
                         position: 'fixed',
-                        bottom: '6rem',
+                        bottom: '2rem',
                         right: '2rem',
                         backgroundColor: 'var(--color-primary-blue)',
                         color: 'var(--color-white)',
