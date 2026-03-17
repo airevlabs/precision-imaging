@@ -5,10 +5,12 @@ import { StaticRouter } from 'react-router';
 import SSGLayout from './components/SSGLayout.jsx';
 import AbdomenUltrasound from './pages/services/AbdomenUltrasound.jsx';
 import AortaScreening from './pages/services/AortaScreening.jsx';
+import BreastUltrasound from './pages/services/BreastUltrasound.jsx';
 
 const routes = {
     '/services/abdomen-ultrasound': AbdomenUltrasound,
-    '/services/aorta-screening': AortaScreening
+    '/services/aorta-screening': AortaScreening,
+    '/services/breast-ultrasound': BreastUltrasound
 };
 
 export function render(url, helmetContext) {
