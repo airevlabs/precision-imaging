@@ -8,6 +8,28 @@ const toAbsolute = (p) => path.resolve(__dirname, p);
 const template = fs.readFileSync(toAbsolute('dist/client/index.html'), 'utf-8');
 const { render } = await import('./dist/server/entry-server.js');
 
+// Helper to find latest assets
+const assetsDir = toAbsolute('dist/client/assets');
+const getLatestAsset = (pattern) => {
+    const files = fs.readdirSync(assetsDir)
+        .filter(f => f.match(pattern))
+        .map(f => ({ name: f, time: fs.statSync(path.join(assetsDir, f)).mtime.getTime() }))
+        .sort((a, b) => b.time - a.time);
+    return files.length > 0 ? files[0].name : null;
+};
+
+const latestJS = getLatestAsset(/^index-.*\.js$/);
+const latestCSS = getLatestAsset(/.*\.css$/);
+
+if (latestJS) {
+    fs.copyFileSync(path.join(assetsDir, latestJS), path.join(assetsDir, 'index.js'));
+    console.log(`Copied ${latestJS} to index.js`);
+}
+if (latestCSS) {
+    fs.copyFileSync(path.join(assetsDir, latestCSS), path.join(assetsDir, 'style.css'));
+    console.log(`Copied ${latestCSS} to style.css`);
+}
+
 const routesToPrerender = [
     { url: '/services/abdomen-ultrasound', name: 'abdomen-ultrasound' },
     { url: '/services/aorta-screening', name: 'aorta-screening' },
@@ -19,10 +41,16 @@ for (const { url, name } of routesToPrerender) {
     const appHtml = render(url, helmetContext);
     const { helmet } = helmetContext;
 
-    const html = template
+    let html = template
         .replace(`<!--app-head-->`, helmet ? Array.from([helmet.title.toString(), helmet.meta.toString(), helmet.link.toString(), helmet.script.toString()]).join('\n') : '')
-        .replace(`<!--app-html-->`, appHtml)
-        .replace(/<script type="module" crossorigin src="[^"]+"><\/script>/, '');
+        .replace(`<!--app-html-->`, appHtml);
+
+    // Replace hashed assets with unhashed versions for GHL stability
+    html = html.replace(/assets\/[a-zA-Z0-9_-]+\.css/g, 'assets/style.css');
+    html = html.replace(/assets\/index-[a-zA-Z0-9_-]+\.js/g, 'assets/index.js');
+    
+    // Safety check for raw source paths if Vite didn't transform them
+    html = html.replace(/src="\/src\/main\.jsx"/, 'src="https://cdn.jsdelivr.net/gh/airevlabs/precision-imaging@main/dist/client/assets/index.js"');
 
     const outDir = toAbsolute('dist/ssg');
     if (!fs.existsSync(outDir)) {
