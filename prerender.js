@@ -10,7 +10,8 @@ const { render } = await import('./dist/server/entry-server.js');
 
 const routesToPrerender = [
     { url: '/services/abdomen-ultrasound', name: 'abdomen-ultrasound' },
-    { url: '/services/aorta-screening', name: 'aorta-screening' }
+    { url: '/services/aorta-screening', name: 'aorta-screening' },
+    { url: '/services/breast-ultrasound', name: 'breast-ultrasound' }
 ];
 
 for (const { url, name } of routesToPrerender) {
