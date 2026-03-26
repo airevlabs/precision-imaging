@@ -6,7 +6,18 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const toAbsolute = (p) => path.resolve(__dirname, p);
 
 const template = fs.readFileSync(toAbsolute('dist/client/index.html'), 'utf-8');
-const { render } = await import('./dist/server/entry-server.js');
+let renderPath = './dist/server/entry-server.js';
+const serverAssetsDir = toAbsolute('dist/server/assets');
+if (fs.existsSync(serverAssetsDir)) {
+    const serverFiles = fs.readdirSync(serverAssetsDir)
+        .filter(f => f.match(/^entry-server-.*\.js$/))
+        .map(f => ({ name: f, time: fs.statSync(path.join(serverAssetsDir, f)).mtime.getTime() }))
+        .sort((a, b) => b.time - a.time);
+    if (serverFiles.length > 0) {
+        renderPath = `./dist/server/assets/${serverFiles[0].name}`;
+    }
+}
+const { render } = await import(renderPath);
 
 // Helper to find latest assets
 const assetsDir = toAbsolute('dist/client/assets');
