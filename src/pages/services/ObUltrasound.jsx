@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { ArrowRight, CheckCircle2, Clock, Calendar, Activity, Heart, Info, FileBadge, Baby, Users, ShieldCheck, Mail } from 'lucide-react';
+import { ArrowRight, CheckCircle2, Clock, Calendar, Activity, Heart, Info, FileBadge, Baby, Mail, ShieldCheck, Users } from 'lucide-react';
 
 const ObUltrasound = () => {
   useEffect(() => {
@@ -153,21 +153,21 @@ const ObUltrasound = () => {
         </script>
       </Helmet>
 
-      {/* 1. Hero Section */}
+      {/* Hero Section */}
       <header className="reveal-section opacity-0 translate-y-8 !bg-slate-900 !rounded-3xl !mx-4 md:!mx-auto md:!max-w-7xl !px-6 !py-20 md:!py-28 lg:!py-32 !text-white !relative !overflow-hidden transition-all duration-700 shadow-2xl">
-        <div className="!absolute !inset-0 !opacity-15 !bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] !from-pink-400 !via-transparent !to-blue-500"></div>
+        <div className="!absolute !inset-0 !opacity-10 !bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] !from-blue-400 !to-transparent"></div>
         <div className="!relative !z-10 !max-w-4xl !mx-auto !text-center flex flex-col items-center">
-          <span className="!uppercase !tracking-wider !text-pink-300 !font-semibold !text-sm !mb-4 flex items-center gap-2">
-            <Baby className="!w-4 !h-4" /> Diagnostic Ultrasound Center
+          <span className="!uppercase !tracking-wider !text-blue-300 !font-semibold !text-sm !mb-4 flex items-center gap-2">
+            <Activity className="!w-4 !h-4" /> Diagnostic Ultrasound Center
           </span>
           <h1 className="!text-5xl md:!text-6xl lg:!text-7xl !font-bold !mb-8 !text-white leading-tight !tracking-tight">
-            Clear, Beautiful Images for Your Peace of Mind
+            OB Ultrasound (Dating & Gender Reveal)
           </h1>
           <p className="!text-xl md:!text-2xl !mb-10 max-w-3xl !text-slate-300 font-medium !leading-relaxed">
             Experience the joy of seeing your baby with our dedicated OB ultrasounds. From early dating and heartbeat confirmation to memorable, picture-perfect gender reveals.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a href="https://precisionimagingus.com/#/booking" className="!bg-pink-600 hover:!bg-pink-500 !px-8 !py-4 rounded-xl !font-semibold flex items-center justify-center transition hover:-translate-y-1 shadow-lg hover:shadow-pink-500/25 !text-white !text-lg w-full sm:w-auto">
+            <a href="https://precisionimagingus.com/#/booking" className="!bg-blue-600 hover:!bg-blue-500 !px-8 !py-4 rounded-xl !font-semibold flex items-center justify-center transition hover:-translate-y-1 shadow-lg hover:shadow-blue-500/25 !text-white !text-lg w-full sm:w-auto">
               Book Appointment <Calendar className="!ml-2 !w-5 !h-5" />
             </a>
             <a href="https://precisionimagingus.com/#/contact" className="!bg-transparent border-2 !border-slate-600 hover:!border-white hover:!bg-white/10 !px-8 !py-4 rounded-xl !font-semibold flex items-center justify-center transition hover:-translate-y-1 !text-white !text-lg w-full sm:w-auto">
@@ -177,137 +177,136 @@ const ObUltrasound = () => {
         </div>
       </header>
 
-      {/* 2. Welcome to Precision Imaging's OB Experience */}
+      {/* 1. The Precision OB Experience */}
       <section aria-labelledby="center-overview" className="reveal-section opacity-0 translate-y-8 transition-all duration-700 ease-out !px-6">
-        <div className="!max-w-5xl !mx-auto">
-          <div className="!text-center !mb-12">
-            <h2 id="center-overview" className="!text-3xl md:!text-4xl !font-bold !text-slate-900 !mb-4">The Precision OB Experience</h2>
-            <p className="!text-lg !text-slate-600 !max-w-3xl !mx-auto">
-              Your pregnancy journey is extraordinary. We believe your imaging experience should reflect that, which is why we've designed our center to prioritize comfort, clarity, and celebration.
-            </p>
-          </div>
-
+        <div className="!max-w-7xl !mx-auto !text-center">
+          <h2 id="center-overview" className="!text-3xl md:!text-4xl !font-bold !text-slate-900 !mb-6">The Precision OB Experience</h2>
+          <p className="!text-center !text-lg !text-slate-600 !mb-12 !max-w-3xl !mx-auto">
+            Your pregnancy journey is extraordinary. We believe your imaging experience should reflect that, which is why we've designed our center to prioritize comfort, clarity, and celebration.
+          </p>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="!bg-white !p-8 !rounded-3xl !shadow-sm !border !border-slate-100 !text-center flex flex-col items-center">
-              <div className="!w-16 !h-16 !bg-blue-50 !rounded-full flex items-center justify-center !mb-6">
-                <ShieldCheck className="!w-8 !h-8 !text-blue-600" />
+            <article className="!bg-white !rounded-3xl !p-8 !shadow-sm hover:!shadow-xl !border !border-slate-100 hover:!border-blue-100 transition-all duration-300 hover:-translate-y-1 flex flex-col h-full items-center text-center">
+              <div className="!bg-blue-50 !w-16 !h-16 !rounded-full flex items-center justify-center !mb-6 text-blue-600">
+                <ShieldCheck className="!w-8 !h-8" />
               </div>
-              <h3 className="!text-xl !font-bold !text-slate-900 !mb-3">Zero Radiation</h3>
-              <p className="!text-slate-600">Our state‑of‑the‑art imaging strictly uses safe, high-frequency sound waves. Complete peace of mind for you and your baby.</p>
-            </div>
-            <div className="!bg-white !p-8 !rounded-3xl !shadow-sm !border !border-slate-100 !text-center flex flex-col items-center">
-              <div className="!w-16 !h-16 !bg-pink-50 !rounded-full flex items-center justify-center !mb-6">
-                <Users className="!w-8 !h-8 !text-pink-600" />
-              </div>
-              <h3 className="!text-xl !font-bold !text-slate-900 !mb-3">Family Friendly</h3>
-              <p className="!text-slate-600">Unlike crowded hospital waiting rooms, our welcoming outpatient environment explicitly encourages partners and loved ones to join in the room.</p>
-            </div>
-            <div className="!bg-white !p-8 !rounded-3xl !shadow-sm !border !border-slate-100 !text-center flex flex-col items-center">
-              <div className="!w-16 !h-16 !bg-purple-50 !rounded-full flex items-center justify-center !mb-6">
-                <Activity className="!w-8 !h-8 !text-purple-600" />
-              </div>
-              <h3 className="!text-xl !font-bold !text-slate-900 !mb-3">Unmatched Clarity</h3>
-              <p className="!text-slate-600">Our modern equipment produces incredibly sharp, detailed real-time images, bringing you closer to your baby before they even arrive.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* 3. Available Exam Options */}
-      <section aria-labelledby="exam-options" className="reveal-section opacity-0 translate-y-8 transition-all duration-700 ease-out !px-6">
-        <div className="!max-w-7xl !mx-auto">
-          <h2 id="exam-options" className="!text-3xl md:!text-4xl !font-bold !text-slate-900 !text-center !mb-12">Our Specialized Pregnancy Ultrasounds</h2>
-          <div className="grid md:grid-cols-2 max-w-5xl mx-auto gap-8">
-            <article className="!bg-white !rounded-3xl !p-10 !shadow-sm hover:!shadow-xl !border !border-slate-100 hover:!border-blue-100 transition-all duration-300 hover:-translate-y-1 relative overflow-hidden">
-              <div className="!absolute !top-0 !right-0 !w-32 !h-32 !bg-blue-50 !rounded-bl-full !opacity-50"></div>
-              <div className="!bg-blue-100 !w-16 !h-16 !rounded-2xl flex items-center justify-center !mb-6 text-blue-700 relative z-10">
-                <Calendar className="!w-8 !h-8" />
-              </div>
-              <h3 className="!text-2xl !font-bold !text-slate-900 !mb-4 relative z-10">OB Dating Ultrasound</h3>
-              <div className="!inline-flex !items-center !px-3 !py-1 !rounded-full !bg-slate-100 !text-slate-700 !text-sm !font-semibold !mb-5 relative z-10">
-                <Clock className="w-4 h-4 mr-2" /> 8 - 13 Weeks
-              </div>
-              <p className="!text-slate-600 !leading-relaxed !text-lg relative z-10">
-                The perfect early pregnancy exam for reassurance. We focus on confirming viability (seeing the heartbeat!), pinpointing fetal measurements, and establishing or confirming your official due date with high accuracy.
+              <h3 className="!text-2xl !font-bold !text-slate-900 !mb-4">Zero Radiation</h3>
+              <p className="!text-slate-600 !leading-relaxed !flex-grow">
+                Our state-of-the-art imaging strictly uses safe, high-frequency sound waves. Complete peace of mind for you and your baby.
               </p>
             </article>
 
-            <article className="!bg-white !rounded-3xl !p-10 !shadow-sm hover:!shadow-xl !border !border-slate-100 hover:!border-pink-100 transition-all duration-300 hover:-translate-y-1 relative overflow-hidden">
-              <div className="!absolute !top-0 !right-0 !w-32 !h-32 !bg-pink-50 !rounded-bl-full !opacity-50"></div>
-              <div className="!bg-pink-100 !w-16 !h-16 !rounded-2xl flex items-center justify-center !mb-6 text-pink-700 relative z-10">
-                <Heart className="!w-8 !h-8" />
+            <article className="!bg-white !rounded-3xl !p-8 !shadow-sm hover:!shadow-xl !border !border-slate-100 hover:!border-blue-100 transition-all duration-300 hover:-translate-y-1 flex flex-col h-full items-center text-center">
+              <div className="!bg-blue-50 !w-16 !h-16 !rounded-full flex items-center justify-center !mb-6 text-blue-600">
+                <Users className="!w-8 !h-8" />
               </div>
-              <h3 className="!text-2xl !font-bold !text-slate-900 !mb-4 relative z-10">OB Gender Reveal Ultrasound</h3>
-              <div className="!inline-flex !items-center !px-3 !py-1 !rounded-full !bg-slate-100 !text-slate-700 !text-sm !font-semibold !mb-5 relative z-10">
-                <Clock className="w-4 h-4 mr-2" /> 16 - 20 Weeks
+              <h3 className="!text-2xl !font-bold !text-slate-900 !mb-4">Family Friendly</h3>
+              <p className="!text-slate-600 !leading-relaxed !flex-grow">
+                Unlike crowded hospital waiting rooms, our welcoming outpatient environment explicitly encourages partners and loved ones to join in the room.
+              </p>
+            </article>
+
+            <article className="!bg-white !rounded-3xl !p-8 !shadow-sm hover:!shadow-xl !border !border-slate-100 hover:!border-blue-100 transition-all duration-300 hover:-translate-y-1 flex flex-col h-full items-center text-center">
+              <div className="!bg-blue-50 !w-16 !h-16 !rounded-full flex items-center justify-center !mb-6 text-blue-600">
+                <Activity className="!w-8 !h-8" />
               </div>
-              <p className="!text-slate-600 !leading-relaxed !text-lg relative z-10">
-                A joyous second‑trimester milestone. We focus on confirming the fetal sex while also checking basic anatomy and amniotic fluid levels. Perfect for parents planning a celebration.
+              <h3 className="!text-2xl !font-bold !text-slate-900 !mb-4">Unmatched Clarity</h3>
+              <p className="!text-slate-600 !leading-relaxed !flex-grow">
+                Our modern equipment produces incredibly sharp, detailed real-time images, bringing you closer to your baby before they even arrive.
               </p>
             </article>
           </div>
         </div>
       </section>
 
-      {/* 4. What These Exams Show */}
+      {/* Exam Options Map section - Light Slate */}
+      <section aria-labelledby="exam-options" className="reveal-section flex flex-col items-center opacity-0 translate-y-8 transition-all duration-700 ease-out !px-6 !max-w-7xl !mx-auto">
+        <h2 id="exam-options" className="!text-3xl md:!text-4xl !font-bold !text-slate-900 !text-center !mb-6 w-full">Our Specialized Pregnancy Ultrasounds</h2>
+        <p className="!text-center !text-lg !text-slate-600 !mb-10 !max-w-3xl !mx-auto w-full">We offer the following exam options in this category:</p>
+        
+        <div className="flex flex-col md:flex-row justify-center items-stretch gap-8 w-full max-w-[850px] mx-auto">
+          <article className="!bg-white !rounded-3xl !p-8 md:!p-10 !shadow-sm hover:!shadow-xl !border !border-slate-100 hover:!border-blue-100 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-start items-center text-center w-full md:w-1/2">
+            <div className="!bg-purple-50 !w-16 !h-16 !rounded-2xl flex items-center justify-center !mb-6 text-purple-600 shrink-0">
+              <Baby className="!w-8 !h-8" />
+            </div>
+            <h3 className="!text-2xl md:!text-3xl !font-bold !text-slate-900 !mb-5">OB Dating Ultrasound</h3>
+            <p className="!text-slate-600 !text-lg !leading-relaxed !flex-grow flex items-center">
+              Early pregnancy exam, usually performed between 8–13 weeks, to confirm early viability, measure the baby, and establish or definitively confirm the due date.
+            </p>
+          </article>
+
+          <article className="!bg-white !rounded-3xl !p-8 md:!p-10 !shadow-sm hover:!shadow-xl !border !border-slate-100 hover:!border-blue-100 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-start items-center text-center w-full md:w-1/2">
+            <div className="!bg-blue-50 !w-16 !h-16 !rounded-2xl flex items-center justify-center !mb-6 text-blue-600 shrink-0">
+              <Heart className="!w-8 !h-8" />
+            </div>
+            <h3 className="!text-2xl md:!text-3xl !font-bold !text-slate-900 !mb-5">OB Gender Reveal Ultrasound</h3>
+            <p className="!text-slate-600 !text-lg !leading-relaxed !flex-grow flex items-center">
+              A joyous second‑trimester milestone. Typically from 16–20 weeks, focused on confirming fetal sex while also viewing basic anatomy and amniotic fluid levels. Perfect for parents planning a celebration.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      {/* 3. What These Exams Show */}
       <section aria-labelledby="what-it-shows" className="reveal-section opacity-0 translate-y-8 transition-all duration-700 ease-out !px-6">
         <div className="!max-w-5xl !mx-auto !bg-slate-900 !rounded-3xl !p-8 md:!p-12 !shadow-xl !text-white overflow-hidden relative">
-          <div className="!absolute !top-0 !right-0 !w-full !h-full !opacity-[0.03] pointer-events-none !bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] !from-pink-300 !to-blue-300"></div>
+          <div className="!absolute !bottom-0 !right-0 !opacity-5 pointer-events-none">
+            <Baby className="!w-96 !h-96" />
+          </div>
           <div className="relative z-10">
-            <h2 id="what-it-shows" className="!text-3xl md:!text-4xl !font-bold !text-white !mb-8">What We View During Your Scan</h2>
-            <p className="!text-lg !text-slate-200 !font-medium !mb-10 !leading-relaxed">
+            <h2 id="what-it-shows" className="!text-3xl md:!text-4xl !font-bold !text-white !mb-8">What These Exams Show</h2>
+            <p className="!text-lg !text-slate-100 !font-medium !mb-10 !leading-relaxed">
               These scans balance emotional reassurance with critical clinical insights. Depending on the stage of your pregnancy, we systematically evaluate:
             </p>
             <div className="grid md:grid-cols-2 gap-8">
               <div className="flex gap-4">
-                <div className="!mt-1 !bg-white/10 !p-2 !rounded-lg h-fit"><CheckCircle2 className="!w-6 !h-6 !text-pink-300" /></div>
+                <div className="!mt-1 !bg-white/20 !p-2 !rounded-lg h-fit"><CheckCircle2 className="!w-6 !h-6 !text-blue-300" /></div>
                 <div>
-                  <h4 className="!text-xl !font-bold !mb-2 !text-white">Heartbeat & Growth</h4>
-                  <p className="!text-slate-300 !font-medium">Early growth patterns, number of fetuses, and visually confirming the rhythmic flickering of the fetal heartbeat.</p>
+                  <h4 className="!text-xl !font-bold !mb-2 !text-white">Heartbeat & Viability</h4>
+                  <p className="!text-slate-100 !font-medium">Confirms early growth patterns, the number of fetuses, and the fetal heartbeat.</p>
                 </div>
               </div>
               <div className="flex gap-4">
-                <div className="!mt-1 !bg-white/10 !p-2 !rounded-lg h-fit"><CheckCircle2 className="!w-6 !h-6 !text-blue-300" /></div>
+                <div className="!mt-1 !bg-white/20 !p-2 !rounded-lg h-fit"><CheckCircle2 className="!w-6 !h-6 !text-blue-300" /></div>
                 <div>
-                  <h4 className="!text-xl !font-bold !mb-2 !text-white">Accurate Due Dates</h4>
-                  <p className="!text-slate-300 !font-medium">Calculating gestational age and your estimated due date based on precise crown‑rump length measurements.</p>
+                  <h4 className="!text-xl !font-bold !mb-2 !text-white">Due Date Accuracy</h4>
+                  <p className="!text-slate-100 !font-medium">Calculates gestational age and your estimated due date based on precise crown‑rump length measurements.</p>
                 </div>
               </div>
               <div className="flex gap-4">
-                <div className="!mt-1 !bg-white/10 !p-2 !rounded-lg h-fit"><CheckCircle2 className="!w-6 !h-6 !text-pink-300" /></div>
+                <div className="!mt-1 !bg-white/20 !p-2 !rounded-lg h-fit"><CheckCircle2 className="!w-6 !h-6 !text-blue-300" /></div>
                 <div>
                   <h4 className="!text-xl !font-bold !mb-2 !text-white">Fetal Position & Anatomy</h4>
-                  <p className="!text-slate-300 !font-medium">Identifying position, observing distinct limbs and facial profiles, and confirming basic anatomic landmarks during mid-pregnancy.</p>
+                  <p className="!text-slate-100 !font-medium">Identifies position, confirms basic anatomic landmarks, and checks placenta location during mid-pregnancy.</p>
                 </div>
               </div>
               <div className="flex gap-4">
-                <div className="!mt-1 !bg-white/10 !p-2 !rounded-lg h-fit"><CheckCircle2 className="!w-6 !h-6 !text-blue-300" /></div>
+                <div className="!mt-1 !bg-white/20 !p-2 !rounded-lg h-fit"><CheckCircle2 className="!w-6 !h-6 !text-blue-300" /></div>
                 <div>
-                  <h4 className="!text-xl !font-bold !mb-2 !text-white">The Reveal</h4>
-                  <p className="!text-slate-300 !font-medium">Pinpointing fetal sex, checking placenta location, and verifying healthy amniotic‑fluid levels.</p>
+                  <h4 className="!text-xl !font-bold !mb-2 !text-white">The Gender Reveal</h4>
+                  <p className="!text-slate-100 !font-medium">Pinpoints fetal sex and verifies healthy amniotic‑fluid volume for your complete peace of mind.</p>
                 </div>
               </div>
             </div>
-            <div className="!mt-10 !pt-6 !border-t !border-white/10">
-              <p className="!text-slate-400 !italic">
-                Your primary provider uses these findings alongside your lab results and history to construct an accurate roadmap for your pregnancy.
+            <div className="!mt-10 !pt-6 !border-t !border-white/20">
+              <p className="!text-slate-200 !italic">
+                Your primary provider uses these findings alongside your history, physical exam, and lab results to make an accurate diagnosis.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* 5 & 6. Prep & What to Expect */}
+      {/* 4 & 5. Prep & What to Expect */}
       <section className="reveal-section opacity-0 translate-y-8 transition-all duration-700 ease-out !px-6">
         <div className="!max-w-7xl !mx-auto grid lg:grid-cols-2 gap-12">
 
           {/* Prep */}
           <div className="!bg-white !p-8 md:!p-12 !rounded-3xl !shadow-sm !border !border-slate-100">
             <h2 className="!text-3xl !font-bold !text-slate-900 !mb-8 flex items-center gap-3">
-              <Info className="!w-8 !h-8 !text-pink-500" /> Easy Preparations
+              <Info className="!w-8 !h-8 !text-blue-600" /> Preparation Instructions
             </h2>
-            <p className="!text-lg !text-slate-600 !mb-8">Follow these steps so we can capture the most breathtaking and accurate images of your little one:</p>
-            <ul className="space-y-6 !mb-8">
+            <p className="!text-lg !text-slate-600 !mb-8">To help your pregnancy ultrasound produce the clearest images, please follow these guidelines:</p>
+            <ul className="space-y-5 !mb-8">
               <li className="flex items-start">
                 <div className="!bg-slate-100 !p-1.5 !rounded-full !mr-4 !mt-0.5"><CheckCircle2 className="!w-5 !h-5 !text-slate-700" /></div>
                 <span className="!text-lg !text-slate-700"><strong>Full Bladder is Essential (Early Scans):</strong> For early dating scans, arrive with a comfortably full bladder to provide a clear view of the deep uterus.</span>
@@ -321,9 +320,9 @@ const ObUltrasound = () => {
                 <span className="!text-lg !text-slate-700"><strong>Keeping the Secret:</strong> Planning a party? Let our sonographer know immediately if you would like the gender written securely in a sealed envelope!</span>
               </li>
             </ul>
-            <div className="!bg-pink-50 !border-l-4 !border-pink-500 !p-5 !rounded-r-xl">
-              <p className="!text-pink-900 !font-medium !flex !items-center !gap-2">
-                <Mail className="!w-5 !h-5" /> Bring any prior pregnancy records or ultrasound reports if you have them.
+            <div className="!bg-blue-50 !border-l-4 !border-blue-600 !p-5 !rounded-r-xl">
+              <p className="!text-blue-900 !font-medium !flex !items-center !gap-2">
+                <Clock className="!w-5 !h-5" /> If your appointment combines more than one ultrasound type, our scheduling team will review the best preparation plan with you.
               </p>
             </div>
           </div>
@@ -331,70 +330,67 @@ const ObUltrasound = () => {
           {/* What to Expect */}
           <div className="!bg-white !p-8 md:!p-12 !rounded-3xl !shadow-sm !border !border-slate-100">
             <h2 className="!text-3xl !font-bold !text-slate-900 !mb-8 flex items-center gap-3">
-              <Activity className="!w-8 !h-8 !text-blue-500" /> The Exam Experience
+              <Activity className="!w-8 !h-8 !text-blue-600" /> What to Expect
             </h2>
-            <p className="!text-lg !text-slate-600 !mb-8">From the moment you arrive, we aim to make you feel comfortable and stress-free:</p>
+            <p className="!text-lg !text-slate-600 !mb-8">Here is what a typical visit looks like at our diagnostic ultrasound center:</p>
             <div className="!flex !flex-col !gap-6 !border-l-2 !border-slate-200 !ml-4 !py-4">
               <div className="!flex !gap-4 !items-start !-ml-[17px]">
-                <div className="!w-8 !h-8 !rounded-full !bg-blue-500 !text-white !flex !items-center !justify-center !font-bold !flex-shrink-0 !border-4 !border-white !shadow-sm">1</div>
+                <div className="!w-8 !h-8 !rounded-full !bg-blue-600 !text-white !flex !items-center !justify-center !font-bold !flex-shrink-0 !border-4 !border-white !shadow-sm">1</div>
                 <div className="!flex-1 !pt-0.5">
                   <h4 className="!text-xl !font-bold !text-slate-900 !mb-2 !mt-0">Relax on the Table</h4>
-                  <p className="!text-slate-600 !leading-relaxed !m-0">You and your partner will get comfortable on a padded table. Warm, water-based gel is applied to your lower abdomen.</p>
+                  <p className="!text-slate-600 !leading-relaxed !m-0">You will lie on a comfortably padded table while warm, water-based gel is applied to your lower abdomen.</p>
                 </div>
               </div>
               <div className="!flex !gap-4 !items-start !-ml-[17px]">
-                <div className="!w-8 !h-8 !rounded-full !bg-blue-500 !text-white !flex !items-center !justify-center !font-bold !flex-shrink-0 !border-4 !border-white !shadow-sm">2</div>
+                <div className="!w-8 !h-8 !rounded-full !bg-blue-600 !text-white !flex !items-center !justify-center !font-bold !flex-shrink-0 !border-4 !border-white !shadow-sm">2</div>
                 <div className="!flex-1 !pt-0.5">
                   <h4 className="!text-xl !font-bold !text-slate-900 !mb-2 !mt-0">Real-Time Viewing</h4>
-                  <p className="!text-slate-600 !leading-relaxed !m-0">The transducer is moved gently over your belly to obtain real‑time images of your baby and capture measurements.</p>
+                  <p className="!text-slate-600 !leading-relaxed !m-0">The transducer is moved gently over your belly to obtain real‑time images of your baby and begin measurements.</p>
                 </div>
               </div>
               <div className="!flex !gap-4 !items-start !-ml-[17px]">
-                <div className="!w-8 !h-8 !rounded-full !bg-blue-500 !text-white !flex !items-center !justify-center !font-bold !flex-shrink-0 !border-4 !border-white !shadow-sm">3</div>
+                <div className="!w-8 !h-8 !rounded-full !bg-blue-600 !text-white !flex !items-center !justify-center !font-bold !flex-shrink-0 !border-4 !border-white !shadow-sm">3</div>
                 <div className="!flex-1 !pt-0.5">
                   <h4 className="!text-xl !font-bold !text-slate-900 !mb-2 !mt-0">The Keepsakes</h4>
-                  <p className="!text-slate-600 !leading-relaxed !m-0">We capture keepsake images when appropriate, answer your questions, and maintain a reassuring atmosphere. Dating scans usually run 20–30 mins, while gender‑reveals run 25–40 mins.</p>
+                  <p className="!text-slate-600 !leading-relaxed !m-0">We capture keepsake images when appropriate, answer questions, and do our best to keep the atmosphere relaxed. Dating scans take 20–30 mins; gender‑reveals typically last 25–40 mins.</p>
                 </div>
               </div>
             </div>
+            <p className="!text-sm !text-slate-500 !mt-6 !italic">Throughout the exam you are welcome to ask questions; our technologist will let you know when each part is complete.</p>
           </div>
 
         </div>
       </section>
 
-      {/* 7. Results & Follow-up */}
+      {/* 6. Results & Follow-up */}
       <section aria-labelledby="results" className="reveal-section opacity-0 translate-y-8 transition-all duration-700 ease-out !px-6">
-        <div className="!max-w-7xl !mx-auto !bg-slate-100 !rounded-3xl !p-8 md:!p-12 border border-slate-200 flex flex-col md:flex-row items-center gap-10">
+        <div className="!max-w-7xl !mx-auto !bg-blue-50 !rounded-3xl !p-8 md:!p-12 border border-blue-100 flex flex-col md:flex-row items-center gap-10">
           <div className="md:w-1/3 flex justify-center">
             <div className="!w-32 !h-32 !bg-white !rounded-full !shadow-lg flex items-center justify-center">
-              <FileBadge className="!w-16 !h-16 !text-slate-600" />
+              <FileBadge className="!w-16 !h-16 !text-blue-600" />
             </div>
           </div>
           <div className="md:w-2/3 !text-center md:!text-left">
-            <h2 id="results" className="!text-3xl md:!text-4xl !font-bold !text-slate-900 !mb-6">Medical Results & Follow-up</h2>
+            <h2 id="results" className="!text-3xl md:!text-4xl !font-bold !text-slate-900 !mb-6">Results & Follow-up</h2>
             <ul className="space-y-4 !text-lg !text-slate-700 !mb-6">
               <li className="!flex !items-start">
-                <ArrowRight className="!w-5 !h-5 !text-slate-500 !mr-3 !shrink-0 !mt-1" />
-                <span>If a doctor order is provided, a detailed clinical radiology report is sent directly to your provider so they can review the viability, dating, and health metrics directly.</span>
+                <ArrowRight className="!w-5 !h-5 !text-blue-500 !mr-3 !shrink-0 !mt-1" />
+                <span>If a doctor order is provided, a detailed clinical radiology report is sent directly to your provider so they can review results and plan next steps.</span>
               </li>
               <li className="!flex !items-start">
-                <ArrowRight className="!w-5 !h-5 !text-slate-500 !mr-3 !shrink-0 !mt-1" />
-                <span>Your provider acts as your medical guide to review any critical developments based on these scans.</span>
+                <ArrowRight className="!w-5 !h-5 !text-blue-500 !mr-3 !shrink-0 !mt-1" />
+                <span>Your provider may recommend medication changes, additional testing, or follow‑up imaging based on the ultrasound findings.</span>
               </li>
             </ul>
-            <div className="!bg-white !p-4 !rounded-xl !border-l-4 !border-slate-800 !inline-block">
-              <p className="!text-slate-700 !font-bold !m-0">
-                Disclaimer: If there is no doctor's order, diagnostic reports cannot be issued. Images alone will be provided on a CD. A physician order is strictly required to receive a full radiological interpretative report.
-              </p>
-            </div>
+            <p className="!text-lg !text-slate-700 !font-bold">Disclaimer: If there is no doctor's order, images will be provided after the exam on a CD. In order to receive a radiology report, a doctor's order is required.</p>
           </div>
         </div>
       </section>
 
-      {/* 8. FAQ */}
+      {/* 7. FAQ */}
       <section aria-labelledby="faq" className="reveal-section opacity-0 translate-y-8 transition-all duration-700 ease-out !px-6">
         <div className="!max-w-4xl !mx-auto">
-          <h2 id="faq" className="!text-3xl md:!text-4xl !font-bold !text-center !text-slate-900 !mb-12">Frequently Asked Pregancy Ultrasound Questions</h2>
+          <h2 id="faq" className="!text-3xl md:!text-4xl !font-bold !text-center !text-slate-900 !mb-12">Frequently Asked Questions</h2>
           <div className="grid gap-6">
 
             <details className="!bg-white !rounded-2xl !p-6 !shadow-sm !border !border-slate-200 group cursor-pointer !transition-shadow hover:!shadow-md">
@@ -468,7 +464,7 @@ const ObUltrasound = () => {
                 If the baby is in a challenging position, we don’t rush! We may have you shift positions or take a short walk to encourage the baby down a bit. Occasionally, we will recommend a short follow-up visit if we absolutely cannot get a definitive, clear image.
               </div>
             </details>
-            
+
             <details className="!bg-white !rounded-2xl !p-6 !shadow-sm !border !border-slate-200 group cursor-pointer !transition-shadow hover:!shadow-md">
               <summary className="!text-xl !font-bold !text-slate-900 !flex !justify-between !items-center !list-none">
                 Do I get to take images home?
@@ -480,7 +476,7 @@ const ObUltrasound = () => {
                 Yes! For self-pay patients and ordered clinical scans, images will be provided on a CD after the exam, allowing you to view and share these early memories. Keepsake printed images may also be provided when appropriate.
               </div>
             </details>
-            
+
             <details className="!bg-white !rounded-2xl !p-6 !shadow-sm !border !border-slate-200 group cursor-pointer !transition-shadow hover:!shadow-md">
               <summary className="!text-xl !font-bold !text-slate-900 !flex !justify-between !items-center !list-none">
                 How accurate is the due date given by an early ultrasound?
@@ -492,7 +488,7 @@ const ObUltrasound = () => {
                 First‑trimester dating ultrasounds are typically highly accurate—usually within about one week—and are clinically considered the most reliable method for confirming your due date compared to LMP.
               </div>
             </details>
-            
+
             <details className="!bg-white !rounded-2xl !p-6 !shadow-sm !border !border-slate-200 group cursor-pointer !transition-shadow hover:!shadow-md">
               <summary className="!text-xl !font-bold !text-slate-900 !flex !justify-between !items-center !list-none">
                 Can you always determine the gender with 100% certainty?
@@ -504,7 +500,7 @@ const ObUltrasound = () => {
                 While our state-of-the-art ultrasound machines provide exceptionally clear imaging and our technologists are highly trained, gender determination always depends on fetal positioning and fluid levels. While accuracy is incredibly high, 100% guarantees cannot be universally made.
               </div>
             </details>
-            
+
             <details className="!bg-white !rounded-2xl !p-6 !shadow-sm !border !border-slate-200 group cursor-pointer !transition-shadow hover:!shadow-md">
               <summary className="!text-xl !font-bold !text-slate-900 !flex !justify-between !items-center !list-none">
                 Is this the same as an ultrasound?
@@ -516,7 +512,7 @@ const ObUltrasound = () => {
                 Yes. The terms sonogram, sonography, and ultrasound all describe the exact same imaging test utilizing safe sound waves.
               </div>
             </details>
-            
+
             <details className="!bg-white !rounded-2xl !p-6 !shadow-sm !border !border-slate-200 group cursor-pointer !transition-shadow hover:!shadow-md">
               <summary className="!text-xl !font-bold !text-slate-900 !flex !justify-between !items-center !list-none">
                 What is a sonogram?
@@ -528,7 +524,7 @@ const ObUltrasound = () => {
                 A sonogram is the technical term for the picture or moving image created and presented during your ultrasound exam.
               </div>
             </details>
-            
+
             <details className="!bg-white !rounded-2xl !p-6 !shadow-sm !border !border-slate-200 group cursor-pointer !transition-shadow hover:!shadow-md">
               <summary className="!text-xl !font-bold !text-slate-900 !flex !justify-between !items-center !list-none">
                 What is sonography?
@@ -549,11 +545,11 @@ const ObUltrasound = () => {
       <footer className="reveal-section opacity-0 translate-y-8 transition-all duration-700 ease-out !px-6">
         <div className="!max-w-7xl !mx-auto !bg-slate-900 !rounded-3xl !p-10 md:!p-16 !text-center shadow-xl">
           <h2 className="!text-3xl md:!text-4xl !font-bold !text-white !mb-6">Ready to see your baby?</h2>
-          <p className="!text-xl !text-slate-200 !mb-10 !max-w-3xl !mx-auto">
-            Use our rapid online scheduling to secure your dating check or gender reveal celebration. Our welcoming team is thrilled to be a part of your journey.
+          <p className="!text-xl !text-slate-300 !mb-10 !max-w-3xl !mx-auto">
+            Use our rapid online scheduling to secure your dating check or gender reveal appointment. Our welcoming team is happy to answer questions and help you select the most appropriate option.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-            <a href="https://precisionimagingus.com/#/booking" className="!bg-pink-600 hover:!bg-pink-500 !text-white !px-10 !py-5 rounded-xl !font-bold !text-xl flex items-center transition hover:-translate-y-1 hover:shadow-lg hover:shadow-pink-500/25 w-full sm:w-auto justify-center">
+            <a href="https://precisionimagingus.com/#/booking" className="!bg-blue-600 hover:!bg-blue-500 !text-white !px-10 !py-5 rounded-xl !font-bold !text-xl flex items-center transition hover:-translate-y-1 hover:shadow-lg hover:shadow-blue-500/25 w-full sm:w-auto justify-center">
               Book Appointment <ArrowRight className="!ml-3 !w-6 !h-6" />
             </a>
             <a href="https://precisionimagingus.com/#/contact" className="!bg-slate-800 hover:!bg-slate-700 !text-white !border !border-slate-600 hover:!border-slate-400 !px-10 !py-5 rounded-xl !font-bold !text-xl transition hover:-translate-y-1 hover:shadow-lg w-full sm:w-auto justify-center flex items-center">
@@ -563,7 +559,7 @@ const ObUltrasound = () => {
         </div>
       </footer>
 
-      {/* 10. Local Service Area */}
+      {/* 8. Local Service Area */}
       <section aria-labelledby="service-area" className="reveal-section opacity-0 translate-y-8 transition-all duration-700 ease-out !px-6 !py-8">
         <div className="!max-w-5xl !mx-auto !text-center">
           <h2 id="service-area" className="sr-only">Local Service Area</h2>
@@ -578,7 +574,7 @@ const ObUltrasound = () => {
 };
 
 const ChevronDownIcon = () => (
-  <svg className="!w-6 !h-6 !text-pink-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <svg className="!w-6 !h-6 !text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
   </svg>
 );
