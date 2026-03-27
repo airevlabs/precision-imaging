@@ -46,7 +46,8 @@ const routesToPrerender = [
     { url: '/services/aorta-screening', name: 'aorta-screening' },
     { url: '/services/breast-ultrasound', name: 'breast-ultrasound' },
     { url: '/services/carotid-screening', name: 'carotid-screening' },
-    { url: '/services/echocardiogram', name: 'echocardiogram' }
+    { url: '/services/echocardiogram', name: 'echocardiogram' },
+    { url: '/services/kidneys-bladder-ultrasound', name: 'kidneys-bladder-ultrasound' }
 ];
 
 for (const { url, name } of routesToPrerender) {
