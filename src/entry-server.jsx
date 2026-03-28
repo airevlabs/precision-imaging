@@ -10,6 +10,7 @@ import CarotidScreening from './pages/services/CarotidScreening.jsx';
 import Echocardiogram from './pages/services/Echocardiogram.jsx';
 import KidneysBladderUltrasound from './pages/services/KidneysBladderUltrasound.jsx';
 import ObUltrasound from './pages/services/ObUltrasound.jsx';
+import PediatricImaging from './pages/services/PediatricImaging.jsx';
 
 const routes = {
     '/services/abdomen-ultrasound': AbdomenUltrasound,
@@ -18,7 +19,8 @@ const routes = {
     '/services/carotid-screening': CarotidScreening,
     '/services/echocardiogram': Echocardiogram,
     '/services/kidneys-bladder-ultrasound': KidneysBladderUltrasound,
-    '/services/ob-ultrasound': ObUltrasound
+    '/services/ob-ultrasound': ObUltrasound,
+    '/services/pediatric-imaging': PediatricImaging
 };
 
 export function render(url, helmetContext) {
