@@ -15,6 +15,7 @@ import PelvicUltrasound from './pages/services/PelvicUltrasound.jsx';
 import SoftTissueUltrasound from './pages/services/SoftTissueUltrasound.jsx';
 import ThyroidUltrasound from './pages/services/ThyroidUltrasound.jsx';
 import VascularUltrasound from './pages/services/VascularUltrasound.jsx';
+import FollowUpSurveillance from './pages/services/FollowUpSurveillance.jsx';
 
 const routes = {
     '/services/abdomen-ultrasound': AbdomenUltrasound,
@@ -28,7 +29,8 @@ const routes = {
     '/services/pelvic-ultrasound': PelvicUltrasound,
     '/services/soft-tissue-ultrasound': SoftTissueUltrasound,
     '/services/thyroid-ultrasound': ThyroidUltrasound,
-    '/services/vascular-ultrasound': VascularUltrasound
+    '/services/vascular-ultrasound': VascularUltrasound,
+    '/services/follow-up-surveillance': FollowUpSurveillance
 };
 
 export function render(url, helmetContext) {
