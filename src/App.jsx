@@ -17,6 +17,7 @@ import Echocardiogram from './pages/services/Echocardiogram';
 import KidneysBladderUltrasound from './pages/services/KidneysBladderUltrasound';
 import ObUltrasound from './pages/services/ObUltrasound';
 import PediatricImaging from './pages/services/PediatricImaging';
+import PelvicUltrasound from './pages/services/PelvicUltrasound';
 import ContactPage from './pages/ContactPage';
 
 // ScrollToAnchor component to handle hash scrolling on route change
@@ -67,6 +68,7 @@ function App() {
         <Route path="/services/kidneys-bladder-ultrasound" element={<KidneysBladderUltrasound />} />
         <Route path="/services/ob-ultrasound" element={<ObUltrasound />} />
         <Route path="/services/pediatric-imaging" element={<PediatricImaging />} />
+        <Route path="/services/pelvic-ultrasound" element={<PelvicUltrasound />} />
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
       <Footer />

@@ -11,6 +11,7 @@ import Echocardiogram from './pages/services/Echocardiogram.jsx';
 import KidneysBladderUltrasound from './pages/services/KidneysBladderUltrasound.jsx';
 import ObUltrasound from './pages/services/ObUltrasound.jsx';
 import PediatricImaging from './pages/services/PediatricImaging.jsx';
+import PelvicUltrasound from './pages/services/PelvicUltrasound.jsx';
 
 const routes = {
     '/services/abdomen-ultrasound': AbdomenUltrasound,
@@ -20,7 +21,8 @@ const routes = {
     '/services/echocardiogram': Echocardiogram,
     '/services/kidneys-bladder-ultrasound': KidneysBladderUltrasound,
     '/services/ob-ultrasound': ObUltrasound,
-    '/services/pediatric-imaging': PediatricImaging
+    '/services/pediatric-imaging': PediatricImaging,
+    '/services/pelvic-ultrasound': PelvicUltrasound
 };
 
 export function render(url, helmetContext) {
