@@ -12,6 +12,7 @@ import KidneysBladderUltrasound from './pages/services/KidneysBladderUltrasound.
 import ObUltrasound from './pages/services/ObUltrasound.jsx';
 import PediatricImaging from './pages/services/PediatricImaging.jsx';
 import PelvicUltrasound from './pages/services/PelvicUltrasound.jsx';
+import SoftTissueUltrasound from './pages/services/SoftTissueUltrasound.jsx';
 
 const routes = {
     '/services/abdomen-ultrasound': AbdomenUltrasound,
@@ -22,7 +23,8 @@ const routes = {
     '/services/kidneys-bladder-ultrasound': KidneysBladderUltrasound,
     '/services/ob-ultrasound': ObUltrasound,
     '/services/pediatric-imaging': PediatricImaging,
-    '/services/pelvic-ultrasound': PelvicUltrasound
+    '/services/pelvic-ultrasound': PelvicUltrasound,
+    '/services/soft-tissue-ultrasound': SoftTissueUltrasound
 };
 
 export function render(url, helmetContext) {

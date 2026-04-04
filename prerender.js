@@ -50,7 +50,8 @@ const routesToPrerender = [
     { url: '/services/kidneys-bladder-ultrasound', name: 'kidneys-bladder-ultrasound' },
     { url: '/services/ob-ultrasound', name: 'ob-ultrasound' },
     { url: '/services/pediatric-imaging', name: 'pediatric-imaging' },
-    { url: '/services/pelvic-ultrasound', name: 'pelvic-ultrasound' }
+    { url: '/services/pelvic-ultrasound', name: 'pelvic-ultrasound' },
+    { url: '/services/soft-tissue-ultrasound', name: 'soft-tissue-ultrasound' }
 ];
 
 for (const { url, name } of routesToPrerender) {
