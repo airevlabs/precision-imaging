@@ -22,6 +22,7 @@ import SoftTissueUltrasound from './pages/services/SoftTissueUltrasound';
 import ThyroidUltrasound from './pages/services/ThyroidUltrasound';
 import VascularUltrasound from './pages/services/VascularUltrasound';
 import FollowUpSurveillance from './pages/services/FollowUpSurveillance';
+import WellnessPreventive from './pages/services/WellnessPreventive';
 import ContactPage from './pages/ContactPage';
 
 // ScrollToAnchor component to handle hash scrolling on route change
@@ -77,6 +78,7 @@ function App() {
         <Route path="/services/thyroid-ultrasound" element={<ThyroidUltrasound />} />
         <Route path="/services/vascular-ultrasound" element={<VascularUltrasound />} />
         <Route path="/services/follow-up-surveillance" element={<FollowUpSurveillance />} />
+        <Route path="/services/wellness-preventive" element={<WellnessPreventive />} />
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
       <Footer />

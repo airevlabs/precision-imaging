@@ -16,6 +16,7 @@ import SoftTissueUltrasound from './pages/services/SoftTissueUltrasound.jsx';
 import ThyroidUltrasound from './pages/services/ThyroidUltrasound.jsx';
 import VascularUltrasound from './pages/services/VascularUltrasound.jsx';
 import FollowUpSurveillance from './pages/services/FollowUpSurveillance.jsx';
+import WellnessPreventive from './pages/services/WellnessPreventive.jsx';
 
 const routes = {
     '/services/abdomen-ultrasound': AbdomenUltrasound,
@@ -30,7 +31,8 @@ const routes = {
     '/services/soft-tissue-ultrasound': SoftTissueUltrasound,
     '/services/thyroid-ultrasound': ThyroidUltrasound,
     '/services/vascular-ultrasound': VascularUltrasound,
-    '/services/follow-up-surveillance': FollowUpSurveillance
+    '/services/follow-up-surveillance': FollowUpSurveillance,
+    '/services/wellness-preventive': WellnessPreventive
 };
 
 export function render(url, helmetContext) {
