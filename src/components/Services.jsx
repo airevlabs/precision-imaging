@@ -7,6 +7,7 @@ import {
     ShieldCheck,
     ClipboardList,
     Brain,
+    ArrowRight,
 } from 'lucide-react';
 
 // Custom Anatomical SVGs
@@ -135,52 +136,90 @@ const services = [
     {
         title: "Abdominal Ultrasound",
         icon: "https://storage.googleapis.com/msgsndr/GuXeu5l7u85zbTGI5UHS/media/6992648f3b3cc92f95cb2556.png",
-        desc: "Imaging of organs like liver, gallbladder, spleen, pancreas, and kidneys."
+        desc: "Imaging of organs like liver, gallbladder, spleen, pancreas, and kidneys.",
+        link: "https://precisionimagingus.com/abdominal-ultrasound"
     },
     {
         title: "Pelvic Ultrasound",
         icon: "https://storage.googleapis.com/msgsndr/GuXeu5l7u85zbTGI5UHS/media/6992648f3b3cc91d0acb2557.png",
-        desc: "Detailed imaging of the pelvic region for women."
+        desc: "Detailed imaging of the pelvic region for women.",
+        link: "https://precisionimagingus.com/pelvic-ultrasound"
     },
-    { title: "Breast Ultrasound", icon: BreastIcon, desc: "Ultrasound for breast cancer screening or for imaging palpable concerns." },
+    { 
+        title: "Breast Ultrasound", 
+        icon: BreastIcon, 
+        desc: "Ultrasound for breast cancer screening or for imaging palpable concerns.",
+        link: "https://precisionimagingus.com/breast-ultrasound"
+    },
     {
         title: "Pediatric Imaging",
         icon: Baby,
-        desc: "Gentle and precise ultrasound exams tailored for infants and children."
+        desc: "Gentle and precise ultrasound exams tailored for infants and children.",
+        link: "https://precisionimagingus.com/pediatric-imaging"
     },
     {
         title: "OB / Gender Reveal",
         icon: "https://storage.googleapis.com/msgsndr/GuXeu5l7u85zbTGI5UHS/media/6992773ea9efde7c998b3d80.png",
-        desc: "Monitoring fetal development and creating special gender reveal moments."
+        desc: "Monitoring fetal development and creating special gender reveal moments.",
+        link: "https://precisionimagingus.com/ob-ultrasound"
     },
     {
         title: "Vascular Ultrasound",
         icon: VascularIcon,
-        desc: "Evaluating blood flow and detecting blockages or clots in veins and arteries."
+        desc: "Evaluating blood flow and detecting blockages or clots in veins and arteries.",
+        link: "https://precisionimagingus.com/vascular-ultrasound"
     },
     {
         title: "Soft Tissue Ultrasound",
-        icon: SoftTissueIcon, // Using original wavy lines SVG
-        desc: "Assessing masses, cysts, and other abnormalities in soft tissues."
+        icon: SoftTissueIcon, 
+        desc: "Assessing masses, cysts, and other abnormalities in soft tissues.",
+        link: "https://precisionimagingus.com/soft-tissue"
     },
     {
         title: "Thyroid Ultrasound",
         icon: "https://storage.googleapis.com/msgsndr/GuXeu5l7u85zbTGI5UHS/media/6992648f1d5e04cd98344426.png",
-        desc: "Detailed examination of the thyroid gland and neck structures."
+        desc: "Detailed examination of the thyroid gland and neck structures.",
+        link: "https://precisionimagingus.com/thyroid-ultrasound"
     },
-    { title: "Aorta Screening", icon: AortaIcon, desc: "Preventive screening for abdominal aortic aneurysms." },
+    { 
+        title: "Aorta Screening", 
+        icon: AortaIcon, 
+        desc: "Preventive screening for abdominal aortic aneurysms.",
+        link: "https://precisionimagingus.com/aorta-screening"
+    },
     {
         title: "Carotid Screening",
         icon: "https://storage.googleapis.com/msgsndr/GuXeu5l7u85zbTGI5UHS/media/699271511d5e0468f3363b52.png",
-        desc: "Assessing stroke risk by imaging the carotid arteries."
+        desc: "Assessing stroke risk by imaging the carotid arteries.",
+        link: "https://precisionimagingus.com/carotid-screening"
     },
-    { title: "Kidney & Bladder", icon: KidneyIcon, desc: "Comprehensive evaluation of the renal system." },
-    { title: "Echocardiogram", icon: Heart, desc: "Specialized ultrasound to assess heart structure and function." },
-    { title: "Follow-Up & Surveillance", icon: ClipboardList, desc: "Regular monitoring of known conditions or previous findings." },
-    { title: "Wellness & Preventive", icon: ShieldCheck, desc: "Proactive imaging for peace of mind and early detection." },
+    { 
+        title: "Kidney & Bladder", 
+        icon: KidneyIcon, 
+        desc: "Comprehensive evaluation of the renal system.",
+        link: "https://precisionimagingus.com/kidneys-bladder"
+    },
+    { 
+        title: "Echocardiogram", 
+        icon: Heart, 
+        desc: "Specialized ultrasound to assess heart structure and function.",
+        link: "https://precisionimagingus.com/echocardiogram"
+    },
+    { 
+        title: "Follow-Up & Surveillance", 
+        icon: ClipboardList, 
+        desc: "Regular monitoring of known conditions or previous findings.",
+        link: "https://precisionimagingus.com/follow-up"
+    },
+    { 
+        title: "Wellness & Preventive", 
+        icon: ShieldCheck, 
+        desc: "Proactive imaging for peace of mind and early detection.",
+        link: "https://precisionimagingus.com/wellness"
+    },
 ];
 
-const ServiceCard = ({ title, icon: IconOrUrl, desc, index }) => {
+const ServiceCard = ({ title, icon: IconOrUrl, desc, link, index }) => {
     const isUrl = typeof IconOrUrl === 'string';
 
     return (
@@ -190,7 +229,7 @@ const ServiceCard = ({ title, icon: IconOrUrl, desc, index }) => {
             viewport={{ once: true }}
             whileHover={{
                 y: -10,
-                boxShadow: 'var(--shadow-lg)',
+                boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
                 borderColor: 'var(--color-secondary-blue)',
             }}
             whileTap={{ scale: 0.98, y: -5 }}
@@ -201,6 +240,7 @@ const ServiceCard = ({ title, icon: IconOrUrl, desc, index }) => {
                 opacity: { duration: 0.5, delay: index * 0.05 },
                 y: { duration: 0.2 }
             }}
+            onClick={() => window.location.href = link}
             style={{
                 backgroundColor: 'var(--color-white)',
                 padding: '2rem',
@@ -215,34 +255,49 @@ const ServiceCard = ({ title, icon: IconOrUrl, desc, index }) => {
                 willChange: 'transform, box-shadow'
             }}
         >
-            <div style={{
-                width: '50px',
-                height: '50px',
-                borderRadius: '12px',
-                backgroundColor: 'var(--color-light-blue)',
+            <div style={{ flex: 1 }}>
+                <div style={{
+                    width: '50px',
+                    height: '50px',
+                    borderRadius: '12px',
+                    backgroundColor: 'var(--color-light-blue)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    color: 'var(--color-primary-blue)',
+                    marginBottom: '1rem',
+                    overflow: 'hidden'
+                }}>
+                    {isUrl ? (
+                        <img
+                            src={IconOrUrl}
+                            alt={title}
+                            style={{
+                                width: '28px',
+                                height: '28px',
+                                objectFit: 'contain'
+                            }}
+                        />
+                    ) : (
+                        <IconOrUrl size={28} strokeWidth={1.5} />
+                    )}
+                </div>
+                <h3 style={{ fontSize: '1.25rem', color: 'var(--color-primary-navy)', fontWeight: '600', marginBottom: '0.5rem' }}>{title}</h3>
+                <p style={{ fontSize: '0.95rem', color: 'var(--color-text-body)', lineHeight: '1.5', marginBottom: '1.5rem' }}>{desc}</p>
+            </div>
+            
+            <div style={{ 
+                marginTop: 'auto',
                 display: 'flex',
                 alignItems: 'center',
-                justifyContent: 'center',
+                gap: '0.5rem',
                 color: 'var(--color-primary-blue)',
-                marginBottom: '0.5rem',
-                overflow: 'hidden'
-            }}>
-                {isUrl ? (
-                    <img
-                        src={IconOrUrl}
-                        alt={title}
-                        style={{
-                            width: '28px',
-                            height: '28px',
-                            objectFit: 'contain'
-                        }}
-                    />
-                ) : (
-                    <IconOrUrl size={28} strokeWidth={1.5} />
-                )}
+                fontWeight: '600',
+                fontSize: '0.95rem',
+                transition: 'all 0.2s ease'
+            }} className="read-more-link">
+                Read More <ArrowRight size={18} />
             </div>
-            <h3 style={{ fontSize: '1.25rem', color: 'var(--color-primary-navy)', fontWeight: '600' }}>{title}</h3>
-            <p style={{ fontSize: '0.95rem', color: 'var(--color-text-body)', lineHeight: '1.5' }}>{desc}</p>
         </motion.div>
     );
 };
