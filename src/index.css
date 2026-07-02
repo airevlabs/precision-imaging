@@ -78,7 +78,7 @@
 /* Specific Updates for Booking Iframe */
 .booking-iframe-container {
   width: 100%;
-  height: 1300px;
+  height: auto;
   overflow: hidden;
 }
 

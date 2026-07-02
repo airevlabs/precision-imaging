@@ -1,7 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import SEO from '../components/SEO';
 
 const Booking = () => {
+    useEffect(() => {
+        // Load the form embed script
+        const script = document.createElement('script');
+        script.src = "https://links.airevlabs.com/js/form_embed.js";
+        script.type = "text/javascript";
+        script.async = true;
+        document.body.appendChild(script);
+
+        return () => {
+            // Clean up the script on unmount
+            if (document.body.contains(script)) {
+                document.body.removeChild(script);
+            }
+        };
+    }, []);
+
     return (
         <div className="page-container" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
             <SEO
@@ -11,12 +27,11 @@ const Booking = () => {
                 <h1 className="text-3xl font-bold text-gray-900 mb-6 text-center" style={{ marginBottom: '2rem', textAlign: 'center', fontSize: '2rem', fontWeight: 'bold' }}>Book Your Appointment</h1>
                 <div className="booking-iframe-container">
                     <iframe
-                        src="https://links.airevlabs.com/widget/booking/ID42mfbX2KQb6dnEDDlZ"
+                        src="https://links.airevlabs.com/booking/precision-imaging-lk69quimwkl?heightMode=full&showHeader=false"
+                        style={{ width: '100%', border: 'none', overflow: 'hidden' }}
+                        scrolling="no"
+                        id="GuXeu5l7u85zbTGI5UHS_1782970475338"
                         title="Book Appointment"
-                        width="100%"
-                        height="100%"
-                        frameBorder="0"
-                        scrolling="yes"
                     />
                 </div>
             </div>
@@ -25,3 +40,4 @@ const Booking = () => {
 };
 
 export default Booking;
+
