@@ -15,7 +15,7 @@ const Footer = () => {
                             Professional diagnostic ultrasound services with transparent pricing and flexible scheduling.
                         </p>
                         <p style={{ fontWeight: '700', fontSize: '1.1rem', marginBottom: '0.5rem' }}>Phone: 630-344-9449</p>
-                        <p style={{ opacity: 0.8, fontSize: '0.95rem' }}>4121 Fairview Ave, Suite L1<br />Downers Grove, IL 60515</p>
+                        <p style={{ opacity: 0.8, fontSize: '0.95rem' }}>4121 Fairview Ave<br />Downers Grove, IL 60515</p>
                     </div>
 
                     <div>
@@ -24,6 +24,7 @@ const Footer = () => {
                             <li><a href="https://precisionimagingus.com/" className="footer-link">Home</a></li>
                             <li><a href="https://precisionimagingus.com/#/#services" className="footer-link">Services</a></li>
                             <li><a href="https://precisionimagingus.com/#/#self-pay" className="footer-link">Self-Pay Options</a></li>
+                            <li><a href="https://precisionimagingus.com/blog" className="footer-link">Blog</a></li>
                             <li><a href="https://precisionimagingus.com/#/contact" className="footer-link">Contact Us</a></li>
                         </ul>
                     </div>

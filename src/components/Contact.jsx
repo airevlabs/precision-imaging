@@ -51,7 +51,7 @@ const Contact = () => {
                                 </div>
                                 <div>
                                     <h3 style={{ fontSize: '1.25rem', color: 'var(--color-primary-navy)', marginBottom: '0.25rem' }}>Location</h3>
-                                    <p style={{ fontSize: '1.1rem' }}>4121 Fairview Ave, Suite L1, Downers Grove, IL 60515</p>
+                                    <p style={{ fontSize: '1.1rem' }}>4121 Fairview Ave, Downers Grove, IL 60515</p>
                                     <p style={{ fontSize: '1rem', color: 'var(--color-gray-text)' }}>Serving Chicago Metro Area & Surrounding Suburbs</p>
                                 </div>
                             </div>
