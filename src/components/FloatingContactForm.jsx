@@ -25,25 +25,12 @@ const FloatingContactForm = () => {
     };
 
     return (
-        <div style={{ position: 'fixed', bottom: '2rem', right: '2rem', zIndex: 1001 }}>
+        <div className="floating-contact-container">
             <motion.button
                 onClick={handleClick}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 className="floating-btn"
-                style={{
-                    width: '50px',
-                    height: '50px',
-                    borderRadius: '50%',
-                    backgroundColor: 'var(--color-primary-blue)',
-                    color: 'var(--color-white)',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    boxShadow: 'var(--shadow-lg)',
-                    cursor: 'pointer',
-                    border: 'none'
-                }}
             >
                 {/* Chat/Message Icon */}
                 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

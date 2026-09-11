@@ -35,23 +35,23 @@ import { Shield } from 'lucide-react';
 
 const WhyChooseUs = () => {
     return (
-        <section id="why-choose-us" style={{ backgroundColor: 'var(--color-white)' }}>
+        <section id="why-choose-us" className="why-section">
             <div className="container">
-                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4rem', alignItems: 'center' }}>
+                <div className="why-grid">
                     <motion.div
-                        style={{ flex: '1 1 400px' }}
+                        className="why-content-col"
                         initial={{ opacity: 0, x: -30 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
                     >
-                        <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem', color: 'var(--color-primary-navy)' }}>
+                        <h2 className="section-title">
                             Why Choose Precision Imaging
                         </h2>
-                        <p style={{ fontSize: '1.2rem', color: 'var(--color-secondary-blue)', fontWeight: '600', marginBottom: '1.5rem' }}>
+                        <p className="why-subheadline">
                             Trust, Reliability, and Convenience.
                         </p>
-                        <p style={{ fontSize: '1.125rem', marginBottom: '2rem', lineHeight: '1.8' }}>
+                        <p className="why-body-text">
                             We pride ourselves on providing a clinical experience that feels high-tech yet personal. Our self-pay model ensures that financial transparency is never a barrier to quality diagnostic care.
                         </p>
                         <motion.a
@@ -64,7 +64,7 @@ const WhyChooseUs = () => {
                         </motion.a>
                     </motion.div>
 
-                    <div style={{ flex: '1 1 400px', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+                    <div className="why-cards-col">
                         {reasons.map((reason, index) => (
                             <motion.div
                                 key={index}
@@ -73,21 +73,14 @@ const WhyChooseUs = () => {
                                 viewport={{ once: true }}
                                 transition={{ delay: index * 0.1 }}
                                 whileHover={{ x: 10 }}
-                                style={{
-                                    display: 'flex',
-                                    gap: '1.5rem',
-                                    padding: '1.5rem',
-                                    borderRadius: '1rem',
-                                    backgroundColor: 'var(--color-soft-gray-bg)',
-                                    borderLeft: '4px solid var(--color-secondary-blue)'
-                                }}
+                                className="why-card"
                             >
-                                <div style={{ color: 'var(--color-primary-blue)', flexShrink: 0 }}>
+                                <div className="why-icon-box">
                                     <reason.icon size={28} />
                                 </div>
                                 <div>
-                                    <h3 style={{ fontSize: '1.125rem', marginBottom: '0.25rem', color: 'var(--color-primary-navy)' }}>{reason.title}</h3>
-                                    <p style={{ fontSize: '0.925rem' }}>{reason.description}</p>
+                                    <h3 className="why-card-title">{reason.title}</h3>
+                                    <p className="why-card-desc">{reason.description}</p>
                                 </div>
                             </motion.div>
                         ))}

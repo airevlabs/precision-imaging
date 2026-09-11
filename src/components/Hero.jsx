@@ -17,69 +17,42 @@ const Hero = () => {
     return (
         <section
             ref={ref}
-            className="hero"
-            style={{
-                minHeight: '100vh',
-                display: 'flex',
-                alignItems: 'center',
-                position: 'relative',
-                overflow: 'hidden',
-                background: 'linear-gradient(135deg, var(--color-white) 0%, var(--color-light-blue) 100%)',
-                padding: '120px 0 120px 0'
-            }}
+            className="hero hero-section"
         >
             {/* Background Decorative Elements */}
             <motion.div
-                style={{
-                    position: 'absolute',
-                    top: '10%',
-                    right: '-5%',
-                    width: '500px',
-                    height: '500px',
-                    borderRadius: '50%',
-                    background: 'radial-gradient(circle, var(--color-sky-blue) 0%, transparent 70%)',
-                    opacity: 0.3,
-                    y: y1
-                }}
+                className="hero-circle-1"
+                style={{ y: y1 }}
             />
             <motion.div
-                style={{
-                    position: 'absolute',
-                    bottom: '10%',
-                    left: '-10%',
-                    width: '400px',
-                    height: '400px',
-                    borderRadius: '50%',
-                    background: 'radial-gradient(circle, var(--color-secondary-blue) 0%, transparent 70%)',
-                    opacity: 0.1,
-                    y: y2
-                }}
+                className="hero-circle-2"
+                style={{ y: y2 }}
             />
 
-            <div className="container" style={{ position: 'relative', zIndex: 1 }}>
+            <div className="container hero-container">
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
-                    style={{ maxWidth: '700px', opacity }}
+                    className="hero-content"
+                    style={{ opacity }}
                 >
-                    <h1 style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', marginBottom: '1.5rem', color: 'var(--color-primary-navy)' }}>
-                        Reliable Diagnostic Ultrasound — <span style={{ color: 'var(--color-secondary-blue)' }}>When You Need It</span>
+                    <h1 className="hero-title">
+                        Reliable Diagnostic Ultrasound — <span className="hero-title-accent">When You Need It</span>
                     </h1>
-                    <p style={{ fontSize: '1.25rem', fontWeight: '600', marginBottom: '1rem', color: 'var(--color-primary-blue)' }}>
+                    <p className="hero-tagline">
                         Clear - Convenient - Self-Pay Friendly
                     </p>
-                    <p style={{ fontSize: '1.125rem', marginBottom: '2.5rem', maxWidth: '600px' }}>
+                    <p className="hero-description">
                         Precision Imaging provides professional diagnostic ultrasound services with transparent self-pay pricing and flexible scheduling, making imaging accessible, efficient, and stress-free for patients and referring providers.
                     </p>
 
-                    <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+                    <div className="hero-btn-group">
                         <motion.button
                             onClick={() => navigate('/booking')}
                             className="btn btn-primary"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            style={{ border: 'none', cursor: 'pointer' }}
                         >
                             Request an Appointment
                         </motion.button>
@@ -94,7 +67,6 @@ const Hero = () => {
                             className="btn btn-secondary"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            style={{ border: 'none', cursor: 'pointer' }}
                         >
                             View Ultrasound Services
                         </motion.button>
@@ -103,16 +75,7 @@ const Hero = () => {
             </div>
 
             {/* Full-width Animated Waveform */}
-            <div style={{
-                position: 'absolute',
-                bottom: 0,
-                left: 0,
-                width: '100%',
-                height: '100px',
-                zIndex: 0,
-                overflow: 'hidden',
-                opacity: 0.6
-            }}>
+            <div className="hero-waveform-container">
                 <motion.svg
                     width="100%"
                     height="100%"

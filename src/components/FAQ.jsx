@@ -24,7 +24,7 @@ const faqs = [
         answer: (
             <>
                 We work with many major insurance plans when a valid physician order is provided, and we also offer clear self‑pay pricing for patients who prefer to pay out of pocket or do not have insurance coverage.{" "}
-                <a href="/#/contact" style={{ color: 'var(--color-primary-blue)', textDecoration: 'underline' }}>
+                <a href="/#/contact" className="faq-inline-link">
                     If you want to use insurance, contact us to see if it is covered.
                 </a>
             </>
@@ -61,42 +61,19 @@ const FAQItem = ({ question, answer, index }) => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: index * 0.05 }}
-            style={{
-                marginBottom: '1rem',
-                backgroundColor: 'var(--color-white)',
-                borderRadius: '1rem',
-                border: '1px solid var(--color-soft-gray-border)',
-                overflow: 'hidden',
-                boxShadow: isOpen ? 'var(--shadow-md)' : 'var(--shadow-sm)',
-                transition: 'box-shadow 0.3s ease'
-            }}
+            className={`faq-item-card ${isOpen ? 'open' : ''}`}
         >
             <button
                 onClick={() => setIsOpen(!isOpen)}
-                style={{
-                    width: '100%',
-                    padding: '1.5rem',
-                    display: 'flex',
-                    justifyContent: 'space-between',
-                    alignItems: 'center',
-                    textAlign: 'left',
-                    background: 'none',
-                    border: 'none',
-                    cursor: 'pointer'
-                }}
+                className="faq-button"
             >
-                <span style={{
-                    fontSize: '1.125rem',
-                    fontWeight: '600',
-                    color: 'var(--color-primary-navy)',
-                    paddingRight: '1rem'
-                }}>
+                <span className="faq-q-text">
                     {question}
                 </span>
                 <motion.div
                     animate={{ rotate: isOpen ? 180 : 0 }}
                     transition={{ duration: 0.3, ease: "easeInOut" }}
-                    style={{ color: 'var(--color-primary-blue)', flexShrink: 0 }}
+                    className="faq-icon-wrapper"
                 >
                     <ChevronDown size={24} />
                 </motion.div>
@@ -109,12 +86,7 @@ const FAQItem = ({ question, answer, index }) => {
                         exit={{ height: 0, opacity: 0 }}
                         transition={{ duration: 0.3, ease: "easeInOut" }}
                     >
-                        <div style={{
-                            padding: '0 1.5rem 1.5rem 1.5rem',
-                            fontSize: '1rem',
-                            lineHeight: '1.6',
-                            color: 'var(--color-text-body)'
-                        }}>
+                        <div className="faq-answer-body">
                             {answer}
                         </div>
                     </motion.div>
@@ -126,14 +98,14 @@ const FAQItem = ({ question, answer, index }) => {
 
 const FAQ = () => {
     return (
-        <section id="faq" style={{ backgroundColor: 'var(--color-soft-gray-bg)', padding: '6rem 0' }}>
+        <section id="faq" className="faq-section">
             <div className="container">
-                <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
+                <div className="section-header">
                     <motion.h2
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        style={{ fontSize: '2.5rem', marginBottom: '1rem', color: 'var(--color-primary-navy)', fontWeight: '700' }}
+                        className="section-title"
                     >
                         Frequently Asked Questions
                     </motion.h2>
@@ -142,13 +114,13 @@ const FAQ = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.1 }}
-                        style={{ maxWidth: '600px', margin: '0 auto', fontSize: '1.125rem', color: 'var(--color-text-body)' }}
+                        className="section-subtitle"
                     >
                         Find answers to common questions about our services, safety, results, and more.
                     </motion.p>
                 </div>
 
-                <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+                <div className="faq-container">
                     {faqs.map((faq, index) => (
                         <FAQItem key={index} index={index} {...faq} />
                     ))}

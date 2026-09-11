@@ -35,23 +35,7 @@ const BackToTop = () => {
                     onClick={scrollToTop}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
-                    style={{
-                        position: 'fixed',
-                        bottom: '2rem',
-                        right: '2rem',
-                        backgroundColor: 'var(--color-primary-blue)',
-                        color: 'var(--color-white)',
-                        border: 'none',
-                        borderRadius: '50%',
-                        width: '50px',
-                        height: '50px',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        cursor: 'pointer',
-                        boxShadow: 'var(--shadow-lg)',
-                        zIndex: 1000
-                    }}
+                    className="back-to-top-btn"
                 >
                     <ArrowUp size={24} />
                 </motion.button>

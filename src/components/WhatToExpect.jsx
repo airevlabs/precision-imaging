@@ -27,14 +27,14 @@ const steps = [
 
 const WhatToExpect = () => {
     return (
-        <section id="what-to-expect" style={{ backgroundColor: 'var(--color-soft-gray-bg)' }}>
+        <section id="what-to-expect" className="expect-section">
             <div className="container">
-                <div style={{ textAlign: 'center', marginBottom: '5rem' }}>
+                <div className="section-header">
                     <motion.h2
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        style={{ fontSize: '2.5rem', marginBottom: '1.5rem', color: 'var(--color-primary-navy)' }}
+                        className="section-title"
                     >
                         What to Expect
                     </motion.h2>
@@ -43,29 +43,15 @@ const WhatToExpect = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.1 }}
-                        style={{ maxWidth: '650px', margin: '0 auto', fontSize: '1.125rem' }}
+                        className="section-subtitle"
                     >
                         Patients can expect a professional, straightforward experience from start to finish. Most exams are completed efficiently, allowing you to return to normal activities right away.
                     </motion.p>
                 </div>
 
-                <div style={{
-                    display: 'grid',
-                    gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
-                    gap: '2.5rem',
-                    position: 'relative'
-                }}>
+                <div className="expect-grid">
                     {/* Connecting line for desktop */}
-                    <div style={{
-                        position: 'absolute',
-                        top: '45px',
-                        left: '10%',
-                        right: '10%',
-                        height: '2px',
-                        backgroundColor: 'var(--color-sky-blue)',
-                        zIndex: 0,
-                        display: 'none'
-                    }} className="step-line" />
+                    <div className="step-line" />
 
                     {steps.map((step, index) => (
                         <motion.div
@@ -74,25 +60,13 @@ const WhatToExpect = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.2 }}
-                            style={{ textAlign: 'center', position: 'relative', zIndex: 1 }}
+                            className="expect-card"
                         >
-                            <div style={{
-                                width: '90px',
-                                height: '90px',
-                                backgroundColor: 'var(--color-white)',
-                                borderRadius: '50%',
-                                display: 'flex',
-                                alignItems: 'center',
-                                justifyContent: 'center',
-                                margin: '0 auto 1.5rem',
-                                color: 'var(--color-primary-blue)',
-                                boxShadow: 'var(--shadow-md)',
-                                border: '4px solid var(--color-light-blue)'
-                            }}>
+                            <div className="expect-icon-wrapper">
                                 <step.icon size={36} />
                             </div>
-                            <h3 style={{ fontSize: '1.25rem', marginBottom: '0.75rem', color: 'var(--color-primary-navy)' }}>{step.title}</h3>
-                            <p style={{ fontSize: '0.95rem', color: 'var(--color-text-body)', lineHeight: '1.6' }}>{step.description}</p>
+                            <h3 className="expect-card-title">{step.title}</h3>
+                            <p className="expect-card-desc">{step.description}</p>
                         </motion.div>
                     ))}
                 </div>

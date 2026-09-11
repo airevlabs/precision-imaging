@@ -33,13 +33,13 @@ const Header = () => {
 
   return (
     <header className="site-header">
-      <input type="checkbox" id="mobile-menu-toggle" style={{ display: 'none' }} />
-      <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+      <input type="checkbox" id="mobile-menu-toggle" />
+      <div className="container header-inner">
         <a href="/"><Logo animated={true} /></a>
 
         {/* Desktop Navigation */}
-        <nav className="desktop-nav" style={{ display: 'none' }}>
-          <ul style={{ display: 'flex', gap: '2rem', alignItems: 'center' }}>
+        <nav className="desktop-nav">
+          <ul className="header-nav-list">
             {navLinks.map((link) => (
               <li key={link.name}>
                 <a
@@ -54,14 +54,7 @@ const Header = () => {
             <li>
               <a
                 href="https://precisionimagingus.com/#/booking"
-                className="btn btn-primary"
-                style={{
-                  padding: '0.75rem 1.5rem',
-                  fontSize: '0.9rem',
-                  borderRadius: '9999px', // Rounded full like pills
-                  textDecoration: 'none',
-                  display: 'inline-block'
-                }}
+                className="btn btn-primary header-book-btn"
               >
                 Book Now
               </a>
@@ -74,12 +67,6 @@ const Header = () => {
           htmlFor="mobile-menu-toggle"
           className="mobile-toggle"
           id="mobile-menu-btn"
-          style={{
-            fontSize: '1.5rem',
-            color: 'var(--color-primary-navy)',
-            zIndex: 1001,
-            cursor: 'pointer'
-          }}
         >
           <span className="hamburger-icon">☰</span>
         </label>
@@ -88,38 +75,19 @@ const Header = () => {
       <div
         id="mobile-menu-container"
         className="mobile-menu-container"
-        style={{
-          position: 'absolute',
-          top: '100%',
-          left: 0,
-          right: 0,
-          backgroundColor: 'var(--color-white)',
-          padding: '2rem',
-          boxShadow: 'var(--shadow-lg)',
-          flexDirection: 'column',
-          gap: '1.5rem',
-          zIndex: 999
-        }}
       >
         {navLinks.map((link) => (
           <a
             key={link.name}
             href={link.to}
             className="mobile-nav-link"
-            style={{ fontWeight: '600', color: 'var(--color-primary-navy)', fontSize: '1.1rem' }}
           >
             {link.name}
           </a>
         ))}
         <a
           href="https://precisionimagingus.com/#/booking"
-          className="btn btn-primary"
-          style={{
-            textAlign: 'center',
-            padding: '0.75rem',
-            borderRadius: '0.5rem',
-            fontWeight: '600'
-          }}
+          className="btn btn-primary mobile-book-btn"
         >
           Book Now
         </a>

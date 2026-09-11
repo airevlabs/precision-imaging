@@ -7,7 +7,7 @@ const Terms = () => {
             <SEO
                 canonical="https://precisionimagingus.com/#/terms"
             />
-            <h1 className="text-4xl font-bold text-gray-900 mb-10 text-center" style={{ marginBottom: '2.5rem', textAlign: 'center', fontSize: '2.25rem', fontWeight: 'bold' }}>Terms of Service</h1>
+            <h1 className="page-header-title">Terms of Service</h1>
             <div className="prose max-w-none text-gray-700 space-y-6">
                 <p><strong>Effective Date: Jan 1st, {new Date().getFullYear()}</strong></p>
 

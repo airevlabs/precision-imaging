@@ -207,8 +207,35 @@ section {
   width: 100%;
 }
 
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav-list {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.header-book-btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 0.9rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  display: inline-block;
+}
+
 .desktop-nav {
   display: none;
+}
+
+.mobile-toggle {
+  font-size: 1.5rem;
+  color: var(--color-primary-navy);
+  z-index: 1001;
+  cursor: pointer;
 }
 
 @media (min-width: 1024px) {
@@ -224,8 +251,22 @@ section {
 }
 
 /* Mobile Menu */
+#mobile-menu-toggle {
+  display: none !important;
+}
+
 .mobile-menu-container {
   display: none !important;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: var(--color-white);
+  padding: 2rem;
+  box-shadow: var(--shadow-lg);
+  flex-direction: column;
+  gap: 1.5rem;
+  z-index: 999;
 }
 
 #mobile-menu-toggle:checked ~ .mobile-menu-container {
@@ -251,6 +292,50 @@ section {
   font-size: 1.1rem;
 }
 
+.mobile-book-btn {
+  text-align: center;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+}
+
+/* Logo */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.logo-text-col {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  align-items: center;
+  margin-left: -15px;
+}
+
+.logo-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-primary-navy);
+  letter-spacing: -0.02em;
+}
+
+.logo-subtitle {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--color-secondary-blue);
+  margin-top: -2px;
+}
+
+.logo-container.theme-dark .logo-title {
+  color: #ffffff;
+}
+
+.logo-container.theme-dark .logo-subtitle {
+  color: var(--color-sky-blue);
+}
+
 /* Footer Link Styles */
 .footer-link {
   color: inherit;
@@ -260,4 +345,639 @@ section {
 .footer-link:hover {
   color: var(--color-sky-blue);
   padding-left: 5px;
+}
+
+/* ==========================================================================
+   Section & Component Styles (Eliminating Inline Styles)
+   ========================================================================== */
+
+/* Typography & Section Headers */
+.section-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--color-primary-navy);
+  font-weight: 700;
+}
+.section-subtitle {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.125rem;
+  color: var(--color-text-body);
+}
+
+/* Hero Section */
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--color-white) 0%, var(--color-light-blue) 100%);
+  padding: 120px 0 120px 0;
+}
+.hero-circle-1 {
+  position: absolute;
+  top: 10%;
+  right: -5%;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--color-sky-blue) 0%, transparent 70%);
+  opacity: 0.3;
+}
+.hero-circle-2 {
+  position: absolute;
+  bottom: 10%;
+  left: -10%;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--color-secondary-blue) 0%, transparent 70%);
+  opacity: 0.1;
+}
+.hero-content {
+  max-width: 700px;
+}
+.hero-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  margin-bottom: 1.5rem;
+  color: var(--color-primary-navy);
+}
+.hero-title-accent {
+  color: var(--color-secondary-blue);
+}
+.hero-tagline {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--color-primary-blue);
+}
+.hero-description {
+  font-size: 1.125rem;
+  margin-bottom: 2.5rem;
+  max-width: 600px;
+}
+.hero-btn-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.hero-waveform-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 0;
+  overflow: hidden;
+  opacity: 0.6;
+}
+
+/* Services Section */
+.services-section {
+  background-color: var(--color-soft-gray-bg);
+  padding: 6rem 0;
+}
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+.service-card {
+  background-color: var(--color-white);
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid var(--color-soft-gray-border);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  cursor: pointer;
+  height: 100%;
+  position: relative;
+  will-change: transform, box-shadow;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.service-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--color-secondary-blue);
+  box-shadow: var(--shadow-lg);
+}
+.service-card-body {
+  flex: 1;
+}
+.service-icon-box {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  background-color: var(--color-light-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary-blue);
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+.service-icon-img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+.service-title {
+  font-size: 1.25rem;
+  color: var(--color-primary-navy);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.service-desc {
+  font-size: 0.95rem;
+  color: var(--color-text-body);
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+.service-read-more {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-primary-blue);
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+/* Self-Pay Section */
+.selfpay-section {
+  background-color: var(--color-white);
+}
+.selfpay-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 4rem;
+  align-items: center;
+}
+.selfpay-highlight-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+.selfpay-highlight-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.selfpay-highlight-text {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+.selfpay-info-box {
+  padding: 1.5rem;
+  background-color: var(--color-light-blue);
+  border-radius: 12px;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.selfpay-info-text {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--color-primary-navy);
+}
+.selfpay-visual-card {
+  position: relative;
+  height: 400px;
+  background-color: var(--color-sky-blue);
+  border-radius: 2rem;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+.selfpay-visual-inner {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(45deg, var(--color-primary-blue), var(--color-sky-blue));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.selfpay-circle-outer {
+  width: 200px;
+  height: 200px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+}
+.selfpay-circle-inner {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+}
+.selfpay-badge-content {
+  color: white;
+  text-align: center;
+  z-index: 1;
+}
+.selfpay-currency-symbol {
+  font-size: 4rem;
+  font-weight: 800;
+}
+.selfpay-badge-label {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* What to Expect */
+.expect-section {
+  background-color: var(--color-soft-gray-bg);
+}
+.expect-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2.5rem;
+  position: relative;
+}
+.expect-card {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.expect-icon-wrapper {
+  width: 90px;
+  height: 90px;
+  background-color: var(--color-white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  color: var(--color-primary-blue);
+  box-shadow: var(--shadow-md);
+  border: 4px solid var(--color-light-blue);
+}
+.expect-card-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  color: var(--color-primary-navy);
+}
+.expect-card-desc {
+  font-size: 0.95rem;
+  color: var(--color-text-body);
+  line-height: 1.6;
+}
+
+/* Why Choose Us */
+.why-section {
+  background-color: var(--color-white);
+}
+.why-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  align-items: center;
+}
+.why-content-col {
+  flex: 1 1 400px;
+}
+.why-subheadline {
+  font-size: 1.2rem;
+  color: var(--color-secondary-blue);
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+.why-body-text {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+  line-height: 1.8;
+}
+.why-cards-col {
+  flex: 1 1 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.why-card {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background-color: var(--color-soft-gray-bg);
+  border-left: 4px solid var(--color-secondary-blue);
+  transition: transform 0.2s ease;
+}
+.why-card:hover {
+  transform: translateX(5px);
+}
+.why-icon-box {
+  color: var(--color-primary-blue);
+  flex-shrink: 0;
+}
+.why-card-title {
+  font-size: 1.125rem;
+  margin-bottom: 0.25rem;
+  color: var(--color-primary-navy);
+}
+.why-card-desc {
+  font-size: 0.925rem;
+}
+
+/* FAQ */
+.faq-section {
+  background-color: var(--color-soft-gray-bg);
+  padding: 6rem 0;
+}
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.faq-item-card {
+  margin-bottom: 1rem;
+  background-color: var(--color-white);
+  border-radius: 1rem;
+  border: 1px solid var(--color-soft-gray-border);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.3s ease;
+}
+.faq-item-card.open {
+  box-shadow: var(--shadow-md);
+}
+.faq-button {
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.faq-q-text {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-primary-navy);
+  padding-right: 1rem;
+}
+.faq-answer-body {
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-text-body);
+}
+
+/* Contact Section */
+.contact-section {
+  background-color: var(--color-soft-gray-bg);
+  padding: 5rem 0;
+}
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 4rem;
+  align-items: start;
+}
+.contact-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.contact-info-row {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+.contact-icon-bubble {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary-blue);
+  box-shadow: var(--shadow-sm);
+  flex-shrink: 0;
+}
+.contact-item-title {
+  font-size: 1.25rem;
+  color: var(--color-primary-navy);
+  margin-bottom: 0.25rem;
+}
+.contact-phone-link {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-secondary-blue);
+}
+.contact-provider-alert {
+  margin-top: 3rem;
+  padding: 2rem;
+  background-color: var(--color-sky-blue);
+  border-radius: 1rem;
+  opacity: 0.8;
+}
+.contact-provider-title {
+  color: var(--color-primary-navy);
+  margin-bottom: 0.5rem;
+}
+.contact-form-card {
+  background-color: var(--color-white);
+  padding: 1rem;
+  border-radius: 1.5rem;
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+  height: 900px;
+}
+.contact-form-iframe {
+  width: 100%;
+  border: none;
+  height: 100%;
+}
+
+.contact-info-row-center {
+  align-items: center;
+}
+.contact-text {
+  font-size: 1.1rem;
+}
+.contact-subtext {
+  font-size: 1rem;
+  color: var(--color-gray-text);
+}
+.contact-provider-desc {
+  font-size: 0.95rem;
+}
+.contact-disclaimer-box {
+  margin-top: 4rem;
+  padding-bottom: 2rem;
+}
+.contact-disclaimer-text {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+/* Footer Details */
+.footer-section {
+  background-color: var(--color-primary-navy);
+  color: var(--color-white);
+  padding: 5rem 0 2rem;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 4rem;
+  margin-bottom: 4rem;
+}
+.footer-brand-logo {
+  margin-bottom: 1.5rem;
+}
+.footer-desc {
+  opacity: 0.8;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+.footer-phone {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+.footer-address {
+  opacity: 0.8;
+  font-size: 0.95rem;
+}
+.footer-col-title {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  color: var(--color-white);
+  font-weight: 700;
+}
+.footer-links-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  opacity: 0.8;
+}
+.footer-bottom-bar {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 2rem;
+  text-align: center;
+  font-size: 0.85rem;
+  opacity: 0.6;
+}
+.footer-disclaimer {
+  margin-top: 0.5rem;
+}
+.footer-credits {
+  margin-top: 1.5rem;
+  opacity: 0.8;
+}
+.footer-credit-link {
+  font-weight: bold;
+  color: var(--color-white);
+  text-decoration: underline;
+}
+
+/* Floating Contact Button */
+.floating-contact-container {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 1001;
+}
+.floating-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--color-primary-blue);
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-lg);
+  cursor: pointer;
+  border: none;
+}
+
+/* Hero container */
+.hero-container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Self-Pay Refinements */
+.selfpay-lead-text {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+}
+.selfpay-insurance-text {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  color: var(--color-text-body);
+}
+.selfpay-insurance-link {
+  color: var(--color-primary-blue);
+  text-decoration: underline;
+  cursor: pointer;
+}
+.selfpay-info-icon {
+  flex-shrink: 0;
+}
+
+/* FAQ Refinements */
+.faq-inline-link {
+  color: var(--color-primary-blue);
+  text-decoration: underline;
+}
+.faq-icon-wrapper {
+  color: var(--color-primary-blue);
+  flex-shrink: 0;
+}
+
+/* Policy & Booking Pages */
+.page-header-title {
+  margin-bottom: 2.5rem;
+  text-align: center;
+  font-size: 2.25rem;
+  font-weight: bold;
+}
+.booking-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.booking-header-title {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.booking-iframe {
+  width: 100%;
+  border: none;
+  overflow: hidden;
+}
+
+/* Back to Top Button */
+.back-to-top-btn {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: var(--color-primary-blue);
+  color: var(--color-white);
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: var(--shadow-lg);
+  z-index: 1000;
 }

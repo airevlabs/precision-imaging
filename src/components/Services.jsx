@@ -241,61 +241,25 @@ const ServiceCard = ({ title, icon: IconOrUrl, desc, link, index }) => {
                 y: { duration: 0.2 }
             }}
             onClick={() => window.location.href = link}
-            style={{
-                backgroundColor: 'var(--color-white)',
-                padding: '2rem',
-                borderRadius: '1rem',
-                border: '1px solid var(--color-soft-gray-border)',
-                display: 'flex',
-                flexDirection: 'column',
-                gap: '1rem',
-                cursor: 'pointer',
-                height: '100%',
-                position: 'relative',
-                willChange: 'transform, box-shadow'
-            }}
+            className="service-card"
         >
-            <div style={{ flex: 1 }}>
-                <div style={{
-                    width: '50px',
-                    height: '50px',
-                    borderRadius: '12px',
-                    backgroundColor: 'var(--color-light-blue)',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    color: 'var(--color-primary-blue)',
-                    marginBottom: '1rem',
-                    overflow: 'hidden'
-                }}>
+            <div className="service-card-body">
+                <div className="service-icon-box">
                     {isUrl ? (
                         <img
                             src={IconOrUrl}
                             alt={title}
-                            style={{
-                                width: '28px',
-                                height: '28px',
-                                objectFit: 'contain'
-                            }}
+                            className="service-icon-img"
                         />
                     ) : (
                         <IconOrUrl size={28} strokeWidth={1.5} />
                     )}
                 </div>
-                <h3 style={{ fontSize: '1.25rem', color: 'var(--color-primary-navy)', fontWeight: '600', marginBottom: '0.5rem' }}>{title}</h3>
-                <p style={{ fontSize: '0.95rem', color: 'var(--color-text-body)', lineHeight: '1.5', marginBottom: '1.5rem' }}>{desc}</p>
+                <h3 className="service-title">{title}</h3>
+                <p className="service-desc">{desc}</p>
             </div>
             
-            <div style={{ 
-                marginTop: 'auto',
-                display: 'flex',
-                alignItems: 'center',
-                gap: '0.5rem',
-                color: 'var(--color-primary-blue)',
-                fontWeight: '600',
-                fontSize: '0.95rem',
-                transition: 'all 0.2s ease'
-            }} className="read-more-link">
+            <div className="service-read-more">
                 Read More <ArrowRight size={18} />
             </div>
         </motion.div>
@@ -304,14 +268,14 @@ const ServiceCard = ({ title, icon: IconOrUrl, desc, link, index }) => {
 
 const Services = () => {
     return (
-        <section id="services" style={{ backgroundColor: 'var(--color-soft-gray-bg)', padding: '6rem 0' }}>
+        <section id="services" className="services-section">
             <div className="container">
-                <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
+                <div className="section-header">
                     <motion.h2
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        style={{ fontSize: '2.5rem', marginBottom: '1rem', color: 'var(--color-primary-navy)', fontWeight: '700' }}
+                        className="section-title"
                     >
                         Ultrasound Services
                     </motion.h2>
@@ -320,17 +284,13 @@ const Services = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.1 }}
-                        style={{ maxWidth: '600px', margin: '0 auto', fontSize: '1.125rem', color: 'var(--color-text-body)' }}
+                        className="section-subtitle"
                     >
                         We offer a wide range of diagnostic ultrasound exams tailored to patient needs and provider recommendations.
                     </motion.p>
                 </div>
 
-                <div style={{
-                    display: 'grid',
-                    gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
-                    gap: '2rem'
-                }}>
+                <div className="services-grid">
                     {services.map((service, index) => (
                         <ServiceCard key={service.title} {...service} index={index} />
                     ))}
