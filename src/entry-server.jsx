@@ -3,6 +3,7 @@ import { renderToString } from 'react-dom/server';
 import { HelmetProvider } from 'react-helmet-async';
 import { StaticRouter } from 'react-router';
 import SSGLayout from './components/SSGLayout.jsx';
+import Home from './pages/Home.jsx';
 import AbdomenUltrasound from './pages/services/AbdomenUltrasound.jsx';
 import AortaScreening from './pages/services/AortaScreening.jsx';
 import BreastUltrasound from './pages/services/BreastUltrasound.jsx';
@@ -19,6 +20,7 @@ import FollowUpSurveillance from './pages/services/FollowUpSurveillance.jsx';
 import WellnessPreventive from './pages/services/WellnessPreventive.jsx';
 
 const routes = {
+    '/': Home,
     '/services/abdomen-ultrasound': AbdomenUltrasound,
     '/services/aorta-screening': AortaScreening,
     '/services/breast-ultrasound': BreastUltrasound,

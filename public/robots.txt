@@ -1,0 +1,30 @@
+# robots.txt for precisionimagingus.com
+
+# 1. Standard Search Engine Crawlers
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /*?*fbclid=
+Disallow: /*?*gclid=
+
+# 2. AI & Generative Search Engines (GEO Optimization)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# 3. XML Sitemap & LLM Knowledge Base References
+Sitemap: https://precisionimagingus.com/sitemap.xml

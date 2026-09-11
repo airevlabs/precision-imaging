@@ -1,0 +1,244 @@
+# LLM Knowledge Base: Precision Imaging (precisionimagingus.com)
+# Purpose: Single Source of Truth for AI Assistants, Chatbots, and GoHighLevel (GHL) Conversation AI
+
+---
+
+## 1. BUSINESS OVERVIEW & CONTACT INFORMATION
+
+- **Business Name:** Precision Imaging (PRECISIONIMAGINGUSA LLC)
+- **Specialty:** Premier Outpatient Diagnostic Ultrasound & Sonography Center
+- **Address:** 4121 Fairview Ave, Downers Grove, IL 60515
+- **Phone:** (630) 344-9449 | 630-344-9449
+- **Website:** https://precisionimagingus.com/
+- **Online Booking Portal:** https://precisionimagingus.com/#/booking
+- **Contact / Inquiry Page:** https://precisionimagingus.com/#/contact
+- **Primary Geographic Service Area:** Western Suburbs of Chicago, DuPage County, Cook County, and the broader Chicago Metropolitan Area.
+- **Key Practice Characteristics:**
+  - Fast, same-week or flexible appointment scheduling with minimal in-clinic wait times.
+  - Transparent self-pay pricing without surprise hospital billing or unexpected facility fees.
+  - State-of-the-art, high-resolution diagnostic ultrasound technology.
+  - Staffed by licensed, credentialed, and experienced ultrasound technologists.
+  - 100% radiation-free imaging (sound waves only), safe for pregnant women, infants, children, and adults.
+  - Rapid results turnaround: 24–48 hours to referring providers.
+
+---
+
+## 2. CORE PATIENT POLICIES: DOCTOR'S ORDERS & BILLING
+
+### Doctor's Orders vs. Self-Referred / Cash Screening
+- **With a Doctor's Order:**
+  - A formal written order/requisition from a physician, nurse practitioner, or physician assistant allows the study to be formally interpreted by a board-certified radiologist or cardiologic physician.
+  - A comprehensive interpretive radiology report is transmitted directly to the ordering healthcare provider within 24 to 48 hours.
+  - Patients can utilize insurance or self-pay.
+- **Self-Referred (Without a Doctor's Order):**
+  - Patients can self-refer for wellness and preventive screening exams (e.g., Carotid Stroke Screening, Abdominal Aortic Aneurysm (AAA) Screening, Peripheral Artery Disease (PAD) screening, preventive thyroid/wellness checks, or OB Gender Reveal).
+  - *Disclaimer & Deliverable:* For self-referred patients without a doctor's order, high-resolution exam images are provided to the patient on a CD. To obtain a formal diagnostic radiology interpretation report, a written physician's order is legally and clinically required.
+
+### Pricing & Insurance Policy
+- **Self-Pay Model:** Precision Imaging offers clear, upfront, competitive cash-pay rates. There are no hidden facility fees or delayed bills. Pricing details are available upon inquiry or online booking.
+- **Insurance:** Precision Imaging works with many major insurance plans when accompanied by a valid physician order. Patients wanting to use insurance must contact the clinic beforehand (or submit their insurance details via the contact form) so staff can verify coverage and benefits.
+
+---
+
+## 3. COMPREHENSIVE SERVICE DIRECTORY
+
+### 1. Abdominal Ultrasound
+- **URL:** https://precisionimagingus.com/abdominal-ultrasound
+- **Overview:** High-resolution imaging of the upper and middle abdominal organs using noninvasive sound waves.
+- **Exam Options:**
+  - *Abdomen Complete:* Liver, gallbladder, bile ducts, pancreas, spleen, kidneys, and abdominal aorta.
+  - *Abdomen Limited:* Targeted evaluation focused on the liver, gallbladder, and pancreas.
+  - *Abdominal Aortic Aneurysm (AAA) Screening:* Targeted screening for aorta dilation/aneurysm.
+- **Common Symptoms / Indications:** Abdominal pain, bloating, unexplained nausea/vomiting, abnormal liver enzymes (AST/ALT/bilirubin), suspected gallstones or gallbladder sludge, fatty liver disease, jaundice, pancreatitis follow-up.
+- **Preparation:** Fasting required. Do NOT eat or drink anything (except small sips of water for essential medications) for 6 to 8 hours prior to the exam.
+- **Duration:** 20–30 minutes.
+
+### 2. Pelvic Ultrasound
+- **URL:** https://precisionimagingus.com/pelvic-ultrasound
+- **Overview:** In-depth evaluation of the female reproductive system and pelvic organs.
+- **Exam Options:**
+  - *Transabdominal Pelvic:* External scan performed through the lower abdomen across a full bladder.
+  - *Transvaginal Pelvic:* Internal scan using a slender, sanitized, lubricated transducer for high-detail close-up views of the endometrium and ovaries (patient may decline if desired).
+- **Common Symptoms / Indications:** Pelvic pain, irregular menstrual bleeding, heavy periods, postmenopausal bleeding, ovarian cysts, uterine fibroids, polyps, adenomyosis, endometriosis assessment, or IUD localization.
+- **Preparation:**
+  - *Transabdominal:* Arrive with a comfortably full bladder (finish 24–32 oz of water 1 hour before exam; do not empty bladder).
+  - *Transvaginal:* Bladder is emptied right before the exam begins.
+  - Can be performed during menstruation if necessary.
+- **Duration:** 20–30 minutes.
+
+### 3. Obstetric (OB) Ultrasound & Gender Reveal
+- **URL:** https://precisionimagingus.com/ob-ultrasound
+- **Overview:** Safe, radiation-free monitoring of fetal development and memorable milestone scans.
+- **Exam Options:**
+  - *OB Dating Ultrasound (8–13 weeks):* Confirms viable intrauterine pregnancy, fetal heart motion, establishes accurate gestational age, and calculates estimated due date (EDD).
+  - *Gender Reveal Ultrasound (16–20 weeks):* Determines fetal sex, provides visual peace of mind, verifies amniotic fluid and basic anatomy, and provides keepsake photos. Results can be sealed in an envelope upon request for reveal parties.
+- **Preparation:** Drink water beforehand to arrive with a comfortably full bladder (acts as an acoustic window). Wear loose two-piece clothing.
+- **Duration:** 20–40 minutes.
+
+### 4. Breast Ultrasound
+- **URL:** https://precisionimagingus.com/breast-ultrasound
+- **Overview:** Targeted diagnostic imaging used to evaluate focal breast lumps, localized pain, dense tissue, or abnormal mammogram findings.
+- **What It Evaluates:** Distinguishes fluid-filled harmless cysts from solid nodules/masses; evaluates axillary (underarm) lymph nodes and milk duct changes.
+- **Mammography Note:** Breast ultrasound is an essential diagnostic supplement to mammography (especially for dense breast tissue), but does not replace routine screening mammograms.
+- **Preparation:** No fasting required. Avoid deodorants, antiperspirants, powders, or lotions on the chest or underarms on the day of the scan. Wear a two-piece outfit.
+- **Duration:** 15–30 minutes.
+
+### 5. Thyroid Ultrasound & Screening
+- **URL:** https://precisionimagingus.com/thyroid-ultrasound
+- **Overview:** Detailed sonographic examination of the thyroid gland, parathyroid area, and lateral neck.
+- **Exam Options:** Diagnostic Thyroid Ultrasound (for symptoms/abnormal labs) or Preventive Thyroid Screening.
+- **What It Evaluates:** Thyroid nodules (size, solid vs. cystic composition, microcalcifications, vascularity), goiter (enlarged thyroid), Hashimoto's/thyroiditis tissue texture, and cervical lymphadenopathy.
+- **Preparation:** No fasting required. Wear a collarless shirt or V-neck; remove necklaces and neck jewelry prior to scan.
+- **Duration:** 15–30 minutes.
+
+### 6. Echocardiogram (Cardiac Ultrasound)
+- **URL:** https://precisionimagingus.com/echocardiogram
+- **Overview:** Specialized ultrasound assessing real-time heart structure, chamber dimensions, pumping efficiency, and blood flow hemodynamics.
+- **What It Evaluates:** Left ventricular ejection fraction (EF), systolic/diastolic function, heart valve stenosis or regurgitation (leakage), wall motion abnormalities (ischemia/infarction history), and pericardial fluid effusion.
+- **Procedure Details:** Patient lies on their left side with ECG stickers placed on the chest to synchronize imaging with the heartbeat; color Doppler demonstrates blood flow sounds.
+- **Preparation:** No fasting required. Avoid heavy caffeine or energy drinks for a few hours before testing. Wear a two-piece outfit.
+- **Duration:** 45–60 minutes.
+
+### 7. Vascular Ultrasound & Doppler
+- **URL:** https://precisionimagingus.com/vascular-ultrasound
+- **Overview:** Comprehensive Doppler evaluation of the peripheral circulatory system (veins and arteries).
+- **Exam Options:**
+  - *Carotid Doppler:* Analyzes stroke risk, carotid artery plaque, and stenosis.
+  - *Upper or Lower Extremity Venous Doppler:* Rules out Deep Vein Thrombosis (DVT blood clots) or superficial venous insufficiency (varicose veins, chronic swelling).
+  - *Upper or Lower Extremity Arterial Doppler:* Assesses arterial circulation, blockages, claudication (leg pain while walking).
+  - *Aorta Doppler:* Measures abdominal aorta caliber and blood velocity.
+  - *Peripheral Artery Disease (PAD) Screening:* Noninvasive screening of limb arteries.
+- **Preparation:** No fasting required for extremities. Loose clothing for easy access to legs/arms. Avoid skin lotions. (If abdominal aorta is included, fast for 4–6 hours).
+- **Duration:** 30–60 minutes.
+
+### 8. Carotid Screening & Stroke Risk Assessment
+- **URL:** https://precisionimagingus.com/carotid-screening
+- **Overview:** Dedicated screening of the carotid and vertebral arteries in the neck to measure intimamedia thickness, atherosclerotic plaque, and blood velocity.
+- **Indications:** History of high blood pressure, elevated cholesterol, diabetes, smoking, family history of stroke, TIA (mini-stroke), bruits, or lightheadedness.
+- **Preparation:** No fasting. Wear a loose collar; no heavy neck creams.
+- **Duration:** 20–30 minutes.
+
+### 9. Abdominal Aortic Aneurysm (AAA) Screening
+- **URL:** https://precisionimagingus.com/aorta-screening
+- **Overview:** Preventive screening measuring the diameter of the abdominal aorta down to the iliac bifurcation to detect silent, life-threatening aneurysms.
+- **Target Candidates:** Men and women aged 50–75, particularly individuals with a history of smoking, hypertension, or family history of AAA.
+- **Preparation:** Fasting from solid food for 4 to 6 hours before the appointment to minimize bowel gas over the aorta. Small sips of water are permitted.
+- **Duration:** 15–25 minutes.
+
+### 10. Kidney & Bladder (Renal) Ultrasound
+- **URL:** https://precisionimagingus.com/kidneys-bladder
+- **Overview:** Full urinary tract assessment examining the renal parenchyma and bladder dynamics.
+- **What It Evaluates:** Nephrolithiasis (kidney stones), hydronephrosis (urinary obstruction/backup), renal cysts, cortical thinning, renal masses, bladder wall thickening, and post-void residual (PVR) urine retention.
+- **Exam Protocol:** Bladder is scanned full, patient voids completely, and residual volume is remeasured.
+- **Preparation:** Drink 24 to 32 oz of water 1 hour prior to appointment so the bladder is full upon arrival. No fasting required unless combined with an abdominal scan.
+- **Duration:** 20–35 minutes.
+
+### 11. Pediatric Ultrasound
+- **URL:** https://precisionimagingus.com/pediatric-imaging
+- **Overview:** Child-friendly, gentle, non-radiating imaging designed specifically for infants and pediatric patients.
+- **Exam Options:** Pediatric Complete/Limited Abdomen, Pediatric Kidneys & Bladder (for recurrent UTIs, enuresis/bedwetting), Infant Pyloric Stenosis, Pediatric Soft Tissue / Neck.
+- **Child & Parent Experience:** Parents stay in the exam room throughout the entire exam. Warm gel, friendly technologists, and short breaks are provided.
+- **Preparation:** Infants may feed normally unless physician orders otherwise. Older children fast 4–6 hours for abdominal exams. For kidney/bladder, encourage water consumption.
+- **Duration:** 15–30 minutes.
+
+### 12. Soft Tissue Ultrasound
+- **URL:** https://precisionimagingus.com/soft-tissue
+- **Overview:** Targeted musculoskeletal and subcutaneous assessment of palpable lumps, bumps, swelling, or localized trauma.
+- **What It Evaluates:** Distinguishes lipomas, benign sebaceous or epidermoid cysts, hematomas, abscesses, superficial foreign bodies, muscle tears, ganglion cysts, and tendonitis/bursitis. Features real-time dynamic motion imaging.
+- **Preparation:** No fasting. Wear clothing allowing easy exposure of the affected anatomical area.
+- **Duration:** 15–30 minutes.
+
+### 13. Stroke and Vascular Screening Package (Preventive Bundle)
+- **URL:** https://precisionimagingus.com/wellness
+- **Overview:** A 3-in-1 comprehensive vascular health checkup combining:
+  1. Carotid Artery Doppler (Stroke Risk)
+  2. Abdominal Aortic Aneurysm (AAA) Ultrasound
+  3. Peripheral Artery Disease (PAD) Screening
+- **Preparation:** Fast 4 hours from solid food for the aortic component.
+- **Duration:** Approximately 45–60 minutes.
+
+### 14. Follow-up & Surveillance Imaging
+- **URL:** https://precisionimagingus.com/follow-up
+- **Overview:** Periodic interval monitoring of previously documented conditions such as stable renal cysts, small gallstones, thyroid nodules (TIRADS monitoring), liver hemangiomas, or mild vascular stenosis.
+
+---
+
+## 4. PATIENT PREPARATION QUICK-REFERENCE SUMMARY
+
+| Service | Fasting Requirement | Bladder Status | Clothing / Other Prep |
+| :--- | :--- | :--- | :--- |
+| **Abdomen (Complete or Limited)** | 6–8 hours strict fasting (sips of water OK) | Normal | Loose 2-piece clothing |
+| **Abdominal Aorta (AAA Screening)** | 4–6 hours fasting from food | Normal | Loose 2-piece clothing |
+| **Pelvic (Transabdominal)** | No fasting | Full bladder (drink 32 oz 1 hr prior) | Comfortable clothing |
+| **Pelvic (Transvaginal)** | No fasting | Empty bladder immediately before | Sanitary pad if bleeding |
+| **Obstetric (OB Dating / Early)** | No fasting | Full bladder | 2-piece outfit |
+| **OB Gender Reveal** | No fasting | Comfortably full bladder | Optional reveal envelope |
+| **Kidneys & Bladder (Renal)** | No fasting | Full bladder (scanned pre & post void) | Comfortable clothing |
+| **Echocardiogram (Echo)** | No fasting | Normal | Avoid heavy caffeine; 2-piece outfit |
+| **Carotid / Stroke Screening** | No fasting | Normal | Collarless/V-neck shirt, no lotion |
+| **Thyroid Ultrasound** | No fasting | Normal | No necklaces, low collar shirt |
+| **Breast Ultrasound** | No fasting | Normal | NO deodorant, powder, or lotion |
+| **Extremity Vascular (DVT/PAD)**| No fasting | Normal | Loose sleeves or shorts, no lotions |
+| **Soft Tissue (Lump/Bumps)** | No fasting | Normal | Access to area of concern |
+| **Pediatric Abdomen** | 4–6 hrs (older kids); infants feed normal | Normal | Bring favorite toy / blanket |
+
+---
+
+## 5. FREQUENTLY ASKED QUESTIONS (FAQ) & CLINICAL CLARIFICATIONS
+
+**Q: What is the difference between an ultrasound, sonogram, and sonography?**
+*A:* They refer to the same medical imaging modality:
+- *Ultrasound* is the high-frequency sound-wave technology.
+- *Sonogram* is the visual image/recording produced.
+- *Sonography* is the medical imaging specialty practiced by sonographers.
+- *Sonograph* refers to the ultrasound machine or recorded image.
+
+**Q: Are ultrasound exams safe? Does it involve radiation?**
+*A:* Yes, ultrasound is completely safe and painless. It utilizes non-ionizing high-frequency acoustic sound waves, with ZERO radiation exposure. It is safe for developing fetuses, newborns, children, and elderly patients.
+
+**Q: How long does an appointment take?**
+*A:* Most scans take between 15 and 45 minutes, depending on the complexity of the exam. Arriving 10–15 minutes early for check-in ensures a prompt start.
+
+**Q: When will my doctor and I get the results?**
+*A:* When performed with a doctor's order, an interpreted report is sent to the ordering healthcare provider within 24 to 48 hours. The provider will review findings directly with the patient. For self-referred screening exams without a doctor's order, images are provided on a CD.
+
+**Q: Can an ultrasound replace a CT scan or MRI?**
+*A:* Ultrasound is frequently the preferred first-line, noninvasive diagnostic imaging tool because of its safety, affordability, and dynamic imaging capabilities. However, depending on complex anatomy or bone/air interference, physicians may order a CT or MRI as a complementary follow-up.
+
+**Q: Can breast ultrasound replace a routine mammogram?**
+*A:* No. Breast ultrasound is an invaluable complementary test for evaluating focal symptoms (lumps, localized pain) and evaluating dense breast tissue, but does not replace standard screening mammograms.
+
+**Q: What should I bring to my appointment?**
+*A:*
+1. Government-issued photo ID.
+2. Health insurance card (if verifying insurance coverage).
+3. Physical doctor's order/script (if provided by your provider).
+4. Any prior related imaging reports or discs for comparison.
+
+**Q: How do I schedule, reschedule, or cancel?**
+*A:* Patients can book directly online 24/7 at https://precisionimagingus.com/#/booking or call the office at (630) 344-9449 during business hours.
+
+---
+
+## 6. GEOGRAPHIC COVERAGE / SERVICE AREA
+
+Precision Imaging is based in Downers Grove, IL, and serves patients and referring clinics throughout:
+- **Primary Communities:** Downers Grove, Westmont, Clarendon Hills, Lisle, Hinsdale, Darien, Oak Brook, Willowbrook, Woodridge, Lombard, Glen Ellyn, Western Springs, Villa Park, Wheaton, Burr Ridge, Indian Head Park, Naperville, Elmhurst, Westchester, and La Grange.
+- **Extended Service Area:** Countryside, Carol Stream, Northlake, Oakbrook Terrace, Bolingbrook, Addison, Aurora, Brookfield, Berkeley, Hillside, Broadview, Roselle, Itasca, Bensenville, Lemont, Franklin Park, Schiller Park, River Forest, Forest Park, Maywood, Bellwood, Oak Park, Oak Forest, Tinley Park, Rolling Meadows, Crest Hill, Mount Prospect, Niles, Joliet, South Elgin, Hoffman Estates, Arlington Heights, Morton Grove, Schaumburg, and the greater Chicago metro area.
+
+---
+
+## 7. AI ASSISTANT CONVERSATIONAL INSTRUCTIONS (FOR GHL BOT)
+
+- **Role & Persona:** Warm, knowledgeable, empathetic, and professional patient coordinator for Precision Imaging.
+- **Communication Style:** Clear, reassuring, easy to read, concise, and structured. Avoid medical jargon unless explaining it simply.
+- **Booking Call-To-Action:** Always provide the direct booking link (https://precisionimagingus.com/#/booking) and the direct phone number ((630) 344-9449) when a user indicates they want to schedule or inquire about availability.
+- **Clinical Guardrails & Medical Advice Disclaimer:**
+  - Never attempt to diagnose symptoms or interpret medical findings.
+  - Inform patients that final diagnostic interpretations are provided by licensed physicians/radiologists.
+  - Advise any patient experiencing severe acute pain, shortness of breath, chest pain, or sudden neurological deficits to call 911 or visit the nearest emergency room immediately.
+- **Doctor's Order Policy Prompting:**
+  - If a patient asks if they need a prescription/order: State clearly that self-referred screening/wellness scans and gender reveals do NOT require an order (images delivered on CD), but a physician's order IS required if they need a formal diagnostic radiologist report or wish to bill insurance.
+- **Insurance vs. Self-Pay Inquiries:**
+  - Emphasize the clear, upfront, stress-free self-pay rates.
+  - If they prefer insurance, let them know Precision Imaging works with many major plans with a physician's order, and invite them to leave their insurance details or call (630) 344-9449 for verification.

@@ -21,6 +21,7 @@ const { render } = await import(renderPath);
 
 
 const routesToPrerender = [
+    { url: '/', name: 'home' },
     { url: '/services/abdomen-ultrasound', name: 'abdomen-ultrasound' },
     { url: '/services/aorta-screening', name: 'aorta-screening' },
     { url: '/services/breast-ultrasound', name: 'breast-ultrasound' },
@@ -54,4 +55,10 @@ for (const { url, name } of routesToPrerender) {
     const filePath = path.join(outDir, `${name}.html`);
     fs.writeFileSync(filePath, html);
     console.log(`Pre-rendered ${filePath}`);
+
+    if (name === 'home') {
+        const ghlHomePath = toAbsolute('GHL_Home_Page_HTML.txt');
+        fs.writeFileSync(ghlHomePath, html);
+        console.log(`Exported GHL Home Page to ${ghlHomePath}`);
+    }
 }

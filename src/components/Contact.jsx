@@ -91,6 +91,7 @@ const Contact = () => {
                     >
                         <iframe
                             src="https://links.airevlabs.com/widget/form/Oj5KV4C0BEXGHFjfqGLp"
+                            loading="lazy"
                             style={{
                                 width: '100%',
                                 border: 'none',

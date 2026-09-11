@@ -28,6 +28,7 @@ const Booking = () => {
                 <div className="booking-iframe-container">
                     <iframe
                         src="https://links.airevlabs.com/booking/precision-imaging-lk69quimwkl?heightMode=full&showHeader=false"
+                        loading="lazy"
                         style={{ width: '100%', border: 'none', overflow: 'hidden' }}
                         scrolling="no"
                         id="GuXeu5l7u85zbTGI5UHS_1782970475338"
