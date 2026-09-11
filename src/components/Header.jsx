@@ -44,30 +44,9 @@ const Header = () => {
               <li key={link.name}>
                 <a
                   href={link.to}
-                  style={{
-                    fontWeight: '600',
-                    fontSize: '0.925rem',
-                    color: 'var(--color-primary-navy)',
-                    position: 'relative'
-                  }}
                   className="nav-link"
                 >
                   {link.name}
-                  <style>{`
-                    .nav-link::after {
-                      content: '';
-                      position: absolute;
-                      bottom: -4px;
-                      left: 0;
-                      width: 0;
-                      height: 2px;
-                      background-color: var(--color-secondary-blue);
-                      transition: var(--transition-smooth);
-                    }
-                    .nav-link:hover::after {
-                      width: 100%;
-                    }
-                  `}</style>
                 </a>
               </li>
             ))}
@@ -145,42 +124,6 @@ const Header = () => {
           Book Now
         </a>
       </div>
-
-      <style jsx>{`
-        /* Hide menu by default */
-        .mobile-menu-container {
-          display: none !important;
-        }
-
-        /* Show menu when checkbox is checked */
-        #mobile-menu-toggle:checked ~ .mobile-menu-container {
-          display: flex !important;
-        }
-
-        /* Change hamburger to X when open */
-        #mobile-menu-toggle:checked ~ .container .mobile-toggle .hamburger-icon::before {
-          content: '✕';
-        }
-        .hamburger-icon::before {
-          content: '☰';
-        }
-        .hamburger-icon {
-          font-size: 0; /* hides the original text */
-        }
-        .hamburger-icon::before {
-          font-size: 1.5rem;
-        }
-
-        /* Hide checkbox when label is clicked, auto close menu */
-        .mobile-nav-link {
-          /* optional styling */
-        }
-
-        @media (min-width: 1024px) {
-          .desktop-nav { display: block !important; }
-          .mobile-toggle { display: none !important; }
-        }
-      `}</style>
     </header>
   );
 };

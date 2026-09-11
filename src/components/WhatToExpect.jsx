@@ -97,11 +97,6 @@ const WhatToExpect = () => {
                     ))}
                 </div>
             </div>
-            <style>{`
-        @media (min-width: 1024px) {
-          .step-line { display: block !important; }
-        }
-      `}</style>
         </section>
     );
 };

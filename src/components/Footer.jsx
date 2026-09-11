@@ -55,12 +55,6 @@ const Footer = () => {
                     </p>
                 </div>
             </div>
-            <style>{`
-        .footer-link:hover {
-          color: var(--color-sky-blue);
-          padding-left: 5px;
-        }
-      `}</style>
         </footer>
     );
 };
