@@ -25,9 +25,9 @@ const Header = () => {
   const navLinks = [
     { name: 'Home', to: 'https://precisionimagingus.com/' },
     { name: 'Ultrasound Services', to: 'https://precisionimagingus.com/#/#services' },
-    { name: 'Self-Pay Options', to: 'https://precisionimagingus.com/#/#self-pay' },
     { name: 'What to Expect', to: 'https://precisionimagingus.com/#/#what-to-expect' },
     { name: 'Why Choose Us', to: 'https://precisionimagingus.com/#/#why-choose-us' },
+    { name: 'Blog', to: 'https://precisionimagingus.com/blog' },
     { name: 'Contact Us', to: 'https://precisionimagingus.com/#/contact' },
   ];
 
