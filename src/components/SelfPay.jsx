@@ -50,7 +50,7 @@ const SelfPay = () => {
                                 </motion.div>
                             ))}
                             <p className="selfpay-insurance-text">
-                                Trying to use insurance? <span onClick={handleContactClick} className="selfpay-insurance-link">Contact us</span> to see if your insurance is covered.
+                                Trying to use insurance? <a href="/#/contact" onClick={(e) => { e.preventDefault(); handleContactClick(); }} className="selfpay-insurance-link">Contact us</a> to see if your insurance is covered.
                             </p>
                         </div>
 

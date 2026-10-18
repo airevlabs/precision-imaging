@@ -1,0 +1,478 @@
+<!-- ================================================================= -->
+<!-- PRECISION IMAGING - GHL BLOG HEADER & FOOTER CODE                  -->
+<!-- Copy and paste the respective blocks into your GHL Blog Template   -->
+<!-- ================================================================= -->
+
+<!-- ========================================== -->
+<!-- 1. HEADER (Custom HTML / Code Block at TOP) -->
+<!-- ========================================== -->
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+  :root {
+    --pi-navy: #1a365d;
+    --pi-blue: #2b6cb0;
+    --pi-sky: #4299e1;
+    --pi-light-blue: #ebf8ff;
+    --pi-ice-blue: #bee3f8;
+    --pi-white: #ffffff;
+    --pi-gray-bg: #f7fafc;
+    --pi-text: #4a5568;
+    --pi-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --pi-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --pi-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --pi-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* Header Fixed Bar */
+  .pi-site-header {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 99990 !important;
+    padding: 1rem 0 !important;
+    background-color: rgba(255, 255, 255, 0.98) !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -1px rgba(0, 0, 0, 0.04) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+    box-sizing: border-box !important;
+  }
+
+  .pi-site-header * {
+    box-sizing: border-box !important;
+  }
+
+  .pi-header-inner {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 0 2rem !important;
+    width: 100% !important;
+  }
+
+  /* Logo */
+  .pi-logo-container {
+    display: flex !important;
+    align-items: center !important;
+    gap: 0 !important;
+    text-decoration: none !important;
+  }
+
+  .pi-logo-text-col {
+    display: flex !important;
+    flex-direction: column !important;
+    line-height: 1 !important;
+    align-items: center !important;
+    margin-left: -15px !important;
+  }
+
+  .pi-logo-title {
+    font-size: 1.5rem !important;
+    font-weight: 700 !important;
+    color: var(--pi-navy) !important;
+    letter-spacing: -0.02em !important;
+  }
+
+  .pi-logo-subtitle {
+    font-size: 1.2rem !important;
+    font-weight: 500 !important;
+    color: var(--pi-sky) !important;
+    margin-top: -2px !important;
+  }
+
+  .pi-logo-wave-path {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    animation: pi-draw-wave 2.5s linear infinite;
+  }
+
+  @keyframes pi-draw-wave {
+    0% { stroke-dashoffset: 1; }
+    80% { stroke-dashoffset: 0; }
+    100% { stroke-dashoffset: 0; }
+  }
+
+  /* Desktop Nav */
+  .pi-desktop-nav {
+    display: none !important;
+  }
+
+  .pi-header-nav-list {
+    display: flex !important;
+    gap: 2rem !important;
+    align-items: center !important;
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .pi-nav-link {
+    font-weight: 600 !important;
+    font-size: 0.925rem !important;
+    color: var(--pi-navy) !important;
+    position: relative !important;
+    display: inline-block !important;
+    text-decoration: none !important;
+    transition: var(--pi-transition) !important;
+  }
+
+  .pi-nav-link::after {
+    content: '' !important;
+    position: absolute !important;
+    bottom: -4px !important;
+    left: 0 !important;
+    width: 0 !important;
+    height: 2px !important;
+    background-color: var(--pi-sky) !important;
+    transition: var(--pi-transition) !important;
+  }
+
+  .pi-nav-link:hover::after {
+    width: 100% !important;
+  }
+
+  .pi-nav-link:hover {
+    color: var(--pi-blue) !important;
+  }
+
+  .pi-btn-primary {
+    background-color: var(--pi-blue) !important;
+    color: #ffffff !important;
+    padding: 0.75rem 1.5rem !important;
+    font-size: 0.9rem !important;
+    border-radius: 9999px !important;
+    font-weight: 600 !important;
+    display: inline-block !important;
+    text-decoration: none !important;
+    transition: var(--pi-transition) !important;
+    border: none !important;
+  }
+
+  .pi-btn-primary:hover {
+    background-color: var(--pi-navy) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: var(--pi-shadow-md) !important;
+    color: #ffffff !important;
+  }
+
+  /* Mobile Toggle & Menu */
+  .pi-mobile-toggle {
+    font-size: 1.5rem !important;
+    color: var(--pi-navy) !important;
+    z-index: 1001 !important;
+    cursor: pointer !important;
+    display: block !important;
+    line-height: 1 !important;
+  }
+
+  #pi-mobile-menu-toggle {
+    display: none !important;
+  }
+
+  .pi-mobile-menu-container {
+    display: none !important;
+    position: absolute !important;
+    top: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+    background-color: #ffffff !important;
+    padding: 2rem !important;
+    box-shadow: var(--pi-shadow-lg) !important;
+    flex-direction: column !important;
+    gap: 1.5rem !important;
+    z-index: 999 !important;
+  }
+
+  #pi-mobile-menu-toggle:checked ~ .pi-mobile-menu-container {
+    display: flex !important;
+  }
+
+  #pi-mobile-menu-toggle:checked ~ .pi-header-inner .pi-mobile-toggle .pi-hamburger-icon::before {
+    content: '✕' !important;
+  }
+
+  .pi-hamburger-icon {
+    font-size: 0 !important;
+  }
+
+  .pi-hamburger-icon::before {
+    content: '☰' !important;
+    font-size: 1.5rem !important;
+  }
+
+  .pi-mobile-nav-link {
+    font-weight: 600 !important;
+    color: var(--pi-navy) !important;
+    font-size: 1.1rem !important;
+    text-decoration: none !important;
+  }
+
+  .pi-mobile-book-btn {
+    text-align: center !important;
+    padding: 0.75rem !important;
+    border-radius: 0.5rem !important;
+    font-weight: 600 !important;
+    background-color: var(--pi-blue) !important;
+    color: #ffffff !important;
+    text-decoration: none !important;
+  }
+
+  @media (min-width: 1024px) {
+    .pi-desktop-nav {
+      display: block !important;
+    }
+    .pi-mobile-toggle {
+      display: none !important;
+    }
+  }
+
+  /* Top Spacer to prevent fixed header from overlapping blog content */
+  .pi-header-spacer {
+    height: 90px !important;
+    width: 100% !important;
+    display: block !important;
+  }
+</style>
+
+<header class="pi-site-header">
+  <input type="checkbox" id="pi-mobile-menu-toggle" />
+  <div class="pi-header-inner">
+    <a href="https://precisionimagingus.com/" class="pi-logo-container" aria-label="Precision Imaging Home">
+      <svg width="80" height="40" viewBox="0 0 120 60" fill="none" xmlns="http://www.w3.org/2000/svg" class="pi-animated-logo-svg" aria-hidden="true">
+        <path class="pi-logo-wave-path" d="M0 30H15L20 20L30 40L40 10L50 50L60 20L70 40L75 30H120" stroke="url(#piWaveGradientHeader)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" pathLength="1"></path>
+        <defs>
+          <linearGradient id="piWaveGradientHeader" x1="0" y1="30" x2="120" y2="30" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#4299e1"></stop>
+            <stop offset="75%" stop-color="#2b6cb0" stop-opacity="1"></stop>
+            <stop offset="100%" stop-color="#2b6cb0" stop-opacity="0"></stop>
+          </linearGradient>
+        </defs>
+      </svg>
+      <div class="pi-logo-text-col">
+        <span class="pi-logo-title">Precision</span>
+        <span class="pi-logo-subtitle">Imaging</span>
+      </div>
+    </a>
+
+    <!-- Desktop Navigation -->
+    <nav class="pi-desktop-nav">
+      <ul class="pi-header-nav-list">
+        <li><a href="https://precisionimagingus.com/" class="pi-nav-link">Home</a></li>
+        <li><a href="https://precisionimagingus.com/#services" class="pi-nav-link">Ultrasound Services</a></li>
+        <li><a href="https://precisionimagingus.com/#what-to-expect" class="pi-nav-link">What to Expect</a></li>
+        <li><a href="https://precisionimagingus.com/#why-choose-us" class="pi-nav-link">Why Choose Us</a></li>
+        <li><a href="https://precisionimagingus.com/blog" class="pi-nav-link">Blog</a></li>
+        <li><a href="https://precisionimagingus.com/#/contact" class="pi-nav-link">Contact Us</a></li>
+        <li><a href="https://precisionimagingus.com/#/booking" class="pi-btn-primary">Book Now</a></li>
+      </ul>
+    </nav>
+
+    <!-- Mobile Menu Toggle -->
+    <label for="pi-mobile-menu-toggle" class="pi-mobile-toggle" aria-label="Toggle navigation menu">
+      <span class="pi-hamburger-icon">☰</span>
+    </label>
+  </div>
+
+  <!-- Mobile Dropdown Menu -->
+  <div class="pi-mobile-menu-container">
+    <a href="https://precisionimagingus.com/" class="pi-mobile-nav-link">Home</a>
+    <a href="https://precisionimagingus.com/#services" class="pi-mobile-nav-link">Ultrasound Services</a>
+    <a href="https://precisionimagingus.com/#what-to-expect" class="pi-mobile-nav-link">What to Expect</a>
+    <a href="https://precisionimagingus.com/#why-choose-us" class="pi-mobile-nav-link">Why Choose Us</a>
+    <a href="https://precisionimagingus.com/blog" class="pi-mobile-nav-link">Blog</a>
+    <a href="https://precisionimagingus.com/#/contact" class="pi-mobile-nav-link">Contact Us</a>
+    <a href="https://precisionimagingus.com/#/booking" class="pi-mobile-book-btn">Book Now</a>
+  </div>
+</header>
+<div class="pi-header-spacer"></div>
+
+
+<!-- ========================================== -->
+<!-- 2. FOOTER (Custom HTML / Code Block at BOTTOM) -->
+<!-- ========================================== -->
+<style>
+  .pi-footer-section {
+    background-color: #1a365d !important;
+    color: #ffffff !important;
+    padding: 5rem 0 2rem !important;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+    box-sizing: border-box !important;
+    width: 100% !important;
+    margin-top: 5rem !important;
+  }
+
+  .pi-footer-section * {
+    box-sizing: border-box !important;
+  }
+
+  .pi-footer-container {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 0 2rem !important;
+  }
+
+  .pi-footer-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) !important;
+    gap: 4rem !important;
+    margin-bottom: 4rem !important;
+  }
+
+  .pi-footer-brand-logo {
+    margin-bottom: 1.5rem !important;
+  }
+
+  .pi-footer-logo-title {
+    color: #ffffff !important;
+  }
+
+  .pi-footer-logo-subtitle {
+    color: #bee3f8 !important;
+  }
+
+  .pi-footer-desc {
+    opacity: 0.8 !important;
+    margin-bottom: 1.5rem !important;
+    font-size: 0.95rem !important;
+    line-height: 1.6 !important;
+    color: #ffffff !important;
+  }
+
+  .pi-footer-phone {
+    font-weight: 700 !important;
+    font-size: 1.1rem !important;
+    margin-bottom: 0.5rem !important;
+    color: #ffffff !important;
+  }
+
+  .pi-footer-address {
+    opacity: 0.8 !important;
+    font-size: 0.95rem !important;
+    line-height: 1.6 !important;
+    color: #ffffff !important;
+  }
+
+  .pi-footer-col-title {
+    font-size: 1.25rem !important;
+    margin-bottom: 1.5rem !important;
+    color: #ffffff !important;
+    font-weight: 700 !important;
+  }
+
+  .pi-footer-links-list {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0.75rem !important;
+    opacity: 0.85 !important;
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .pi-footer-link {
+    color: #ffffff !important;
+    text-decoration: none !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    display: inline-block !important;
+    font-size: 0.95rem !important;
+  }
+
+  .pi-footer-link:hover {
+    color: #bee3f8 !important;
+    padding-left: 5px !important;
+  }
+
+  .pi-footer-bottom-bar {
+    border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+    padding-top: 2rem !important;
+    text-align: center !important;
+    font-size: 0.85rem !important;
+    opacity: 0.65 !important;
+    line-height: 1.6 !important;
+    color: #ffffff !important;
+  }
+
+  .pi-footer-disclaimer {
+    margin-top: 0.5rem !important;
+  }
+
+  .pi-footer-credits {
+    margin-top: 1.5rem !important;
+    opacity: 0.8 !important;
+  }
+
+  .pi-footer-credit-link {
+    font-weight: bold !important;
+    color: #ffffff !important;
+    text-decoration: underline !important;
+  }
+</style>
+
+<footer class="pi-footer-section">
+  <div class="pi-footer-container">
+    <div class="pi-footer-grid">
+      <!-- Col 1: Brand Info -->
+      <div>
+        <div class="pi-footer-brand-logo">
+          <div class="pi-logo-container">
+            <svg width="80" height="40" viewBox="0 0 120 60" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path class="pi-logo-wave-path" d="M0 30H15L20 20L30 40L40 10L50 50L60 20L70 40L75 30H120" stroke="url(#piWaveGradientFooter)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" pathLength="1"></path>
+              <defs>
+                <linearGradient id="piWaveGradientFooter" x1="0" y1="30" x2="120" y2="30" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stop-color="#ebf8ff"></stop>
+                  <stop offset="75%" stop-color="#bee3f8" stop-opacity="1"></stop>
+                  <stop offset="100%" stop-color="#bee3f8" stop-opacity="0"></stop>
+                </linearGradient>
+              </defs>
+            </svg>
+            <div class="pi-logo-text-col">
+              <span class="pi-logo-title pi-footer-logo-title">Precision</span>
+              <span class="pi-logo-subtitle pi-footer-logo-subtitle">Imaging</span>
+            </div>
+          </div>
+        </div>
+        <p class="pi-footer-desc">Professional diagnostic ultrasound services with transparent pricing and flexible scheduling.</p>
+        <p class="pi-footer-phone">Phone: 630-344-9449</p>
+        <p class="pi-footer-address">4121 Fairview Ave<br />Downers Grove, IL 60515</p>
+      </div>
+
+      <!-- Col 2: Quick Links -->
+      <div>
+        <h3 class="pi-footer-col-title">Quick Links</h3>
+        <ul class="pi-footer-links-list">
+          <li><a href="https://precisionimagingus.com/" class="pi-footer-link">Home</a></li>
+          <li><a href="https://precisionimagingus.com/#services" class="pi-footer-link">Services</a></li>
+          <li><a href="https://precisionimagingus.com/#what-to-expect" class="pi-footer-link">What to Expect</a></li>
+          <li><a href="https://precisionimagingus.com/#why-choose-us" class="pi-footer-link">Why Choose Us</a></li>
+          <li><a href="https://precisionimagingus.com/blog" class="pi-footer-link">Blog</a></li>
+          <li><a href="https://precisionimagingus.com/#/contact" class="pi-footer-link">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Patient Resources -->
+      <div>
+        <h3 class="pi-footer-col-title">Patient Resources</h3>
+        <ul class="pi-footer-links-list">
+          <li><a href="https://precisionimagingus.com/#what-to-expect" class="pi-footer-link">What to Expect</a></li>
+          <li><a href="https://precisionimagingus.com/#why-choose-us" class="pi-footer-link">Why Choose Us</a></li>
+          <li><a href="https://precisionimagingus.com/#/privacy" class="pi-footer-link">Privacy Policy</a></li>
+          <li><a href="https://precisionimagingus.com/#/hipaa" class="pi-footer-link">HIPAA Notice</a></li>
+          <li><a href="https://precisionimagingus.com/#/terms" class="pi-footer-link">Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="pi-footer-bottom-bar">
+      <p>© 2026 PRECISIONIMAGINGUSA LLC. All rights reserved. Professional medical imaging services provided by licensed specialists.</p>
+      <p class="pi-footer-disclaimer">This website is for informational purposes and does not constitute medical advice. Please consult with a healthcare professional for diagnosis or treatment.</p>
+      <p class="pi-footer-credits">
+        Designed by <a href="https://airevlabs.com" target="_blank" rel="noopener noreferrer" class="pi-footer-credit-link">AI REV LABS</a>
+      </p>
+    </div>
+  </div>
+</footer>

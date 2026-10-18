@@ -22,8 +22,8 @@ const Footer = () => {
                         <h3 className="footer-col-title">Quick Links</h3>
                         <ul className="footer-links-list">
                             <li><a href="https://precisionimagingus.com/" className="footer-link">Home</a></li>
-                            <li><a href="https://precisionimagingus.com/#/#services" className="footer-link">Services</a></li>
-                            <li><a href="https://precisionimagingus.com/#/#self-pay" className="footer-link">Self-Pay Options</a></li>
+                            <li><a href="https://precisionimagingus.com/#services" className="footer-link">Services</a></li>
+                            <li><a href="https://precisionimagingus.com/#self-pay" className="footer-link">Self-Pay Options</a></li>
                             <li><a href="https://precisionimagingus.com/blog" className="footer-link">Blog</a></li>
                             <li><a href="https://precisionimagingus.com/#/contact" className="footer-link">Contact Us</a></li>
                         </ul>
@@ -32,8 +32,8 @@ const Footer = () => {
                     <div>
                         <h3 className="footer-col-title">Patient Resources</h3>
                         <ul className="footer-links-list">
-                            <li><a href="https://precisionimagingus.com/#/#what-to-expect" className="footer-link">What to Expect</a></li>
-                            <li><a href="https://precisionimagingus.com/#/#why-choose-us" className="footer-link">Why Choose Us</a></li>
+                            <li><a href="https://precisionimagingus.com/#what-to-expect" className="footer-link">What to Expect</a></li>
+                            <li><a href="https://precisionimagingus.com/#why-choose-us" className="footer-link">Why Choose Us</a></li>
                             <li><a href="https://precisionimagingus.com/#/privacy" className="footer-link">Privacy Policy</a></li>
                             <li><a href="https://precisionimagingus.com/#/hipaa" className="footer-link">HIPAA Notice</a></li>
                             <li><a href="https://precisionimagingus.com/#/terms" className="footer-link">Terms & Conditions</a></li>

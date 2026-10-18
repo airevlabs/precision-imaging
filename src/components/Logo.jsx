@@ -14,6 +14,7 @@ const Logo = ({ animated = false, theme = 'light' }) => {
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         className={animated ? "animated-logo-svg" : ""}
+        aria-hidden="true"
       >
         <path
           className="logo-wave-path"

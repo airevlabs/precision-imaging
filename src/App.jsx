@@ -25,14 +25,31 @@ import FollowUpSurveillance from './pages/services/FollowUpSurveillance';
 import WellnessPreventive from './pages/services/WellnessPreventive';
 import ContactPage from './pages/ContactPage';
 
-// ScrollToAnchor component to handle hash scrolling on route change
+// ScrollToAnchor component to handle hash and path scrolling on route change
 const ScrollToAnchor = () => {
   const { pathname, hash } = useLocation();
   const topPages = ['/contact', '/booking', '/hipaa', '/privacy', '/terms'];
 
   useEffect(() => {
+    const sectionRoutes = ['services', 'what-to-expect', 'why-choose-us', 'self-pay'];
+    const pathSection = pathname.replace('/', '');
+
     if (hash) {
-      const element = document.getElementById(hash.replace('#', ''));
+      const targetId = hash.replace(/^#+/, '');
+      const element = document.getElementById(targetId);
+      if (element) {
+        setTimeout(() => {
+          const headerOffset = 80;
+          const elementPosition = element.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth"
+          });
+        }, 100);
+      }
+    } else if (sectionRoutes.includes(pathSection)) {
+      const element = document.getElementById(pathSection);
       if (element) {
         setTimeout(() => {
           const headerOffset = 80;
@@ -61,6 +78,10 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/services" element={<Home />} />
+        <Route path="/what-to-expect" element={<Home />} />
+        <Route path="/why-choose-us" element={<Home />} />
+        <Route path="/self-pay" element={<Home />} />
         <Route path="/booking" element={<Booking />} />
         <Route path="/hipaa" element={<Hipaa />} />
         <Route path="/privacy" element={<Privacy />} />

@@ -83,6 +83,7 @@ const Hero = () => {
                     fill="none"
                     preserveAspectRatio="none"
                     xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
                 >
                     <motion.path
                         d="M0 50 H200 L220 10 L240 90 L260 50 H500 L520 20 L540 80 L560 50 H900 L920 30 L940 70 L960 50 H1440"

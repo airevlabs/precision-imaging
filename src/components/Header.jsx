@@ -24,9 +24,9 @@ const Header = () => {
 
   const navLinks = [
     { name: 'Home', to: 'https://precisionimagingus.com/' },
-    { name: 'Ultrasound Services', to: 'https://precisionimagingus.com/#/#services' },
-    { name: 'What to Expect', to: 'https://precisionimagingus.com/#/#what-to-expect' },
-    { name: 'Why Choose Us', to: 'https://precisionimagingus.com/#/#why-choose-us' },
+    { name: 'Ultrasound Services', to: 'https://precisionimagingus.com/#services' },
+    { name: 'What to Expect', to: 'https://precisionimagingus.com/#what-to-expect' },
+    { name: 'Why Choose Us', to: 'https://precisionimagingus.com/#why-choose-us' },
     { name: 'Blog', to: 'https://precisionimagingus.com/blog' },
     { name: 'Contact Us', to: 'https://precisionimagingus.com/#/contact' },
   ];
@@ -35,7 +35,7 @@ const Header = () => {
     <header className="site-header">
       <input type="checkbox" id="mobile-menu-toggle" />
       <div className="container header-inner">
-        <a href="/"><Logo animated={true} /></a>
+        <a href="/" aria-label="Precision Imaging Home"><Logo animated={true} /></a>
 
         {/* Desktop Navigation */}
         <nav className="desktop-nav">
@@ -67,6 +67,7 @@ const Header = () => {
           htmlFor="mobile-menu-toggle"
           className="mobile-toggle"
           id="mobile-menu-btn"
+          aria-label="Toggle navigation menu"
         >
           <span className="hamburger-icon">☰</span>
         </label>

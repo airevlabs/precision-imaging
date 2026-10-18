@@ -248,20 +248,29 @@ const ServiceCard = ({ title, icon: IconOrUrl, desc, link, index }) => {
                     {isUrl ? (
                         <img
                             src={IconOrUrl}
-                            alt={title}
+                            alt={`${title} - Diagnostic Ultrasound Scan`}
                             className="service-icon-img"
+                            loading="lazy"
+                            decoding="async"
+                            width="48"
+                            height="48"
                         />
                     ) : (
-                        <IconOrUrl size={28} strokeWidth={1.5} />
+                        <IconOrUrl size={28} strokeWidth={1.5} aria-hidden="true" />
                     )}
                 </div>
                 <h3 className="service-title">{title}</h3>
                 <p className="service-desc">{desc}</p>
             </div>
             
-            <div className="service-read-more">
-                Read More <ArrowRight size={18} />
-            </div>
+            <a
+                href={link}
+                className="service-read-more"
+                aria-label={`Read more about ${title}`}
+                onClick={(e) => e.stopPropagation()}
+            >
+                Read More <ArrowRight size={18} aria-hidden="true" />
+            </a>
         </motion.div>
     );
 };
